@@ -9,7 +9,7 @@
             </div>
             <ul class="portfolio-filters text-center">
                 <li class="filter active" data-filter="all">all</li>
-                <li class="filter" data-filter="sports">sports</li>
+                <li class="filter" data-filter="sports" onclick="alert('kidooooooooooo')">sports</li>
                 <li class="filter" data-filter="class">class</li>
                 <li class="filter" data-filter="video">video</li>
                 <li class="filter" data-filter="painting">Painting</li>

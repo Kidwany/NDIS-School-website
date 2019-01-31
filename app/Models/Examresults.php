@@ -2,27 +2,25 @@
 
 namespace App;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-class User  extends Authenticatable  {
+class Examresults extends Model  {
 
-
-    protected $primaryKey = 'UID';
-
+    
 
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'examresults';
 
     /**
      * Attributes that should be mass-assignable.
      *
      * @var array
      */
-    protected $fillable = ['UID', 'UserName', 'fullname', 'password', 'email', 'address', 'phone', 'type', 'Created_Date'];
+    protected $fillable = ['ERID', 'mark', 'EID', 'UID', 'Created_Date', 'Update_Date'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -43,6 +41,6 @@ class User  extends Authenticatable  {
      *
      * @var array
      */
-    protected $dates = ['Created_Date'];
+    protected $dates = ['Created_Date', 'Update_Date'];
 
 }

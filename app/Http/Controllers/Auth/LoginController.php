@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Classes\MainCore;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -25,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/index';
 
     /**
      * Create a new controller instance.
@@ -35,5 +38,33 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function login(Request $request)
+    {
+       $data = MainCore::Login($request->name, $request->password);
+        if ($data[0]->type == 1) {
+            return redirect('admin');
+
+        } elseif($data[0]->type == 2) {
+            return redirect('student');
+
+        }elseif($data[0]->type == 3) {
+            return redirect('teacher');
+
+        }
+    }
+    public function showLoginForm(){
+        return view('login');
+    }
+
+    public function logout(Request $request)
+    {
+
+
+            $this->guard()->logout();
+            $request->session()->invalidate();
+            return redirect('/');
+
     }
 }
