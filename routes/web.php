@@ -11,7 +11,49 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-Route::get('index','HomeController@index');
+/* --- Return Welcome Page --- */
+Route::get('/', 'PagesController@welcome');
+
+/* --- Return About Page ---*/
+Route::get('/about', 'PagesController@about');
+
+/* --- Return Contact Page ---*/
+Route::get('/contact', 'PagesController@contact');
+
+
+/* --- Login Page ---*/
+Route::get('/login', 'PagesController@login');
+
+
+/* --- Blog Page ---*/
+Route::get('/blog', 'PagesController@blog');
+
+/* --- Blog Page ---*/
+Route::get('/admission', 'PagesController@admission_form');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
