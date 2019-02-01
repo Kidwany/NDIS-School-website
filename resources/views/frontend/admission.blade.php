@@ -63,7 +63,7 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div id="left_form">
-                        <figure><img src="{{asset('website/img/stepper/father.png')}}" alt=""></figure>
+                        <figure><img src="{{asset('website/img/stepper/school.png')}}" alt=""></figure>
                         <h2>Student Information</h2>
                         <p class="step_desc">In this step you should enter your son/daughter information, Be-careful during filling information .</p>
                         <a href="#0" id="more_info" data-toggle="modal" data-target="#more-info"><i class="pe-7s-info"></i></a>
