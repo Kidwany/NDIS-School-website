@@ -14,10 +14,4 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
-Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::post('afterlogin', 'Auth\LoginController@login')->name('afterlogin');
-Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('index','HomeController@index');
-Route::get('admin','HomeController@Admin')->middleware('admin');
-Route::get('student','HomeController@Student');
-Route::get('teacher','HomeController@Teacher');
