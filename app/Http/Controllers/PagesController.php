@@ -64,4 +64,9 @@ class PagesController extends Controller
     {
         return view('frontend.admission');
     }
+
+    public function feesGuide()
+    {
+        return view('frontend.fees-guide');
+    }
 }
