@@ -14,6 +14,7 @@
                     <div class="login-register">
                         <ul>
                            {{-- <li><a href="login-register.html">Login</a></li>--}}
+
                             <li><a href="{{url('login')}}">Login</a></li>
                         </ul>
                     </div>

@@ -24,7 +24,10 @@ Route::get('/contact', 'PagesController@contact');
 
 
 /* --- Login Page ---*/
-Route::get('/login', 'PagesController@login');
+Route::get('/signin', 'PagesController@login');
+Route::get('/logout', 'Auth\LoginController@logout');
+
+
 
 
 /* --- Blog Page ---*/
