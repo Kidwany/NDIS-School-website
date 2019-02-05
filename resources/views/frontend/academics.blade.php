@@ -1,7 +1,16 @@
 @extends('layouts.layouts')
 @section('title', 'How To Apply')
+@section('applyStepper')
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{asset('website/css/layouts/stepper.css')}}">
+@endsection
+
+@section('applyStepperScript')
+    <script src="{{asset('website/js/stepper/jquery.steps.js')}}"></script>
+@endsection
 @section('content')
     @include('layouts.header')
+
 
     <!------------------------ Title banner section ----------------->
     <div class="breadcrumb-area">
@@ -20,8 +29,201 @@
         </div>
     </div>
 
+    <!------ About Section ------>
+    <div class="about-us pt-130 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="about-content">
+                        <div class="section-title section-title-green mb-30">
+                            <h2>Our <span>Aims</span></h2>
+                            <p class="aims">At NDIS Foundation Stage, we believe that the first years of life are the most influential in establishing good habits and basic learning skills.  We are working to help all children to prepare for the future and enable them to develop their capabilities as successful learners, confident individuals and responsible citizens.  Indeed, play is a fundamental part of childhood. For that reason our children’s learning is promoted successfully by activities specially planned and adapted to meet or extend their individual learning needs. </p>
+                            <p>Every day is a learning day and that learning is around us. We aim to provide a balanced plan for every   child. As well we work to develop our kids’ skills and attitude best through playing, which is well planned to give our kids the opportunity to be creative and to explore the world. .</p>
 
-    <!------------------------ Tabs ----------------->
+                        </div>
+                        {{--<div class="about-btn mt-45">
+                            <a class="default-btn" href="about-us.html">ABOUT US</a>
+                        </div>--}}
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="about-img default-overlay">
+                        <img src="{{asset('website/img/academics/aims.jpg')}}" alt="">
+                        {{--<a class="video-btn video-popup" href="https://www.youtube.com/watch?v=sv5hK4crIRc">
+                            <img class="animated" src="{{asset('website/img')}}/icon-img/video.png" alt="">
+                        </a>--}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------ About Section ------>
+    <div class="about-us pt-50 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="about-content">
+                        <div class="section-title section-title-green mb-30">
+                            <h2>Our <span>Curriculum </span></h2>
+                            <p class="aims">Our curriculum is designed to be fun and balanced to cover all the
+                                learning goals.  The Department for Education, in the UK, sets out Learning Objectives
+                                for each area of the curriculum and Levels of Attainment that pupils are expected
+                                to achieve at the end of each key stage.
+                            </p>
+
+                        </div>
+                        {{--<div class="about-btn mt-45">
+                            <a class="default-btn" href="about-us.html">ABOUT US</a>
+                        </div>--}}
+                    </div>
+                </div>
+
+                {{--<div class="col-lg-6 col-md-6">
+                    <div class="about-img default-overlay">
+                        <img src="{{asset('website/img/academics/aims.jpg')}}" alt="">
+                        --}}{{--<a class="video-btn video-popup" href="https://www.youtube.com/watch?v=sv5hK4crIRc">
+                            <img class="animated" src="{{asset('website/img')}}/icon-img/video.png" alt="">
+                        </a>--}}{{--
+                    </div>
+                </div>--}}
+            </div>
+        </div>
+    </div>
+
+
+    {{--<!------ About Section ------>
+    <div class="container">
+        <div class="wrapper">
+            <div class="inner">
+                <div id="wizard">
+                    <!-- SECTION 1 Curriculum-->
+                    <h4>Curriculum </h4>
+                    <section>
+                        <p>Our curriculum is designed to be fun and balanced to cover all the learning goals.
+                            The Department for Education, in the UK, sets out Learning Objectives for each area of the curriculum and Levels
+                            of Attainment that pupils are expected to achieve at the end of each key stage.
+                            <br>
+                            <span class="font-weight-bold">Paying the application doesn’t guarantee the acceptance.</span>
+                        </p>
+                        --}}{{--<button class="forward">Next Step
+                            <i class="zmdi zmdi-long-arrow-right"></i>
+                        </button>--}}{{--
+                    </section>
+
+                    <!-- SECTION 2 Character building-->
+                    <h4>Character building</h4>
+                    <section class="section-style">
+                        <div class="form-wrapper">
+                            <p>
+
+                            </p>
+                            --}}{{-- <button class="forward">Next Step
+                                 <i class="zmdi zmdi-long-arrow-right"></i>
+                             </button>--}}{{--
+                        </div>
+                    </section>
+
+                    <!-- SECTION 3 Activities-->
+                    <h4>Activities</h4>
+                    <section>
+                        <p>Parents will be notified of the assessment result within 5 working days from
+                            The assessment date.
+                        </p>
+
+                        --}}{{--<button class="forward" style="width: 195px; margin-top: 44px;">Next Step
+                            <i class="zmdi zmdi-long-arrow-right"></i>
+                        </button>--}}{{--
+                    </section>
+
+                    <!-- SECTION 4 Our typical day-->
+                    <h4>Our typical day</h4>
+                    <section class="section-style">
+                        <div class="pay-wrapper">
+                            <p>
+                                If the student is offered a place, a onetime reservation fee of <span class="font-weight-bold">2,500 EGP </span>must be paid within 5 working days and the below documents should be presented to guarantee the student’s place.
+                                <br><span class="font-weight-bold">** This amount is accredited from the 1st Installment.</span>
+                                <br>
+                                - Copy of vaccination report.
+                                <br>
+                                - Copy of parents’ IDs or Passports.
+                                <br>
+                                - An original electronic birth certificate.
+                                <br>
+                                - 8 recent passport-sized color photos.
+                                <br>
+                                - The original stamped report from the previous school.
+                                <br>
+                                If a school bus is required, an amount of 2,000 EGP MUST be paid with reservation fees
+                                with maximum 1st installment, Otherwise, the student will not be assigned to a bus route.
+                                <br>
+                                <span class="font-weight-bold">
+                                     **Promotion from one year to the next is not automatic, unless the following year’s
+                                1st installment is paid before 30th June.
+                                </span>
+
+
+                            </p>
+                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
+                                <i class="zmdi zmdi-long-arrow-right"></i>
+                            </button>--}}{{--
+                        </div>
+                    </section>
+
+
+                    <!-- SECTION 5 Classroom displays-->
+                    <h4>Classroom Displays</h4>
+                    <section class="section-style">
+                        <div class="pay-wrapper">
+                            <p>
+                                Classroom displays
+
+
+                            </p>
+                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
+                                <i class="zmdi zmdi-long-arrow-right"></i>
+                            </button>--}}{{--
+                        </div>
+                    </section>
+
+                    <!-- SECTION 6 Outdoor facilities-->
+                    <h4>Outdoor facilities</h4>
+                    <section class="section-style">
+                        <div class="pay-wrapper">
+                            <p>
+                                Outdoor facilities
+
+
+                            </p>
+                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
+                                <i class="zmdi zmdi-long-arrow-right"></i>
+                            </button>--}}{{--
+                        </div>
+                    </section>
+
+                    <!-- SECTION 7 How to help your child at home?-->
+                    <h4>How to help your child at home?</h4>
+                    <section class="section-style">
+                        <div class="pay-wrapper">
+                            <p>
+                                How to help your child at home?
+
+                            </p>
+                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
+                                <i class="zmdi zmdi-long-arrow-right"></i>
+                            </button>--}}{{--
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>--}}
+
+
+
+   {{-- <!------------------------ Tabs ----------------->
     <div class="course-details-area pt-130">
         <div class="container">
             <div class="row">
@@ -524,7 +726,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
 
     @include('layouts.footer')
 @endsection
