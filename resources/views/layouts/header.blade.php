@@ -202,18 +202,37 @@
                 <div class="mobile-menu">
                     <nav id="mobile-menu-active">
                         <ul class="menu-overflow">
-                            <li><a href="index.html">HOME</a>
-                                <ul>
+                            <li><a href="{{url('/')}}"> HOME </a>
+                                {{--<ul class="submenu">
                                     <li><a href="index.html">home version 1</a></li>
                                     <li><a href="index-2.html">home version 2</a></li>
                                     <li><a href="index-3.html">home version 3</a></li>
+                                </ul>--}}
+                            </li>
+                            <li>
+                                <a href="{{url('/admission')}}"> ADMISSION  <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="{{url('how-to-apply')}}">How To Apply</a></li>
+                                    <li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
+                                    <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
+                                    <li><a href="{{url('/admission')}}">Online Application</a></li>
                                 </ul>
                             </li>
-                            <li><a href="about-us.html">About</a></li>
-                            <li><a href="shop.html">Shop</a>
-                                <ul>
-                                    <li><a href="#">Categories 01</a>
+
+                            <li>
+                                <a href="{{url('/academics')}}"> ACADEMICS  <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="{{url('/foundation-stage')}}">Foundation Stage</a></li>
+                                    {{--<li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
+                                    <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
+                                    <li><a href="{{url('/admission')}}">Online Application</a></li>--}}
+                                </ul>
+                            </li>
+                            {{--<li class="mega-menu-position top-hover"><a href="shop.html"> SHOP <i class="fa fa-angle-down"></i> </a>
+                                <ul class="mega-menu">
+                                    <li>
                                         <ul>
+                                            <li class="mega-menu-title"><a href="#">Categories 01</a></li>
                                             <li><a href="shop.html">bag</a></li>
                                             <li><a href="shop.html">Pen</a></li>
                                             <li><a href="shop.html">Erasers</a></li>
@@ -222,8 +241,9 @@
                                             <li><a href="shop.html">Pencil box </a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Categories 02</a>
+                                    <li>
                                         <ul>
+                                            <li class="mega-menu-title"><a href="#">Categories 02</a></li>
                                             <li><a href="shop.html">bag</a></li>
                                             <li><a href="shop.html">Pen</a></li>
                                             <li><a href="shop.html">Erasers</a></li>
@@ -232,8 +252,9 @@
                                             <li><a href="shop.html">Pencil box </a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Categories 03</a>
+                                    <li>
                                         <ul>
+                                            <li class="mega-menu-title"><a href="#">Categories 03</a></li>
                                             <li><a href="shop.html">bag</a></li>
                                             <li><a href="shop.html">Pen</a></li>
                                             <li><a href="shop.html">Erasers</a></li>
@@ -242,8 +263,9 @@
                                             <li><a href="shop.html">Pencil box </a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Categories 04</a>
+                                    <li>
                                         <ul>
+                                            <li class="mega-menu-title"><a href="#">Categories 04</a></li>
                                             <li><a href="shop.html">bag</a></li>
                                             <li><a href="shop.html">Pen</a></li>
                                             <li><a href="shop.html">Erasers</a></li>
@@ -253,9 +275,9 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
-                            <li><a href="#">Pages</a>
-                                <ul>
+                            </li>--}}
+                            <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
                                     <li><a href="course.html">course page</a></li>
                                     <li><a href="event.html">event page</a></li>
                                     <li><a href="shop.html">shop page</a></li>
@@ -268,14 +290,14 @@
                                     <li><a href="login-register.html">login / register</a></li>
                                 </ul>
                             </li>
-                            <li><a href="about-us.html">About us</a></li>
-                            <li><a href="blog.html">Blog</a>
-                                <ul>
+                            {{--<li><a href="course.html"> COURSES / PROGRAMMES</a></li>--}}
+                            <li><a href="{{url('blog')}}"> BLOG </a>
+                                {{--<ul class="submenu">
                                     <li><a href="blog.html">blog</a></li>
                                     <li><a href="blog-details.html">blog details</a></li>
-                                </ul>
+                                </ul>--}}
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{url('contact')}}"> CONTACT </a></li>
                         </ul>
                     </nav>
                 </div>
