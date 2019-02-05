@@ -9,19 +9,19 @@
                             <h4>ABOUT US</h4>
                         </div>
                         <div class="footer-about">
-                            <p>Ugiat nulla pariatur. Edeserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natu</p>
+                            <p></p>
                             <div class="f-contact-info">
                                 <div class="single-f-contact-info">
                                     <i class="fa fa-home"></i>
-                                    <span>Uttara, Dhaka, Bangladesh</span>
+                                    <span>Saqqara EL-Seyahe Road, El-Mariouteyra,El-Haram, Giza (after Madina Academy).</span>
                                 </div>
                                 <div class="single-f-contact-info">
                                     <i class="fa fa-envelope-o"></i>
-                                    <span><a href="#">education@email.com</a></span>
+                                    <span><a href="mailto:info@ndbischool.com">info@ndbischool.com</a></span>
                                 </div>
                                 <div class="single-f-contact-info">
                                     <i class="fa fa-phone"></i>
-                                    <span> +98 558 547 589</span>
+                                    <span> 01023344443 - 01023355553</span>
                                 </div>
                             </div>
                         </div>
