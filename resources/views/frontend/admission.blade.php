@@ -66,6 +66,7 @@
                         <figure><img id="infoimg" src="{{asset('website/img/stepper/boy.png')}}" alt=""></figure>
                         <h2 id="pic_info">
                             Student Information
+
                         </h2>
                         <input id="stepnum" name="website" type="hidden" value="1">
                         <p class="step_desc">In this step you should enter your son/daughter information, Be-careful during filling information .</p>

@@ -67,8 +67,8 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-(function webpackMissingModule() { throw new Error("Cannot find module \"C:\\xampp\\htdocs\\ndis\\resources\\img\\js\\app.js\""); }());
-(function webpackMissingModule() { throw new Error("Cannot find module \"C:\\xampp\\htdocs\\ndis\\resources\\img\\sass\\app.scss\""); }());
+(function webpackMissingModule() { throw new Error("Cannot find module \"C:\\xampp\\htdocs\\ndis\\ndis\\resources\\img\\js\\app.js\""); }());
+(function webpackMissingModule() { throw new Error("Cannot find module \"C:\\xampp\\htdocs\\ndis\\ndis\\resources\\img\\sass\\app.scss\""); }());
 
 
 /***/ })

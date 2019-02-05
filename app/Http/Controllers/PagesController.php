@@ -63,8 +63,8 @@ class PagesController extends Controller
      */
     public function admission_form()
     {
-        $national = Nationality::all();
-        return view('frontend.admission',compact($national));
+       //$national = Nationality::all();
+        return view('frontend.admission');
     }
 
     public function feesGuide()
