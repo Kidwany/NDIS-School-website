@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Nationality;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -62,7 +63,8 @@ class PagesController extends Controller
      */
     public function admission_form()
     {
-        return view('frontend.admission');
+        $national = Nationality::all();
+        return view('frontend.admission',compact($national));
     }
 
     public function feesGuide()

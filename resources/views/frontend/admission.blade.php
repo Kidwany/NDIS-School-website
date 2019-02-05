@@ -64,7 +64,9 @@
                 <div class="col-lg-5">
                     <div id="left_form">
                         <figure><img id="infoimg" src="{{asset('website/img/stepper/boy.png')}}" alt=""></figure>
-                        <h2 id="pic_info">Student Information</h2>
+                        <h2 id="pic_info">
+                            Student Information
+                        </h2>
                         <input id="stepnum" name="website" type="hidden" value="1">
                         <p class="step_desc">In this step you should enter your son/daughter information, Be-careful during filling information .</p>
                         <a href="#0" id="more_info" data-toggle="modal" data-target="#more-info"><i class="pe-7s-info"></i></a>
