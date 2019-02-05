@@ -67,6 +67,14 @@
                 <div class="col-lg-12 col-md-12">
                     <div class="about-content">
                         <div class="section-title section-title-green mb-30">
+                            <div class="section-title mb-75">
+                                <h2>Our <span>Curriculum</span></h2>
+                                <p>Our curriculum is designed to be fun and balanced to cover all the
+                                    learning goals.  The Department for Education, in the UK, sets out Learning Objectives
+                                    for each area of the curriculum and Levels of Attainment that pupils are expected
+                                    to achieve at the end of each key stage.
+                                </p>
+                            </div>
                             <h2>Our <span>Curriculum </span></h2>
                             <p class="aims">Our curriculum is designed to be fun and balanced to cover all the
                                 learning goals.  The Department for Education, in the UK, sets out Learning Objectives
@@ -81,135 +89,6 @@
                     </div>
                 </div>
 
-
-                <div class="description-review-area pb-50 pt-40">
-                    <div class="container">
-                        <div class="description-review-wrapper">
-                            <div class="description-review-topbar nav">
-                                <a class="active" data-toggle="tab" href="#des-details1">Description</a>
-                                <a data-toggle="tab" href="#des-details2">Additional information</a>
-                                <a data-toggle="tab" href="#des-details3">Reviews</a>
-                            </div>
-                            <div class="tab-content description-review-bottom">
-                                <div id="des-details1" class="tab-pane active">
-                                    <div class="product-description-wrapper">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar massa metus, vitae pharetra lacus sodales sit amet. Morbi accumsan suscipit lacus, sit amet egestas magna elemen tum nec. Mauris urna enim, rutrum in iaculis nec, vehicula ut libero. Etiam sit amet ex orci. Duis eget consectetur libero, eget interdum metus. Aliquam rhoncus porttitor felis, a tincidunt ex scel erisque et. Morbi faucibus venenatis dignissim. Nullam ut facilisis mauris. In hac habitasse platea dictumst. </p>
-                                        <p>Pellentesque luctus augue ipsum, ut tincidunt odio tempus at. Nullam ac quam venenatis, bibendum eros at, placerat risus. Maecenas cursus elit non nisl finibus congue. Donec posuere fringilla ante eu vehicula. Fusce sed erat quis nisi gravida vehicula id vitae dolor. In at libero pretium, maximus lorem vitae, pharetra turpis feugiat facilisis ullamcorper.  </p>
-                                    </div>
-                                </div>
-                                <div id="des-details2" class="tab-pane ">
-                                    <div class="product-anotherinfo-wrapper">
-                                        <ul>
-                                            <li><span>Weight</span> 400 g</li>
-                                            <li><span>Dimensions</span>10 x 10 x 15 cm </li>
-                                            <li><span>Materials</span> 60% cotton, 40% polyester</li>
-                                            <li><span>Other Info</span> American heirloom jean shorts pug seitan letterpress</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div id="des-details3" class="tab-pane">
-                                    <div class="row">
-                                        <div class="col-lg-7">
-                                            <div class="review-wrapper">
-                                                <div class="single-review">
-                                                    <div class="review-img">
-                                                        <img src="assets/img/blog/recent-post-1.jpg" alt="">
-                                                    </div>
-                                                    <div class="review-content">
-                                                        <div class="review-top-wrap">
-                                                            <div class="review-left">
-                                                                <div class="review-name">
-                                                                    <h4>White Lewis</h4>
-                                                                </div>
-                                                                <div class="review-rating">
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="review-left">
-                                                                <a href="#">Reply</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="review-bottom">
-                                                            <p>Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="single-review child-review">
-                                                    <div class="review-img">
-                                                        <img src="assets/img/blog/recent-post-2.jpg" alt="">
-                                                    </div>
-                                                    <div class="review-content">
-                                                        <div class="review-top-wrap">
-                                                            <div class="review-left">
-                                                                <div class="review-name">
-                                                                    <h4>White Lewis</h4>
-                                                                </div>
-                                                                <div class="review-rating">
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="review-left">
-                                                                <a href="#">Reply</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="review-bottom">
-                                                            <p>Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Sus pen disse viverra ed viverra. Mauris ullarper euismod vehicula. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5">
-                                            <div class="ratting-form-wrapper pl-50 ratting-nagative-mrg">
-                                                <h3>Add a Review</h3>
-                                                <div class="ratting-form">
-                                                    <form action="#">
-                                                        <div class="star-box">
-                                                            <span>Your rating:</span>
-                                                            <div class="ratting-star">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="rating-form-style mb-10">
-                                                                    <input placeholder="Name" type="text">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="rating-form-style mb-10">
-                                                                    <input placeholder="Email" type="email">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-12">
-                                                                <div class="rating-form-style form-submit">
-                                                                    <textarea name="Your Review" placeholder="Message"></textarea>
-                                                                    <input type="submit" value="Submit">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 {{--<div class="col-lg-6 col-md-6">
                     <div class="about-img default-overlay">
                         <img src="{{asset('website/img/academics/aims.jpg')}}" alt="">
@@ -218,6 +97,137 @@
                         </a>--}}{{--
                     </div>
                 </div>--}}
+            </div>
+
+            <div class="description-review-area pb-50 pt-40">
+                <div class="container">
+                    <div class="description-review-wrapper">
+                        <div class="description-review-topbar nav">
+                            <a class="active text-center" data-toggle="tab" href="#des-details1" style="width: 50%">Prime Areas </a>
+                            <a data-toggle="tab" href="#des-details2" class="text-center" style="width: 50%">Specific areas </a>
+                            {{--
+                                                            <a data-toggle="tab" href="#des-details3">Reviews</a>
+                            --}}
+                        </div>
+                        <div class="tab-content description-review-bottom">
+                            <div id="des-details1" class="tab-pane active">
+                                <div class="product-description-wrapper">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar massa metus, vitae pharetra lacus sodales sit amet. Morbi accumsan suscipit lacus, sit amet egestas magna elemen tum nec. Mauris urna enim, rutrum in iaculis nec, vehicula ut libero. Etiam sit amet ex orci. Duis eget consectetur libero, eget interdum metus. Aliquam rhoncus porttitor felis, a tincidunt ex scel erisque et. Morbi faucibus venenatis dignissim. Nullam ut facilisis mauris. In hac habitasse platea dictumst. </p>
+                                    <p>Pellentesque luctus augue ipsum, ut tincidunt odio tempus at. Nullam ac quam venenatis, bibendum eros at, placerat risus. Maecenas cursus elit non nisl finibus congue. Donec posuere fringilla ante eu vehicula. Fusce sed erat quis nisi gravida vehicula id vitae dolor. In at libero pretium, maximus lorem vitae, pharetra turpis feugiat facilisis ullamcorper.  </p>
+                                </div>
+                            </div>
+                            <div id="des-details2" class="tab-pane ">
+                                <div class="product-anotherinfo-wrapper">
+                                    <ul>
+                                        <li><span>Weight</span> 400 g</li>
+                                        <li><span>Dimensions</span>10 x 10 x 15 cm </li>
+                                        <li><span>Materials</span> 60% cotton, 40% polyester</li>
+                                        <li><span>Other Info</span> American heirloom jean shorts pug seitan letterpress</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            {{--<div id="des-details3" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="review-wrapper">
+                                            <div class="single-review">
+                                                <div class="review-img">
+                                                    <img src="assets/img/blog/recent-post-1.jpg" alt="">
+                                                </div>
+                                                <div class="review-content">
+                                                    <div class="review-top-wrap">
+                                                        <div class="review-left">
+                                                            <div class="review-name">
+                                                                <h4>White Lewis</h4>
+                                                            </div>
+                                                            <div class="review-rating">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review-left">
+                                                            <a href="#">Reply</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-bottom">
+                                                        <p>Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-review child-review">
+                                                <div class="review-img">
+                                                    <img src="assets/img/blog/recent-post-2.jpg" alt="">
+                                                </div>
+                                                <div class="review-content">
+                                                    <div class="review-top-wrap">
+                                                        <div class="review-left">
+                                                            <div class="review-name">
+                                                                <h4>White Lewis</h4>
+                                                            </div>
+                                                            <div class="review-rating">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review-left">
+                                                            <a href="#">Reply</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-bottom">
+                                                        <p>Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Sus pen disse viverra ed viverra. Mauris ullarper euismod vehicula. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="ratting-form-wrapper pl-50 ratting-nagative-mrg">
+                                            <h3>Add a Review</h3>
+                                            <div class="ratting-form">
+                                                <form action="#">
+                                                    <div class="star-box">
+                                                        <span>Your rating:</span>
+                                                        <div class="ratting-star">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="rating-form-style mb-10">
+                                                                <input placeholder="Name" type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="rating-form-style mb-10">
+                                                                <input placeholder="Email" type="email">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="rating-form-style form-submit">
+                                                                <textarea name="Your Review" placeholder="Message"></textarea>
+                                                                <input type="submit" value="Submit">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>--}}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

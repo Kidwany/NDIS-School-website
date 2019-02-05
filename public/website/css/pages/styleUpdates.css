@@ -179,3 +179,9 @@
 {
     color: #1b1e21;
 }
+
+
+.description-review-topbar a
+{
+    margin: 0 !important;
+}
