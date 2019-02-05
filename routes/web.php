@@ -50,7 +50,7 @@ Route::get('/how-to-apply', 'PagesController@howToApply');
 Route::get('/required-documents', 'PagesController@requiredDocuments');
 
 
-/* --- Required Documents Page ---*/
+/* --- Academics Page ---*/
 Route::get('/academics', 'PagesController@academics');
 
 
