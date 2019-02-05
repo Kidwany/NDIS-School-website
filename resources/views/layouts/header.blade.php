@@ -222,7 +222,7 @@
                             <li>
                                 <a href="{{url('/academics')}}"> ACADEMICS  <i class="fa fa-angle-down"></i> </a>
                                 <ul class="submenu">
-                                    <li><a href="{{url('/foundation-stage')}}">Foundation Stage</a></li>
+                                    <li><a href="{{url('/academics')}}">Foundation Stage</a></li>
                                     {{--<li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
                                     <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
                                     <li><a href="{{url('/admission')}}">Online Application</a></li>--}}
