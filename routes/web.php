@@ -35,8 +35,20 @@ Route::get('/blog', 'PagesController@blog');
 Route::get('/admission', 'PagesController@admission_form');
 
 
-/* --- Blog Page ---*/
+/* --- Fees Guide Page ---*/
 Route::get('/fees-guide', 'PagesController@feesGuide');
+
+
+/* --- Blog Page ---*/
+Route::get('/how-to-apply', 'PagesController@howToApply');
+
+
+/* --- Required Documents Page ---*/
+Route::get('/required-documents', 'PagesController@requiredDocuments');
+
+
+/* --- Required Documents Page ---*/
+Route::get('/academics', 'PagesController@academics');
 
 
 

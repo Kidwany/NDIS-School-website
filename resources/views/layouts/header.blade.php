@@ -46,11 +46,21 @@
                                     <li>
                                         <a href="{{url('/admission')}}"> ADMISSION  <i class="fa fa-angle-down"></i> </a>
                                         <ul class="submenu">
-                                            <li><a href="index.html">How To Apply</a></li>
+                                            <li><a href="{{url('how-to-apply')}}">How To Apply</a></li>
                                             <li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
-                                            <li><a href="index-3.html">Required Docs</a></li>
+                                            <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
                                             <li><a href="{{url('/admission')}}">Online Application</a></li>
                                         </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="{{url('/academics')}}"> ACADEMICS  <i class="fa fa-angle-down"></i> </a>
+                                        {{--<ul class="submenu">
+                                            <li><a href="{{url('how-to-apply')}}">How To Apply</a></li>
+                                            <li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
+                                            <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
+                                            <li><a href="{{url('/admission')}}">Online Application</a></li>
+                                        </ul>--}}
                                     </li>
                                     {{--<li class="mega-menu-position top-hover"><a href="shop.html"> SHOP <i class="fa fa-angle-down"></i> </a>
                                         <ul class="mega-menu">

@@ -65,8 +65,43 @@ class PagesController extends Controller
         return view('frontend.admission');
     }
 
+
+    /**
+     * This Function returns Fees Guide page
+     *
+     */
+
     public function feesGuide()
     {
         return view('frontend.fees-guide');
+    }
+
+
+    /**
+     * This Function returns Fees Guide page
+     *
+     */
+    public function howToApply()
+    {
+        return view('frontend.how-to-apply');
+    }
+
+
+    /**
+     * This Function returns Fees Documents Page
+     *
+     */
+    public function requiredDocuments()
+    {
+        return view('frontend.required-documents');
+    }
+
+    /**
+     * This Function returns Fees Documents Page
+     *
+     */
+    public function academics()
+    {
+        return view('frontend.academics');
     }
 }
