@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Homework extends Model  {
+class Gender extends Model  {
 
     
 
@@ -13,14 +13,14 @@ class Homework extends Model  {
      *
      * @var string
      */
-    protected $table = 'homework';
+    protected $table = 'gender';
 
     /**
      * Attributes that should be mass-assignable.
      *
      * @var array
      */
-    protected $fillable = ['HWID', 'file', 'fullmark', 'UID', 'CID', 'SID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['GNID', 'Gendername'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -41,6 +41,6 @@ class Homework extends Model  {
      *
      * @var array
      */
-    protected $dates = ['Created_Date', 'Update_Date'];
+    protected $dates = [];
 
 }

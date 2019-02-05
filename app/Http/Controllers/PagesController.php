@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Nationality;
+
+use App\Models;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -11,7 +12,7 @@ class PagesController extends Controller
     /**
      * This Function returns welcome page
      *
-    */
+     */
     public function welcome()
     {
         return view('frontend.welcome');
@@ -63,8 +64,13 @@ class PagesController extends Controller
      */
     public function admission_form()
     {
-       //$national = Nationality::all();
-        return view('frontend.admission');
+        $nat = Models\Nationality::all();
+        $rel = Models\Religion::all();
+        $qal = Models\Qualification::all();
+        $ocp = Models\Occupation::all();
+        $gen = Models\Gender::all();
+        $int = ["nat" => $nat,"rel"=>$rel,"qal"=>$qal,"ocp"=>$ocp,"gen" => $gen];
+        return view('frontend.admission', compact('int'));
     }
 
 
@@ -105,5 +111,13 @@ class PagesController extends Controller
     public function academics()
     {
         return view('frontend.academics');
+    }
+    /**
+     * This Function returns save applications form
+     *
+     */
+    public function storeappform(Request $request)
+    {
+        return $request;
     }
 }

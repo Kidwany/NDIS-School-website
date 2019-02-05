@@ -52,6 +52,7 @@ Route::get('/required-documents', 'PagesController@requiredDocuments');
 
 /* --- Academics Page ---*/
 Route::get('/academics', 'PagesController@academics');
+Route::post('/store', 'PagesController@storeappform');
 
 
 
