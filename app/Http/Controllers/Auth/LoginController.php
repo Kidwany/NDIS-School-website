@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 
 class LoginController extends Controller
 {
@@ -40,31 +41,18 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function login(Request $request)
+
+
+  /*  public function showlogin()
     {
-       $data = MainCore::Login($request->name, $request->password);
-        if ($data[0]->type == 1) {
-            return redirect('admin');
-
-        } elseif($data[0]->type == 2) {
-            return redirect('student');
-
-        }elseif($data[0]->type == 3) {
-            return redirect('teacher');
-
-        }
-    }
-    public function showLoginForm(){
-        return view('login');
+       // return view('frontend.login');
     }
 
     public function logout(Request $request)
     {
+        $this->guard()->logout();
+        $request->session()->invalidate();
+        return redirect('/');
 
-
-            $this->guard()->logout();
-            $request->session()->invalidate();
-            return redirect('/');
-
-    }
+    }*/
 }

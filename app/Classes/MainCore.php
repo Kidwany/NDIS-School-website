@@ -14,12 +14,18 @@ use Illuminate\Support\Facades\Session;
 {
     public static function Login($username, $password)
     {
-        $data = DB::table('users')->where('username', '=', $username)
-            ->where('password', '=', $password)
+        $data = DB::table('users')->where('email', '=', $username)
+            ->where('password', '=', Hash::make($password))
             ->get();
-        //Auth::loginUsingId($data[0]->UID, true);
-        Session::put('type',$data[0]->type);
-        return $data;
+
+        if(count($data) >= 1){
+            Session::put('type',$data[0]->TID);
+            Auth::login($data);
+            return $data;
+        }else{
+            return false;
+        }
+
 
     }
 }

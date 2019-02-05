@@ -63,8 +63,9 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div id="left_form">
-                        <figure><img src="{{asset('website/img/stepper/school.png')}}" alt=""></figure>
-                        <h2>Student Information</h2>
+                        <figure><img id="infoimg" src="{{asset('website/img/stepper/boy.png')}}" alt=""></figure>
+                        <h2 id="pic_info">Student Information</h2>
+                        <input id="stepnum" name="website" type="hidden" value="1">
                         <p class="step_desc">In this step you should enter your son/daughter information, Be-careful during filling information .</p>
                         <a href="#0" id="more_info" data-toggle="modal" data-target="#more-info"><i class="pe-7s-info"></i></a>
                     </div>
@@ -88,7 +89,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="studentName">Student full name</label>
-                                                <input type="text" name="studentName" class="form-control " placeholder="Full Name" id="studentName">
+                                                <input type="text" name="studentName" class="form-control required"   placeholder="Full Name" id="studentName">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -256,7 +257,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="father_phone">Phone</label>
-                                                <input type="number" name="father_phone" class="form-control " placeholder="Father's Phone" id="father_phone">
+                                                <input type="number" name="father_phone" class="form-control required" placeholder="Father's Phone" id="father_phone">
                                             </div>
                                         </div>
                                     </div>
@@ -736,8 +737,8 @@
                             </div>
                             <!-- /middle-wizard -->
                             <div id="bottom-wizard">
-                                <button type="button" name="backward" class="backward">Backward </button>
-                                <button type="button" name="forward" class="forward">Forward</button>
+                                <button type="button" name="backward" class="backward" onclick="goback()">Backward </button>
+                                <button type="button" name="forward" class="forward" onclick="getalert(1)">Forward</button>
                                 <button type="submit" name="process" class="submit">Submit</button>
                             </div>
                             <!-- /bottom-wizard -->

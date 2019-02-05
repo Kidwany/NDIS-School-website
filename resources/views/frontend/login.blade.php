@@ -14,7 +14,7 @@
         <div class="breadcrumb-bottom">
             <div class="container">
                 <ul>
-                    <li><a href="#">Home</a> <span><i class="fa fa-angle-double-right"></i>login/Register</span></li>
+                    <li><a href="#">Home</a> <span><i class="fa fa-angle-double-right"></i>login</span></li>
                 </ul>
             </div>
         </div>
@@ -36,9 +36,10 @@
                             <div id="lg1" class="tab-pane active">
                                 <div class="login-form-container">
                                     <div class="login-register-form">
-                                        <form action="#" method="post">
-                                            <input type="text" name="user-name" placeholder="Username">
-                                            <input type="password" name="user-password" placeholder="Password">
+                                        <form action="login" method="post">
+                                            {{ csrf_field() }}
+                                            <input type="email" name="user-name" placeholder="Email" required>
+                                            <input type="password" name="user-password" placeholder="Password" required>
                                             <div class="button-box">
                                                 <div class="login-toggle-btn">
                                                     <input type="checkbox">

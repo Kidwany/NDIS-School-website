@@ -22,7 +22,10 @@ Route::get('/contact', 'PagesController@contact');
 
 
 /* --- Login Page ---*/
-Route::get('/login', 'PagesController@login');
+Route::get('/signin', 'PagesController@login');
+Route::get('/logout', 'Auth\LoginController@logout');
+
+
 
 
 /* --- Blog Page ---*/
@@ -57,3 +60,11 @@ Route::get('/admission', 'PagesController@admission_form');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
