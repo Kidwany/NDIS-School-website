@@ -34,11 +34,11 @@
                         </div>
                         <div class="footer-list">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="course.html">Courses</a></li>
-                                <li><a href="#">Admission</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="{{url('/')}}">Home</a></li>
+                                <li><a href="{{url('/about')}}">About Us</a></li>
+                                <li><a href="{{url('contact')}}">Contact</a></li>
+                                <li><a href="{{url('/admission')}}">Admission</a></li>
+                                <li><a href="{{url('/blog')}}">Blog</a></li>
                             </ul>
                         </div>
                     </div>

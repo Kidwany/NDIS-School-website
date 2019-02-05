@@ -22,8 +22,9 @@
     <link rel="stylesheet" href="{{asset('website/css/libs/animate.min.css')}}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('website/css/libs/bootstrap.min.css')}}">
-    <!-- Stepper Style -->
     @yield('stepperStyle')
+
+    @yield('applyStepper')
     {{--<link rel="stylesheet" href="{{asset('website/css/libs/magnific-popup.css')}}">--}}
     <!-- Icon Font CSS -->
     <link rel="stylesheet" href="{{asset('website/css/pages/icons.min.css')}}">
@@ -32,6 +33,8 @@
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="{{asset('website/css/pages/style.css')}}">
     <link rel="stylesheet" href="{{asset('website/css/pages/styleUpdates.css')}}">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{{asset('website/css/layouts/accordion.css')}}">
     <!-- Modernizer JS -->
     <script src="{{asset('website/js/vendor/modernizr-2.8.3.min.js')}}"></script>
 
@@ -56,20 +59,25 @@
 --}}
 <!-- jQuery JS -->
 <script src="{{asset('website/js/vendor/jquery-3.2.1.min.js')}}"></script>
-<!-- jQuery JS -->
+<!-- Magnific Pop up JS -->
 <script src="{{asset('website/js/vendor/jquery.magnific-popup.min.js')}}"></script>
 <!-- Popper JS -->
 <script src="{{asset('website/js/popper.min.js')}}"></script>
 <!-- Bootstrap JS -->
 <script src="{{asset('website/js/bootstrap.min.js')}}"></script>
+<!-- Stepper JS -->
+@yield('applyStepperScript')
 <!-- Plugins JS -->
 <script src="{{asset('website/js/plugins.js')}}"></script>
+
 <!-- Ajax Mail -->
 <script src="{{asset('website/js/ajax-mail.js')}}"></script>
+@yield('stepperScripts')
 <!-- Main JS -->
 <script src="{{asset('website/js/main.js')}}"></script>
 
-@yield('stepperScripts')
+
+
 
 </body>
 </html>
