@@ -276,7 +276,7 @@
     </div>
     <!-- campus-area-end -->
 
-    <!------ Course Section ------>
+    {{--<!------ Course Section ------>
     <div class="course-area bg-img pt-130 pb-10" style="background-image:url({{asset('website/img/bg/bg-1.jpg')}});">
         <div class="container">
             <div class="section-title mb-75">
@@ -996,7 +996,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
 
     
     @include('layouts.footer')
