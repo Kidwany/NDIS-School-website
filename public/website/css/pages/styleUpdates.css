@@ -185,3 +185,41 @@
 {
     margin: 0 !important;
 }
+
+.single-event.event-white-bg
+{
+    border: 1px solid #e4e4e4;
+    min-height: 460px;
+}
+
+
+/************ Fees Guide Page ***********/
+.nav-style-1.owl-carousel > .owl-nav div
+{
+    background-color: #00a651;
+    color: white;
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-style-1.owl-carousel > .owl-nav div.owl-next
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/************** Welcome Pge **************/
+.single-event .event-img
+{
+    height: 250px;
+}
+.single-event .event-img img
+{
+    height: 100%;
+    object-position: center center;
+    -o-object-position: center center;
+    object-fit: cover;
+    -o-object-fit: cover;
+}

@@ -55,44 +55,44 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-choose-us choose-bg-light-blue">
                         <div class="choose-img">
-                            <img class="animated" src="{{asset('website/img')}}/icon-img/service-1.png" alt="">
+                            <img class="animated" src="{{asset('website/img/home/challenge.png')}}" alt="">
                         </div>
                         <div class="choose-content">
-                            <h3>Scholarship Facility</h3>
-                            <p>magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing elit, sed do exercitation. </p>
+                            <h3>Academically Challenging</h3>
+                            <p>A program of instruction in English leading to nationally and internationally-recognized qualifications. </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="single-choose-us choose-bg-yellow">
                         <div class="choose-img">
-                            <img class="animated" src="{{asset('website/img')}}/icon-img/service-2.png" alt="">
+                            <img class="animated" src="{{asset('website/img/home/security.png')}}" alt="">
                         </div>
                         <div class="choose-content">
-                            <h3>Scholarship Facility</h3>
-                            <p>magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing elit, sed do exercitation. </p>
+                            <h3>Secure Environment</h3>
+                            <p>Students are encouraged to develop a love of learning and to internalize learning as lifelong practiced. </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="single-choose-us choose-bg-blue">
                         <div class="choose-img">
-                            <img class="animated" src="{{asset('website/img')}}/icon-img/service-3.png" alt="">
+                            <img class="animated" src="{{asset('website/img/home/decsion.png')}}" alt="">
                         </div>
                         <div class="choose-content">
-                            <h3>Scholarship Facility</h3>
-                            <p>magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing elit, sed do exercitation. </p>
+                            <h3>Decision-Making</h3>
+                            <p>In implementing the policies of the Board, The director will give due consideration to the views of staff. </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="single-choose-us choose-bg-green">
                         <div class="choose-img">
-                            <img class="animated" src="{{asset('website/img')}}/icon-img/service-4.png" alt="">
+                            <img class="animated" src="{{asset('website/img/home/american.png')}}" alt="">
                         </div>
                         <div class="choose-content">
-                            <h3>Scholarship Facility</h3>
-                            <p>magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing elit, sed do exercitation. </p>
+                            <h3>American Curriculums</h3>
+                            <p>NDIS is licensed as an American and British curriculum school by the Egyptian Ministry of Education. </p>
                         </div>
                     </div>
                 </div>
@@ -275,6 +275,90 @@
         </div>
     </div>
     <!-- campus-area-end -->
+
+
+
+    <div class="event-area bg-img default-overlay pt-130 pb-130" style="background-image:url({{asset('website/img/bg/fees_bg.jpg')}});">
+        <div class="container">
+            <div class="section-title mb-75">
+                <h2><span>Our</span> Event</h2>
+                <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
+            </div>
+            <div class="event-active owl-carousel nav-style-1">
+                <div class="single-event event-white-bg">
+                    <div class="event-img">
+                        <a href="event-details.html"><img src="{{asset('website/img/event/event-1.jpg')}}" alt=""></a>
+                        <div class="event-date-wrap">
+                            <span class="event-date">31th</span>
+                            <span>Dec</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3><a href="event-details.html">New Year Festival for Student & Parents.</a></h3>
+                        <p>Every Year NDIS Celebrate with it's students for christmas day .</p>
+                        <div class="event-meta-wrap">
+                            <div class="event-meta">
+                                <i class="fa fa-location-arrow"></i>
+                                <span>Movenpick ,Giza</span>
+                            </div>
+                            <div class="event-meta">
+                                <i class="fa fa-clock-o"></i>
+                                <span>11:00 pm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-event event-white-bg">
+                    <div class="event-img">
+                        <a href="event-details.html"><img src="{{asset('website/img/about/who_we_are.jpg')}}" alt=""></a>
+                        <div class="event-date-wrap">
+                            <span class="event-date">10th</span>
+                            <span>Jan</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3><a href="event-details.html">Open Day for FS-1 Stage.</a></h3>
+                        <p>Next Monday will be the yearly open day for FS-1 Stage.</p>
+                        <div class="event-meta-wrap">
+                            <div class="event-meta">
+                                <i class="fa fa-location-arrow"></i>
+                                <span>Campus ,Giza</span>
+                            </div>
+                            <div class="event-meta">
+                                <i class="fa fa-clock-o"></i>
+                                <span>08:30 am</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-event event-white-bg">
+                    <div class="event-img">
+                        <a href="event-details.html"><img src="{{asset('website/img/event/event-3.jpg')}}" alt=""></a>
+                        <div class="event-date-wrap">
+                            <span class="event-date">1st</span>
+                            <span>Feb</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3><a href="event-details.html">Second Term Parents Meeting.</a></h3>
+                        <p>parent meeting is a very important event for make interviews with your child's teachers.</p>
+                        <div class="event-meta-wrap">
+                            <div class="event-meta">
+                                <i class="fa fa-location-arrow"></i>
+                                <span>Campus ,Al Mnia</span>
+                            </div>
+                            <div class="event-meta">
+                                <i class="fa fa-clock-o"></i>
+                                <span>10:00 am</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     {{--<!------ Course Section ------>
     <div class="course-area bg-img pt-130 pb-10" style="background-image:url({{asset('website/img/bg/bg-1.jpg')}});">

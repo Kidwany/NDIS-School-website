@@ -1,13 +1,13 @@
 @extends('layouts.layouts')
-@section('title', 'Home')
+@section('title', 'About')
 @section('content')
     @include('layouts.header')
 
     <div class="breadcrumb-area">
-        <div class="breadcrumb-top default-overlay bg-img pt-100 pb-95" style="background-image:url({{asset('website/img/bg/breadcrumb-bg.jpg')}});">
+        <div class="breadcrumb-top default-overlay bg-img pt-100 pb-95" style="background-image:url({{asset('website/img/about/about_banner.jpg')}});">
             <div class="container">
                 <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+                <p>NDIS is licensed as an American and British curriculum school by the Egyptian Ministry of Education.</p>
             </div>
         </div>
         <div class="breadcrumb-bottom">
@@ -18,7 +18,21 @@
             </div>
         </div>
     </div>
-    <div class="choose-area bg-img pt-90" style="background-image:url({{asset('website/img/bg/bg-8.jpg')}});">
+
+    <style>
+        .single-about-chose-us .about-choose-img
+        {
+            height: 50px;
+        }
+
+        .single-about-chose-us .about-choose-img img
+        {
+            height: 100%;
+        }
+    </style>
+
+    <!------ Choose Us ------>
+    <div class="choose-area bg-img pt-90" style="background-image:url({{asset('website/img/bg/about_bg.jpg')}});">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-12">
@@ -27,44 +41,44 @@
                             <div class="col-lg-6 col-md-6">
                                 <div class="single-about-chose-us mb-95">
                                     <div class="about-choose-img">
-                                        <img src="{{asset('website/')}}img/icon-img/service-9.png" alt="">
+                                        <img src="{{asset('website/img/about/challenge_blue.png')}}" alt="">
                                     </div>
                                     <div class="about-choose-content text-light-blue">
-                                        <h3>Scholarship Facility</h3>
-                                        <p>magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing elit, sed do exercitation ullamco</p>
+                                        <h3>Academically Challenging</h3>
+                                        <p>A program of instruction in English leading to nationally and internationally-recognized qualifications.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="single-about-chose-us mb-95 about-negative-mrg">
                                     <div class="about-choose-img">
-                                        <img src="{{asset('website/')}}img/icon-img/service-10.png" alt="">
+                                        <img src="{{asset('website/img/about/security_yellow.png')}}" alt="">
                                     </div>
                                     <div class="about-choose-content text-yellow">
-                                        <h3>Best Teacher </h3>
-                                        <p>magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing elit, sed do exercitation ullamco</p>
+                                        <h3>Secure Environment </h3>
+                                        <p>Students are encouraged to develop a love of learning and to internalize learning as lifelong practiced.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="single-about-chose-us mb-95">
                                     <div class="about-choose-img">
-                                        <img src="{{asset('website/')}}img/icon-img/service-11.png" alt="">
+                                        <img src="{{asset('website/img/about/decsion_blue.png')}}" alt="">
                                     </div>
                                     <div class="about-choose-content text-blue">
-                                        <h3>Library & Book Store</h3>
-                                        <p>magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing elit, sed do exercitation ullamco</p>
+                                        <h3>Decision-Making</h3>
+                                        <p>In implementing the policies of the Board, The director will give due consideration to the views of staff.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="single-about-chose-us mb-95 about-negative-mrg">
                                     <div class="about-choose-img">
-                                        <img src="{{asset('website/')}}img/icon-img/service-12.png" alt="">
+                                        <img src="{{asset('website/img/about/american_green.png')}}" alt="">
                                     </div>
                                     <div class="about-choose-content text-green">
-                                        <h3>25 Years Of Experience</h3>
-                                        <p>magna aliqua. Ut enim ad minim veniam conse ctetur adipisicing elit, sed do exercitation ullamco</p>
+                                        <h3>American Curriculums</h3>
+                                        <p>NDIS is licensed as an American and British curriculum school by the Egyptian Ministry of Education.</p>
                                     </div>
                                 </div>
                             </div>
@@ -79,6 +93,7 @@
             </div>
         </div>
     </div>
+    {{--<!------ Choose Us ------>
     <div class="video-area bg-img pt-270 pb-270" style="background-image:url({{asset('website/img/banner/video.jpg')}});">
         <div class="video-btn-2">
             <a class="video-popup" href="https://www.youtube.com/watch?v=sv5hK4crIRc">
@@ -86,6 +101,7 @@
             </a>
         </div>
     </div>
+    <!------ Choose Us ------>
     <div class="teacher-area pt-130 pb-100">
         <div class="container">
             <div class="section-title mb-75">
@@ -226,6 +242,7 @@
             </div>
         </div>
     </div>
+    <!------ Choose Us ------>
     <div class="fun-fact-area bg-img pt-130 pb-100" style="background-image:url({{asset('website/img/bg/bg-6.jpg')}});">
         <div class="container">
             <div class="section-title-3 section-shape-hm2-2 white-text text-center mb-100">
@@ -280,6 +297,7 @@
             </div>
         </div>
     </div>
+    <!------ Choose Us ------>
     <div class="achievement-area pt-130 pb-115">
         <div class="container">
             <div class="section-title mb-75">
@@ -409,6 +427,7 @@
             </div>
         </div>
     </div>
+    <!------ Choose Us ------>
     <div class="brand-logo-area pb-130">
         <div class="container">
             <div class="brand-logo-active owl-carousel">
@@ -435,7 +454,199 @@
                 </div>
             </div>
         </div>
+    </div>--}}
+
+    <!------ wHO WE ARE ------>
+
+    <!------ Aim Section ------>
+    <div class="about-us pt-130 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="about-content">
+                        <div class="section-title section-title-green mb-30">
+                            <h2>Who We <span>Are ?</span></h2>
+                            <p class="aims">
+                                NDIS is licensed as an American and British curriculums school
+                                by the Egyptian Ministry of Education, Cambridge, Edexcel and AIAA.
+                                The task of school is offering students a general education leading
+                                to both Egyptian and International qualifications.
+                                In particular it serves the educational needs of students and promotes international understanding.
+                            </p>
+                            <p>
+                                The goal of New Discovery International School is to provide an excellent education to students,
+                                based on International Baccalaureate programme and philosophy. The school is dedicated to intercultural
+                                understanding and development of the individual talents of young people.
+                            </p>
+
+                        </div>
+                        {{--<div class="about-btn mt-45">
+                            <a class="default-btn" href="about-us.html">ABOUT US</a>
+                        </div>--}}
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="about-img default-overlay">
+                        <img src="{{asset('website/img/about/who_we_are.jpg')}}" alt="">
+                        {{--<a class="video-btn video-popup" href="https://www.youtube.com/watch?v=sv5hK4crIRc">
+                            <img class="animated" src="{{asset('website/img')}}/icon-img/video.png" alt="">
+                        </a>--}}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+    <!-- campus-area-start -->
+    <div class="campus-area pt-130">
+        <div class="container">
+            <div class="inner-campus">
+                <div class="campus">
+                    <div class="row">
+
+                        <div class="col-md-6 p-0">
+                            <div class="campus-video-wrapper ptb-180" style="background-image:url({{asset('website/img/slider/mini-slider.jpg')}})" >
+                                <div class="campus-text text-center">
+                                    <div class="campus-icon">
+                                        <a class="video-popup" href="https://www.youtube.com/watch?v=5IfKTuUH0HU"><i class="fa fa-play"></i></a>
+                                    </div>
+                                    <h4>Take a Video Tour of Our Campus</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 p-0">
+                            <div class="tab-wrapper">
+                                <ul class="nav nav-pills mb-3 campus-tab" id="pills-tab" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                            <div class="campus-info">
+                                                <h4>Our Vision</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#profile" aria-controls="home" role="tab" data-toggle="tab">
+                                            <div class="campus-list">
+                                                <div class="campus-info">
+                                                    <h4>Mission</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#messages" aria-controls="home" role="tab" data-toggle="tab">
+                                            <div class="campus-list">
+                                                <div class="campus-info">
+                                                    <h4>Philosophy</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <div class="campus-wrapper">
+                                            <div class="campus-content">
+                                                <p>The real success of nations is discovering and empowering the innate abilities of younger generations throught innovation and quality learning to cope withe the challenges of the 21st century worldwide  </p>
+                                                <p>The task of the school is offering students a general education leading to both Egyptian and international qualifications.</p>
+                                                <a href="{{url('/about')}}">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile">
+                                        <div class="campus-wrapper">
+                                            <div class="campus-content">
+                                                <p>We are keen to deliver to society highly qualified graduates through applied learning with advanced technology.    </p>
+                                                <p>Due care is given to moral development and character building as well as involving parents positively to complement the educational journey of their sons and daughters.</p>
+                                                <a href="{{url('/about')}}">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="messages">
+                                        <div class="campus-wrapper">
+                                            <div class="campus-content">
+                                                <p>NDIS and staff share the philosophy that a aschool must be a place for successful experiences. </p>
+                                                <p>Even though learning styles and abilities are different, all children can be successful in many endeavors.</p>
+                                                <p>Teachers who individualize instruction to meet the student's further enhance the youngster's abilities to be successful in learning.</p>
+                                                <a href="{{url('/about')}}">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {{--<div>
+                                    <!-- Nav tabs -->
+                                    <ul class="campus-tab" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                                <div class="campus-info">
+                                                    <h4>about us</h4>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#profile" aria-controls="home" role="tab" data-toggle="tab">
+                                                <div class="campus-list">
+                                                    <div class="campus-info">
+                                                        <h4>mission</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#messages" aria-controls="home" role="tab" data-toggle="tab">
+                                                <div class="campus-list">
+                                                    <div class="campus-info">
+                                                        <h4>vision</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <div class="campus-wrapper">
+                                            <div class="campus-content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, naised do eiusmod tempor incididunba t ut laboraliqua. </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, naised do eiusmod tempor incididuLorem ipsum dolor siconsectetur adipisicing elit, sed do eiusmod tempor idunt ut labore et dolore magna aliqua. Ut enim ad minim.  </p>
+                                                <a href="about.html">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile">
+                                        <div class="campus-wrapper">
+                                            <div class="campus-content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, naised do eiusmod tempor incididunba t ut laboraliqua. </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, naised do eiusmod tempor incididuLorem siconsectetur adipisicing elit, sed do eiusmod tempor idunt ut labore et dolore magna aliqua. Ut enim ad minim.  </p>
+                                                <a href="about.html">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="messages">
+                                        <div class="campus-wrapper">
+                                            <div class="campus-content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, naised do eiusmod tempor incididunba t ut laboraliqua. </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, eiusmod tempor incididuLorem ipsum dolor siconsectetur adipisicing elit, sed do eiusmod tempor idunt ut labore et dolore magna aliqua. Ut enim ad minim.  </p>
+                                                <a href="#">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>--}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- campus-area-end -->
+
 
     @include('layouts.footer')
 @endsection

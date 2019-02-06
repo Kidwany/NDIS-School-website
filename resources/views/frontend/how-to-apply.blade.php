@@ -39,7 +39,7 @@
                 <p style="margin-bottom: 0; font-size: 18px">- Pre-Foundation, Foundation Stage 1 & 2.  <span style="color: #214090; font-size: 18px; font-weight: 600">(UK Curriculum).</span> </p>
                 <p style="margin-bottom: 0; font-size: 18px">- Year 1 to 8 <span style="color: #214090; font-size: 18px; font-weight: 600">(British).</span> </p>
                 <p style=" font-size: 18px">- Grade 1 to Grade 12  <span style="color: #214090; font-size: 18px; font-weight: 600">(American).</span> {{--<span style="color: #d71e27; font-size: 18px; font-weight: 600">(11 & 12 if capacity allows).</span> --}}</p>
-                <p style="">All applicants are considered on an individual basis and must be in good academic and behavior standing the school on Basic learning fees</p>
+                <p style="">All applicants are considered on an individual basis and must be in good academic and behavior standing.</p>
                 <p style="margin-bottom: 0">All application sections must be filled in clear handwriting The parent is responsible for any wrong typed details.</p>
             </div>
         </div>

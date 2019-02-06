@@ -112,7 +112,7 @@
                                         </ul>
                                     </li>--}}
                                     <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
-                                        <ul class="submenu">
+                                        {{--<ul class="submenu">
                                             <li><a href="course.html">course page</a></li>
                                             <li><a href="event.html">event page</a></li>
                                             <li><a href="shop.html">shop page</a></li>
@@ -123,7 +123,7 @@
                                             <li><a href="checkout.html">checkout</a></li>
                                             <li><a href="wishlist.html">wishlist</a></li>
                                             <li><a href="login-register.html">login / register</a></li>
-                                        </ul>
+                                        </ul>--}}
                                     </li>
                                     {{--<li><a href="course.html"> COURSES / PROGRAMMES</a></li>--}}
                                     <li><a href="{{url('blog')}}"> BLOG </a>
@@ -277,7 +277,7 @@
                                 </ul>
                             </li>--}}
                             <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
-                                <ul class="submenu">
+                                {{--<ul class="submenu">
                                     <li><a href="course.html">course page</a></li>
                                     <li><a href="event.html">event page</a></li>
                                     <li><a href="shop.html">shop page</a></li>
@@ -288,7 +288,7 @@
                                     <li><a href="checkout.html">checkout</a></li>
                                     <li><a href="wishlist.html">wishlist</a></li>
                                     <li><a href="login-register.html">login / register</a></li>
-                                </ul>
+                                </ul>--}}
                             </li>
                             {{--<li><a href="course.html"> COURSES / PROGRAMMES</a></li>--}}
                             <li><a href="{{url('blog')}}"> BLOG </a>
