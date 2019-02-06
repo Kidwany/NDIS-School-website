@@ -222,7 +222,7 @@
                                         <!--------------- Mathematics --------------->
                                         <div class="single-event event-white-bg">
                                             <div class="event-img">
-                                                <a href="event-details.html"><img src="{{asset('website/img/academics/communication.jpg')}}" alt=""></a>
+                                                <a href="event-details.html"><img src="{{asset('website/img/academics/math.jpg')}}" alt=""></a>
                                                 {{--<div class="event-date-wrap">
                                                     <span class="event-date">1st</span>
                                                     <span>Dec</span>
@@ -398,7 +398,6 @@
                             - Always push your chair in when finished.
                             <br>
                             - Always pick up your plate and say thank you.
-
                         </p>
                         {{--<button class="forward">Next Step
                             <i class="zmdi zmdi-long-arrow-right"></i>

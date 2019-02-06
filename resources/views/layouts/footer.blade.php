@@ -66,10 +66,10 @@
                         </div>
                         <div class="footer-gallery">
                             <ul>
-                                <li><a href="#"><img src="{{asset('website/img')}}/gallery/gallery-1.png" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('website/img')}}/gallery/gallery-2.png" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('website/img')}}/gallery/gallery-3.png" alt=""></a></li>
-                                <li><a href="#"><img src="{{asset('website/img')}}/gallery/gallery-4.png" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('website/img/event/event-1.jpg')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('website/img/event/event-3.jpg')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('website/img/about/who_we_are.jpg')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{asset('website/img/academics/aims.jpg')}}" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
