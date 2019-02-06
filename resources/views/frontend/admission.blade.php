@@ -100,9 +100,17 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="nickName">Nick Name</label>
-                                                <input type="text" name="nickName" class="form-control "
-                                                       placeholder="Nick Name" id="nickName">
+                                                <label for="father_nationality">Applying for grade</label>
+                                                <select class="form-control required" name="stu_grade"
+                                                        id="father_nationality">
+                                                    <option selected>Choose Grade</option>
+                                                    @if(count($int['gr']))
+                                                        @foreach($int['gr'] as $key)
+                                                            <option value="{{$key->GID}}">{{$key->Gradename}}</option>
+                                                        @endforeach
+                                                    @endif
+
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -112,7 +120,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="religion">Religion</label>
-                                                <select class="form-control required" name="religion" id="religion">
+                                                <select class="form-control required" name="stureligion" id="religion">
                                                     <option selected>Choose Religion</option>
                                                     @if(count($int['rel']))
                                                         @foreach($int['rel'] as $key)
@@ -126,7 +134,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="father_nationality">Student Nationality</label>
-                                                <select class="form-control required" name="father_nationality"
+                                                <select class="form-control required" name="stu_nationality"
                                                         id="father_nationality">
                                                     <option selected>Choose Country</option>
                                                     @if(count($int['nat']))
@@ -145,14 +153,14 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="address">Address</label>
-                                                <input type="text" name="st_nationality" class="form-control "
-                                                       placeholder="Address" id="address">
+                                                <label for="address">Bus Address</label>
+                                                <input type="text" name="busaddress" class="form-control "
+                                                       placeholder="Bus Address" id="address">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="address">Date of Birth</label>
+                                                <label for="address">Age on 1st of october</label>
                                                 <div class="d-flex">
                                                     <!-- /year -->
                                                     <select class="form-control required" name="year">
@@ -230,9 +238,9 @@
 
 
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
                                             <label for="gender">Gender</label>
-                                            <select class="form-control required" name="gender"
+                                            <select class="form-control required" name="stugender"
                                                     id="gender">
                                                 <option selected>Choose gender</option>
                                                 @if(count($int['gen']))
@@ -240,6 +248,31 @@
                                                         <option value="{{$key->GNID}}">{{$key->Gendername}}</option>
                                                     @endforeach
                                                 @endif
+
+                                            </select>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="gender">Section</label>
+                                            <select class="form-control required" name="stugender"
+                                                    id="gender">
+                                                <option selected>Choose Section</option>
+                                                <option value="1">British</option>
+                                                <option value="2">American</option>
+
+                                            </select>
+
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label for="gender">Second Language</label>
+                                            <select class="form-control required" name="stugender"
+                                                    id="gender">
+                                                <option selected>Choose Language</option>
+
+                                                        <option value="1">French</option>
+                                                        <option value="2">German</option>
+
 
                                             </select>
 
@@ -255,6 +288,14 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
+                                                <label for="father_fullname">Father Fullname.</label>
+                                                <input type="text" name="father_fullname" class="form-control "
+                                                       placeholder="Father Fullname"
+                                                       id="father_fullname">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
                                                 <label for="father_nationality">Nationality</label>
                                                 <select class="form-control required" name="father_nationality"
                                                         id="father_nationality">
@@ -268,13 +309,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="father_phone">Phone</label>
-                                                <input type="number" name="father_phone" class="form-control required"
-                                                       placeholder="Father's Phone" id="father_phone">
-                                            </div>
-                                        </div>
+
                                     </div>
                                     <!-- /row -->
 
@@ -288,40 +323,32 @@
                                                        placeholder="Father's Email" id="father_email">
                                             </div>
                                         </div>
-
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="father_passport">ID/Passport No.</label>
-                                                <input type="text" name="father_passport" class="form-control "
-                                                       placeholder="Enter ID or Passport for non Egyptians"
-                                                       id="father_passport">
+                                                <label for="father_phone">Phone</label>
+                                                <input type="number" name="father_phone" class="form-control required"
+                                                       placeholder="Father's Phone" id="father_phone">
                                             </div>
                                         </div>
+
                                     </div>
                                     <!-- /row -->
 
                                     <div class="row">
 
-
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="father_nationality">Qualification</label>
-                                                <select class="form-control required" name="father_nationality"
-                                                        id="father_nationality">
-                                                    <option selected>Choose Education Level</option>
-                                                    @if(count($int['qal']))
-                                                        @foreach($int['qal'] as $key)
-                                                            <option value="{{$key->QID}}">{{$key->Qualificationname}}</option>
-                                                        @endforeach
-                                                    @endif
-                                                </select>
+                                                <label for="employer">Company Name</label>
+                                                <input type="text" name="fathercompany" class="form-control "
+                                                       placeholder="Enter Company name" id="employer">
                                             </div>
                                         </div>
+
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="job">Job</label>
-                                                <select class="form-control required" name="job" id="job">
+                                                <select class="form-control required" name="fatherjob" id="job">
                                                     <option selected>Choose a Job</option>
                                                     @if(count($int['ocp']))
                                                         @foreach($int['ocp'] as $key)
@@ -334,25 +361,7 @@
                                     </div>
                                     <!-- /row -->
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="employer">Employer Name</label>
-                                                <input type="text" name="employer" class="form-control "
-                                                       placeholder="Enter employer name" id="employer">
-                                            </div>
-                                        </div>
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="father_business_address">Business Address</label>
-                                                <input type="text" name="father_business_address" class="form-control "
-                                                       placeholder="Enter Mother's Business Address"
-                                                       id="father_business_address">
-                                            </div>
-                                        </div>
-
-                                    </div>
                                     <!-- /row -->
                                 </div>
                                 <!-- /step -->
@@ -361,6 +370,14 @@
                                 <div class="step">
                                     <h3 class="main_question"><strong>3/8</strong>Enter Mothers's Information</h3>
                                     <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="mother_fullname">Mother Fullname.</label>
+                                                <input type="text" name="mother_fullname" class="form-control "
+                                                       placeholder="Mother Fullname"
+                                                       id="mother_fullname">
+                                            </div>
+                                        </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="mother_nationality">Nationality</label>
@@ -376,6 +393,11 @@
                                             </div>
                                         </div>
 
+
+                                    </div>
+                                    <!-- /row -->
+
+                                    <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="mother_phone">Phone</label>
@@ -383,11 +405,6 @@
                                                        placeholder="Mother's Phone" id="mother_phone">
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- /row -->
-
-
-                                    <div class="row">
 
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -397,35 +414,20 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="mother_passport">ID/Passport No.</label>
-                                                <input type="text" name="mother_passport" class="form-control "
-                                                       placeholder="Enter ID or Passport for non Egyptians"
-                                                       id="mother_passport">
-                                            </div>
-                                        </div>
+
                                     </div>
                                     <!-- /row -->
 
                                     <div class="row">
 
-
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="mother_nationality">Qualification</label>
-                                                <select class="form-control required" name="mother_nationality"
-                                                        id="mother_nationality">
-                                                    <option selected>Choose Education Level</option>
-                                                    @if(count($int['qal']))
-                                                        @foreach($int['qal'] as $key)
-                                                            <option value="{{$key->QID}}">{{$key->Qualificationname}}</option>
-                                                        @endforeach
-                                                    @endif
-
-                                                </select>
+                                                <label for="mother_company">Company Name</label>
+                                                <input type="text" name="mother_company" class="form-control "
+                                                       placeholder="Enter Company name" id="mother_company">
                                             </div>
                                         </div>
+
 
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -444,24 +446,7 @@
                                     </div>
                                     <!-- /row -->
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="mother_employer">Employer Name</label>
-                                                <input type="text" name="mother_employer" class="form-control "
-                                                       placeholder="Enter employer name" id="mother_employer">
-                                            </div>
-                                        </div>
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="mother_business_address">Business Address</label>
-                                                <input type="text" name="mother_business_address" class="form-control "
-                                                       placeholder="Enter Mother's Business Address"
-                                                       id="mother_business_address">
-                                            </div>
-                                        </div>
-                                    </div>
                                     <!-- /row -->
 
 
@@ -519,49 +504,49 @@
 
                                     <hr style="margin-bottom: 10px; margin-top: 0">
 
-                                    <div class="row">
+                                    {{--<div class="row">--}}
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="emergency_second_name">Second Person Name</label>
-                                                <input type="text" name="emergency_second_name" class="form-control "
-                                                       placeholder="Second Person Name" id="emergency_second_name">
-                                            </div>
-                                        </div>
+                                        {{--<div class="col-md-6">--}}
+                                            {{--<div class="form-group">--}}
+                                                {{--<label for="emergency_second_name">Second Person Name</label>--}}
+                                                {{--<input type="text" name="emergency_second_name" class="form-control "--}}
+                                                       {{--placeholder="Second Person Name" id="emergency_second_name">--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="second_person_relation">Relation to Child</label>
-                                                <input type="text" name="second_person_relation" class="form-control "
-                                                       placeholder="Second Person Relation To Child"
-                                                       id="second_person_relation">
-                                            </div>
-                                        </div>
+                                        {{--<div class="col-md-6">--}}
+                                            {{--<div class="form-group">--}}
+                                                {{--<label for="second_person_relation">Relation to Child</label>--}}
+                                                {{--<input type="text" name="second_person_relation" class="form-control "--}}
+                                                       {{--placeholder="Second Person Relation To Child"--}}
+                                                       {{--id="second_person_relation">--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
 
-                                    </div>
+                                    {{--</div>--}}
                                     <!-- /row -->
 
-                                    <div class="row">
+                                    {{--<div class="row">--}}
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="emergency_second_mobile">Second Person Mobile</label>
-                                                <input type="number" name="emergency_second_mobile"
-                                                       class="form-control " placeholder="Second Person Phone Number"
-                                                       id="emergency_second_mobile">
-                                            </div>
-                                        </div>
+                                        {{--<div class="col-md-6">--}}
+                                            {{--<div class="form-group">--}}
+                                                {{--<label for="emergency_second_mobile">Second Person Mobile</label>--}}
+                                                {{--<input type="number" name="emergency_second_mobile"--}}
+                                                       {{--class="form-control " placeholder="Second Person Phone Number"--}}
+                                                       {{--id="emergency_second_mobile">--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="emergency_second_home_no">Second Person Home No</label>
-                                                <input type="text" name="emergency_second_home_no" class="form-control "
-                                                       placeholder="Second Person Home Number"
-                                                       id="emergency_second_home_no">
-                                            </div>
-                                        </div>
+                                        {{--<div class="col-md-6">--}}
+                                            {{--<div class="form-group">--}}
+                                                {{--<label for="emergency_second_home_no">Second Person Home No</label>--}}
+                                                {{--<input type="text" name="emergency_second_home_no" class="form-control "--}}
+                                                       {{--placeholder="Second Person Home Number"--}}
+                                                       {{--id="emergency_second_home_no">--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
 
-                                    </div>
+                                    {{--</div>--}}
                                     <!-- /row -->
 
                                 </div>
@@ -593,25 +578,23 @@
                                             <div class="form-group">
                                                 <label for="child1_school">School/University Name</label>
                                                 <input type="text" name="child1_school" class="form-control "
-                                                       placeholder="Enter Chile School or University"
+                                                       placeholder="Enter Child School or University"
                                                        id="child1_school">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <label for="chile1_gender">Gender</label>
-                                            <div class="form-group">
+                                        <div class="col-md-4">
+                                            <label for="gender">Gender</label>
+                                            <select class="form-control required" name="othergender"
+                                                    id="gender">
+                                                <option selected>Choose gender</option>
+                                                @if(count($int['gen']))
+                                                    @foreach($int['gen'] as $key)
+                                                        <option value="{{$key->GNID}}">{{$key->Gendername}}</option>
+                                                    @endforeach
+                                                @endif
 
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio"
-                                                           name="inlineRadioOptions" id="inlineRadio1" value="male">
-                                                    <label class="form-check-label" for="inlineRadio1">Male</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio"
-                                                           name="inlineRadioOptions" id="inlineRadio2" value="female">
-                                                    <label class="form-check-label" for="inlineRadio2">Female</label>
-                                                </div>
-                                            </div>
+                                            </select>
+
                                         </div>
                                     </div>
                                     <!-- /row -->
@@ -619,50 +602,50 @@
                                     <hr style="margin-bottom: 10px; margin-top: 0">
 
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="child2_name">Child Name</label>
-                                                <input type="text" name="child1_name" class="form-control "
-                                                       placeholder="Enter Chile Name" id="child2_name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="child1_age">Child Age</label>
-                                                <input type="number" name="child2_age" class="form-control "
-                                                       placeholder="Enter Child Age" min="1" max="60" id="child2_age">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /row -->
+                                    {{--<div class="row">--}}
+                                        {{--<div class="col-md-6">--}}
+                                            {{--<div class="form-group">--}}
+                                                {{--<label for="child2_name">Child Name</label>--}}
+                                                {{--<input type="text" name="child1_name" class="form-control "--}}
+                                                       {{--placeholder="Enter Chile Name" id="child2_name">--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="col-md-6">--}}
+                                            {{--<div class="form-group">--}}
+                                                {{--<label for="child1_age">Child Age</label>--}}
+                                                {{--<input type="number" name="child2_age" class="form-control "--}}
+                                                       {{--placeholder="Enter Child Age" min="1" max="60" id="child2_age">--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<!-- /row -->--}}
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="child1_school">School/University Name</label>
-                                                <input type="text" name="child2_school" class="form-control "
-                                                       placeholder="Enter Chile School or University"
-                                                       id="child2_school">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="chile2_gender">Gender</label>
-                                            <div class="form-group">
+                                    {{--<div class="row">--}}
+                                        {{--<div class="col-md-6">--}}
+                                            {{--<div class="form-group">--}}
+                                                {{--<label for="child1_school">School/University Name</label>--}}
+                                                {{--<input type="text" name="child2_school" class="form-control "--}}
+                                                       {{--placeholder="Enter Chile School or University"--}}
+                                                       {{--id="child2_school">--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="col-md-6">--}}
+                                            {{--<label for="chile2_gender">Gender</label>--}}
+                                            {{--<div class="form-group">--}}
 
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio"
-                                                           name="inlineRadioOptions" id="inlineRadio1" value="male">
-                                                    <label class="form-check-label" for="inlineRadio1">Male</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio"
-                                                           name="inlineRadioOptions" id="inlineRadio2" value="female">
-                                                    <label class="form-check-label" for="inlineRadio2">Female</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                                {{--<div class="form-check form-check-inline">--}}
+                                                    {{--<input class="form-check-input" type="radio"--}}
+                                                           {{--name="inlineRadioOptions" id="inlineRadio1" value="male">--}}
+                                                    {{--<label class="form-check-label" for="inlineRadio1">Male</label>--}}
+                                                {{--</div>--}}
+                                                {{--<div class="form-check form-check-inline">--}}
+                                                    {{--<input class="form-check-input" type="radio"--}}
+                                                           {{--name="inlineRadioOptions" id="inlineRadio2" value="female">--}}
+                                                    {{--<label class="form-check-label" for="inlineRadio2">Female</label>--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
 
 
                                 </div>
@@ -676,19 +659,13 @@
 
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="school1_name">School Name</label>
+                                                <label for="school1_name">School\Nursery Name</label>
                                                 <input type="text" name="school1_name" class="form-control "
                                                        placeholder="Enter Previous School Name" id="school1_name">
                                             </div>
                                         </div>
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="grade1">Grade</label>
-                                                <input type="text" name="grade1" class="form-control "
-                                                       placeholder="Grade" id="grade1">
-                                            </div>
-                                        </div>
+
 
                                     </div>
                                     <!-- /row -->
@@ -702,29 +679,26 @@
                                                        placeholder="Enter The Curriculum of School" id="curriculum1">
                                             </div>
                                         </div>
-
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="school1_location">Location</label>
-                                                <input type="text" name="school1_location" class="form-control "
-                                                       placeholder="Enter School Location" id="school1_location">
+                                                <label for="father_nationality">grade</label>
+                                                <select class="form-control required" name="stu_grade2"
+                                                        id="father_nationality">
+                                                    <option selected>Choose Grade</option>
+                                                    @if(count($int['gr']))
+                                                        @foreach($int['gr'] as $key)
+                                                            <option value="{{$key->GID}}">{{$key->Gradename}}</option>
+                                                        @endforeach
+                                                    @endif
+
+                                                </select>
                                             </div>
                                         </div>
 
                                     </div>
                                     <!-- /row -->
 
-                                    <div class="row">
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="school1_years">Years Attended</label>
-                                                <input type="number" name="school1_years" class="form-control "
-                                                       placeholder="Enter Number of Years Attended" id="school1_years">
-                                            </div>
-                                        </div>
-
-                                    </div>
                                     <!-- /row -->
                                 </div>
                                 <!-- /step -->
@@ -755,6 +729,20 @@
                                                           placeholder="Why did you choose to apply to New Discovery British lntrnational School?"
                                                           id="child_hobbies"
                                                           style="resize: none; height: 100px"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="prstatus">Parent status</label>
+                                                <select class="form-control required" name="prstatus" id="prstatus">
+                                                    <option selected>Choose one</option>
+                                                    @if(count($int['pr']))
+                                                        @foreach($int['pr'] as $key)
+                                                            <option value="{{$key->PRSID}}">{{$key->status}}</option>
+                                                        @endforeach
+                                                    @endif
+
+                                                </select>
                                             </div>
                                         </div>
                                     </div>

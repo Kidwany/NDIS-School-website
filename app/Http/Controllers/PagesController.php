@@ -69,7 +69,9 @@ class PagesController extends Controller
         $qal = Models\Qualification::all();
         $ocp = Models\Occupation::all();
         $gen = Models\Gender::all();
-        $int = ["nat" => $nat,"rel"=>$rel,"qal"=>$qal,"ocp"=>$ocp,"gen" => $gen];
+        $gr = Models\Grade::all();
+        $pr = Models\Parentstatus::all();
+        $int = ["nat" => $nat,"rel"=>$rel,"qal"=>$qal,"ocp"=>$ocp,"gen" => $gen,"gr"=>$gr,"pr"=>$pr];
         return view('frontend.admission', compact('int'));
     }
 
@@ -118,6 +120,10 @@ class PagesController extends Controller
      */
     public function storeappform(Request $request)
     {
+        //save students information
+        //studentName - nickName - stureligion - stu_nationality - stuaddress - year - month - day stugender
+        //save father information
+        //father_nationality - father_phone - father_email - father_passport - father_qal - fatherjob
         return $request;
     }
 }
