@@ -254,11 +254,11 @@
                                         </div>
                                         <div class="col-md-4">
                                             <label for="gender">Section</label>
-                                            <select class="form-control required" name="stugender"
+                                            <select class="form-control required" name="stusection"
                                                     id="gender">
                                                 <option selected>Choose Section</option>
-                                                <option value="1">British</option>
-                                                <option value="2">American</option>
+                                                <option value="British">British</option>
+                                                <option value="American">American</option>
 
                                             </select>
 
@@ -266,7 +266,7 @@
 
                                         <div class="col-md-4">
                                             <label for="gender">Second Language</label>
-                                            <select class="form-control required" name="stugender"
+                                            <select class="form-control required" name="stusecondlang"
                                                     id="gender">
                                                 <option selected>Choose Language</option>
 
