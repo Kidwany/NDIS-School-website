@@ -13,6 +13,7 @@ class ErrorSave extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'Id';
     protected $table = 'error_save';
 
     /**

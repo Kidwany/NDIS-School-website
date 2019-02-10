@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pages extends Model  {
+class Additionalinfo extends Model  {
 
     
 
@@ -13,15 +13,14 @@ class Pages extends Model  {
      *
      * @var string
      */
-    protected $primaryKey = 'PID';
-    protected $table = 'pages';
+    protected $table = 'additionalinfo';
 
     /**
      * Attributes that should be mass-assignable.
      *
      * @var array
      */
-    protected $fillable = ['PID', 'pagename', 'order', 'isactive', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['ADID', 'LNID', 'interests', 'Why', 'hearabout', 'APPID'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -42,6 +41,6 @@ class Pages extends Model  {
      *
      * @var array
      */
-    protected $dates = ['Created_Date', 'Update_Date'];
+    protected $dates = [];
 
 }

@@ -13,6 +13,7 @@ class Parents extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'PID';
     protected $table = 'parents';
 
     /**

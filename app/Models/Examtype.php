@@ -13,6 +13,7 @@ class Examtype extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'ETID';
     protected $table = 'examtype';
 
     /**

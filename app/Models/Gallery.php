@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Models;
-
 use Illuminate\Database\Eloquent\Model;
 
 class Gallery extends Model  {
@@ -13,6 +12,7 @@ class Gallery extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'GLID';
     protected $table = 'gallery';
 
     /**
@@ -20,7 +20,7 @@ class Gallery extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['GLID', 'path', 'isimage', 'ALID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['GLID', 'path', 'isimage', 'Created_Date', 'Update_Date'];
 
     /**
      * The attributes excluded from the model's JSON form.

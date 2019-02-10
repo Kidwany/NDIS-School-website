@@ -13,6 +13,7 @@ class Busdriver extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'BDID';
     protected $table = 'busdriver';
 
     /**
@@ -20,7 +21,7 @@ class Busdriver extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['BDID', 'name', 'phone', 'address', 'BID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['BDID', 'name', 'phone', 'address', 'Created_Date', 'Update_Date'];
 
     /**
      * The attributes excluded from the model's JSON form.

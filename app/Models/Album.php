@@ -13,6 +13,7 @@ class Album extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'ALID';
     protected $table = 'album';
 
     /**
@@ -20,7 +21,7 @@ class Album extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['ALID', 'name', 'desc', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['ALID', 'name', 'desc', 'Created_Date', 'Update_Date', 'GLID'];
 
     /**
      * The attributes excluded from the model's JSON form.

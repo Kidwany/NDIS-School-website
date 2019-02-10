@@ -13,6 +13,7 @@ class Religion extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'RLID';
     protected $table = 'religion';
 
     /**

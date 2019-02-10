@@ -13,6 +13,7 @@ class Schoolyear extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'SYID';
     protected $table = 'schoolyear';
 
     /**

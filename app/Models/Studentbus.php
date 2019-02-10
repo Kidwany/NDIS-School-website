@@ -13,6 +13,7 @@ class Studentbus extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'SBID';
     protected $table = 'studentbus';
 
     /**
@@ -20,7 +21,7 @@ class Studentbus extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['SBID', 'UID', 'BID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['SBID', 'UID', 'Created_Date', 'Update_Date', 'BID'];
 
     /**
      * The attributes excluded from the model's JSON form.

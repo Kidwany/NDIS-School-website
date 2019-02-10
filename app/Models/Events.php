@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -13,6 +12,7 @@ class Events extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'EVID';
     protected $table = 'events';
 
     /**

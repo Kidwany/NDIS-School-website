@@ -13,6 +13,7 @@ class Nationality extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'NID';
     protected $table = 'nationality';
 
     /**

@@ -13,6 +13,7 @@ class Timetable extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'TTID';
     protected $table = 'timetable';
 
     /**
@@ -20,7 +21,7 @@ class Timetable extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['TTID', 'from', 'to', 'branch', 'title', 'SID', 'UID', 'CID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['TTID', 'from', 'to', 'branch', 'title', 'Created_Date', 'Update_Date', 'CID'];
 
     /**
      * The attributes excluded from the model's JSON form.

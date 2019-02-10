@@ -13,6 +13,7 @@ class Occupation extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'OID';
     protected $table = 'occupation';
 
     /**

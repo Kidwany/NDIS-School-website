@@ -13,6 +13,7 @@ class Qualification extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'QID';
     protected $table = 'qualification';
 
     /**

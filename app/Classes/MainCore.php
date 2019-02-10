@@ -35,17 +35,26 @@ class MainCore
 
     public static function get_all_data($table)
     {
-
         $filedname = MainCore::getTableColumns($table);
-        $v = "<table border='1'>
-                    <tr>
-                        <td>test</td>
-                    </tr>
-            </table>";
-        return $v;
-        //$data = DB::table($table)->get();
-        //return "<h1>".$filedname."</h1>";
+        $data = DB::table($table)->get()->toArray();
+        $newdata = array();
+
+        for ($i = 0; $i < count($filedname); $i++) {
+            $t = array_column($data, $filedname[$i]);
+            array_push($newdata, $t);
+        }
+        $result = array();
+        $action = array();
+        foreach ($newdata as $sub_array) {
+            foreach ($sub_array as $key => $value) {
+                $result[$key][] = $value;
+            }
+        }
+
+        return '{"data":' . json_encode($result) . '}';
+
     }
+
 
     public static function getTableColumns($table)
     {

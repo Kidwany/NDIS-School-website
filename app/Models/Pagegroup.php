@@ -13,6 +13,7 @@ class Pagegroup extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'PGID';
     protected $table = 'pagegroup';
 
     /**
@@ -20,7 +21,7 @@ class Pagegroup extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['PGID', 'PID', 'UID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['PGID', 'Created_Date', 'Update_Date'];
 
     /**
      * The attributes excluded from the model's JSON form.

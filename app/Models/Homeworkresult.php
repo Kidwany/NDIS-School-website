@@ -13,6 +13,7 @@ class Homeworkresult extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'HWRID';
     protected $table = 'homeworkresult';
 
     /**
@@ -20,7 +21,7 @@ class Homeworkresult extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['HWRID', 'file', 'results', 'HWID', 'UID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['HWRID', 'file', 'results', 'Created_Date', 'Update_Date', 'UID', 'HWID'];
 
     /**
      * The attributes excluded from the model's JSON form.

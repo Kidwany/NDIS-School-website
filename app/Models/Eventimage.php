@@ -13,6 +13,7 @@ class Eventimage extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'EIID';
     protected $table = 'eventimage';
 
     /**
@@ -20,7 +21,7 @@ class Eventimage extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['EIID', 'path', 'isimage', 'EVID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['EIID', 'path', 'isimage', 'Created_Date', 'Update_Date', 'EVID'];
 
     /**
      * The attributes excluded from the model's JSON form.

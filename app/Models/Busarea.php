@@ -13,6 +13,7 @@ class Busarea extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'BAID';
     protected $table = 'busarea';
 
     /**
@@ -20,7 +21,7 @@ class Busarea extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['BAID', 'areaname', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['BAID', 'areaname', 'Created_Date', 'Update_Date', 'BID'];
 
     /**
      * The attributes excluded from the model's JSON form.

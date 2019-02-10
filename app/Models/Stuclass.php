@@ -13,6 +13,7 @@ class Stuclass extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'SCID';
     protected $table = 'stuclass';
 
     /**
@@ -20,7 +21,7 @@ class Stuclass extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['SCID', 'UID', 'CID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['SCID', 'Created_Date', 'Update_Date', 'CID', 'UID'];
 
     /**
      * The attributes excluded from the model's JSON form.

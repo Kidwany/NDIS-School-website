@@ -13,6 +13,7 @@ class Examresults extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'ERID';
     protected $table = 'examresults';
 
     /**
@@ -20,7 +21,7 @@ class Examresults extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['ERID', 'mark', 'EID', 'UID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['ERID', 'mark', 'Created_Date', 'Update_Date', 'EID', 'UID'];
 
     /**
      * The attributes excluded from the model's JSON form.

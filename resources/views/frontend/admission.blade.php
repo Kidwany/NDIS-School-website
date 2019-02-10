@@ -93,15 +93,15 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="studentName">Student full name</label>
-                                                <input type="text" name="studentName" class="form-control required"
-                                                       placeholder="Full Name" id="studentName">
+                                                <label for="applicationfullname">Student full name</label>
+                                                <input type="text" name="applicationfullname" class="form-control required"
+                                                       placeholder="Full Name" id="applicationfullname">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="father_nationality">Applying for grade</label>
-                                                <select class="form-control required" name="stu_grade"
+                                                <select class="form-control required" name="GID"
                                                         id="father_nationality">
                                                     <option selected>Choose Grade</option>
                                                     @if(count($int['gr']))
@@ -120,7 +120,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="religion">Religion</label>
-                                                <select class="form-control required" name="stureligion" id="religion">
+                                                <select class="form-control required" name="RLID" id="religion">
                                                     <option selected>Choose Religion</option>
                                                     @if(count($int['rel']))
                                                         @foreach($int['rel'] as $key)
@@ -134,7 +134,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="father_nationality">Student Nationality</label>
-                                                <select class="form-control required" name="stu_nationality"
+                                                <select class="form-control required" name="NID"
                                                         id="father_nationality">
                                                     <option selected>Choose Country</option>
                                                     @if(count($int['nat']))
@@ -154,7 +154,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="address">Bus Address</label>
-                                                <input type="text" name="busaddress" class="form-control "
+                                                <input type="text" name="applicationbusaddress" class="form-control "
                                                        placeholder="Bus Address" id="address">
                                             </div>
                                         </div>
@@ -180,18 +180,18 @@
                                                     <!-- /month -->
                                                     <select class="form-control required" name="month">
                                                         <option selected>Month</option>
-                                                        <option>January</option>
-                                                        <option>February</option>
-                                                        <option>March</option>
-                                                        <option>April</option>
-                                                        <option>May</option>
-                                                        <option>June</option>
-                                                        <option>July</option>
-                                                        <option>August</option>
-                                                        <option>September</option>
-                                                        <option>October</option>
-                                                        <option>November</option>
-                                                        <option>December</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
                                                     </select>
 
                                                     <!-- /day -->
@@ -240,7 +240,7 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <label for="gender">Gender</label>
-                                            <select class="form-control required" name="stugender"
+                                            <select class="form-control required" name="GNID"
                                                     id="gender">
                                                 <option selected>Choose gender</option>
                                                 @if(count($int['gen']))
@@ -270,8 +270,8 @@
                                                     id="gender">
                                                 <option selected>Choose Language</option>
 
-                                                        <option value="1">French</option>
-                                                        <option value="2">German</option>
+                                                        <option value="French">French</option>
+                                                        <option value="German">German</option>
 
 
                                             </select>
@@ -710,7 +710,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="child_hobbies">Tell us More About Your Child</label>
-                                                <textarea type="number" name="child_hobbies" class="form-control "
+                                                <textarea type="text" name="child_hobbies1" class="form-control "
                                                           placeholder="Tell Us More About Your Child Hobbies, Interests, etc..."
                                                           id="child_hobbies"
                                                           style="resize: none; height: 70px"></textarea>
@@ -720,21 +720,11 @@
                                     <!-- /row -->
 
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                {{--
-                                                                                                <label for="child_hobbies">Tell us More About Your Child</label>
-                                                --}}
-                                                <textarea type="number" name="child_hobbies" class="form-control "
-                                                          placeholder="Why did you choose to apply to New Discovery British lntrnational School?"
-                                                          id="child_hobbies"
-                                                          style="resize: none; height: 100px"></textarea>
-                                            </div>
-                                        </div>
+
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="prstatus">Parent status</label>
-                                                <select class="form-control required" name="prstatus" id="prstatus">
+                                                <select class="form-control required" name="PRSID" id="prstatus">
                                                     <option selected>Choose one</option>
                                                     @if(count($int['pr']))
                                                         @foreach($int['pr'] as $key)
@@ -788,10 +778,10 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group terms">
-                                                <input name="terms" type="checkbox" class="icheck " value="yes">
-                                                <label>Please accept <a href="#" data-toggle="modal"
-                                                                        data-target="#terms-txt">terms and
-                                                        conditions</a> ?</label>
+                                                {{--<input name="terms" type="checkbox" class="icheck " value="yes">--}}
+                                                {{--<label>Please accept <a href="#" data-toggle="modal"--}}
+                                                                        {{--data-target="#terms-txt">terms and--}}
+                                                        {{--conditions</a> ?</label>--}}
                                             </div>
                                         </div>
                                     </div>

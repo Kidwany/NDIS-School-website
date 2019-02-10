@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -13,6 +12,7 @@ class Users extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'UID';
     protected $table = 'users';
 
     /**
@@ -20,7 +20,7 @@ class Users extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['UID', 'UserName', 'fullname', 'password', 'email', 'address', 'phone', 'type', 'Created_Date'];
+    protected $fillable = ['UID', 'UserName', 'fullname', 'password', 'email', 'address', 'phone', 'created_at', 'remember_token', 'TID', 'updated_at'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -41,6 +41,6 @@ class Users extends Model  {
      *
      * @var array
      */
-    protected $dates = ['Created_Date'];
+    protected $dates = ['created_at', 'updated_at'];
 
 }

@@ -13,6 +13,7 @@ class Setting extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'ID';
     protected $table = 'setting';
 
     /**

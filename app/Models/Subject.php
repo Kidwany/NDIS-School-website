@@ -13,6 +13,7 @@ class Subject extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'SID';
     protected $table = 'subject';
 
     /**

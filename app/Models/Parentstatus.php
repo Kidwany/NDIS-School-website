@@ -13,6 +13,7 @@ class Parentstatus extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'PRSID';
     protected $table = 'parentstatus';
 
     /**

@@ -13,6 +13,7 @@ class Gender extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'GNID';
     protected $table = 'gender';
 
     /**

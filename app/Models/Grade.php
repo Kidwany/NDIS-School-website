@@ -13,6 +13,7 @@ class Grade extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'GID';
     protected $table = 'grade';
 
     /**
@@ -20,7 +21,7 @@ class Grade extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['GID', 'Gradename', 'Year', 'SYID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['GID', 'Gradename', 'Year', 'Created_Date', 'Update_Date'];
 
     /**
      * The attributes excluded from the model's JSON form.

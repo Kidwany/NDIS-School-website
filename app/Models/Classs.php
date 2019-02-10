@@ -13,6 +13,7 @@ class Classs extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'CID';
     protected $table = 'classs';
 
     /**
@@ -20,7 +21,7 @@ class Classs extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['CID', 'Classname', 'GID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['CID', 'Classname', 'Created_Date', 'Update_Date', 'GID'];
 
     /**
      * The attributes excluded from the model's JSON form.

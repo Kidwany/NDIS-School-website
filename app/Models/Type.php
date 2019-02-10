@@ -13,6 +13,7 @@ class Type extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'TID';
     protected $table = 'type';
 
     /**

@@ -13,6 +13,7 @@ class Busline extends Model  {
      *
      * @var string
      */
+    protected $primaryKey = 'BLID';
     protected $table = 'busline';
 
     /**
@@ -20,7 +21,7 @@ class Busline extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['BLID', 'linenumber', 'BAID', 'Created_Date', 'Update_Date'];
+    protected $fillable = ['BLID', 'linenumber', 'Created_Date', 'Update_Date', 'BAID'];
 
     /**
      * The attributes excluded from the model's JSON form.
