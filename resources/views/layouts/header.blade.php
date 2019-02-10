@@ -126,7 +126,7 @@
                                         </ul>--}}
                                     </li>
                                     {{--<li><a href="course.html"> COURSES / PROGRAMMES</a></li>--}}
-                                    <li><a href="{{url('blog')}}"> BLOG </a>
+                                    <li><a href="{{url('events')}}"> EVENTS </a>
                                         {{--<ul class="submenu">
                                             <li><a href="blog.html">blog</a></li>
                                             <li><a href="blog-details.html">blog details</a></li>

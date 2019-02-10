@@ -118,7 +118,6 @@ class PagesController extends Controller
     {
         return view('frontend.academics');
     }
-
     /**
      * This Function returns save applications form
      *
@@ -198,6 +197,28 @@ class PagesController extends Controller
 
         return view('master', compact('filedname', 'tablename'));
     }
+
+
+    /**
+     * This Function returns Events Page
+     *
+     */
+    public function events()
+    {
+        return view('frontend.events');
+    }
+
+
+    /**
+     * This Function returns Events Page
+     *
+     */
+    public function eventDetails($id)
+    {
+        return view('frontend.eventDetails');
+    }
+
+
 
     public function filldata()
     {
