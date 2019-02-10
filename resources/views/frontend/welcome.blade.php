@@ -274,10 +274,9 @@
             </div>
         </div>
     </div>
+
+
     <!-- campus-area-end -->
-
-
-
     <div class="event-area bg-img default-overlay pt-130 pb-130" style="background-image:url({{asset('website/img/bg/fees_bg.jpg')}});">
         <div class="container">
             <div class="section-title mb-75">

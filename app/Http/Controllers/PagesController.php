@@ -115,7 +115,7 @@ class PagesController extends Controller
         return view('frontend.academics');
     }
     /**
-     * This Function returns save applications form
+     * This Function save applications form
      *
      */
     public function storeappform(Request $request)
@@ -126,4 +126,26 @@ class PagesController extends Controller
         //father_nationality - father_phone - father_email - father_passport - father_qal - fatherjob
         return $request;
     }
+
+
+    /**
+     * This Function returns Events Page
+     *
+     */
+    public function events()
+    {
+        return view('frontend.events');
+    }
+
+
+    /**
+     * This Function returns Events Page
+     *
+     */
+    public function eventDetails($id)
+    {
+        return view('frontend.eventDetails');
+    }
+
+
 }

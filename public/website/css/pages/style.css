@@ -1711,7 +1711,8 @@ textarea:focus {
         border-left: 1px solid #ddd;
         padding: 5px 14px 5px 14px; }
         .header-search .search-content form button:hover {
-          color: #00a651; }
+          color: #00a651;
+        }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-bottom {
@@ -3454,16 +3455,16 @@ textarea:focus {
   position: relative;
   overflow: hidden; }
   .register-area #register-1 {
-    background-image: url("../../img/img/icon-img/register-shape-1.png");
+    background-image: url("../../img/icon-img/register-shape-1.png");
     background-size: contain;
     height: 138px;
     -webkit-transform: translateX(0px) translateY(566px);
     -ms-transform: translateX(0px) translateY(566px);
     transform: translateX(0px) translateY(566px);
-    width: 261;
+    width: 261px;
     z-index: 1; }
   .register-area #register-2 {
-    background-image: url("../../img/img/icon-img/register-shape-2.png");
+    background-image: url("../../img/icon-img/register-shape-2.png");
     background-size: contain;
     height: 110px;
     -webkit-transform: translateX(0px) translateY(330px);
@@ -6515,7 +6516,7 @@ textarea:focus {
 .description-review-topbar a {
   background-color: #f6f6f6;
   border-bottom: 3px solid transparent;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1;
   margin: 0 5px 0 0;
@@ -6526,9 +6527,13 @@ textarea:focus {
       padding: 18px 15px;
       font-size: 14px; } }
 
-.description-review-topbar a.active {
+.description-review-topbar a.active
+{
   border-bottom: 3px solid #00a651;
-  background-color: transparent; }
+    border-top: 1px solid #f6f6f6;
+    border-left: 1px solid #f6f6f6;
+  background-color: transparent;
+}
 
 .description-review-bottom {
   padding: 33px 0 0; }

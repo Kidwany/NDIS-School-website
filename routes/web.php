@@ -55,6 +55,31 @@ Route::get('/academics', 'PagesController@academics');
 Route::post('/store', 'PagesController@storeappform');
 
 
+/* -- Events Page --- */
+Route::get('/events', 'PagesController@events');
+Route::get('/event/details/{id}', 'PagesController@eventDetails');
+
+
+
+
+
+
+
+
+/**
+ * This List Containing The Admin Panel Routes
+*/
+
+
+Route::group(['namespace' => 'Dashboard'], function ()
+{
+
+    Route::get('/management', 'DashboardController@index');
+    Route::get('management/applications', 'DashboardController@applications');
+    Route::get('management/application-details', 'DashboardController@applicationDetails');
+
+});
+
 
 
 
