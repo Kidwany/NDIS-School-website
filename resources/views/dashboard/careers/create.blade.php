@@ -1,23 +1,28 @@
 @extends('dashboard.layouts.layouts')
 @section('title', 'Dashboard')
 
+
 @section('datatablesStyle')
     <!--begin::Page Vendors -->
-    <link href="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet"
+          type="text/css"/>
     <!--end::Page Vendors -->
 @endsection
 
 @section('datatablesScripts')
 
     <!--begin::Page Vendors -->
-    <script src="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.js')}}" type="text/javascript"></script>
+    <script src="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.js')}}"
+            type="text/javascript"></script>
     <!--end::Page Vendors -->
-    <script src="{{asset('metronic/assets/demo/default/custom/crud/datatables/data-sources/html.js')}}" type="text/javascript"></script>
+    <script src="{{asset('metronic/assets/demo/default/custom/crud/datatables/data-sources/html.js')}}"
+            type="text/javascript"></script>
     <!--end::Page Resources -->    <!--end::Page Resources -->
 
 @endsection
 
 @section('content')
+
 
     <!-- END: Left Aside -->
     <div class="m-grid__item m-grid__item--fluid m-wrapper">
@@ -26,7 +31,7 @@
             <div class="d-flex align-items-center">
                 <div class="mr-auto">
                     <h3 class="m-subheader__title m-subheader__title--separator">
-                        Apply Applications
+                        Create New Career
                     </h3>
                     <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
                         <li class="m-nav__item m-nav__item--home">
@@ -38,7 +43,7 @@
                             -
                         </li>
                         <li class="m-nav__item">
-                            <a href="" class="m-nav__link">
+                            <a href="{{url('/management')}}" class="m-nav__link">
                                 <span class="m-nav__link-text">
                                     Dashboard
                                 </span>
@@ -48,9 +53,9 @@
                             -
                         </li>
                         <li class="m-nav__item">
-                            <a href="" class="m-nav__link">
+                            <a href="{{url('management/careers')}}" class="m-nav__link">
                                 <span class="m-nav__link-text">
-                                    Applications
+                                    Careers
                                 </span>
                             </a>
                         </li>
@@ -67,8 +72,11 @@
                     </ul>
                 </div>
                 <div>
-                    <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
-                        <a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
+                    <div
+                        class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push"
+                        m-dropdown-toggle="hover" aria-expanded="true">
+                        <a href="#"
+                           class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
                             <i class="la la-plus m--hide"></i>
                             <i class="la la-ellipsis-h"></i>
                         </a>
@@ -117,7 +125,8 @@
                                             </li>
                                             <li class="m-nav__separator m-nav__separator--fit"></li>
                                             <li class="m-nav__item">
-                                                <a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
+                                                <a href="#"
+                                                   class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
                                                     Submit
                                                 </a>
                                             </li>
@@ -150,33 +159,37 @@
                     <div class="m-portlet__head-caption">
                         <div class="m-portlet__head-title">
                             <h3 class="m-portlet__head-text">
-                                Latest Applications
+                                Create New Career
                             </h3>
                         </div>
                     </div>
                     <div class="m-portlet__head-tools">
-                        {{--<ul class="m-portlet__nav">
+                        <ul class="m-portlet__nav">
                             <li class="m-portlet__nav-item">
-                                <a href="#" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
+                                {{--<a href="{{url('management/careers/create')}}" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
                                     <span>
-                                        <i class="la la-cart-plus"></i>
+                                        <i class="la la-plus"></i>
                                         <span>
-                                            New Record
+                                            New Career
                                         </span>
                                     </span>
-                                </a>
+                                </a>--}}
                             </li>
+
                             <li class="m-portlet__nav-item"></li>
                             <li class="m-portlet__nav-item">
-                                <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
-                                    <a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
+                                <div
+                                    class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push"
+                                    m-dropdown-toggle="hover" aria-expanded="true">
+                                    <a href="#"
+                                       class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
                                         <i class="la la-ellipsis-h m--font-brand"></i>
                                     </a>
 
                                     <!------ Actions Menu -->
-
-                                    --}}{{--<div class="m-dropdown__wrapper">
-                                        <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+                                    <div class="m-dropdown__wrapper">
+                                        <span
+                                            class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
                                         <div class="m-dropdown__inner">
                                             <div class="m-dropdown__bodmy">
                                                 <div class="m-dropdown__content">
@@ -233,7 +246,8 @@
                                                         </li>
                                                         <li class="m-nav__separator m-nav__separator--fit m--hide"></li>
                                                         <li class="m-nav__item m--hide">
-                                                            <a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
+                                                            <a href="#"
+                                                               class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
                                                                 Submit
                                                             </a>
                                                         </li>
@@ -241,98 +255,143 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>--}}{{--
+                                    </div>
 
                                 </div>
                             </li>
-                        </ul>--}}
+                        </ul>
                     </div>
                 </div>
                 <div class="m-portlet__body">
-                    <!--begin: Datatable -->
-                    <table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
-                        <thead>
-                        <tr>
-                            <th>
-                                ID
-                            </th>
-                            <th>
-                                Student Name
-                            </th>
-                            <th>
-                                App Code
-                            </th>
-                            <th>
-                                Date of Birth
-                            </th>
-                            <th>
-                                Age
-                            </th>
-                            <th>
-                                Gender
-                            </th>
-                            <th>
-                                Program
-                            </th>
-                            <th>
-                                Religion
-                            </th>
-                            <th>
-                                Status
-                            </th>
-                            <th>
-                                Date
-                            </th>
-                            <th>
-                                Actions
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                Ahmed Mustafa
-                            </td>
-                            <td>
-                                61715-075
-                            </td>
-                            <td>
-                                31/7/1993
-                            </td>
-                            <td>
-                                7 Years
-                            </td>
-                            <td>
-                                Male
-                            </td>
-                            <td>
-                                American
-                            </td>
-                            <td>
-                                Muslim
-                            </td>
-                            <td>
-                                2/12/2018
-                            </td>
-                            <td>
-                                <span class="m-badge m-badge--brand m-badge--wide">Pending</span>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-row justify-content-between">
-                                    <button type="button" class="btn m-btn--square  btn-outline-danger">
-                                        <i class="fa fa-trash"></i>
-                                    </button>
-                                    <button type="button" class="btn m-btn--square  btn-outline-primary">
-                                        <i class="fa fa-pencil"></i>
-                                    </button>
+                    <!--begin: Form -->
+                    <!--begin::Form-->
+                    <form class="m-form m-form--fit m-form--label-align-right" id="m_form_1">
+                        <div class="m-portlet__body">
+                            <div class="m-form__content">
+                                <div class="m-alert m-alert--icon alert alert-danger m--hide" role="alert"
+                                     id="m_form_1_msg">
+                                    <div class="m-alert__icon">
+                                        <i class="la la-warning"></i>
+                                    </div>
+                                    <div class="m-alert__text">
+                                        Opps! Please fill the required fields.
+                                    </div>
+                                    <div class="m-alert__close">
+                                        <button type="button" class="close" data-close="alert"
+                                                aria-label="Close"></button>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                            <!-------------------- Position ---------------->
+                            <div class="form-group m-form__group row">
+                                <label class="col-form-label col-lg-2 col-sm-12">
+                                    Position *
+                                </label>
+                                <div class="col-lg-4 col-md-9 col-sm-12">
+                                    <input type="text" class="form-control m-input" name="text"
+                                           placeholder="Enter Position" data-toggle="m-tooltip" required>
+                                    <span class="m-form__help">
+                                        Enter Available Position you want to share it
+                                    </span>
+                                </div>
+
+                                <!-------------------- Code ---------------->
+                                <label class="col-form-label col-lg-2 col-sm-12">
+                                    Code *
+                                </label>
+                                <div class="col-lg-4 col-md-9 col-sm-12">
+                                    <div class="input-group">
+                                        <input type="number" class="form-control m-input" name="code"
+                                               placeholder="Enter position unique code" required>
+                                        {{-- <div class="input-group-append">
+                                             <span class="input-group-text">
+                                                 .via.com
+                                             </span>
+                                         </div>--}}
+                                    </div>
+                                       <span class="m-form__help">
+{{--
+                                           Please enter your website URL.
+--}}
+                                       </span>
+                                </div>
+                            </div>
+
+
+                            <!-------------------- Description ---------------->
+                            <div class="form-group m-form__group row">
+                                <label class="col-form-label col-lg-2 col-sm-12">
+                                    Description *
+                                </label>
+                                <div class="col-lg-10 col-md-9 col-sm-12">
+                                    <textarea class="form-control m-input" name="position_desc"
+                                              placeholder="Enter a Description" style="resize: none" rows="5" required></textarea>
+                                    {{--<span class="m-form__help">
+                                        Please enter a menu within text length range 10 and 100.
+                                    </span>--}}
+                                </div>
+                            </div>
+
+
+                            <div class="form-group m-form__group row">
+                                <!-------------------- Expire Date ---------------->
+                                <label class="col-form-label col-lg-2 col-sm-12">
+                                    Expire Date *
+                                </label>
+                                <div class="col-lg-4 col-md-9 col-sm-12">
+                                    <div class='input-group'>
+                                        <input type='text' class="form-control m-input" name="date" placeholder="Select date" id='m_datepicker'/>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="la la-calendar-check-o"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="m-form__help">
+                                        Select a date
+                                    </span>
+                                </div>
+
+                                <!-------------------- Status ---------------->
+                                <label class="col-form-label col-lg-2 col-sm-12">
+                                    Status *
+                                </label>
+                                <div class="col-lg-4 col-md-9 col-sm-12">
+                                    <select class="form-control m-input" name="option">
+                                        <option value="">
+                                            Select
+                                        </option>
+                                        <option>
+                                            Running
+                                        </option>
+                                        <option>
+                                            Closed
+                                        </option>
+                                    </select>
+                                    <span class="m-form__help">
+                                        Please select an option.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space"></div>
+                        </div>
+                        <div class="m-portlet__foot m-portlet__foot--fit">
+                            <div class="m-form__actions m-form__actions">
+                                <div class="row">
+                                    <div class="col-lg-10 ml-lg-auto">
+                                        <button type="submit" class="btn btn-success">
+                                            Publish
+                                        </button>
+                                        <button type="reset" class="btn btn-secondary">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--end::Form-->
+
                 </div>
             </div>
             <!-- END EXAMPLE TABLE PORTLET-->

@@ -223,3 +223,9 @@
     object-fit: cover;
     -o-object-fit: cover;
 }
+
+.single-choose-us
+{
+    height: 238px;
+    overflow: hidden;
+}

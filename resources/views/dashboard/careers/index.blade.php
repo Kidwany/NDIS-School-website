@@ -1,6 +1,7 @@
 @extends('dashboard.layouts.layouts')
 @section('title', 'Dashboard')
 
+
 @section('datatablesStyle')
     <!--begin::Page Vendors -->
     <link href="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
@@ -26,7 +27,7 @@
             <div class="d-flex align-items-center">
                 <div class="mr-auto">
                     <h3 class="m-subheader__title m-subheader__title--separator">
-                        Apply Applications
+                        Careers
                     </h3>
                     <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
                         <li class="m-nav__item m-nav__item--home">
@@ -50,7 +51,7 @@
                         <li class="m-nav__item">
                             <a href="" class="m-nav__link">
                                 <span class="m-nav__link-text">
-                                    Applications
+                                    Careers
                                 </span>
                             </a>
                         </li>
@@ -150,22 +151,23 @@
                     <div class="m-portlet__head-caption">
                         <div class="m-portlet__head-title">
                             <h3 class="m-portlet__head-text">
-                                Latest Applications
+                                Latest Careers
                             </h3>
                         </div>
                     </div>
                     <div class="m-portlet__head-tools">
-                        {{--<ul class="m-portlet__nav">
+                        <ul class="m-portlet__nav">
                             <li class="m-portlet__nav-item">
-                                <a href="#" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
+                                <a href="{{url('management/careers/create')}}" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
                                     <span>
-                                        <i class="la la-cart-plus"></i>
+                                        <i class="la la-plus"></i>
                                         <span>
-                                            New Record
+                                            New Career
                                         </span>
                                     </span>
                                 </a>
                             </li>
+
                             <li class="m-portlet__nav-item"></li>
                             <li class="m-portlet__nav-item">
                                 <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
@@ -175,7 +177,7 @@
 
                                     <!------ Actions Menu -->
 
-                                    --}}{{--<div class="m-dropdown__wrapper">
+                                    <div class="m-dropdown__wrapper">
                                         <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
                                         <div class="m-dropdown__inner">
                                             <div class="m-dropdown__bodmy">
@@ -241,11 +243,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>--}}{{--
+                                    </div>
 
                                 </div>
                             </li>
-                        </ul>--}}
+                        </ul>
                     </div>
                 </div>
                 <div class="m-portlet__body">
@@ -257,35 +259,24 @@
                                 ID
                             </th>
                             <th>
-                                Student Name
+                                Position
                             </th>
                             <th>
-                                App Code
+                                Code
                             </th>
                             <th>
-                                Date of Birth
+                                Description
                             </th>
                             <th>
-                                Age
-                            </th>
-                            <th>
-                                Gender
-                            </th>
-                            <th>
-                                Program
-                            </th>
-                            <th>
-                                Religion
+                                Expire Date
                             </th>
                             <th>
                                 Status
                             </th>
                             <th>
-                                Date
-                            </th>
-                            <th>
                                 Actions
                             </th>
+
                         </tr>
                         </thead>
                         <tbody>
@@ -294,28 +285,16 @@
                                 1
                             </td>
                             <td>
-                                Ahmed Mustafa
+                                English Teacher
                             </td>
                             <td>
-                                61715-075
+                                55-146
                             </td>
                             <td>
-                                31/7/1993
+                                English Teacher is required with 5 years experience in giza campus
                             </td>
                             <td>
-                                7 Years
-                            </td>
-                            <td>
-                                Male
-                            </td>
-                            <td>
-                                American
-                            </td>
-                            <td>
-                                Muslim
-                            </td>
-                            <td>
-                                2/12/2018
+                                5-March-2019
                             </td>
                             <td>
                                 <span class="m-badge m-badge--brand m-badge--wide">Pending</span>
@@ -331,6 +310,7 @@
                                 </div>
                             </td>
                         </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -341,3 +321,6 @@
 
 
 @endsection
+
+
+

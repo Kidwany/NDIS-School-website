@@ -49,7 +49,7 @@
         @include('dashboard.layouts.header')
         <!-- END: Header -->
             <!-- begin::Body -->
-            <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body" style="min-height: 83vh">
+            <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body" style="min-height: 90vh">
                 <!-- BEGIN: Left Aside -->
             @include('dashboard.layouts.sideMenu')
             <!-- END: Left Aside -->
@@ -120,6 +120,10 @@
 <!--begin::Base Scripts -->
 <script src="{{asset('metronic/assets/vendors/base/vendors.bundle.js')}}" type="text/javascript"></script>
 <script src="{{asset('metronic/assets/demo/default/base/scripts.bundle.js')}}" type="text/javascript"></script>
+<!--begin::Page Resources -->
+<script src="{{asset('metronic/assets/demo/default/custom/crud/forms/validation/form-controls.js')}}" type="text/javascript"></script>
+<!--end::Page Resources -->
+<script src="{{asset('metronic/assets/demo/default/custom/crud/forms/validation/form-widgets.js')}}" type="text/javascript"></script>
 
 @yield('datatablesScripts');
 
@@ -130,6 +134,9 @@
 <!--begin::Page Snippets -->
 <script src="{{asset('metronic/assets/app/js/dashboard.js')}}" type="text/javascript"></script>
 <!--end::Page Snippets -->
+<!--begin::Page Resources -->
+<script src="{{asset('metronic/assets/demo/default/custom/crud/forms/widgets/select2.js')}}" type="text/javascript"></script>
+<!--end::Page Resources -->
 
 
 

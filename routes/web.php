@@ -74,9 +74,29 @@ Route::get('/event/details/{id}', 'PagesController@eventDetails');
 Route::group(['namespace' => 'Dashboard'], function ()
 {
 
+    /*--- Index of Dashboard ---*/
     Route::get('/management', 'DashboardController@index');
+
+    /*--- Applications ---*/
     Route::get('management/applications', 'DashboardController@applications');
+
+    /*--- Application Details ---*/
     Route::get('management/application-details', 'DashboardController@applicationDetails');
+
+    /*--- Careers ---*/
+    Route::get('management/careers', 'DashboardController@careers');
+
+    /*--- Career Details ---*/
+    Route::get('management/career/career-details', 'DashboardController@careerDetails');
+
+    /*--- Create Career ---*/
+    Route::get('management/careers/create', 'DashboardController@createCareer');
+
+    /*--- Appliers For Career ---*/
+    Route::get('management/careers/appliers', 'DashboardController@appliers');
+
+    /*---  Applicants Details  ---*/
+    Route::get('management/careers/appliers/applicant', 'DashboardController@applicantDetails');
 
 });
 

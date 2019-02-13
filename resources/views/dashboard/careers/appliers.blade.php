@@ -1,6 +1,7 @@
 @extends('dashboard.layouts.layouts')
 @section('title', 'Dashboard')
 
+
 @section('datatablesStyle')
     <!--begin::Page Vendors -->
     <link href="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
@@ -11,9 +12,12 @@
 
     <!--begin::Page Vendors -->
     <script src="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.js')}}" type="text/javascript"></script>
-    <!--end::Page Vendors -->
+    {{--<!--end::Page Vendors -->
     <script src="{{asset('metronic/assets/demo/default/custom/crud/datatables/data-sources/html.js')}}" type="text/javascript"></script>
-    <!--end::Page Resources -->    <!--end::Page Resources -->
+    <!--end::Page Resources -->--}}    <!--end::Page Resources -->
+    <!--begin::Page Resources -->
+    <script src="{{asset('metronic/assets/demo/default/custom/crud/datatables/search-options/advanced-search.js')}}" type="text/javascript"></script>
+    <!--end::Page Resources -->
 
 @endsection
 
@@ -26,7 +30,7 @@
             <div class="d-flex align-items-center">
                 <div class="mr-auto">
                     <h3 class="m-subheader__title m-subheader__title--separator">
-                        Apply Applications
+                        Careers
                     </h3>
                     <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
                         <li class="m-nav__item m-nav__item--home">
@@ -50,20 +54,20 @@
                         <li class="m-nav__item">
                             <a href="" class="m-nav__link">
                                 <span class="m-nav__link-text">
-                                    Applications
+                                    Careers
                                 </span>
                             </a>
                         </li>
-                        {{--<li class="m-nav__separator">
+                        <li class="m-nav__separator">
                             -
                         </li>
                         <li class="m-nav__item">
-                            <a href="" class="m-nav__link">
+                            <a href="{{url('management/careers/appliers')}}" class="m-nav__link">
                                 <span class="m-nav__link-text">
-                                    HTML
+                                    Appliers
                                 </span>
                             </a>
-                        </li>--}}
+                        </li>
                     </ul>
                 </div>
                 <div>
@@ -150,22 +154,23 @@
                     <div class="m-portlet__head-caption">
                         <div class="m-portlet__head-title">
                             <h3 class="m-portlet__head-text">
-                                Latest Applications
+                                Latest Appliers
                             </h3>
                         </div>
                     </div>
                     <div class="m-portlet__head-tools">
-                        {{--<ul class="m-portlet__nav">
-                            <li class="m-portlet__nav-item">
-                                <a href="#" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
+                        <ul class="m-portlet__nav">
+                            {{--<li class="m-portlet__nav-item">
+                                <a href="{{url('management/careers/create')}}" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
                                     <span>
-                                        <i class="la la-cart-plus"></i>
+                                        <i class="la la-plus"></i>
                                         <span>
-                                            New Record
+                                            New Career
                                         </span>
                                     </span>
                                 </a>
-                            </li>
+                            </li>--}}
+
                             <li class="m-portlet__nav-item"></li>
                             <li class="m-portlet__nav-item">
                                 <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
@@ -175,7 +180,7 @@
 
                                     <!------ Actions Menu -->
 
-                                    --}}{{--<div class="m-dropdown__wrapper">
+                                    <div class="m-dropdown__wrapper">
                                         <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
                                         <div class="m-dropdown__inner">
                                             <div class="m-dropdown__bodmy">
@@ -241,14 +246,39 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>--}}{{--
+                                    </div>
 
                                 </div>
                             </li>
-                        </ul>--}}
+                        </ul>
                     </div>
                 </div>
                 <div class="m-portlet__body">
+                    <!--begin: Search Form -->
+                    <div class="d-flex flex-row justify-content-between">
+                        <form class="m-form m-form--fit m--margin-bottom-20 col-lg-9">
+                            <div class="row m--margin-bottom-20">
+                                <div class="col-lg-6 m--margin-bottom-10-tablet-and-mobile">
+                                    <label>
+                                        Position Code:
+                                    </label>
+                                    <input type="text" class="form-control m-input" placeholder="E.g: 55-125" data-col-index="0">
+                                </div>
+
+                                <div class="col-lg-6 m--margin-bottom-10-tablet-and-mobile">
+                                    <label>
+                                        Position:
+                                    </label>
+                                    <select class="form-control m-input" data-col-index="2">
+                                        <option value="">
+                                            Select
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="btn btn-danger" style="height: 36px; margin-top: 25px"><i class="fa fa-file-pdf-o"></i> Download all CV'S</button>
+                    </div>
                     <!--begin: Datatable -->
                     <table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
                         <thead>
@@ -257,35 +287,24 @@
                                 ID
                             </th>
                             <th>
-                                Student Name
+                                Name
                             </th>
                             <th>
-                                App Code
+                                Email
                             </th>
                             <th>
-                                Date of Birth
+                                Phone
                             </th>
                             <th>
-                                Age
+                                Position Applied For
                             </th>
                             <th>
-                                Gender
-                            </th>
-                            <th>
-                                Program
-                            </th>
-                            <th>
-                                Religion
-                            </th>
-                            <th>
-                                Status
-                            </th>
-                            <th>
-                                Date
+                                Applying Date
                             </th>
                             <th>
                                 Actions
                             </th>
+
                         </tr>
                         </thead>
                         <tbody>
@@ -294,43 +313,32 @@
                                 1
                             </td>
                             <td>
-                                Ahmed Mustafa
+                                Mohamed Abd EL Moaty
                             </td>
                             <td>
-                                61715-075
+                                mohamed@gmail.com
                             </td>
                             <td>
-                                31/7/1993
+                                0122568778
                             </td>
                             <td>
-                                7 Years
+                                <a href="#">English Teacher</a>
                             </td>
                             <td>
-                                Male
+                                15 Feb 2018
                             </td>
                             <td>
-                                American
-                            </td>
-                            <td>
-                                Muslim
-                            </td>
-                            <td>
-                                2/12/2018
-                            </td>
-                            <td>
-                                <span class="m-badge m-badge--brand m-badge--wide">Pending</span>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-row justify-content-between">
-                                    <button type="button" class="btn m-btn--square  btn-outline-danger">
+                                <div class="d-flex flex-row">
+                                    <button type="button" class="btn m-btn--square  btn-outline-danger mr-2">
                                         <i class="fa fa-trash"></i>
                                     </button>
-                                    <button type="button" class="btn m-btn--square  btn-outline-primary">
-                                        <i class="fa fa-pencil"></i>
-                                    </button>
+                                    <a type="button" href="{{url('management/careers/appliers/applicant')}}" class="btn m-btn--square  btn-outline-primary">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
                                 </div>
                             </td>
                         </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -341,3 +349,6 @@
 
 
 @endsection
+
+
+
