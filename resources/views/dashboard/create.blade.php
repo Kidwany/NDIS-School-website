@@ -1,6 +1,7 @@
 @extends('dashboard.layouts.layouts')
 @section('title', 'Dashboard')
 
+
 @section('datatablesStyle')
     <!--begin::Page Vendors -->
     <link href="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
@@ -19,6 +20,7 @@
 
 @section('content')
 
+
     <!-- END: Left Aside -->
     <div class="m-grid__item m-grid__item--fluid m-wrapper">
         <!-- BEGIN: Subheader -->
@@ -26,7 +28,7 @@
             <div class="d-flex align-items-center">
                 <div class="mr-auto">
                     <h3 class="m-subheader__title m-subheader__title--separator">
-                        Apply Applications
+                        Create New Career
                     </h3>
                     <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
                         <li class="m-nav__item m-nav__item--home">
@@ -38,7 +40,7 @@
                             -
                         </li>
                         <li class="m-nav__item">
-                            <a href="" class="m-nav__link">
+                            <a href="{{url('/management')}}" class="m-nav__link">
                                 <span class="m-nav__link-text">
                                     Dashboard
                                 </span>
@@ -48,9 +50,9 @@
                             -
                         </li>
                         <li class="m-nav__item">
-                            <a href="" class="m-nav__link">
+                            <a href="{{url('management/careers')}}" class="m-nav__link">
                                 <span class="m-nav__link-text">
-                                    Applications
+                                    Careers
                                 </span>
                             </a>
                         </li>
@@ -150,22 +152,23 @@
                     <div class="m-portlet__head-caption">
                         <div class="m-portlet__head-title">
                             <h3 class="m-portlet__head-text">
-                                Latest Applications
+                                Create New Career
                             </h3>
                         </div>
                     </div>
                     <div class="m-portlet__head-tools">
-                        {{--<ul class="m-portlet__nav">
+                        <ul class="m-portlet__nav">
                             <li class="m-portlet__nav-item">
-                                <a href="#" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
+                                {{--<a href="{{url('management/careers/create')}}" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
                                     <span>
-                                        <i class="la la-cart-plus"></i>
+                                        <i class="la la-plus"></i>
                                         <span>
-                                            New Record
+                                            New Career
                                         </span>
                                     </span>
-                                </a>
+                                </a>--}}
                             </li>
+
                             <li class="m-portlet__nav-item"></li>
                             <li class="m-portlet__nav-item">
                                 <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
@@ -175,7 +178,7 @@
 
                                     <!------ Actions Menu -->
 
-                                    --}}{{--<div class="m-dropdown__wrapper">
+                                    <div class="m-dropdown__wrapper">
                                         <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
                                         <div class="m-dropdown__inner">
                                             <div class="m-dropdown__bodmy">
@@ -241,98 +244,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>--}}{{--
+                                    </div>
 
                                 </div>
                             </li>
-                        </ul>--}}
+                        </ul>
                     </div>
                 </div>
                 <div class="m-portlet__body">
                     <!--begin: Datatable -->
-                    <table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
-                        <thead>
-                        <tr>
-                            <th>
-                                ID
-                            </th>
-                            <th>
-                                Student Name
-                            </th>
-                            <th>
-                                App Code
-                            </th>
-                            <th>
-                                Date of Birth
-                            </th>
-                            <th>
-                                Age
-                            </th>
-                            <th>
-                                Gender
-                            </th>
-                            <th>
-                                Program
-                            </th>
-                            <th>
-                                Religion
-                            </th>
-                            <th>
-                                Status
-                            </th>
-                            <th>
-                                Date
-                            </th>
-                            <th>
-                                Actions
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                Ahmed Mustafa
-                            </td>
-                            <td>
-                                61715-075
-                            </td>
-                            <td>
-                                31/7/1993
-                            </td>
-                            <td>
-                                7 Years
-                            </td>
-                            <td>
-                                Male
-                            </td>
-                            <td>
-                                American
-                            </td>
-                            <td>
-                                Muslim
-                            </td>
-                            <td>
-                                2/12/2018
-                            </td>
-                            <td>
-                                <span class="m-badge m-badge--brand m-badge--wide">Pending</span>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-row justify-content-between">
-                                    <button type="button" class="btn m-btn--square  btn-outline-danger">
-                                        <i class="fa fa-trash"></i>
-                                    </button>
-                                    <button type="button" class="btn m-btn--square  btn-outline-primary">
-                                        <i class="fa fa-pencil"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+
                 </div>
             </div>
             <!-- END EXAMPLE TABLE PORTLET-->

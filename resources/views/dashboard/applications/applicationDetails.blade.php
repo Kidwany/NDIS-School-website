@@ -9,7 +9,7 @@
             <div class="d-flex align-items-center">
                 <div class="mr-auto">
                     <h3 class="m-subheader__title ">
-                        My Profile
+                        Application Details
                     </h3>
                 </div>
                 <div>
@@ -79,7 +79,7 @@
         <!-- END: Subheader -->
         <div class="m-content">
             <div class="row">
-                <div class="col-xl-3 col-lg-4">
+                {{--<div class="col-xl-3 col-lg-4">
                     <div class="m-portlet m-portlet--full-height  ">
                         <div class="m-portlet__body">
                             <div class="m-card-profile">
@@ -221,26 +221,52 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-9 col-lg-8">
+                </div>--}}
+                <div class="col-xl-12 col-lg-12">
                     <div class="m-portlet m-portlet--full-height m-portlet--tabs  ">
                         <div class="m-portlet__head">
                             <div class="m-portlet__head-tools">
                                 <ul class="nav nav-tabs m-tabs m-tabs-line   m-tabs-line--left m-tabs-line--primary" role="tablist">
                                     <li class="nav-item m-tabs__item">
-                                        <a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_user_profile_tab_1" role="tab">
+                                        <a class="nav-link m-tabs__link active" data-toggle="tab" href="#all_app_info" role="tab">
                                             <i class="flaticon-share m--hide"></i>
-                                            Update Profile
+                                            All Info
                                         </a>
                                     </li>
                                     <li class="nav-item m-tabs__item">
-                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_user_profile_tab_2" role="tab">
-                                            Messages
+                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#student_data" role="tab">
+                                            <i class="flaticon-share m--hide"></i>
+                                            Student Info
                                         </a>
                                     </li>
                                     <li class="nav-item m-tabs__item">
-                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_user_profile_tab_3" role="tab">
-                                            Settings
+                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#father_data" role="tab">
+                                            Father Data
+                                        </a>
+                                    </li>
+                                    <li class="nav-item m-tabs__item">
+                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#mother_data" role="tab">
+                                            Mother Data
+                                        </a>
+                                    </li>
+                                    <li class="nav-item m-tabs__item">
+                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#emergency_data" role="tab">
+                                            Emergency
+                                        </a>
+                                    </li>
+                                    <li class="nav-item m-tabs__item">
+                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#other_children" role="tab">
+                                            Other Children
+                                        </a>
+                                    </li>
+                                    <li class="nav-item m-tabs__item">
+                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#previous_schools" role="tab">
+                                            Previous Schools
+                                        </a>
+                                    </li>
+                                    <li class="nav-item m-tabs__item">
+                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#additional_info" role="tab">
+                                            Additional Info
                                         </a>
                                     </li>
                                 </ul>
@@ -252,6 +278,8 @@
                                             <a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
                                                 <i class="la la-gear"></i>
                                             </a>
+
+                                            <!-- END: Side Menu -->
                                             <div class="m-dropdown__wrapper">
                                                 <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
                                                 <div class="m-dropdown__inner">
@@ -259,53 +287,53 @@
                                                         <div class="m-dropdown__content">
                                                             <ul class="m-nav">
                                                                 <li class="m-nav__section m-nav__section--first">
-                                                                                    <span class="m-nav__section-text">
-                                                                                        Quick Actions
-                                                                                    </span>
+                                                                    <span class="m-nav__section-text">
+                                                                        Quick Actions
+                                                                    </span>
                                                                 </li>
                                                                 <li class="m-nav__item">
                                                                     <a href="" class="m-nav__link">
                                                                         <i class="m-nav__link-icon flaticon-share"></i>
                                                                         <span class="m-nav__link-text">
-                                                                                            Create Post
-                                                                                        </span>
+                                                                            Create Post
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                                 <li class="m-nav__item">
                                                                     <a href="" class="m-nav__link">
                                                                         <i class="m-nav__link-icon flaticon-chat-1"></i>
                                                                         <span class="m-nav__link-text">
-                                                                                            Send Messages
-                                                                                        </span>
+                                                                            Send Messages
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                                 <li class="m-nav__item">
                                                                     <a href="" class="m-nav__link">
                                                                         <i class="m-nav__link-icon flaticon-multimedia-2"></i>
                                                                         <span class="m-nav__link-text">
-                                                                                            Upload File
-                                                                                        </span>
+                                                                            Upload File
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                                 <li class="m-nav__section">
-                                                                                    <span class="m-nav__section-text">
-                                                                                        Useful Links
-                                                                                    </span>
+                                                                    <span class="m-nav__section-text">
+                                                                        Useful Links
+                                                                    </span>
                                                                 </li>
                                                                 <li class="m-nav__item">
                                                                     <a href="" class="m-nav__link">
                                                                         <i class="m-nav__link-icon flaticon-info"></i>
                                                                         <span class="m-nav__link-text">
-                                                                                            FAQ
-                                                                                        </span>
+                                                                            FAQ
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                                 <li class="m-nav__item">
                                                                     <a href="" class="m-nav__link">
                                                                         <i class="m-nav__link-icon flaticon-lifebuoy"></i>
                                                                         <span class="m-nav__link-text">
-                                                                                            Support
-                                                                                        </span>
+                                                                            Support
+                                                                        </span>
                                                                     </a>
                                                                 </li>
                                                                 <li class="m-nav__separator m-nav__separator--fit m--hide"></li>
@@ -325,157 +353,47 @@
                             </div>
                         </div>
                         <div class="tab-content">
-                            <div class="tab-pane active" id="m_user_profile_tab_1">
-                                <form class="m-form m-form--fit m-form--label-align-right">
-                                    <div class="m-portlet__body">
-                                        <div class="form-group m-form__group m--margin-top-10 m--hide">
-                                            <div class="alert m-alert m-alert--default" role="alert">
-                                                The example form below demonstrates common HTML form elements that receive updated styles from Bootstrap with additional classes.
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <div class="col-10 ml-auto">
-                                                <h3 class="m-form__section">
-                                                    1. Personal Details
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                Full Name
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="Mark Andre">
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                Occupation
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="CTO">
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                Company Name
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="Keenthemes">
-                                                <span class="m-form__help">
-                                                                    If you want your invoices addressed to a company. Leave blank to use your full name.
-                                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                Phone No.
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="+456669067890">
-                                            </div>
-                                        </div>
-                                        <div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>
-                                        <div class="form-group m-form__group row">
-                                            <div class="col-10 ml-auto">
-                                                <h3 class="m-form__section">
-                                                    2. Address
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                Address
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="L-12-20 Vertex, Cybersquare">
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                City
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="San Francisco">
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                State
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="California">
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                Postcode
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="45000">
-                                            </div>
-                                        </div>
-                                        <div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>
-                                        <div class="form-group m-form__group row">
-                                            <div class="col-10 ml-auto">
-                                                <h3 class="m-form__section">
-                                                    3. Social Links
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                Linkedin
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="www.linkedin.com/Mark.Andre">
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                Facebook
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="www.facebook.com/Mark.Andre">
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                Twitter
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="www.twitter.com/Mark.Andre">
-                                            </div>
-                                        </div>
-                                        <div class="form-group m-form__group row">
-                                            <label for="example-text-input" class="col-2 col-form-label">
-                                                Instagram
-                                            </label>
-                                            <div class="col-7">
-                                                <input class="form-control m-input" type="text" value="www.instagram.com/Mark.Andre">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="m-portlet__foot m-portlet__foot--fit">
-                                        <div class="m-form__actions">
-                                            <div class="row">
-                                                <div class="col-2"></div>
-                                                <div class="col-7">
-                                                    <button type="reset" class="btn btn-accent m-btn m-btn--air m-btn--custom">
-                                                        Save changes
-                                                    </button>
-                                                    &nbsp;&nbsp;
-                                                    <button type="reset" class="btn btn-secondary m-btn m-btn--air m-btn--custom">
-                                                        Cancel
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                            <!-- Begin: All Info Data -->
+                            <div class="tab-pane active" id="all_app_info">
+                                <!-- Begin: Student Data -->
+                                @include('dashboard.applications.applicationComponents.all_info')
+
                             </div>
-                            <div class="tab-pane " id="m_user_profile_tab_2"></div>
-                            <div class="tab-pane " id="m_user_profile_tab_3"></div>
+                            <!-- End: All Info Data -->
+                            <!-- Begin: Student Data -->
+                            <div class="tab-pane" id="student_data">
+                                @include('dashboard.applications.applicationComponents.student')
+                            </div>
+                            <!-- End: Student Data -->
+                            <!-- Begin: Father Data -->
+                            <div class="tab-pane " id="father_data">
+                                @include('dashboard.applications.applicationComponents.father_info')
+                            </div>
+                            <!-- End: Father Data -->
+                            <!-- Begin: Mother Data -->
+                            <div class="tab-pane " id="mother_data">
+                                @include('dashboard.applications.applicationComponents.mother_info')                            </div>
+                            <!-- End: Mother Data -->
+                            <!-- Begin: Emergency Data -->
+                            <div class="tab-pane " id="emergency_data">
+                                @include('dashboard.applications.applicationComponents.emergency')
+                            </div>
+                            <!-- End: Emergency Data -->
+                            <!-- Begin: Other Children -->
+                            <div class="tab-pane " id="other_children">
+                                @include('dashboard.applications.applicationComponents.other_children')
+                            </div>
+                            <!-- End: Other Children -->
+                            <!-- Begin: Previous Schools -->
+                            <div class="tab-pane " id="previous_schools">
+                                @include('dashboard.applications.applicationComponents.previous_school')
+                            </div>
+                            <!-- End: Previous Schools -->
+                            <!-- Begin: Additional Info -->
+                            <div class="tab-pane " id="additional_info">
+                                @include('dashboard.applications.applicationComponents.additional_info')
+                            </div>
+                            <!-- End: Additional Info -->
                         </div>
                     </div>
                 </div>

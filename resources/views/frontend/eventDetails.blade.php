@@ -60,13 +60,18 @@
                             <img src="{{asset('website/img/event/event-1.jpg')}}" alt="">
                             <h3>New Year Festival for Student & Parents.</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dorepre enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu antium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem snesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                            <div class="event-gallery text-center mt-40">
+
+
+
+                            {{--<div class="event-gallery text-center mt-40">
                                 <div class="event-gallery-active nav-style-3 owl-carousel">
-                                    <img src="assets/img/event/event-gallery-1.jpg" alt="">
-                                    <img src="assets/img/event/event-gallery-2.jpg" alt="">
+                                    <img src="{{asset('website/img/event/christmas-1.jpg')}}" alt="">
+                                    <img src="{{asset('website/img/event/christmas-2.jpg')}}" alt="">
+                                    <img src="{{asset('website/img/event/christmas-3.jpg')}}" alt="">
+                                    <img src="{{asset('website/img/event/christmas-4.jpg')}}" alt="">
                                 </div>
                                 <h4>View Our Event Gallery</h4>
-                            </div>
+                            </div>--}}
 {{--
                             <div class="seat-book-wrap bg-img mt-80 " style="background-image:url(assets/img/event/seat-book.jpg);">
                                 <div class="seat-book-title text-center">
@@ -97,9 +102,9 @@
                                 </div>
                             </div>
 --}}
-                            <div class="location-area mt-80">
+                            {{--<div class="location-area mt-80">
                                 <div id="location"></div>
-                            </div>
+                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -220,6 +225,40 @@
                         </div>--}}
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="course-area bg-img pt-60 pb-10">
+        <div class="container">
+            <div class="section-title mb-75">
+                <h2> <span>Event</span> Gallery</h2>
+            </div>
+            <div class="course-slider-active nav-style-1 owl-carousel">
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="#"><img class="animated" src="{{asset('website/img/event/christmas-1.png')}}" alt=""></a>
+                    </div>
+                </div>
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="#"><img class="animated" src="{{asset('website/img/event/christmas-2.png')}}" alt=""></a>
+                    </div>
+                </div>
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="#"><img class="animated" src="{{asset('website/img/event/christmas-1.png')}}" alt=""></a>
+                    </div>
+                </div>
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="#"><img class="animated" src="{{asset('website/img/event/christmas-1.png')}}" alt=""></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
