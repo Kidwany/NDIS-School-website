@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Dataprotection extends Model  {
+class AppMoredetails extends Model  {
 
     
 
@@ -13,15 +13,15 @@ class Dataprotection extends Model  {
      *
      * @var string
      */
-    protected $primaryKey = 'DPID';
-    protected $table = 'dataprotection';
+    protected $primaryKey = 'MRID';
+    protected $table = 'app_moredetails';
 
     /**
      * Attributes that should be mass-assignable.
      *
      * @var array
      */
-    protected $fillable = ['DPID', 'fristname','lastname','phone', 'Email', 'APPID'];
+    protected $fillable = ['MRID', 'diagnostictestdate', 'parentmeeting', 'assessmentdate', 'diagnostictestresult', 'assessmentresult', 'APPID', 'created_at', 'updated_at'];
 
     /**
      * The attributes excluded from the model's JSON form.

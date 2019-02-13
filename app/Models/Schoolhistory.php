@@ -21,7 +21,7 @@ class Schoolhistory extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['SHID', 'PreviousSchool', 'Grade', 'Curriculum', 'SchoolLocation', 'YearsAttended', 'skippedagrade', ' learningsupport', 'acceleratedprogram', 'APPID'];
+    protected $fillable = ['SHID', 'PreviousSchool', 'GID', 'Curriculum', 'SchoolLocation', 'YearsAttended', 'skippedagrade', ' learningsupport', 'acceleratedprogram', 'APPID'];
 
     /**
      * The attributes excluded from the model's JSON form.

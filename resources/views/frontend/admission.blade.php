@@ -60,6 +60,16 @@
 
     <main>
         <div id="form_container">
+            {{--@if ($errors->any())--}}
+                {{--<div class="alert alert-danger">--}}
+                    {{--<ul>--}}
+                        {{--@foreach ($errors->all() as $error)--}}
+                            {{--<li>{{ $error }}</li>--}}
+                        {{--@endforeach--}}
+                    {{--</ul>--}}
+                {{--</div>--}}
+            {{--@endif--}}
+
             <div class="row">
                 <div class="col-lg-5">
                     <div id="left_form">
@@ -67,7 +77,7 @@
                         <h2 id="pic_info">
                             Student Information
                         </h2>
-                        <input id="stepnum" name="website" type="hidden" value="1">
+                        <input  id="stepnum" name="website" type="hidden" value="1">
                         <p class="step_desc">In this step you should enter your son/daughter information, Be-careful
                             during filling information .</p>
                         <a href="#0" id="more_info" data-toggle="modal" data-target="#more-info"><i
@@ -81,9 +91,9 @@
                             <div id="progressbar"></div>
                         </div>
                         <!-- /top-wizard -->
-                        <form name="example-1" id="wrapped" method="POST" class="stepper-form" action="{{ url('store') }}">
+                        <form name="example-1" id="wrapped" method="POST" class="stepper-form" action="{{url('store')}}">
                             @csrf
-                            <input id="website" name="website" type="text" value="">
+                          <input id="website" name="website" type="text" value="">
                             <!-- Leave for security protection, read docs for details -->
                             <div id="middle-wizard">
 
@@ -94,7 +104,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="applicationfullname">Student full name</label>
-                                                <input type="text" name="applicationfullname" class="form-control required"
+                                              <input type="text" name="applicationfullname" class="form-control required"
                                                        placeholder="Full Name" id="applicationfullname">
                                             </div>
                                         </div>
@@ -102,8 +112,8 @@
                                             <div class="form-group">
                                                 <label for="father_nationality">Applying for grade</label>
                                                 <select class="form-control required" name="GID"
-                                                        id="father_nationality">
-                                                    <option selected>Choose Grade</option>
+                                                        id="father_nationality"  required >
+                                                    <option value="" selected>Choose Grade</option>
                                                     @if(count($int['gr']))
                                                         @foreach($int['gr'] as $key)
                                                             <option value="{{$key->GID}}">{{$key->Gradename}}</option>
@@ -121,7 +131,7 @@
                                             <div class="form-group">
                                                 <label for="religion">Religion</label>
                                                 <select class="form-control required" name="RLID" id="religion">
-                                                    <option selected>Choose Religion</option>
+                                                    <option value="" selected>Choose Religion</option>
                                                     @if(count($int['rel']))
                                                         @foreach($int['rel'] as $key)
                                                             <option value="{{$key->RLID}}">{{$key->Religionname}}</option>
@@ -136,7 +146,7 @@
                                                 <label for="father_nationality">Student Nationality</label>
                                                 <select class="form-control required" name="NID"
                                                         id="father_nationality">
-                                                    <option selected>Choose Country</option>
+                                                    <option value="" selected>Choose Country</option>
                                                     @if(count($int['nat']))
                                                         @foreach($int['nat'] as $key)
                                                             <option value="{{$key->NID}}">{{$key->Nationalityname}}</option>
@@ -154,7 +164,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="address">Bus Address</label>
-                                                <input type="text" name="applicationbusaddress" class="form-control "
+                                              <input type="text" name="applicationbusaddress" class="form-control required"
                                                        placeholder="Bus Address" id="address">
                                             </div>
                                         </div>
@@ -164,7 +174,7 @@
                                                 <div class="d-flex">
                                                     <!-- /year -->
                                                     <select class="form-control required" name="year">
-                                                        <option selected>Year</option>
+                                                        <option value="" selected>Year</option>
                                                         <option>2002</option>
                                                         <option>2003</option>
                                                         <option>2004</option>
@@ -179,7 +189,7 @@
 
                                                     <!-- /month -->
                                                     <select class="form-control required" name="month">
-                                                        <option selected>Month</option>
+                                                        <option value="" selected>Month</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
@@ -196,7 +206,7 @@
 
                                                     <!-- /day -->
                                                     <select class="form-control required" name="day">
-                                                        <option selected>Day</option>
+                                                        <option value="" selected>Day</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
@@ -242,7 +252,7 @@
                                             <label for="gender">Gender</label>
                                             <select class="form-control required" name="GNID"
                                                     id="gender">
-                                                <option selected>Choose gender</option>
+                                                <option value="" selected>Choose gender</option>
                                                 @if(count($int['gen']))
                                                     @foreach($int['gen'] as $key)
                                                         <option value="{{$key->GNID}}">{{$key->Gendername}}</option>
@@ -256,7 +266,7 @@
                                             <label for="gender">Section</label>
                                             <select class="form-control required" name="stusection"
                                                     id="gender">
-                                                <option selected>Choose Section</option>
+                                                <option value="" selected>Choose Section</option>
                                                 <option value="British">British</option>
                                                 <option value="American">American</option>
 
@@ -268,7 +278,7 @@
                                             <label for="gender">Second Language</label>
                                             <select class="form-control required" name="stusecondlang"
                                                     id="gender">
-                                                <option selected>Choose Language</option>
+                                                <option value="" selected>Choose Language</option>
 
                                                         <option value="French">French</option>
                                                         <option value="German">German</option>
@@ -289,7 +299,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="father_fullname">Father Fullname.</label>
-                                                <input type="text" name="father_fullname" class="form-control "
+                                              <input type="text" name="father_fullname" class="form-control required"
                                                        placeholder="Father Fullname"
                                                        id="father_fullname">
                                             </div>
@@ -299,7 +309,7 @@
                                                 <label for="father_nationality">Nationality</label>
                                                 <select class="form-control required" name="father_nationality"
                                                         id="father_nationality">
-                                                    <option selected>Choose Country</option>
+                                                    <option value="" selected>Choose Country</option>
                                                     @if(count($int['nat']))
                                                         @foreach($int['nat'] as $key)
                                                             <option value="{{$key->NID}}">{{$key->Nationalityname}}</option>
@@ -319,14 +329,14 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="father_email">Email</label>
-                                                <input type="email" name="father_email" class="form-control "
+                                              <input type="email" name="father_email" class="form-control required"
                                                        placeholder="Father's Email" id="father_email">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="father_phone">Phone</label>
-                                                <input type="number" name="father_phone" class="form-control required"
+                                              <input type="number" name="father_phone" class="form-control required"
                                                        placeholder="Father's Phone" id="father_phone">
                                             </div>
                                         </div>
@@ -339,7 +349,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="employer">Company Name</label>
-                                                <input type="text" name="fathercompany" class="form-control "
+                                              <input type="text" name="fathercompany" class="form-control "
                                                        placeholder="Enter Company name" id="employer">
                                             </div>
                                         </div>
@@ -349,7 +359,7 @@
                                             <div class="form-group">
                                                 <label for="job">Job</label>
                                                 <select class="form-control required" name="fatherjob" id="job">
-                                                    <option selected>Choose a Job</option>
+                                                    <option value="" selected>Choose a Job</option>
                                                     @if(count($int['ocp']))
                                                         @foreach($int['ocp'] as $key)
                                                             <option value="{{$key->OID}}">{{$key->Occupationname}}</option>
@@ -373,7 +383,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="mother_fullname">Mother Fullname.</label>
-                                                <input type="text" name="mother_fullname" class="form-control "
+                                              <input type="text" name="mother_fullname" class="form-control "
                                                        placeholder="Mother Fullname"
                                                        id="mother_fullname">
                                             </div>
@@ -383,7 +393,7 @@
                                                 <label for="mother_nationality">Nationality</label>
                                                 <select class="form-control required" name="mother_nationality"
                                                         id="mother_nationality">
-                                                    <option selected>Choose Country</option>
+                                                    <option value="" selected>Choose Country</option>
                                                     @if(count($int['nat']))
                                                         @foreach($int['nat'] as $key)
                                                             <option value="{{$key->NID}}">{{$key->Nationalityname}}</option>
@@ -401,7 +411,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="mother_phone">Phone</label>
-                                                <input type="number" name="mother_phone" class="form-control "
+                                              <input type="number" name="mother_phone" class="form-control "
                                                        placeholder="Mother's Phone" id="mother_phone">
                                             </div>
                                         </div>
@@ -409,7 +419,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="mother_email">Email</label>
-                                                <input type="email" name="mother_email" class="form-control "
+                                              <input type="email" name="mother_email" class="form-control "
                                                        placeholder="Mother's Email" id="mother_email">
                                             </div>
                                         </div>
@@ -423,7 +433,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="mother_company">Company Name</label>
-                                                <input type="text" name="mother_company" class="form-control "
+                                              <input type="text" name="mother_company" class="form-control "
                                                        placeholder="Enter Company name" id="mother_company">
                                             </div>
                                         </div>
@@ -433,7 +443,7 @@
                                             <div class="form-group">
                                                 <label for="mother_job">Job</label>
                                                 <select class="form-control required" name="mother_job" id="mother_job">
-                                                    <option selected>Choose a Job</option>
+                                                    <option value="" selected>Choose a Job</option>
                                                     @if(count($int['ocp']))
                                                         @foreach($int['ocp'] as $key)
                                                             <option value="{{$key->OID}}">{{$key->Occupationname}}</option>
@@ -462,7 +472,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="emergency_first_name">First Person Name</label>
-                                                <input type="text" name="emergency_first_name" class="form-control "
+                                              <input type="text" name="emergency_first_name" class="form-control "
                                                        placeholder="First Person Name" id="emergency_first_name">
                                             </div>
                                         </div>
@@ -470,7 +480,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="first_person_relation">Relation to Child</label>
-                                                <input type="text" name="first_person_relation" class="form-control "
+                                              <input type="text" name="first_person_relation" class="form-control "
                                                        placeholder="First Person Relation To Child"
                                                        id="first_person_relation">
                                             </div>
@@ -484,7 +494,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="emergency_first_mobile">First Person Mobile</label>
-                                                <input type="number" name="emergency_first_mobile" class="form-control "
+                                              <input type="number" name="emergency_first_mobile" class="form-control "
                                                        placeholder="First Person Phone Number"
                                                        id="emergency_first_mobile">
                                             </div>
@@ -493,7 +503,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="emergency_first_home_no">First Person Home No</label>
-                                                <input type="text" name="emergency_first_home_no" class="form-control "
+                                              <input type="text" name="emergency_first_home_no" class="form-control "
                                                        placeholder="First Person Home Number"
                                                        id="emergency_first_home_no">
                                             </div>
@@ -509,7 +519,7 @@
                                         {{--<div class="col-md-6">--}}
                                             {{--<div class="form-group">--}}
                                                 {{--<label for="emergency_second_name">Second Person Name</label>--}}
-                                                {{--<input type="text" name="emergency_second_name" class="form-control "--}}
+                                                {{--<input value="old" type="text" name="emergency_second_name" class="form-control "--}}
                                                        {{--placeholder="Second Person Name" id="emergency_second_name">--}}
                                             {{--</div>--}}
                                         {{--</div>--}}
@@ -517,7 +527,7 @@
                                         {{--<div class="col-md-6">--}}
                                             {{--<div class="form-group">--}}
                                                 {{--<label for="second_person_relation">Relation to Child</label>--}}
-                                                {{--<input type="text" name="second_person_relation" class="form-control "--}}
+                                                {{--<input value="old" type="text" name="second_person_relation" class="form-control "--}}
                                                        {{--placeholder="Second Person Relation To Child"--}}
                                                        {{--id="second_person_relation">--}}
                                             {{--</div>--}}
@@ -531,7 +541,7 @@
                                         {{--<div class="col-md-6">--}}
                                             {{--<div class="form-group">--}}
                                                 {{--<label for="emergency_second_mobile">Second Person Mobile</label>--}}
-                                                {{--<input type="number" name="emergency_second_mobile"--}}
+                                                {{--<input value="old" type="number" name="emergency_second_mobile"--}}
                                                        {{--class="form-control " placeholder="Second Person Phone Number"--}}
                                                        {{--id="emergency_second_mobile">--}}
                                             {{--</div>--}}
@@ -540,7 +550,7 @@
                                         {{--<div class="col-md-6">--}}
                                             {{--<div class="form-group">--}}
                                                 {{--<label for="emergency_second_home_no">Second Person Home No</label>--}}
-                                                {{--<input type="text" name="emergency_second_home_no" class="form-control "--}}
+                                                {{--<input value="old" type="text" name="emergency_second_home_no" class="form-control "--}}
                                                        {{--placeholder="Second Person Home Number"--}}
                                                        {{--id="emergency_second_home_no">--}}
                                             {{--</div>--}}
@@ -559,14 +569,14 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="child1_name">Child Name</label>
-                                                <input type="text" name="child1_name" class="form-control "
+                                              <input type="text" name="child1_name" class="form-control "
                                                        placeholder="Enter Chile Name" id="child1_name">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="child1_age">Child Age</label>
-                                                <input type="number" name="child1_age" class="form-control "
+                                              <input type="number" name="child1_age" class="form-control "
                                                        placeholder="Enter Child Age" min="1" max="60" id="child1_age">
                                             </div>
                                         </div>
@@ -577,7 +587,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="child1_school">School/University Name</label>
-                                                <input type="text" name="child1_school" class="form-control "
+                                              <input type="text" name="child1_school" class="form-control "
                                                        placeholder="Enter Child School or University"
                                                        id="child1_school">
                                             </div>
@@ -586,7 +596,7 @@
                                             <label for="gender">Gender</label>
                                             <select class="form-control required" name="othergender"
                                                     id="gender">
-                                                <option selected>Choose gender</option>
+                                                <option value="" selected>Choose gender</option>
                                                 @if(count($int['gen']))
                                                     @foreach($int['gen'] as $key)
                                                         <option value="{{$key->GNID}}">{{$key->Gendername}}</option>
@@ -606,14 +616,14 @@
                                         {{--<div class="col-md-6">--}}
                                             {{--<div class="form-group">--}}
                                                 {{--<label for="child2_name">Child Name</label>--}}
-                                                {{--<input type="text" name="child1_name" class="form-control "--}}
+                                                {{--<input value="old" type="text" name="child1_name" class="form-control "--}}
                                                        {{--placeholder="Enter Chile Name" id="child2_name">--}}
                                             {{--</div>--}}
                                         {{--</div>--}}
                                         {{--<div class="col-md-6">--}}
                                             {{--<div class="form-group">--}}
                                                 {{--<label for="child1_age">Child Age</label>--}}
-                                                {{--<input type="number" name="child2_age" class="form-control "--}}
+                                                {{--<input value="old" type="number" name="child2_age" class="form-control "--}}
                                                        {{--placeholder="Enter Child Age" min="1" max="60" id="child2_age">--}}
                                             {{--</div>--}}
                                         {{--</div>--}}
@@ -624,7 +634,7 @@
                                         {{--<div class="col-md-6">--}}
                                             {{--<div class="form-group">--}}
                                                 {{--<label for="child1_school">School/University Name</label>--}}
-                                                {{--<input type="text" name="child2_school" class="form-control "--}}
+                                                {{--<input value="old" type="text" name="child2_school" class="form-control "--}}
                                                        {{--placeholder="Enter Chile School or University"--}}
                                                        {{--id="child2_school">--}}
                                             {{--</div>--}}
@@ -634,12 +644,12 @@
                                             {{--<div class="form-group">--}}
 
                                                 {{--<div class="form-check form-check-inline">--}}
-                                                    {{--<input class="form-check-input" type="radio"--}}
+                                                    {{--<input value="old" class="form-check-input" type="radio"--}}
                                                            {{--name="inlineRadioOptions" id="inlineRadio1" value="male">--}}
                                                     {{--<label class="form-check-label" for="inlineRadio1">Male</label>--}}
                                                 {{--</div>--}}
                                                 {{--<div class="form-check form-check-inline">--}}
-                                                    {{--<input class="form-check-input" type="radio"--}}
+                                                    {{--<input value="old" class="form-check-input" type="radio"--}}
                                                            {{--name="inlineRadioOptions" id="inlineRadio2" value="female">--}}
                                                     {{--<label class="form-check-label" for="inlineRadio2">Female</label>--}}
                                                 {{--</div>--}}
@@ -660,7 +670,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="school1_name">School\Nursery Name</label>
-                                                <input type="text" name="school1_name" class="form-control "
+                                              <input type="text" name="school1_name" class="form-control "
                                                        placeholder="Enter Previous School Name" id="school1_name">
                                             </div>
                                         </div>
@@ -675,7 +685,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="curriculum1">Curriculum</label>
-                                                <input type="text" name="curriculum1" class="form-control "
+                                              <input type="text" name="curriculum1" class="form-control "
                                                        placeholder="Enter The Curriculum of School" id="curriculum1">
                                             </div>
                                         </div>
@@ -683,8 +693,8 @@
                                             <div class="form-group">
                                                 <label for="father_nationality">grade</label>
                                                 <select class="form-control required" name="stu_grade2"
-                                                        id="father_nationality">
-                                                    <option selected>Choose Grade</option>
+                                                        id="father_nationality" required>
+                                                    <option value="" selected>Choose Grade</option>
                                                     @if(count($int['gr']))
                                                         @foreach($int['gr'] as $key)
                                                             <option value="{{$key->GID}}">{{$key->Gradename}}</option>
@@ -710,7 +720,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="child_hobbies">Tell us More About Your Child</label>
-                                                <textarea type="text" name="child_hobbies1" class="form-control "
+                                              <textarea   type="text" name="child_hobbies1" class="form-control "
                                                           placeholder="Tell Us More About Your Child Hobbies, Interests, etc..."
                                                           id="child_hobbies"
                                                           style="resize: none; height: 70px"></textarea>
@@ -725,7 +735,7 @@
                                             <div class="form-group">
                                                 <label for="prstatus">Parent status</label>
                                                 <select class="form-control required" name="PRSID" id="prstatus">
-                                                    <option selected>Choose one</option>
+                                                    <option value="" selected>Choose one</option>
                                                     @if(count($int['pr']))
                                                         @foreach($int['pr'] as $key)
                                                             <option value="{{$key->PRSID}}">{{$key->status}}</option>
@@ -746,13 +756,13 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" name="firstname" class="form-control required"
+                                              <input type="text" name="firstname" class="form-control required"
                                                        placeholder="First name">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" name="lastname" class="form-control required"
+                                              <input type="text" name="lastname" class="form-control required"
                                                        placeholder="Last name">
                                             </div>
                                         </div>
@@ -762,13 +772,13 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="email" name="email" class="form-control required"
+                                              <input type="email" name="email" class="form-control required"
                                                        placeholder="Your Email">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" name="telephone" class="form-control"
+                                              <input type="text" name="telephone" class="form-control"
                                                        placeholder="Your Telephone">
                                             </div>
                                         </div>
@@ -778,7 +788,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group terms">
-                                                {{--<input name="terms" type="checkbox" class="icheck " value="yes">--}}
+                                                {{--<input value="old" name="terms" type="checkbox" class="icheck " value="yes">--}}
                                                 {{--<label>Please accept <a href="#" data-toggle="modal"--}}
                                                                         {{--data-target="#terms-txt">terms and--}}
                                                         {{--conditions</a> ?</label>--}}

@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
 use App\Classes\MainCore;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Validator;
 
 class PagesController extends Controller
 {
@@ -118,16 +120,24 @@ class PagesController extends Controller
     {
         return view('frontend.academics');
     }
+
     /**
      * This Function returns save applications form
      *
      */
     public function storeappform(Request $request)
     {
+
+        $this->validate($request, [
+            'GID' => 'required|int',
+
+        ],[],[
+            'GID'=>'test'
+        ]);
         //save students information
         //studentName - stu_grade - stureligion - stu_nationality -
-        // busaddress - year - month - day - stugender - stusection -
-        // stusecondlang
+        //busaddress - year - month - day - stugender - stusection -
+        //stusecondlang
 
         $data = $request->all();
         $d = $data['year'] . '-' . $data['month'] . '-' . $data['day'];
@@ -162,7 +172,7 @@ class PagesController extends Controller
         $app->NID = $request->input('NID');
         $app->GNID = $request->input('GNID');
         $app->PRSID = $request->input('PRSID');
-        if($app->save()){
+        if ($app->save()) {
             $APPID = $app->APPID;
         }
         //save father information
@@ -180,14 +190,69 @@ class PagesController extends Controller
         $parent->PRID = 4;
         $parent->save();
         //mother_fullname - mother_nationality - mother_phone - mother_email - mother_company - mother_job
+        $parent->FullName = $request->input('mother_fullname');
+        $parent->Phone = $request->input('mother_phone');
+        $parent->Company = $request->input('mother_company');
+        $parent->email = $request->input('mother_email');
+        $parent->OID = $request->input('mother_job');
+        $parent->APPID = $APPID;
+        $parent->NID = $request->input('mother_nationality');
+        $parent->PRID = 5;
+        $parent->save();
         //emergency_first_name - first_person_relation - emergency_first_mobile - emergency_first_home_no
+        //['EMID', 'Name', 'Relationtochild', 'HomeTel',
+        // 'Mobile', 'Other', 'APPID'];
+        $emrgncy = new Models\Emergency();
+        $emrgncy->Name = $request->input('emergency_first_name');
+        $emrgncy->Relationtochild = $request->input('first_person_relation');
+        $emrgncy->HomeTel = $request->input('emergency_first_home_no');
+        $emrgncy->Mobile = $request->input('emergency_first_mobile');
+        $emrgncy->APPID = $APPID;
+        $emrgncy->save();
         //child1_name - child1_age - child1_school - othergender
+        //['FCID', 'familychildname', 'familychildage', 'familychildschool'
+        //, 'APPID', 'GNID'];
+        $child = new Models\Familychild();
+        $child->familychildname = $request->input('child1_name');
+        $child->familychildage = $request->input('child1_age');
+        $child->familychildschool = $request->input('child1_school');
+        $child->APPID = $APPID;
+        $child->GNID = $request->input('othergender');
+        $child->save();
         //school1_name - curriculum1 - stu_grade2
+        //['SHID', 'PreviousSchool', 'Grade', 'Curriculum', 'SchoolLocation', 'YearsAttended',
+        // 'skippedagrade', ' learningsupport',
+        // 'acceleratedprogram', 'APPID'];
+        $schoolhistroy = new Models\Schoolhistory();
+        $schoolhistroy->PreviousSchool = $request->input('school1_name');
+        $schoolhistroy->GID = $request->input('stu_grade2');
+        $schoolhistroy->Curriculum = $request->input('curriculum1');
+        $schoolhistroy->APPID = $APPID;
+        $schoolhistroy->save();
         //child_hobbies - child_hobbies - prstatus
+        //['ADID', 'LNID', 'interests',
+        // 'Why', 'hearabout', 'APPID'];
+        $addinfo = new Models\Additionalinfo();
+        $addinfo->interests = $request->input('child_hobbies1');
+        $addinfo->APPID = $APPID;
+        $addinfo->save();
         //firstname - lastname - email - telephone
+        //['DPID', 'Signature', 'Email', 'APPID'];
+        $datapro = new Models\Dataprotection();
+        $datapro->firstname = $request->input('firstname');
+        $datapro->lastname = $request->input('lastname');
+        $datapro->phone = $request->input('telephone');
+        $datapro->Email = $request->input('email');
+        $datapro->APPID = $APPID;
+        $datapro->save();
+        return redirect('thankyou')->with('appcode', $appcode);
 
 
-//        return $request;
+    }
+
+    public function thankyou()
+    {
+        return view('frontend.thankyou');
     }
 
     public function getview($table)
@@ -217,7 +282,6 @@ class PagesController extends Controller
     {
         return view('frontend.eventDetails');
     }
-
 
 
     public function filldata()

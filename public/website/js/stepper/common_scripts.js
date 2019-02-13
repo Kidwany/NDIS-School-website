@@ -13451,6 +13451,7 @@ Dual licensed under the MIT and GPLv2 licenses.
             if (!this.length) {
                 if (options && options.debug && window.console) {
                     console.warn("Nothing selected, can't validate, returning nothing.");
+
                 }
                 return;
             }

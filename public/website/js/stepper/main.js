@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+
 	"use strict";
 	var overlayNav = $('.cd-overlay-nav'),
 		overlayContent = $('.cd-overlay-content'),
@@ -87,4 +88,5 @@ jQuery(document).ready(function($){
 
 
 	/*================================================ Stepper Scripts Update ========================================*/
+
 });
