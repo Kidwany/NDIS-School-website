@@ -291,4 +291,16 @@ class PagesController extends Controller
     }
 
 
+    /**
+     * This Function returns School life Page
+     *
+     */
+    public function schoolLife()
+    {
+        return view('frontend.schoolLife');
+    }
+
+
+
+
 }

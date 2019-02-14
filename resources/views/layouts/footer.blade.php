@@ -38,7 +38,8 @@
                                 <li><a href="{{url('/about')}}">About Us</a></li>
                                 <li><a href="{{url('contact')}}">Contact</a></li>
                                 <li><a href="{{url('/admission')}}">Admission</a></li>
-                                <li><a href="{{url('/blog')}}">Blog</a></li>
+                                <li><a href="{{url('/events')}}">Events</a></li>
+                                <li><a href="{{url('/careers')}}">Careers</a></li>
                             </ul>
                         </div>
                     </div>
@@ -46,15 +47,14 @@
                 <div class="col-lg-2 col-md-3 col-sm-6">
                     <div class="footer-widget negative-mrg-30 mb-40">
                         <div class="footer-title">
-                            <h4>COURSES</h4>
+                            <h4>ADMISSION</h4>
                         </div>
                         <div class="footer-list">
                             <ul>
-                                <li><a href="#">Under Graduate Programmes </a></li>
-                                <li><a href="#">Graduate Programmes </a></li>
-                                <li><a href="#">Diploma Courses</a></li>
-                                <li><a href="#">Others Programmes</a></li>
-                                <li><a href="#">Short Courses</a></li>
+                                <li><a href="#">How to Apply </a></li>
+                                <li><a href="#">Fees Guide </a></li>
+                                <li><a href="#">Required Docs</a></li>
+                                <li><a href="#">Online Application</a></li>
                             </ul>
                         </div>
                     </div>

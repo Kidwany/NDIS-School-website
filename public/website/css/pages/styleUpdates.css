@@ -229,3 +229,8 @@
     height: 238px;
     overflow: hidden;
 }
+
+.course-slider-active.owl-carousel .owl-stage-outer
+{
+    padding-bottom: 25px !important;
+}
