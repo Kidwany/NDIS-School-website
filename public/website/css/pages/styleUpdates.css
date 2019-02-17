@@ -234,3 +234,16 @@
 {
     padding-bottom: 25px !important;
 }
+
+
+.career_container:nth-child(1),
+.career_container:nth-child(2)
+{
+    margin-top: 75px;
+}
+
+.career_container
+{
+    border: 1px solid #e4e4e4;
+    padding: 20px;
+}

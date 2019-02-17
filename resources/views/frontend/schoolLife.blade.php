@@ -21,11 +21,12 @@
     </div>
 
 
+
     <!-------- Lab, Zoo, Mosque, Tennis ------>
     <div class="course-area bg-img pt-100 pb-10" style="background-color: white">
         <div class="container">
             <div class="section-title mb-75">
-                <h2> <span>School</span> Life</h2>
+                <h2> <span>School</span> Facilities</h2>
                 <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
             </div>
             <div class="course-slider-active nav-style-1 owl-carousel">
@@ -40,7 +41,7 @@
                 </div>
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/zoo.png')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/mini_zoo.png')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4><a href="#">Zoo</a></h4>
@@ -58,7 +59,7 @@
                 </div>
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img')}}/course/course-1.jpg" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/tennis.png')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4><a href="#">Tennis</a></h4>

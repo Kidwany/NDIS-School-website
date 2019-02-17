@@ -100,7 +100,7 @@
         </div>
     </div>
 
-    {{--<!------ About Section ------>
+    <!------ About Section ------>
     <div class="about-us pt-130 pb-130">
         <div class="container">
             <div class="row">
@@ -119,14 +119,14 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="about-img default-overlay">
                         <img src="{{asset('website/img')}}/banner/banner-1.jpg" alt="">
-                        <a class="video-btn video-popup" href="https://www.youtube.com/watch?v=sv5hK4crIRc">
+                        <a class="video-btn video-popup" href="{{asset('website/img')}}/icon-img/Car rent.mp4">
                             <img class="animated" src="{{asset('website/img')}}/icon-img/video.png" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>--}}
+    </div>
 
     <!-- campus-area-start -->
     <div class="campus-area">

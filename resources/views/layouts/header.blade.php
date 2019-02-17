@@ -15,7 +15,7 @@
                         <ul>
                            {{-- <li><a href="login-register.html">Login</a></li>--}}
 
-                            <li><a href="{{url('login')}}">Login</a></li>
+                            <li><a href="{{url('signin')}}">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -45,9 +45,9 @@
                                         </ul>--}}
                                     </li>
                                     <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
-                                        {{--<ul class="submenu">
-                                            <li><a href="course.html">course page</a></li>
-                                            <li><a href="event.html">event page</a></li>
+                                        <ul class="submenu">
+                                            <li><a href="{{url('calendar')}}">Calendar</a></li>
+                                            {{--<li><a href="event.html">event page</a></li>
                                             <li><a href="shop.html">shop page</a></li>
                                             <li><a href="course-details.html">course details</a></li>
                                             <li><a href="event-details.html">event details</a></li>
@@ -55,8 +55,8 @@
                                             <li><a href="cart.html">cart page</a></li>
                                             <li><a href="checkout.html">checkout</a></li>
                                             <li><a href="wishlist.html">wishlist</a></li>
-                                            <li><a href="login-register.html">login / register</a></li>
-                                        </ul>--}}
+                                            <li><a href="login-register.html">login / register</a></li>--}}
+                                        </ul>
                                     </li>
 
                                     <li>
@@ -90,12 +90,12 @@
 
                                     <li>
                                         <a href="{{url('/school-life')}}"> SCHOOL LIFE  </a>
-                                        {{--<ul class="submenu">
-                                            <li><a href="{{url('/academics')}}">Foundation Stage</a></li>
-                                            --}}{{--<li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
+                                        <ul class="submenu">
+                                            <li><a href="{{url('/school-life')}}">Facilities</a></li>
+                                            {{--<li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
                                             <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
-                                            <li><a href="{{url('/admission')}}">Online Application</a></li>--}}{{--
-                                        </ul>--}}
+                                            <li><a href="{{url('/admission')}}">Online Application</a></li>--}}
+                                        </ul>
                                     </li>
                                     {{--<li class="mega-menu-position top-hover"><a href="shop.html"> SHOP <i class="fa fa-angle-down"></i> </a>
                                         <ul class="mega-menu">

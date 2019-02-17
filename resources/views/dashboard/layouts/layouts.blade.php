@@ -33,7 +33,7 @@
     <link rel="shortcut icon" href="{{asset('metronic/assets/demo/default/media/img/logo/favicon.ico')}}" />
 --}}
 
-    <link rel="icon" href="{{asset('img')}}">
+    <link rel="shortcut icon" href="/favicon.ico">
 {{--<link rel="stylesheet" href="{{asset('website/css/libs/reset-min.css')}}" type="text/css">--}}
 
 <!-- CSS ============================================ -->
@@ -137,6 +137,9 @@
 <!--begin::Page Resources -->
 <script src="{{asset('metronic/assets/demo/default/custom/crud/forms/widgets/select2.js')}}" type="text/javascript"></script>
 <!--end::Page Resources -->
+
+<!-- Customized Scripts -->
+@yield('customizedScript')
 
 
 
