@@ -15,7 +15,7 @@
                         <ul>
                            {{-- <li><a href="login-register.html">Login</a></li>--}}
 
-                            <li><a href="{{url('login')}}">Login</a></li>
+                            <li><a href="{{url('signin')}}">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,6 +44,21 @@
                                             <li><a href="index-3.html">home version 3</a></li>
                                         </ul>--}}
                                     </li>
+                                    <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
+                                        <ul class="submenu">
+                                            <li><a href="{{url('calendar')}}">Calendar</a></li>
+                                            {{--<li><a href="event.html">event page</a></li>
+                                            <li><a href="shop.html">shop page</a></li>
+                                            <li><a href="course-details.html">course details</a></li>
+                                            <li><a href="event-details.html">event details</a></li>
+                                            <li><a href="single-product.html">single product</a></li>
+                                            <li><a href="cart.html">cart page</a></li>
+                                            <li><a href="checkout.html">checkout</a></li>
+                                            <li><a href="wishlist.html">wishlist</a></li>
+                                            <li><a href="login-register.html">login / register</a></li>--}}
+                                        </ul>
+                                    </li>
+
                                     <li>
                                         <a href="{{url('/admission')}}"> ADMISSION  <i class="fa fa-angle-down"></i> </a>
                                         <ul class="submenu">
@@ -51,13 +66,32 @@
                                             <li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
                                             <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
                                             <li><a href="{{url('/admission')}}">Online Application</a></li>
+                                            <li><a href="#">Schedule a Visit</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="{{url('/admission')}}"> Education <i class="fa fa-angle-down"></i> </a>
+                                        <ul class="submenu">
+                                            <li><a href="#">American</a></li>
+                                            <li><a href="#">British</a></li>
+                                            <li><a href="#">Accreditation</a></li>
                                         </ul>
                                     </li>
 
                                     <li>
                                         <a href="{{url('/academics')}}"> ACADEMICS  <i class="fa fa-angle-down"></i> </a>
                                         <ul class="submenu">
-                                            <li><a href="{{url('/academics')}}">Foundation Stage</a></li>
+                                            <li><a href="#">Foundation Stage</a></li>
+                                            <li><a href="#">Junior</a></li>
+                                            <li><a href="#">Senior</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="{{url('/school-life')}}"> SCHOOL LIFE  </a>
+                                        <ul class="submenu">
+                                            <li><a href="{{url('/school-life')}}">Facilities</a></li>
                                             {{--<li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
                                             <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
                                             <li><a href="{{url('/admission')}}">Online Application</a></li>--}}
@@ -111,27 +145,14 @@
                                             </li>
                                         </ul>
                                     </li>--}}
-                                    <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
-                                        {{--<ul class="submenu">
-                                            <li><a href="course.html">course page</a></li>
-                                            <li><a href="event.html">event page</a></li>
-                                            <li><a href="shop.html">shop page</a></li>
-                                            <li><a href="course-details.html">course details</a></li>
-                                            <li><a href="event-details.html">event details</a></li>
-                                            <li><a href="single-product.html">single product</a></li>
-                                            <li><a href="cart.html">cart page</a></li>
-                                            <li><a href="checkout.html">checkout</a></li>
-                                            <li><a href="wishlist.html">wishlist</a></li>
-                                            <li><a href="login-register.html">login / register</a></li>
-                                        </ul>--}}
-                                    </li>
+
                                     {{--<li><a href="course.html"> COURSES / PROGRAMMES</a></li>--}}
-                                    <li><a href="{{url('events')}}"> EVENTS </a>
-                                        {{--<ul class="submenu">
+                                    {{--<li><a href="{{url('events')}}"> EVENTS </a>
+                                        --}}{{--<ul class="submenu">
                                             <li><a href="blog.html">blog</a></li>
                                             <li><a href="blog-details.html">blog details</a></li>
-                                        </ul>--}}
-                                    </li>
+                                        </ul>--}}{{--
+                                    </li>--}}
                                     <li><a href="{{url('contact')}}"> CONTACT </a></li>
                                 </ul>
                             </nav>

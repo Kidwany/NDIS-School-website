@@ -64,11 +64,21 @@ Route::get('/events', 'PagesController@events');
 Route::get('/event/details/{id}', 'PagesController@eventDetails');
 
 
+/* -- School Life Page --- */
+Route::get('/school-life', 'PagesController@schoolLife');
 
 
 
+/* -- School Calendar --- */
+Route::get('/calendar', 'PagesController@calendar');
 
 
+/* -- Careers --- */
+Route::get('/careers', 'PagesController@careers');
+
+
+/* -- Careers --- */
+Route::get('/careers-apply', 'PagesController@applyCareers');
 
 /**
  * This List Containing The Admin Panel Routes

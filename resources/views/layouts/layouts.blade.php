@@ -13,7 +13,7 @@
     <!-- GOOGLE WEB FONT -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
 
-    <link rel="icon" href="{{asset('img')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('favicon.ico')}}">
     {{--<link rel="stylesheet" href="{{asset('website/css/libs/reset-min.css')}}" type="text/css">--}}
 
     <!-- CSS ============================================ -->
@@ -38,6 +38,7 @@
     <!-- Modernizer JS -->
     <script src="{{asset('website/js/vendor/modernizr-2.8.3.min.js')}}"></script>
 
+    @yield('customizedStyle')
 <!-- Styles -->
     {{--<link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
 </head>
@@ -72,9 +73,13 @@
 
 <!-- Ajax Mail -->
 <script src="{{asset('website/js/ajax-mail.js')}}"></script>
-@yield('stepperScripts')
 <!-- Main JS -->
+@yield('stepperScripts')
 <script src="{{asset('website/js/main.js')}}"></script>
+
+<!-- Customized Scripts -->
+@yield('customizedScript')
+
 
 
 

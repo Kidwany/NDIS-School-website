@@ -78,7 +78,7 @@ class PagesController extends Controller
         $gen = Models\Gender::all();
         $gr = Models\Grade::all();
         $int = ["nat" => $nat, "rel" => $rel, "qal" => $qal, "ocp" => $ocp, "gen" => $gen, "gr" => $gr, "pr" => $pr];
-        return view('frontend.admission', compact('int'));
+        return view('frontend.admission.admission', compact('int'));
     }
 
 
@@ -89,7 +89,7 @@ class PagesController extends Controller
 
     public function feesGuide()
     {
-        return view('frontend.fees-guide');
+        return view('frontend.admission.fees-guide');
     }
 
 
@@ -99,7 +99,7 @@ class PagesController extends Controller
      */
     public function howToApply()
     {
-        return view('frontend.how-to-apply');
+        return view('frontend.admission.how-to-apply');
     }
 
 
@@ -109,7 +109,7 @@ class PagesController extends Controller
      */
     public function requiredDocuments()
     {
-        return view('frontend.required-documents');
+        return view('frontend.admission.required-documents');
     }
 
     /**
@@ -284,7 +284,7 @@ class PagesController extends Controller
      */
     public function events()
     {
-        return view('frontend.events');
+        return view('frontend.events.events');
     }
 
 
@@ -294,7 +294,7 @@ class PagesController extends Controller
      */
     public function eventDetails($id)
     {
-        return view('frontend.eventDetails');
+        return view('frontend.events.eventDetails');
     }
 
 
@@ -303,6 +303,46 @@ class PagesController extends Controller
         $table = request('Table');
         return MainCore::get_all_data($table);
     }
+
+
+    /**
+     * This Function returns School life Page
+     *
+     */
+    public function schoolLife()
+    {
+        return view('frontend.schoolLife');
+    }
+
+
+    /**
+     * This Function returns School life Page
+     *
+     */
+    public function calendar()
+    {
+        return view('frontend.about.calendar');
+    }
+
+    /**
+     * This Function returns careers
+     *
+     */
+    public function careers()
+    {
+        return view('frontend.careers');
+    }
+
+
+    /**
+     * This Function returns careers
+     *
+     */
+    public function applyCareers()
+    {
+        return view('frontend.careers.apply');
+    }
+
 
 
 }

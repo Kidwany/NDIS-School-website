@@ -59,7 +59,7 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   color: #333; }
 
 h1,
@@ -69,7 +69,7 @@ h4,
 h5,
 h6 {
   color: #333333;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   font-weight: 400;
   margin-top: 0; }
 

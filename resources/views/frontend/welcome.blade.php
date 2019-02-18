@@ -100,7 +100,7 @@
         </div>
     </div>
 
-    {{--<!------ About Section ------>
+    <!------ About Section ------>
     <div class="about-us pt-130 pb-130">
         <div class="container">
             <div class="row">
@@ -119,14 +119,14 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="about-img default-overlay">
                         <img src="{{asset('website/img')}}/banner/banner-1.jpg" alt="">
-                        <a class="video-btn video-popup" href="https://www.youtube.com/watch?v=sv5hK4crIRc">
+                        <a class="video-btn video-popup" href="{{asset('website/img')}}/icon-img/Car rent.mp4">
                             <img class="animated" src="{{asset('website/img')}}/icon-img/video.png" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>--}}
+    </div>
 
     <!-- campus-area-start -->
     <div class="campus-area">
@@ -277,6 +277,185 @@
 
 
     <!-- campus-area-end -->
+
+    <div class="achievement-area pt-130 pb-115">
+        <div class="container">
+            <div class="section-title mb-75">
+                <h2>Our <span>Achievement</span></h2>
+                <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-count mb-30 count-one">
+                        <div class="count-img">
+                            <img src="{{asset('website/img')}}/icon-img/achieve-1.png" alt="">
+                        </div>
+                        <div class="count-content">
+                            <h2 class="count">890</h2>
+                            <span>STUDENTS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-count mb-30 count-two">
+                        <div class="count-img">
+                            <img src="{{asset('website/img')}}/icon-img/achieve-2.png" alt="">
+                        </div>
+                        <div class="count-content">
+                            <h2 class="count">670</h2>
+                            <span>GRADUATE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-count mb-30 count-three">
+                        <div class="count-img">
+                            <img src="{{asset('website/img')}}/icon-img/achieve-3.png" alt="">
+                        </div>
+                        <div class="count-content">
+                            <h2 class="count">160</h2>
+                            <span>AWARD WINNING</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-count mb-30 count-four">
+                        <div class="count-img">
+                            <img src="{{asset('website/img')}}/icon-img/achieve-4.png" alt="">
+                        </div>
+                        <div class="count-content">
+                            <h2 class="count">200</h2>
+                            <span>FACULTIES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slider-wrap mt-45">
+                <div class="testimonial-text-slider">
+                    <div class="testi-content-wrap">
+                        <div class="testi-big-img">
+                            <img alt="" src="{{asset('website/img')}}/testimonial/testi-b1.jpg">
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="ml-auto col-lg-6 col-md-12">
+                                <div class="testi-content bg-img default-overlay" style="background-image:url({{asset('website/img/bg/testi.png')}});">
+                                    <div class="quote-style quote-left">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit </p>
+                                    <div class="testi-info">
+                                        <h5>AYESHA HOQUE</h5>
+                                        <span>Students Of AMMT Department</span>
+                                    </div>
+                                    <div class="quote-style quote-right">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                    <div class="testi-arrow">
+                                        <img alt="" src="{{asset('website/img')}}/icon-img/testi-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-content-wrap">
+                        <div class="testi-big-img">
+                            <img alt="" src="{{asset('website/img')}}/testimonial/testi-b3.jpg">
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="ml-auto col-lg-6 col-md-12">
+                                <div class="testi-content bg-img default-overlay" style="background-image:url({{asset('website/img/bg/testi.png')}});">
+                                    <div class="quote-style quote-left">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis</p>
+                                    <div class="testi-info">
+                                        <h5>Tayeb Rayed</h5>
+                                        <span>Students Of AMMT Department</span>
+                                    </div>
+                                    <div class="quote-style quote-right">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                    <div class="testi-arrow">
+                                        <img alt="" src="{{asset('website/img')}}/icon-img/testi-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-content-wrap">
+                        <div class="testi-big-img">
+                            <img alt="" src="{{asset('website/img')}}/testimonial/testi-b2.jpg">
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="ml-auto col-lg-6 col-md-12">
+                                <div class="testi-content bg-img default-overlay" style="background-image:url({{asset('website/img/bg/testi.png')}});">
+                                    <div class="quote-style quote-left">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui. Sed ut perspiciatis unde omnis iste natus error sit </p>
+                                    <div class="testi-info">
+                                        <h5>Robiul siddikee</h5>
+                                        <span>Students Of AMMT Department</span>
+                                    </div>
+                                    <div class="quote-style quote-right">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                    <div class="testi-arrow">
+                                        <img alt="" src="{{asset('website/img')}}/icon-img/testi-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-content-wrap">
+                        <div class="testi-big-img">
+                            <img alt="" src="{{asset('website/img')}}/testimonial/testi-b2.jpg">
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="ml-auto col-lg-6 col-md-12">
+                                <div class="testi-content bg-img default-overlay" style="background-image:url({{asset('website/img/bg/testi.png')}});">
+                                    <div class="quote-style quote-left">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit </p>
+                                    <div class="testi-info">
+                                        <h5>Modhu Dada</h5>
+                                        <span>Students Of AMMT Department</span>
+                                    </div>
+                                    <div class="quote-style quote-right">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                    <div class="testi-arrow">
+                                        <img alt="" src="{{asset('website/img')}}/icon-img/testi-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-image-slider">
+                    <div class="sin-testi-image">
+                        <img src="{{asset('website/img')}}/testimonial/testi-s2.jpg" alt="">
+                    </div>
+                    <div class="sin-testi-image">
+                        <img src="{{asset('website/img')}}/testimonial/testi-s1.jpg" alt="">
+                    </div>
+                    <div class="sin-testi-image">
+                        <img src="{{asset('website/img')}}/testimonial/testi-s3.jpg" alt="">
+                    </div>
+                    <div class="sin-testi-image">
+                        <img src="{{asset('website/img')}}/testimonial/testi-s3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-text-img">
+                <img alt="" src="{{asset('website/img')}}/icon-img/testi-text.png">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Events -->
     <div class="event-area bg-img default-overlay pt-130 pb-130" style="background-image:url({{asset('website/img/bg/fees_bg.jpg')}});">
         <div class="container">
             <div class="section-title mb-75">
@@ -286,14 +465,14 @@
             <div class="event-active owl-carousel nav-style-1">
                 <div class="single-event event-white-bg">
                     <div class="event-img">
-                        <a href="event-details.html"><img src="{{asset('website/img/event/event-1.jpg')}}" alt=""></a>
+                        <a href="{{url('event/details/1')}}"><img src="{{asset('website/img/event/event-1.jpg')}}" alt=""></a>
                         <div class="event-date-wrap">
                             <span class="event-date">31th</span>
                             <span>Dec</span>
                         </div>
                     </div>
                     <div class="event-content">
-                        <h3><a href="event-details.html">New Year Festival for Student & Parents.</a></h3>
+                        <h3><a href="{{url('event/details/1')}}">New Year Festival for Student & Parents.</a></h3>
                         <p>Every Year NDIS Celebrate with it's students for christmas day .</p>
                         <div class="event-meta-wrap">
                             <div class="event-meta">
@@ -307,16 +486,17 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="single-event event-white-bg">
                     <div class="event-img">
-                        <a href="event-details.html"><img src="{{asset('website/img/about/who_we_are.jpg')}}" alt=""></a>
+                        <a href="{{url('event/details/1')}}"><img src="{{asset('website/img/about/who_we_are.jpg')}}" alt=""></a>
                         <div class="event-date-wrap">
                             <span class="event-date">10th</span>
                             <span>Jan</span>
                         </div>
                     </div>
                     <div class="event-content">
-                        <h3><a href="event-details.html">Open Day for FS-1 Stage.</a></h3>
+                        <h3><a href="{{url('event/details/1')}}">Open Day for FS-1 Stage.</a></h3>
                         <p>Next Monday will be the yearly open day for FS-1 Stage.</p>
                         <div class="event-meta-wrap">
                             <div class="event-meta">
@@ -330,16 +510,17 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="single-event event-white-bg">
                     <div class="event-img">
-                        <a href="event-details.html"><img src="{{asset('website/img/event/event-3.jpg')}}" alt=""></a>
+                        <a href="{{url('event/details/1')}}"><img src="{{asset('website/img/event/event-3.jpg')}}" alt=""></a>
                         <div class="event-date-wrap">
                             <span class="event-date">1st</span>
                             <span>Feb</span>
                         </div>
                     </div>
                     <div class="event-content">
-                        <h3><a href="event-details.html">Second Term Parents Meeting.</a></h3>
+                        <h3><a href="{{url('event/details/1')}}">Second Term Parents Meeting.</a></h3>
                         <p>parent meeting is a very important event for make interviews with your child's teachers.</p>
                         <div class="event-meta-wrap">
                             <div class="event-meta">
@@ -359,6 +540,33 @@
     </div>
 
 
+    <div class="brand-logo-area pb-130 mt-30">
+        <div class="container">
+            <div class="brand-logo-active owl-carousel">
+                <div class="single-brand-logo">
+                    <a href="#"><img src="{{asset('website/img/brand-logo/1.png')}}" alt=""></a>
+                </div>
+                <div class="single-brand-logo">
+                    <a href="#"><img src="{{asset('website/img/brand-logo/2.png')}}" alt=""></a>
+                </div>
+                <div class="single-brand-logo">
+                    <a href="#"><img src="{{asset('website/img/brand-logo/3.png')}}" alt=""></a>
+                </div>
+                <div class="single-brand-logo">
+                    <a href="#"><img src="{{asset('website/img/brand-logo/4.png')}}" alt=""></a>
+                </div>
+                <div class="single-brand-logo">
+                    <a href="#"><img src="{{asset('website/img/brand-logo/5.png')}}" alt=""></a>
+                </div>
+                <div class="single-brand-logo">
+                    <a href="#"><img src="{{asset('website/img/brand-logo/6.png')}}" alt=""></a>
+                </div>
+                <div class="single-brand-logo">
+                    <a href="#"><img src="{{asset('website/img/brand-logo/2.png')}}" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
     {{--<!------ Course Section ------>
     <div class="course-area bg-img pt-130 pb-10" style="background-image:url({{asset('website/img/bg/bg-1.jpg')}});">
         <div class="container">
