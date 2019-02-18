@@ -131,8 +131,8 @@ class PagesController extends Controller
         $this->validate($request, [
             'GID' => 'required|int',
 
-        ],[],[
-            'GID'=>'test'
+        ], [], [
+            'GID' => 'test'
         ]);
         //save students information
         //studentName - stu_grade - stureligion - stu_nationality -
@@ -255,12 +255,26 @@ class PagesController extends Controller
         return view('frontend.thankyou');
     }
 
-    public function getview($table)
+    public function getview($table,$rel)
     {
+
+        $NamespacedModel = '\\App\Models\\' . $table;
+
+        if($rel != "all"){
+             $data = $NamespacedModel::with($rel)->get()->toArray();
+            foreach ($data as $type => $list) {
+                return countount_recursive($list);
+
+            }
+
+        }else{
+            $data = $NamespacedModel::get()->toArray();
+        }
+
         $tablename = $table;
         $filedname = MainCore::getTableColumns($table);
-
-        return view('master', compact('filedname', 'tablename'));
+        $alldata = MainCore::get_all_data($table,$rel);
+        return view('dashboard.master', compact('filedname', 'tablename', 'alldata'));
     }
 
 

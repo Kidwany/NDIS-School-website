@@ -33,10 +33,26 @@ class MainCore
 
     }
 
-    public static function get_all_data($table)
+    public static function get_all_data($table,$rel)
     {
-        $filedname = MainCore::getTableColumns($table);
-        $data = DB::table($table)->get()->toArray();
+         $filedname = Schema::getColumnListing($table);
+        $NamespacedModel = '\\App\Models\\' . $table;
+
+        if($rel != "all"){
+            $data = $NamespacedModel::with($rel)->get()->toArray();
+            $result = array();
+            foreach ($data as $key => $value) {
+                if (is_array($value)) {
+
+                }
+                else {
+                    $result[$key] = $value;
+                }
+            }
+        }else{
+            $data = $NamespacedModel::get()->toArray();
+        }
+        //$data = DB::table($table)->get()->toArray();
         $newdata = array();
 
         for ($i = 0; $i < count($filedname); $i++) {
@@ -51,15 +67,33 @@ class MainCore
             }
         }
 
-        return '{"data":' . json_encode($result) . '}';
+        return  json_encode($data);
 
     }
 
 
     public static function getTableColumns($table)
     {
-        return Schema::getColumnListing($table);
+        $filedname=  DB::table('gensetting')->select('filedname')->where('tbname', '=', $table)
+            ->get()->toArray();
+        $fileds = array_column($filedname,'filedname');
+        $fstring = implode(',',$fileds);
+        $final = explode(",",$fstring);
+        return $final;
 
 
+
+    }
+    function Get_TwoDimarray_Return_OneUnique($array) {
+        $result = array();
+        foreach ($array as $key => $value) {
+            if (is_array($value)) {
+                $result = array_merge($result, Get_TwoDimarray_Return_OneUnique($value));
+            }
+            else {
+                $result[$key] = $value;
+            }
+        }
+        return array_unique($result);
     }
 }

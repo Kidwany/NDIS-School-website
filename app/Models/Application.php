@@ -43,5 +43,13 @@ class Application extends Model  {
      * @var array
      */
     protected $dates = [];
+    public  function grade(){
+        return $this->belongsTo('App\Models\Grade','GID','GID');
+
+    }
+    public  function nat(){
+        return $this->belongsTo('App\Models\Nationality','NID','NID');
+
+    }
 
 }
