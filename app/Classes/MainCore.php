@@ -35,6 +35,7 @@ class MainCore
 
     public static function get_all_data($table,$rel)
     {
+        //find me here 
          $filedname = Schema::getColumnListing($table);
         $NamespacedModel = '\\App\Models\\' . $table;
 
