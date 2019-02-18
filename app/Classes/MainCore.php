@@ -29,8 +29,6 @@ class MainCore
         } else {
             return false;
         }
-
-
     }
 
     public static function get_all_data($table)

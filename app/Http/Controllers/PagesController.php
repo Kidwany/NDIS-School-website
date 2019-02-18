@@ -319,6 +319,11 @@ class PagesController extends Controller
         return view('frontend.careers');
     }
 
+    public function apply(Request $request)
+    {
+        return $request->all();
+    }
+
 
     /**
      * This Function returns careers

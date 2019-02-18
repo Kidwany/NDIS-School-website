@@ -77,8 +77,9 @@ Route::get('/calendar', 'PagesController@calendar');
 Route::get('/careers', 'PagesController@careers');
 
 
-/* -- Careers --- */
+/* -- Careers Apply--- */
 Route::get('/careers-apply', 'PagesController@applyCareers');
+Route::post('/career-apply', 'PagesController@apply');
 
 /**
  * This List Containing The Admin Panel Routes

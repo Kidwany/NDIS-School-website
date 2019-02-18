@@ -1,5 +1,6 @@
+@include('layouts.messages')
 @extends('layouts.layouts')
-@section('title', 'Home')
+@section('title', 'Apply')
 @section('customizedStyle')
     <!--begin::Page Vendors -->
     <!--end::Page Vendors -->
@@ -54,20 +55,20 @@
                             <div id="lg1" class="tab-pane active">
                                 <div class="login-form-container">
                                     <div class="login-register-form">
-                                        <form action="login" method="post">
+                                        <form action="{{url('/career-apply')}}" method="post">
                                             {{ csrf_field() }}
                                             <div class="row">
                                                 <div class="col-lg-6">
-                                                    <input type="text" name="user-name" placeholder="Enter your Name" required >
+                                                    <input type="text" name="fullname" placeholder="Enter your Full Name" required >
                                                 </div>
                                                 <div class="col-lg-6">
-                                                    <input type="email" name="user-password" placeholder="Enter Your Email" required >
+                                                    <input type="email" name="email" placeholder="Enter Your Email" required >
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <input type="number" name="phone" placeholder="Enter Your Phone" required class="w-100">
                                                 </div>
                                                 <div class="col-lg-6">
-                                                    <select name="position" class="form-control" style="font-size: 14px; height: 50px; border-radius: 0">
+                                                    <select name="JOBID" class="form-control" style="font-size: 14px; height: 50px; border-radius: 0">
                                                         <option selected>Choose The Position You Applying For</option>
                                                         <option >Arabic Teacher</option>
                                                         <option >English Teacher</option>
