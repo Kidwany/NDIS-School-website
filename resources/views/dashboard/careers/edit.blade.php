@@ -159,7 +159,7 @@
                     <div class="m-portlet__head-caption">
                         <div class="m-portlet__head-title">
                             <h3 class="m-portlet__head-text">
-                                Create New Career
+                                {{$career->jobtitle}}
                             </h3>
                         </div>
                     </div>
@@ -186,77 +186,6 @@
                                         <i class="la la-ellipsis-h m--font-brand"></i>
                                     </a>
 
-                                    <!------ Actions Menu -->
-                                    <div class="m-dropdown__wrapper">
-                                        <span
-                                            class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
-                                        <div class="m-dropdown__inner">
-                                            <div class="m-dropdown__bodmy">
-                                                <div class="m-dropdown__content">
-                                                    <ul class="m-nav">
-                                                        <li class="m-nav__section m-nav__section--first">
-                                                            <span class="m-nav__section-text">
-                                                                Quick Actions
-                                                            </span>
-                                                        </li>
-                                                        <li class="m-nav__item">
-                                                            <a href="" class="m-nav__link">
-                                                                <i class="m-nav__link-icon flaticon-share"></i>
-                                                                <span class="m-nav__link-text">
-                                                                    Create Post
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="m-nav__item">
-                                                            <a href="" class="m-nav__link">
-                                                                <i class="m-nav__link-icon flaticon-chat-1"></i>
-                                                                <span class="m-nav__link-text">
-                                                                    Send Messages
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="m-nav__item">
-                                                            <a href="" class="m-nav__link">
-                                                                <i class="m-nav__link-icon flaticon-multimedia-2"></i>
-                                                                <span class="m-nav__link-text">
-                                                                    Upload File
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="m-nav__section">
-                                                            <span class="m-nav__section-text">
-                                                                Useful Links
-                                                            </span>
-                                                        </li>
-                                                        <li class="m-nav__item">
-                                                            <a href="" class="m-nav__link">
-                                                                <i class="m-nav__link-icon flaticon-info"></i>
-                                                                <span class="m-nav__link-text">
-                                                                    FAQ
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="m-nav__item">
-                                                            <a href="" class="m-nav__link">
-                                                                <i class="m-nav__link-icon flaticon-lifebuoy"></i>
-                                                                <span class="m-nav__link-text">
-                                                                    Support
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="m-nav__separator m-nav__separator--fit m--hide"></li>
-                                                        <li class="m-nav__item m--hide">
-                                                            <a href="#"
-                                                               class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
-                                                                Submit
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </li>
                         </ul>
@@ -265,7 +194,8 @@
                 <div class="m-portlet__body">
                     <!--begin: Form -->
                     <!--begin::Form-->
-                    <form class="m-form m-form--fit m-form--label-align-right" id="m_form_1" action="{{url('management/careers')}}" method="post" accept-charset="UTF-8">
+                    <form class="m-form m-form--fit m-form--label-align-right" id="m_form_1" action="{{route('careers.update', $career->ID)}}" method="post" accept-charset="UTF-8">
+                        <input name="_method" type="hidden" value="PATCH">
                         {{csrf_field()}}
                         <div class="m-portlet__body">
 
@@ -292,7 +222,7 @@
                                 </label>
                                 <div class="col-lg-4 col-md-9 col-sm-12">
                                     <input type="text" class="form-control m-input" name="jobtitle"
-                                           placeholder="Enter Position" data-toggle="m-tooltip" required value="{{old('jobtitle')}}">
+                                           placeholder="Enter Position" data-toggle="m-tooltip" required value="{{$career->jobtitle}}">
                                     <span class="m-form__help">
                                         Enter Available Position you want to share it
                                     </span>
@@ -305,14 +235,14 @@
                                 <div class="col-lg-4 col-md-9 col-sm-12">
                                     <div class="input-group">
                                         <input type="number" class="form-control m-input" name="jobcode"
-                                               placeholder="Enter position unique code" required value="{{old('jobcode')}}">
+                                               placeholder="Enter position unique code" required value="{{$career->jobcode}}">
                                         {{-- <div class="input-group-append">
                                              <span class="input-group-text">
                                                  .via.com
                                              </span>
                                          </div>--}}
                                     </div>
-                                       <span class="m-form__help">
+                                    <span class="m-form__help">
 {{--
                                            Please enter your website URL.
 --}}
@@ -328,7 +258,7 @@
                                 </label>
                                 <div class="col-lg-10 col-md-9 col-sm-12">
                                     <textarea class="form-control m-input" name="desc"
-                                              placeholder="Enter a Description" style="resize: none" rows="5" required>{{old('desc')}}</textarea>
+                                              placeholder="Enter a Description" style="resize: none" rows="5" required>{{$career->desc}}</textarea>
                                     {{--<span class="m-form__help">
                                         Please enter a menu within text length range 10 and 100.
                                     </span>--}}
@@ -343,7 +273,7 @@
                                 </label>
                                 <div class="col-lg-4 col-md-9 col-sm-12">
                                     <div class='input-group'>
-                                        <input type='text' class="form-control m-input" name="expiredate" value="{{old('expiredate')}}" placeholder="Select date" id='m_datepicker'/>
+                                        <input type='text' class="form-control m-input" name="expiredate" value="{{$career->expiredate}}" placeholder="Select date" id='m_datepicker'/>
                                         <div class="input-group-append">
                                             <span class="input-group-text">
                                                 <i class="la la-calendar-check-o"></i>
@@ -362,10 +292,10 @@
                                 <div class="col-lg-4 col-md-9 col-sm-12">
                                     <select class="form-control m-input" name="status">
                                         <option selected> Choose Status of Position</option>
-                                        <option value="1">
+                                        <option value="1" {{$career->status == 1 ? 'selected' : ''}}>
                                             Running
                                         </option>
-                                        <option value="0">
+                                        <option value="0" {{$career->status == 0 ? 'selected' : ''}}>
                                             Closed
                                         </option>
                                     </select>

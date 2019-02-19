@@ -10,6 +10,7 @@ use App\Classes\MainCore;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
 class PagesController extends Controller
@@ -258,18 +259,6 @@ class PagesController extends Controller
     public function getview($table,$rel)
     {
 
-        $NamespacedModel = '\\App\Models\\' . $table;
-
-        if($rel != "all"){
-             $data = $NamespacedModel::with($rel)->get()->toArray();
-            foreach ($data as $type => $list) {
-                return countount_recursive($list);
-
-            }
-
-        }else{
-            $data = $NamespacedModel::get()->toArray();
-        }
 
         $tablename = $table;
         $filedname = MainCore::getTableColumns($table);
@@ -330,12 +319,56 @@ class PagesController extends Controller
      */
     public function careers()
     {
-        return view('frontend.careers');
+        $careers = Models\Careers::all();
+        return view('frontend.careers.careers', compact('careers'));
     }
 
     public function apply(Request $request)
     {
-        return $request->all();
+        $input = $request->all();
+
+        $this->validate($request, [
+            'fullname'  =>  'required|min:6|max:30',
+            'email'     =>  'required|email|min:6|max:40',
+            'phone'     =>  'required|alpha_num|min:9|max:12',
+            'cvpath.*'    =>  'required|file|doc,docx,pdf',
+        ],[],[
+            'fullname'  =>  'Name',
+            'email'     =>  'Email',
+            'phone'     =>  'Phone',
+            'cvpath'    => 'CV',
+        ]);
+
+        //Upload and insert images
+        try
+        {
+
+            if ($file = $request->file('cvpath'))
+            {
+                $name =  time() . $file->getClientOriginalName();
+
+                $file->move('dashboard/img/cv', $name);
+
+                $path = 'dashboard/img/cv/' . $name;
+
+                //$image = Images::create(['name' => $name, 'path' => $path]);
+
+                $input['cvpath'] = $path;
+            }
+
+            $applicant = Models\Applicants::create($input);
+
+            Session::flash('create', 'Thanks ' . $applicant->name . '.. Your Application has been sent successfully');
+            return redirect('careers-apply');
+
+        }
+
+        catch (\Exception $e)
+        {
+            Session::flash('exception', 'Can\'t Upload CV to Server');
+            return redirect('careers-apply');
+        }
+
     }
 
 
@@ -345,7 +378,8 @@ class PagesController extends Controller
      */
     public function applyCareers()
     {
-        return view('frontend.careers.apply');
+        $careers = Models\Careers::all();
+        return view('frontend.careers.apply', compact('careers'));
     }
 
 

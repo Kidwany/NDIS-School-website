@@ -2,7 +2,6 @@
 @extends('dashboard.layouts.layouts')
 @section('title', 'Dashboard')
 
-
 @section('datatablesStyle')
     <!--begin::Page Vendors -->
     <link href="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet"
@@ -24,8 +23,11 @@
 
 @section('content')
 
+
+
     <!-- END: Left Aside -->
     <div class="m-grid__item m-grid__item--fluid m-wrapper">
+    @include('dashboard.layouts.messages')
         <!-- BEGIN: Subheader -->
         <div class="m-subheader ">
             <div class="d-flex align-items-center">
@@ -307,9 +309,9 @@
                                         <button type="button" class="btn m-btn--square  btn-outline-danger">
                                             <i class="fa fa-trash"></i>
                                         </button>
-                                        <button type="button" class="btn m-btn--square  btn-outline-primary">
+                                        <a type="button" href="{{url('')}}" class="btn m-btn--square  btn-outline-primary">
                                             <i class="fa fa-pencil"></i>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                         </tr>

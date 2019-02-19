@@ -254,8 +254,9 @@
                     </div>
                 </div>
                 <div class="m-portlet__body">
+                    @include('dashboard.layouts.messages')
                     <!--begin: Search Form -->
-                    <div class="d-flex flex-row justify-content-between">
+                    {{--<div class="d-flex flex-row justify-content-between">
                         <form class="m-form m-form--fit m--margin-bottom-20 col-lg-9">
                             <div class="row m--margin-bottom-20">
                                 <div class="col-lg-6 m--margin-bottom-10-tablet-and-mobile">
@@ -278,7 +279,7 @@
                             </div>
                         </form>
                         <button class="btn btn-danger" style="height: 36px; margin-top: 25px"><i class="fa fa-file-pdf-o"></i> Download all CV'S</button>
-                    </div>
+                    </div>--}}
                     <!--begin: Datatable -->
                     <table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
                         <thead>
@@ -287,7 +288,7 @@
                                 ID
                             </th>
                             <th>
-                                Name
+                                Full Name
                             </th>
                             <th>
                                 Email
@@ -308,36 +309,82 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                Mohamed Abd EL Moaty
-                            </td>
-                            <td>
-                                mohamed@gmail.com
-                            </td>
-                            <td>
-                                0122568778
-                            </td>
-                            <td>
-                                <a href="#">English Teacher</a>
-                            </td>
-                            <td>
-                                15 Feb 2018
-                            </td>
-                            <td>
-                                <div class="d-flex flex-row">
-                                    <button type="button" class="btn m-btn--square  btn-outline-danger mr-2">
-                                        <i class="fa fa-trash"></i>
-                                    </button>
-                                    <a type="button" href="{{url('management/careers/appliers/applicant')}}" class="btn m-btn--square  btn-outline-primary">
-                                        <i class="fa fa-eye"></i>
-                                    </a>
+                        @if($applicants)
+                            @foreach($applicants as $applicant)
+                                <tr>
+                                    <td>
+                                        {{$applicant->APLID}}
+                                    </td>
+                                    <td>
+                                        {{$applicant->fullname}}
+                                    </td>
+                                    <td>
+                                        {{$applicant->email}}
+                                    </td>
+                                    <td>
+                                        {{$applicant->phone}}
+                                    </td>
+                                    <td>
+                                        <a href="#">{{$applicant->job->jobtitle}}</a>
+                                    </td>
+                                    <td>
+                                        @if($applicant->created_at)
+                                            {{$applicant->created_at->diffForHumans()}}
+                                        @endif
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row">
+                                            <button data-toggle="modal" data-target="#m_modal_{{$applicant->APLID}}" href="{{url('management/applicants/' . $applicant->APLID . '/delete')}}" type="button" class="btn  btn-danger mr-1">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                            <a type="button" href="{{url('management/applicants/' . $applicant->APLID . '/edit')}}" class="btn   btn-primary">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+
+                                <div class="modal fade" id="m_modal_{{ $applicant->APLID}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">
+                                                    Delete Applicant
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">
+												&times;
+											</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Are You Sure You want to delete Applicant <strong>{{$applicant->fullname}}</strong>
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                    Close
+                                                </button>
+
+                                                <form action="{{route('applicants.destroy', $applicant->APLID)}}" method="post" accept-charset="UTF-8">
+                                                    {{csrf_field()}}
+                                                    <input name="_method" type="hidden" value="DELETE">
+                                                    <button type="submit" class="btn btn-danger">
+                                                        Delete
+                                                    </button>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
+
+                            @endforeach
+                        @endif
+
 
                         </tbody>
                     </table>

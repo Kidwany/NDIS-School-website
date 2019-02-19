@@ -135,7 +135,7 @@
                                 <div class="m-portlet__head-title">
                                     <!------- Name ------>
                                     <h3 class="m-portlet__head-text">
-                                        Ahmed Mohamed Abdel Hady
+                                        {{$applicant->fullname}}
                                     </h3>
                                 </div>
                             </div>
@@ -161,7 +161,7 @@
                                                     </span>
                                                             <a href="" class="m-list-search__result-item">
                                                         <span class="m-list-search__result-item-text">
-                                                            Ahmed@gmail.com
+                                                            {{$applicant->email}}
                                                         </span>
                                                             </a>
                                                         </div>
@@ -173,7 +173,7 @@
                                                         </span>
                                                             <a href="#" class="m-list-search__result-item">
                                                         <span class="m-list-search__result-item-text">
-                                                            01255698741
+                                                            {{$applicant->phone}}
                                                         </span>
                                                             </a>
                                                         </div>
@@ -186,7 +186,7 @@
                                                         </span>
                                                             <a href="#" class="m-list-search__result-item">
                                                         <span class="m-list-search__result-item-text">
-                                                            English Teacher
+                                                            {{$applicant->job->jobtitle}}
                                                         </span>
                                                             </a>
                                                         </div>
@@ -198,7 +198,7 @@
                                                         </span>
                                                             <a href="#" class="m-list-search__result-item">
                                                         <span class="m-list-search__result-item-text">
-                                                            15 Feb 2019
+                                                            {{$applicant->created_at->format('d M Y')}}
                                                         </span>
                                                             </a>
                                                         </div>
@@ -206,7 +206,7 @@
 
                                                         <!------------- Download PDF ------>
                                                         <div class="col-lg-6 mt-5">
-                                                            <button class="btn btn-danger"><i class="fa fa-file-pdf-o"></i> Download CV </button>
+                                                            <a href="{{asset($applicant->cvpath)}}" download="{{$applicant->fullname}}" class="btn btn-danger"><i class="fa fa-file-pdf-o"></i> Download CV </a>
                                                         </div>
                                                     </div>
                                                 </div>

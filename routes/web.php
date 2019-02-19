@@ -73,11 +73,11 @@ Route::get('/school-life', 'PagesController@schoolLife');
 Route::get('/calendar', 'PagesController@calendar');
 
 
-/* -- Careers --- */
+/* -- CareersController --- */
 Route::get('/careers', 'PagesController@careers');
 
 
-/* -- Careers Apply--- */
+/* -- CareersController Apply--- */
 Route::get('/careers-apply', 'PagesController@applyCareers');
 Route::post('/career-apply', 'PagesController@apply');
 
@@ -86,34 +86,6 @@ Route::post('/career-apply', 'PagesController@apply');
 */
 
 
-Route::group(['namespace' => 'Dashboard'], function ()
-{
-
-    /*--- Index of Dashboard ---*/
-    Route::get('/management', 'DashboardController@index');
-
-    /*--- Applications ---*/
-    Route::get('management/applications', 'DashboardController@applications');
-
-    /*--- Application Details ---*/
-    Route::get('management/application-details', 'DashboardController@applicationDetails');
-
-    /*--- Careers ---*/
-    Route::get('management/careers', 'DashboardController@careers');
-
-    /*--- Career Details ---*/
-    Route::get('management/career/career-details', 'DashboardController@careerDetails');
-
-    /*--- Create Career ---*/
-    Route::get('management/careers/create', 'DashboardController@createCareer');
-
-    /*--- Appliers For Career ---*/
-    Route::get('management/careers/appliers', 'DashboardController@appliers');
-
-    /*---  Applicants Details  ---*/
-    Route::get('management/careers/appliers/applicant', 'DashboardController@applicantDetails');
-
-});
 
 
 

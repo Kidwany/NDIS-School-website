@@ -33,20 +33,20 @@ class MainCore
 
     public static function get_all_data($table,$rel)
     {
-         $filedname = Schema::getColumnListing($table);
+        $filedname = Schema::getColumnListing($table);
         $NamespacedModel = '\\App\Models\\' . $table;
 
         if($rel != "all"){
             $data = $NamespacedModel::with($rel)->get()->toArray();
             $result = array();
-            foreach ($data as $key => $value) {
+            /*foreach ($data as $key => $value) {
                 if (is_array($value)) {
 
                 }
                 else {
                     $result[$key] = $value;
                 }
-            }
+            }*/
         }else{
             $data = $NamespacedModel::get()->toArray();
         }
@@ -72,6 +72,7 @@ class MainCore
 
     public static function getTableColumns($table)
     {
+
         $filedname=  DB::table('gensetting')->select('filedname')->where('tbname', '=', $table)
             ->get()->toArray();
         $fileds = array_column($filedname,'filedname');
@@ -79,6 +80,6 @@ class MainCore
         $final = explode(",",$fstring);
         return $final;
 
-
     }
+
 }
