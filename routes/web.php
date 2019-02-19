@@ -56,6 +56,7 @@ Route::post('/store', 'PagesController@storeappform');
 Route::get('/thankyou', 'PagesController@thankyou');
 Route::get('/getdata/{Table}/{rel}', 'PagesController@getview');
 Route::get('/filldata/{Table}', 'PagesController@filldata');
+Route::get('/checkrelation/{table}', 'PagesController@getrelation');
 
 
 

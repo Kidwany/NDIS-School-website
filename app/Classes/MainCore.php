@@ -29,25 +29,28 @@ class MainCore
         } else {
             return false;
         }
+
+
     }
 
-    public static function get_all_data($table,$rel)
+    public static function get_all_data($table, $rel)
     {
+        //find me here
         $filedname = Schema::getColumnListing($table);
         $NamespacedModel = '\\App\Models\\' . $table;
 
-        if($rel != "all"){
+        if ($rel != "all") {
             $data = $NamespacedModel::with($rel)->get()->toArray();
-            $result = array();
-            /*foreach ($data as $key => $value) {
-                if (is_array($value)) {
-
-                }
-                else {
-                    $result[$key] = $value;
-                }
-            }*/
-        }else{
+            //$result = array();
+//            foreach ($data as $key => $value) {
+//                if (is_array($value)) {
+//
+//                }
+//                else {
+//                    $result[$key] = $value;
+//                }
+//            }
+        } else {
             $data = $NamespacedModel::get()->toArray();
         }
         //$data = DB::table($table)->get()->toArray();
@@ -65,21 +68,62 @@ class MainCore
             }
         }
 
-        return  json_encode($data);
+        return json_encode($data);
 
     }
 
 
     public static function getTableColumns($table)
     {
-
-        $filedname=  DB::table('gensetting')->select('filedname')->where('tbname', '=', $table)
+        $filedname = DB::table('gensetting')->select('filedname')->where('tbname', '=', $table)
             ->get()->toArray();
-        $fileds = array_column($filedname,'filedname');
-        $fstring = implode(',',$fileds);
-        $final = explode(",",$fstring);
+        $fileds = array_column($filedname, 'filedname');
+        $fstring = implode(',', $fileds);
+        $final = explode(",", $fstring);
         return $final;
+
 
     }
 
+    function Get_TwoDimarray_Return_OneUnique($array)
+    {
+        $result = array();
+        foreach ($array as $key => $value) {
+            if (is_array($value)) {
+                $result = array_merge($result, Get_TwoDimarray_Return_OneUnique($value));
+            } else {
+                $result[$key] = $value;
+            }
+        }
+        return array_unique($result);
+    }
+
+    public static function checkrelation($table)
+    {
+
+        $alltablehasrelation = DB::select("SELECT  table_name,column_name,referenced_table_name,referenced_column_name FROM information_schema.KEY_COLUMN_USAGE
+                WHERE REFERENCED_TABLE_SCHEMA is not null
+                AND REFERENCED_TABLE_NAME is not null
+                AND referenced_table_name is not null
+                AND referenced_column_name is not null");
+        $ourtablerelation = array();
+        $foundkey = "";
+        foreach ($alltablehasrelation as $key => $value){
+            foreach ($value as $subvalue){
+                if ($table == $subvalue){
+                    $foundkey .= "many ".$value->table_name."=====>";
+                    $foundkey .= "one ".$value->referenced_table_name."<br />";
+                }
+            }
+
+
+        }
+        return $foundkey;
+        //return $ourtablerelation;
+
+
+
+
+
+    }
 }
