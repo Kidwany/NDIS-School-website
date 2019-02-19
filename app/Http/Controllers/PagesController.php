@@ -255,25 +255,11 @@ class PagesController extends Controller
         return view('frontend.thankyou');
     }
 
-    public function getview($table,$rel)
+    public function getview($table, $rel)
     {
-
-        $NamespacedModel = '\\App\Models\\' . $table;
-
-        if($rel != "all"){
-             $data = $NamespacedModel::with($rel)->get()->toArray();
-            foreach ($data as $type => $list) {
-                return countount_recursive($list);
-
-            }
-
-        }else{
-            $data = $NamespacedModel::get()->toArray();
-        }
-
         $tablename = $table;
         $filedname = MainCore::getTableColumns($table);
-        $alldata = MainCore::get_all_data($table,$rel);
+        $alldata = MainCore::get_all_data($table, $rel);
         return view('dashboard.master', compact('filedname', 'tablename', 'alldata'));
     }
 
@@ -300,8 +286,8 @@ class PagesController extends Controller
 
     public function filldata()
     {
-        $table = request('Table');
-        return MainCore::get_all_data($table);
+        //$table = request('Table');
+        //return MainCore::get_all_data($table);
     }
 
 
@@ -343,6 +329,11 @@ class PagesController extends Controller
         return view('frontend.careers.apply');
     }
 
+    public function getrelation()
+    {
+        $table = request('table');
+        return MainCore::checkrelation($table);
+    }
 
 
 }
