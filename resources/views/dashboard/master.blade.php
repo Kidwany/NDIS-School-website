@@ -305,10 +305,10 @@
                                 <td>
                                     <div class="d-flex flex-row justify-content-between">
                                         <button type="button" class="btn m-btn--square  btn-outline-danger">
-                                            <i class="fa fa-trash"></i>
+                                            <i class="fa fa-trash">{{$key->APPID}}</i>
                                         </button>
                                         <button type="button" class="btn m-btn--square  btn-outline-primary">
-                                            <i class="fa fa-pencil"></i>
+                                            <i class="fa fa-pencil">{{$key->APPID}}</i>
                                         </button>
                                     </div>
                                 </td>

@@ -108,21 +108,24 @@ class MainCore
                 AND referenced_column_name is not null");
         $ourtablerelation = array();
         $foundkey = "";
-        foreach ($alltablehasrelation as $key => $value){
-            foreach ($value as $subvalue){
-                if ($table == $subvalue){
-                    $foundkey .= "many ".$value->table_name."=====>";
-                    $foundkey .= "one ".$value->referenced_table_name."<br />";
+        $newarray = array();
+        foreach ($alltablehasrelation as $key => $value) {
+            foreach ($value as $newkey => $subvalue) {
+
+                if ($subvalue == $table) {
+                    //array_push($newarray, $value->table_name);
+                    //array_push($newarray,$value->referenced_table_name);
+                    //$ourtablerelation[$newkey] = $newarray;
+                    //$ourtablerelation[$newkey] = $value->referenced_table_name;
+//                    array_push($ourtablerelation, $value->table_name);
+//                    array_push($ourtablerelation, $value->referenced_table_name);
+                    $foundkey .= "tabel_name ,".$value->table_name."= tabel_ref,";
+                    $foundkey .= $value->referenced_table_name.",";
                 }
             }
-
-
         }
-        return $foundkey;
-        //return $ourtablerelation;
-
-
-
+    return $foundkey;
+        //return $newarray;
 
 
     }
