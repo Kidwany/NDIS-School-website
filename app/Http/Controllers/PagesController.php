@@ -389,6 +389,7 @@ class PagesController extends Controller
      */
     public function applyCareers()
     {
+        //kmnbhjk
         $careers = Models\Careers::all();
         return view('frontend.careers.apply', compact('careers'));
     }
