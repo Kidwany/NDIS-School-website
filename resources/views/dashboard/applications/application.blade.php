@@ -3,16 +3,19 @@
 
 @section('datatablesStyle')
     <!--begin::Page Vendors -->
-    <link href="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet"
+          type="text/css"/>
     <!--end::Page Vendors -->
 @endsection
 
 @section('datatablesScripts')
 
     <!--begin::Page Vendors -->
-    <script src="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.js')}}" type="text/javascript"></script>
+    <script src="{{asset('metronic/assets/vendors/custom/datatables/datatables.bundle.js')}}"
+            type="text/javascript"></script>
     <!--end::Page Vendors -->
-    <script src="{{asset('metronic/assets/demo/default/custom/crud/datatables/data-sources/html.js')}}" type="text/javascript"></script>
+    <script src="{{asset('metronic/assets/demo/default/custom/crud/datatables/data-sources/html.js')}}"
+            type="text/javascript"></script>
     <!--end::Page Resources -->    <!--end::Page Resources -->
 
 @endsection
@@ -67,8 +70,10 @@
                     </ul>
                 </div>
                 <div>
-                    <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
-                        <a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
+                    <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push"
+                         m-dropdown-toggle="hover" aria-expanded="true">
+                        <a href="#"
+                           class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
                             <i class="la la-plus m--hide"></i>
                             <i class="la la-ellipsis-h"></i>
                         </a>
@@ -117,7 +122,8 @@
                                             </li>
                                             <li class="m-nav__separator m-nav__separator--fit"></li>
                                             <li class="m-nav__item">
-                                                <a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
+                                                <a href="#"
+                                                   class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
                                                     Submit
                                                 </a>
                                             </li>
@@ -151,6 +157,7 @@
                         <div class="m-portlet__head-title">
                             <h3 class="m-portlet__head-text">
                                 Latest Applications
+
                             </h3>
                         </div>
                     </div>
@@ -289,48 +296,69 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                Ahmed Mustafa
-                            </td>
-                            <td>
-                                61715-075
-                            </td>
-                            <td>
-                                31/7/1993
-                            </td>
-                            <td>
-                                7 Years
-                            </td>
-                            <td>
-                                Male
-                            </td>
-                            <td>
-                                American
-                            </td>
-                            <td>
-                                Muslim
-                            </td>
-                            <td>
-                                2/12/2018
-                            </td>
-                            <td>
-                                <span class="m-badge m-badge--brand m-badge--wide">Pending</span>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-row justify-content-between">
-                                    <button type="button" class="btn m-btn--square  btn-outline-danger">
-                                        <i class="fa fa-trash"></i>
-                                    </button>
-                                    <button type="button" class="btn m-btn--square  btn-outline-primary">
-                                        <i class="fa fa-pencil"></i>
-                                    </button>
+                        @foreach($applications as  $data)
+                            <tr>
+                                <td>{{$data->APPID}}</td>
+                                <td>{{$data->applicationfullname}}</td>
+                                <td>{{$data->appcode}}</td>
+                                <td>{{$data->applicationdob}}</td>
+                                <td>{{$data->applicationage}}</td>
+                                <td>{{$data['gender']->Gendername}}</td>
+                                <td>{{$data['grade']->Gradename}}</td>
+                                <td>{{$data['nat']->Nationalityname}}</td>
+                                <td>{{$data->isapproved}}</td>
+                                <td>{{$data->RegestrationDate}}</td>
+                                <td>
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <button data-toggle="modal" data-target="#m_modal_{{$data->APPID}}"  type="button" class="btn  btn-danger mr-1">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                        <a href="{{url('management/applications/' . $data->APPID )}}" type="button" class="btn  btn-primary">
+                                            <i class="fa fa-pencil"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+
+                            <div class="modal fade" id="m_modal_{{$data->APPID}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                Delete applications
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">
+												&times;
+											</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Are You Sure You want to delete applications <strong>{{$data->applicationfullname}}</strong>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                Close
+                                            </button>
+
+                                            <form action="{{route('applications.destroy', $data->APPID)}}" method="post" accept-charset="UTF-8">
+                                                {{csrf_field()}}
+                                                <input name="_method" type="hidden" value="DELETE">
+                                                <button type="submit" class="btn btn-danger">
+                                                    Delete
+                                                </button>
+                                            </form>
+
+                                        </div>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
+                            </div>
+
+                        @endforeach
                         </tbody>
                     </table>
                 </div>

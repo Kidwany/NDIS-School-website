@@ -3,12 +3,12 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
-use App\Models\Applicants;
+use App\Models\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
-class ApplicantController extends Controller
+class ApplicationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +17,8 @@ class ApplicantController extends Controller
      */
     public function index()
     {
-        $applicants = Applicants::with('job')->get();
-        return view('dashboard.careers.appliers', compact('applicants'));
+        $applications = Application::with('Grade','nat','gender')->get();
+        return view('dashboard.applications.application', compact('applications'));
     }
 
     /**
@@ -61,7 +61,7 @@ class ApplicantController extends Controller
      */
     public function edit($id)
     {
-        $applicant = Applicants::find($id);
+        $applicant = Application::find($id);
         return view('dashboard.careers.applicantDetails', compact('applicant'));
     }
 
@@ -85,12 +85,17 @@ class ApplicantController extends Controller
      */
     public function destroy($id)
     {
-        $applicant = Applicants::find($id);
+        $appllication = Application::find($id);
+        $appllication->appinfo()->delete();
+        $appllication->dataprotection()->delete();
+        $appllication->childpassport()->delete();
+        $appllication->emergency()->delete();
+        $appllication->schoolhistory()->delete();
+        $appllication->parentapp()->delete();
+        $appllication->familychild()->delete();
+        $appllication->delete();
+        Session::flash('delete',   $appllication->applicationfullname . ' Application Has Been Deleted Successfully');
 
-        $applicant->delete();
-
-        Session::flash('delete',   $applicant->fullname . ' Applicant Has Been Deleted Successfully');
-
-        return redirect('management/applicants');
+        return redirect('management/applications');
     }
 }

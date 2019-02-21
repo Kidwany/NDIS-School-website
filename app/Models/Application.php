@@ -49,7 +49,31 @@ class Application extends Model  {
     }
     public  function nat(){
         return $this->belongsTo('App\Models\Nationality','NID','NID');
-
     }
+    public  function gender(){
+        return $this->belongsTo('App\Models\Gender','GNID','GNID');
+    }
+    public  function appinfo(){
+        return $this->hasMany('App\Models\Additionalinfo','APPID','APPID');
+    }
+    public  function dataprotection(){
+        return $this->hasMany('App\Models\Dataprotection','APPID','APPID');
+    }
+    public  function childpassport(){
+        return $this->hasMany('App\Models\Childernpassport','APPID','APPID');
+    }
+    public  function emergency(){
+        return $this->hasMany('App\Models\Emergency','APPID','APPID');
+    }
+    public  function schoolhistory(){
+        return $this->hasMany('App\Models\Schoolhistory','APPID','APPID');
+    }
+    public  function parentapp(){
+        return $this->hasMany('App\Models\Parentapp','APPID','APPID');
+    }
+    public  function familychild(){
+        return $this->hasMany('App\Models\Familychild','APPID','APPID');
+    }
+
 
 }

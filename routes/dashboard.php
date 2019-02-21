@@ -13,7 +13,7 @@ Route::group(['namespace' => 'Dashboard'], function ()
     Route::get('/management', 'DashboardController@index');
 
     /*--- Applications ---*/
-    Route::get('management/applications', 'DashboardController@applications');
+    Route::resource('management/applications', 'ApplicationController');
 
     /*--- Application Details ---*/
     Route::get('management/application-details', 'DashboardController@applicationDetails');
@@ -37,6 +37,6 @@ Route::group(['namespace' => 'Dashboard'], function ()
     Route::resource('management/careers', 'CareersController');
 
     /*---- Applicant ----*/
-    Route::resource('management/applicants', 'ApplicantController');
+//    Route::resource('management/applicants', 'ApplicantController');
 
 });
