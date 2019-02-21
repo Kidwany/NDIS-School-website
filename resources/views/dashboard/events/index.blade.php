@@ -54,7 +54,7 @@
                         <li class="m-nav__item">
                             <a href="" class="m-nav__link">
                                 <span class="m-nav__link-text">
-                                    Careers
+                                    Events
                                 </span>
                             </a>
                         </li>
@@ -100,7 +100,7 @@
                     <div class="m-portlet__head-tools">
                         <ul class="m-portlet__nav">
                             <li class="m-portlet__nav-item">
-                                <a href="{{url('management/calendar/create')}}" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
+                                <a href="{{url('management/event/create')}}" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
                                     <span>
                                         <i class="la la-plus"></i>
                                         <span>
@@ -135,16 +135,19 @@
                                 ID
                             </th>
                             <th>
+                                Image
+                            </th>
+                            <th>
                                 Title
                             </th>
                             <th>
                                 Description
                             </th>
                             <th>
-                                Start Date
+                                Date
                             </th>
                             <th>
-                                End Date
+                               Location
                             </th>
                             <th>
                                 Action
@@ -158,23 +161,24 @@
                                 <tr>
 
                                     <td>
-                                        {{$event->id}}
+                                        {{$event->EVID}}
+                                    </td>
+                                    <td>
+                                        <img src="{{asset($event->image)}}" style="width: 50px; height: 50px">
                                     </td>
                                     <td>
                                         {{$event->title}}
                                     </td>
                                     <td>
-                                        {{$event->desc}}
+                                        {{$event->content}}
                                     </td>
                                     <td>
-                                        @if($event->start)
-                                            {{$event->start}}
+                                        @if($event->date)
+                                            {{$event->date}}
                                         @endif
                                     </td>
                                     <td>
-                                        @if($event->end)
-                                            {{$event->end}}
-                                        @endif
+                                        {{$event->location}}
                                     </td>
                                     <td>
                                         <div class="d-flex flex-row justify-content-between">

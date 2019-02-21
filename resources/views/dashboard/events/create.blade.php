@@ -18,6 +18,8 @@
     <script src="{{asset('metronic/assets/demo/default/custom/crud/datatables/data-sources/html.js')}}"
             type="text/javascript"></script>
     <!--end::Page Resources -->    <!--end::Page Resources -->
+    <script src="{{asset('metronic/assets/demo/default/custom/crud/forms/widgets/bootstrap-datetimepicker.js')}}" type="text/javascript"></script>
+
 
 @endsection
 
@@ -31,7 +33,7 @@
             <div class="d-flex align-items-center">
                 <div class="mr-auto">
                     <h3 class="m-subheader__title m-subheader__title--separator">
-                        Create New Career
+                        Create New Event
                     </h3>
                     <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
                         <li class="m-nav__item m-nav__item--home">
@@ -55,7 +57,7 @@
                         <li class="m-nav__item">
                             <a href="{{url('management/careers')}}" class="m-nav__link">
                                 <span class="m-nav__link-text">
-                                    Careers
+                                    Events
                                 </span>
                             </a>
                         </li>
@@ -78,7 +80,6 @@
                         <a href="#"
                            class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
                             <i class="la la-plus m--hide"></i>
-                            <i class="la la-ellipsis-h"></i>
                         </a>
                         <div class="m-dropdown__wrapper">
                             <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
@@ -141,19 +142,6 @@
         </div>
         <!-- END: Subheader -->
         <div class="m-content">
-            {{--<div class="m-alert m-alert--icon m-alert--air m-alert--square alert alert-dismissible m--margin-bottom-30" role="alert">
-                <div class="m-alert__icon">
-                    <i class="flaticon-exclamation m--font-brand"></i>
-                </div>
-                <div class="m-alert__text">
-                    The foundation for DataTables is progressive enhancement, so it is very adept at reading table information directly from the DOM. This example shows how easy it is to add searching, ordering and paging to your HTML table by simply running DataTables on it.
-                    See official documentation
-                    <a href="https://datatables.net/examples/data_sources/dom.html" target="_blank">
-                        here
-                    </a>
-                    .
-                </div>
-            </div>--}}
             <div class="m-portlet m-portlet--mobile">
                 <div class="m-portlet__head">
                     <div class="m-portlet__head-caption">
@@ -165,16 +153,6 @@
                     </div>
                     <div class="m-portlet__head-tools">
                         <ul class="m-portlet__nav">
-                            <li class="m-portlet__nav-item">
-                                {{--<a href="{{url('management/careers/create')}}" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
-                                    <span>
-                                        <i class="la la-plus"></i>
-                                        <span>
-                                            New Career
-                                        </span>
-                                    </span>
-                                </a>--}}
-                            </li>
 
                             <li class="m-portlet__nav-item"></li>
                             <li class="m-portlet__nav-item">
@@ -194,7 +172,7 @@
                 <div class="m-portlet__body">
                     <!--begin: Form -->
                     <!--begin::Form-->
-                    <form class="m-form m-form--fit m-form--label-align-right" id="m_form_1" action="{{url('management/calendar')}}" method="post" accept-charset="UTF-8">
+                    <form class="m-form m-form--fit m-form--label-align-right" id="m_form_1" action="{{url('management/event')}}" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
                         {{csrf_field()}}
                         <div class="m-portlet__body">
 
@@ -235,8 +213,8 @@
                                     Description *
                                 </label>
                                 <div class="col-lg-10 col-md-9 col-sm-12">
-                                    <textarea class="form-control m-input" name="desc"
-                                              placeholder="Enter a Description of Event" style="resize: none" rows="5" >{{old('desc')}}</textarea>
+                                    <textarea class="form-control m-input" name="content"
+                                              placeholder="Enter a Description of Event" style="resize: none" rows="5" >{{old('content')}}</textarea>
                                     {{--<span class="m-form__help">
                                         Please enter a menu within text length range 10 and 100.
                                     </span>--}}
@@ -247,14 +225,14 @@
                             <div class="form-group m-form__group row">
                                 <!-------------------- Start Date ---------------->
                                 <label class="col-form-label col-lg-2 col-sm-12">
-                                    Start Date *
+                                     Date *
                                 </label>
                                 <div class="col-lg-4 col-md-9 col-sm-12">
-                                    <div class='input-group'>
-                                        <input type='date' class="form-control m-input" name="start" value="{{old('start')}}" placeholder="Select date"/>
+                                    <div class="input-group date" >
+                                        <input type="text" class="form-control m-input" name="date" placeholder="Bottom left" id="m_datetimepicker_4_3"/>
                                         <div class="input-group-append">
                                             <span class="input-group-text">
-                                                <i class="la la-calendar-check-o"></i>
+                                                <i class="la la-check glyphicon-th"></i>
                                             </span>
                                         </div>
                                     </div>
@@ -263,28 +241,22 @@
                                     </span>
                                 </div>
                             </div>
-
 
 
                             <div class="form-group m-form__group row">
-                                <!-------------------- Start Date ---------------->
                                 <label class="col-form-label col-lg-2 col-sm-12">
-                                    End Date
+                                    Image *
                                 </label>
-                                <div class="col-lg-4 col-md-9 col-sm-12">
-                                    <div class='input-group'>
-                                        <input type='date' class="form-control m-input" name="end" value="{{old('end')}}" placeholder="Select date" id='m_datepicker2'/>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">
-                                                <i class="la la-calendar-check-o"></i>
-                                            </span>
-                                        </div>
+                                <div class="col-lg-10 col-md-9 col-sm-12">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="validatedCustomFile" required name="image" {{old('cvpath')}}>
+                                        <label class="custom-file-label"for="validatedCustomFile">Upload Event Image...</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
                                     </div>
-                                    <span class="m-form__help">
-                                        Select a date
-                                    </span>
                                 </div>
                             </div>
+
+
 
                             <div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space"></div>
                         </div>

@@ -320,7 +320,11 @@ class PagesController extends Controller
      */
     public function calendar()
     {
-        return view('frontend.about.calendar');
+        $events = Models\Calendar::all();
+
+
+
+        return view('frontend.about.calendar', compact('events'));
     }
 
     /**
@@ -335,29 +339,25 @@ class PagesController extends Controller
 
     public function apply(Request $request)
     {
-        //WHAT THE HELL
-
 
         $input = $request->all();
         $this->validate($request, [
-            'fullname'  =>  'required|min:6|max:30',
-            'email'     =>  'required|email|min:6|max:40',
-            'phone'     =>  'required|alpha_num|min:9|max:12',
-            'cvpath.*'    =>  'required|file|doc,docx,pdf',
-        ],[],[
-            'fullname'  =>  'Name',
-            'email'     =>  'Email',
-            'phone'     =>  'Phone',
-            'cvpath'    => 'CV',
+            'fullname' => 'required|min:6|max:30',
+            'email' => 'required|email|min:6|max:40',
+            'phone' => 'required|alpha_num|min:9|max:12',
+            'cvpath.*' => 'required|file|doc,docx,pdf',
+        ], [], [
+            'fullname' => 'Name',
+            'email' => 'Email',
+            'phone' => 'Phone',
+            'cvpath' => 'CV',
         ]);
 
         //Upload and insert images
-        try
-        {
+        try {
 
-            if ($file = $request->file('cvpath'))
-            {
-                $name =  time() . $file->getClientOriginalName();
+            if ($file = $request->file('cvpath')) {
+                $name = time() . $file->getClientOriginalName();
 
                 $file->move('dashboard/img/cv', $name);
 
@@ -373,10 +373,7 @@ class PagesController extends Controller
             Session::flash('create', 'Thanks ' . $applicant->name . '.. Your Application has been sent successfully');
             return redirect('careers-apply');
 
-        }
-
-        catch (\Exception $e)
-        {
+        } catch (\Exception $e) {
             Session::flash('exception', 'Can\'t Upload CV to Server');
             return redirect('careers-apply');
         }
@@ -394,7 +391,6 @@ class PagesController extends Controller
         $careers = Models\Careers::all();
         return view('frontend.careers.apply', compact('careers'));
     }
-
 
 
 }
