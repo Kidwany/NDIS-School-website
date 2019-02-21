@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <!-- Begin: Fathe Name  -->
+        <!-- Begin: Father Name  -->
         <div class="form-group m-form__group row">
             <label for="example-text-input" class="col-2 col-form-label">
                 Parents Meeting Appointment

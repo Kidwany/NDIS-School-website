@@ -78,7 +78,7 @@
                                 <ul class="m-portlet__nav">
                                     <li class="m-portlet__nav-item m-portlet__nav-item--last">
                                         <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
-                                            <a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
+                                            <a href="#" class="d-none m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
                                                 <i class="la la-gear"></i>
                                             </a>
 
