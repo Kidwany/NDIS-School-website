@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Contact;
 use App\Models;
 use DemeterChain\Main;
 use Illuminate\Http\Request;
@@ -10,6 +11,7 @@ use App\Classes\MainCore;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
 class PagesController extends Controller
@@ -79,6 +81,17 @@ class PagesController extends Controller
         $gr = Models\Grade::all();
         $int = ["nat" => $nat, "rel" => $rel, "qal" => $qal, "ocp" => $ocp, "gen" => $gen, "gr" => $gr, "pr" => $pr];
         return view('frontend.admission.admission', compact('int'));
+    }
+
+    public function applicationTrack()
+    {
+        return view('frontend.admission.track-application');
+    }
+
+
+    public function applicationStatus($id)
+    {
+        return view('frontend.admission.application-status');
     }
 
 
@@ -335,5 +348,34 @@ class PagesController extends Controller
         return MainCore::checkrelation($table);
     }
 
+
+    /**
+     * This Function Posts Contact Form Values
+     *
+     */
+
+    public function contactForm(Request $request)
+    {
+
+        $input = $request->all();
+
+        $this->validate($request, [
+            'name'          =>  'required|min:2',
+            'email'         =>  'required|email',
+            'subject'       =>  'max:100',
+            'message'       =>  'required|min:10|max:1000',
+        ],[],[
+            'name'          =>  'Name',
+            'email'         =>  'Email',
+            'subject'       =>  'Subject',
+            'message'       =>  'Message',
+        ]);
+
+        $info = Contact::create($input);
+
+        Session::flash('create', 'Thanks... ' .   $info->name . '... Your Message has been sent successfully');
+        return redirect('contact');
+
+    }
 
 }

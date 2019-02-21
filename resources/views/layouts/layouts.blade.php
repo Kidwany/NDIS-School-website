@@ -75,10 +75,11 @@
 <script src="{{asset('website/js/ajax-mail.js')}}"></script>
 <!-- Main JS -->
 @yield('stepperScripts')
+@yield('customizedScript')
+
 <script src="{{asset('website/js/main.js')}}"></script>
 
 <!-- Customized Scripts -->
-@yield('customizedScript')
 
 
 
