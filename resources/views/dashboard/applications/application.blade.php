@@ -313,7 +313,7 @@
                                         <button data-toggle="modal" data-target="#m_modal_{{$data->APPID}}"  type="button" class="btn  btn-danger mr-1">
                                             <i class="fa fa-trash"></i>
                                         </button>
-                                        <a href="{{url('management/applications/' . $data->APPID )}}" type="button" class="btn  btn-primary">
+                                        <a href="{{url('management/applications/' . $data->APPID.'/edit' )}}" type="button" class="btn  btn-primary">
                                             <i class="fa fa-pencil"></i>
                                         </a>
                                     </div>

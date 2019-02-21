@@ -180,7 +180,7 @@ class PagesController extends Controller
         $app->applicationage = $age;
         $appcode = $randnumber . "_" . $dt->toDateString();
         $app->appcode = $appcode;
-        $app->isapproved = 0;
+        $app->isapproved = 1;
         $app->RegestrationDate = $dt->toDateString();
         $app->NID = $request->input('NID');
         $app->GNID = $request->input('GNID');
