@@ -356,6 +356,8 @@ class PagesController extends Controller
 
     public function contactForm(Request $request)
     {
+        //WHAT THE HELL
+
 
         $input = $request->all();
 
