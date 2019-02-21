@@ -61,8 +61,8 @@ class ApplicationController extends Controller
      */
     public function edit($id)
     {
-        $applicant = Application::find($id);
-        return view('dashboard.careers.applicantDetails', compact('applicant'));
+        $application = Application::find($id);
+        return view('dashboard.applications.applicationDetails', compact('application'));
     }
 
     /**

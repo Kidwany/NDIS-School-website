@@ -21,7 +21,7 @@ class Application extends Model  {
      *
      * @var array
      */
-    protected $fillable = ['APPID', 'applicationfullname', 'applicationbusaddress', 'GID', 'stusection', 'stusecondlang', 'RLID', 'applicationdob', 'applicationage', 'appcode', 'isapproved', 'RegestrationDate', 'NID', 'GNID', 'PRSID'];
+    protected $fillable = ['APPID', 'applicationfullname', 'applicationbusaddress', 'GID', 'stusection', 'stusecondlang', 'RLID', 'applicationdob', 'applicationage', 'appcode', 'STID', 'RegestrationDate', 'NID', 'GNID', 'PRSID'];
 
     /**
      * The attributes excluded from the model's JSON form.
