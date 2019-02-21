@@ -339,7 +339,6 @@ class PagesController extends Controller
 
 
         $input = $request->all();
-
         $this->validate($request, [
             'fullname'  =>  'required|min:6|max:30',
             'email'     =>  'required|email|min:6|max:40',
