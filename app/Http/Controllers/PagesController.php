@@ -329,7 +329,59 @@ class PagesController extends Controller
      */
     public function careers()
     {
-        return view('frontend.careers');
+        $careers = Models\Careers::all();
+        return view('frontend.careers.careers', compact('careers'));
+    }
+
+    public function apply(Request $request)
+    {
+        //WHAT THE HELL
+
+
+        $input = $request->all();
+
+        $this->validate($request, [
+            'fullname'  =>  'required|min:6|max:30',
+            'email'     =>  'required|email|min:6|max:40',
+            'phone'     =>  'required|alpha_num|min:9|max:12',
+            'cvpath.*'    =>  'required|file|doc,docx,pdf',
+        ],[],[
+            'fullname'  =>  'Name',
+            'email'     =>  'Email',
+            'phone'     =>  'Phone',
+            'cvpath'    => 'CV',
+        ]);
+
+        //Upload and insert images
+        try
+        {
+
+            if ($file = $request->file('cvpath'))
+            {
+                $name =  time() . $file->getClientOriginalName();
+
+                $file->move('dashboard/img/cv', $name);
+
+                $path = 'dashboard/img/cv/' . $name;
+
+                //$image = Images::create(['name' => $name, 'path' => $path]);
+
+                $input['cvpath'] = $path;
+            }
+
+            $applicant = Models\Applicants::create($input);
+
+            Session::flash('create', 'Thanks ' . $applicant->name . '.. Your Application has been sent successfully');
+            return redirect('careers-apply');
+
+        }
+
+        catch (\Exception $e)
+        {
+            Session::flash('exception', 'Can\'t Upload CV to Server');
+            return redirect('careers-apply');
+        }
+
     }
 
 
@@ -339,45 +391,10 @@ class PagesController extends Controller
      */
     public function applyCareers()
     {
-        return view('frontend.careers.apply');
-    }
-
-    public function getrelation()
-    {
-        $table = request('table');
-        return MainCore::checkrelation($table);
+        $careers = Models\Careers::all();
+        return view('frontend.careers.apply', compact('careers'));
     }
 
 
-    /**
-     * This Function Posts Contact Form Values
-     *
-     */
-
-    public function contactForm(Request $request)
-    {
-        //WHAT THE HELL
-
-
-        $input = $request->all();
-
-        $this->validate($request, [
-            'name'          =>  'required|min:2',
-            'email'         =>  'required|email',
-            'subject'       =>  'max:100',
-            'message'       =>  'required|min:10|max:1000',
-        ],[],[
-            'name'          =>  'Name',
-            'email'         =>  'Email',
-            'subject'       =>  'Subject',
-            'message'       =>  'Message',
-        ]);
-
-        $info = Contact::create($input);
-
-        Session::flash('create', 'Thanks... ' .   $info->name . '... Your Message has been sent successfully');
-        return redirect('contact');
-
-    }
 
 }

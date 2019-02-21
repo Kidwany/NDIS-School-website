@@ -385,36 +385,25 @@
                     <ul class="m-menu__subnav">
 
                         <li class="m-menu__item " aria-haspopup="true" >
-                            <a  href="{{url('management/careers')}}" class="m-menu__link ">
+                            <a  href="{{url('management/calendar')}}" class="m-menu__link ">
                                 <i class="m-menu__link-bullet m-menu__link-bullet--dot">
                                     <span>
 
                                     </span>
                                 </i>
                                 <span class="m-menu__link-text">
-                                   All Careers
+                                   All Events
                                 </span>
                             </a>
                         </li>
 
                         <li class="m-menu__item " aria-haspopup="true" >
-                            <a  href="{{url('management/careers/create')}}" class="m-menu__link ">
+                            <a  href="{{url('management/calendar/create')}}" class="m-menu__link ">
                                 <i class="m-menu__link-bullet m-menu__link-bullet--dot">
                                     <span></span>
                                 </i>
                                 <span class="m-menu__link-text">
-                                    New Career
-                                </span>
-                            </a>
-                        </li>
-
-                        <li class="m-menu__item " aria-haspopup="true" >
-                            <a  href="{{url('management/applicants')}}" class="m-menu__link ">
-                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                    <span></span>
-                                </i>
-                                <span class="m-menu__link-text">
-                                    Applicants
+                                    New Event
                                 </span>
                             </a>
                         </li>

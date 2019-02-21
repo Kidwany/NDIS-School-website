@@ -6,7 +6,7 @@
  * Time: 3:16 PM
  */
 
-Route::group(['namespace' => 'Dashboard'], function ()
+Route::group(['namespace' => 'Dashboard'],  function ()
 {
 
     /*--- Index of Dashboard ---*/
@@ -38,5 +38,8 @@ Route::group(['namespace' => 'Dashboard'], function ()
 
     /*---- Applicant ----*/
 //    Route::resource('management/applicants', 'ApplicantController');
+
+    /*---- Applicant ----*/
+    Route::resource('management/calendar', 'CalendarController');
 
 });
