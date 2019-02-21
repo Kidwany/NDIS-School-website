@@ -1,5 +1,5 @@
 @extends('layouts.layouts')
-@section('title', 'Home')
+@section('title', 'Contact')
 @section('content')
     @include('layouts.header')
 
@@ -49,20 +49,32 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-5">
+
+
                     <div class="contact-form">
                         <div class="contact-title mb-45">
                             <h2>Stay <span>Connected</span></h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipis do eiusmod tempor indunt ut labore et dolore magna aliqua.</p>
                         </div>
-                        <form id="contact-form" action="assets/php/mail.php" method="post">
-                            <input name="name" placeholder="Name*" type="text">
-                            <input name="email" placeholder="Email*" type="email">
-                            <input name="subject" placeholder="Subject*" type="text">
-                            <textarea name="message" placeholder="Message"></textarea>
+
+                        @include('layouts.messages')
+
+                        <form method="post" action="{{url('/contact-form')}}">
+
+                            {{csrf_field()}}
+
+                            <input name="name" placeholder="Name*" type="text" class="form-control" required style="height: 50px"value="{{old('name')}}">
+                            <input name="email" placeholder="Email*" type="email" class="form-control" required style="height: 50px"value="{{old('email')}}">
+                            <input name="subject" placeholder="Subject*" type="text" class="form-control" style="height: 50px"value="{{old('subject')}}">
+                            <textarea name="message" placeholder="Message" class="form-control" rows="5" required style="resize: none">{{old('message')}}</textarea>
                             <button class="submit btn-style" type="submit">SEND MESSAGE</button>
+
                         </form>
+{{--
                         <p class="form-messege"></p>
+--}}
                     </div>
                 </div>
             </div>

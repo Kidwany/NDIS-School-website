@@ -21,6 +21,7 @@ Route::get('/about', 'PagesController@about');
 
 /* --- Return Contact Page ---*/
 Route::get('/contact', 'PagesController@contact');
+Route::post('/contact-form', 'PagesController@contactForm');
 
 
 /* --- Login Page ---*/
@@ -49,6 +50,12 @@ Route::get('/how-to-apply', 'PagesController@howToApply');
 /* --- Required Documents Page ---*/
 Route::get('/required-documents', 'PagesController@requiredDocuments');
 
+
+/* --- Required Documents Page ---*/
+Route::get('/application-track', 'PagesController@applicationTrack');
+
+/* --- Required Documents Page ---*/
+Route::get('/application-track/{id}', 'PagesController@applicationStatus');
 
 /* --- Academics Page ---*/
 Route::get('/academics', 'PagesController@academics');

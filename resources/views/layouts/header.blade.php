@@ -66,6 +66,7 @@
                                             <li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
                                             <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
                                             <li><a href="{{url('/admission')}}">Online Application</a></li>
+                                            <li><a href="{{url('/application-track')}}">Track Your Application</a></li>
                                             <li><a href="#">Schedule a Visit</a></li>
                                         </ul>
                                     </li>

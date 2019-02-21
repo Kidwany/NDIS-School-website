@@ -361,12 +361,65 @@
             <!-------- Events -------->
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  m-menu-submenu-toggle="hover">
                 <a  href="javascript:;" class="m-menu__link m-menu__toggle">
-                    <i class="m-menu__link-icon flaticon-interface-7"></i>
+                    <i class="m-menu__link-icon fa fa-calendar-check-o"></i>
                     <span class="m-menu__link-text">
                         Events
                     </span>
                     <i class="m-menu__ver-arrow la la-angle-right"></i>
                 </a>
+            </li>
+
+
+            <!-------- Calendar -------->
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  m-menu-submenu-toggle="hover">
+                <a  href="javascript:;" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon fa fa-calendar"></i>
+                    <span class="m-menu__link-text">
+                        Calendar
+                    </span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+
+                <div class="m-menu__submenu ">
+                    <span class="m-menu__arrow"></span>
+                    <ul class="m-menu__subnav">
+
+                        <li class="m-menu__item " aria-haspopup="true" >
+                            <a  href="{{url('management/careers')}}" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span>
+
+                                    </span>
+                                </i>
+                                <span class="m-menu__link-text">
+                                   All Careers
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="m-menu__item " aria-haspopup="true" >
+                            <a  href="{{url('management/careers/create')}}" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">
+                                    New Career
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="m-menu__item " aria-haspopup="true" >
+                            <a  href="{{url('management/applicants')}}" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">
+                                    Applicants
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>

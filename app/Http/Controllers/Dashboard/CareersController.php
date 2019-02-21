@@ -66,18 +66,6 @@ class CareersController extends Controller
 
         Session::flash('create',   $career->jobtitle . 'Has Been Published Successfully');
         return redirect('getdata/careers/all');
-       /* try
-        {
-
-
-
-        }
-
-        catch (\Exception $e)
-        {
-            Session::flash('exception', 'Can\'t Publish Position');
-            return redirect('management/careers/create');
-        }*/
     }
 
     /**
