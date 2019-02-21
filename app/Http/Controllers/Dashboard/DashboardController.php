@@ -39,14 +39,6 @@ class DashboardController extends Controller
         return view('dashboard.applications.applicationDetails');
     }
 
-    /**
-     *
-     * This Function Return Careers
-     */
-    public function careers()
-    {
-        return view('dashboard.careers.index');
-    }
 
 
     /**

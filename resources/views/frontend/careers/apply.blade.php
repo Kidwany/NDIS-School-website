@@ -1,5 +1,5 @@
 @extends('layouts.layouts')
-@section('title', 'Home')
+@section('title', 'Apply')
 @section('customizedStyle')
     <!--begin::Page Vendors -->
     <!--end::Page Vendors -->
@@ -54,44 +54,47 @@
                             <div id="lg1" class="tab-pane active">
                                 <div class="login-form-container">
                                     <div class="login-register-form">
-                                        <form action="login" method="post">
+                                        @include('layouts.messages')
+                                        <form action="{{url('/career-apply')}}" method="post" enctype="multipart/form-data">
                                             {{ csrf_field() }}
                                             <div class="row">
                                                 <div class="col-lg-6">
-                                                    <input type="text" name="user-name" placeholder="Enter your Name" required >
+                                                    <input type="text" name="fullname" placeholder="Enter your Full Name" class="w-100" required value="{{old('fullname')}}">
                                                 </div>
                                                 <div class="col-lg-6">
-                                                    <input type="email" name="user-password" placeholder="Enter Your Email" required >
+                                                    <input type="email" name="email" placeholder="Enter Your Email" class="w-100" required value="{{old('email')}}">
                                                 </div>
                                                 <div class="col-lg-6">
-                                                    <input type="number" name="phone" placeholder="Enter Your Phone" required class="w-100">
+                                                    <input type="number" name="phone" placeholder="Enter Your Phone" class="w-100" required value="{{old('phone')}}">
                                                 </div>
                                                 <div class="col-lg-6">
-                                                    <select name="position" class="form-control" style="font-size: 14px; height: 50px; border-radius: 0">
+                                                    <select name="JOBID" class="form-control" required style="font-size: 14px; height: 50px; border-radius: 0">
                                                         <option selected>Choose The Position You Applying For</option>
+                                                        @if($careers)
+                                                            @foreach($careers as $career)
+                                                                <option value="{{$career->ID}}">{{$career->jobtitle}}</option>
+                                                            @endforeach
+                                                        @endif
+                                                        {{--
                                                         <option >Arabic Teacher</option>
                                                         <option >English Teacher</option>
                                                         <option >Math Teacher</option>
-                                                        <option >Science Teacher</option>
+                                                        <option >Science Teacher</option>--}}
                                                     </select>
                                                 </div>
 
                                                 <div class="col-lg-12">
-                                                    <div class="m-dropzone dropzone" action="inc/api/dropzone/upload.php" id="m-dropzone-one">
-                                                        <div class="m-dropzone__msg dz-message needsclick">
-                                                            <h3 class="m-dropzone__msg-title">
-                                                                Drop Your CV Here.
-                                                            </h3>
-                                                            <span class="m-dropzone__msg-desc">
-														or open directory from your computer
-													</span>
-                                                        </div>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="validatedCustomFile" required name="cvpath" {{old('cvpath')}}>
+                                                        <label class="custom-file-label"for="validatedCustomFile">Upload your CV...</label>
+                                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
                                                     </div>
                                                 </div>
+
                                             </div>
 
                                             <div class="button-box mt-15">
-                                                <button class="default-btn" type="submit"><span>Login</span></button>
+                                                <button class="default-btn" type="submit"><span>Apply</span></button>
                                             </div>
                                         </form>
                                     </div>
