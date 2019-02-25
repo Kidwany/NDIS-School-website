@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <style>
+        *
         {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -237,14 +238,14 @@
     <div class="row">
         <div class="email-container">
             <div class="row">
-                <img src="{{asset('Group130.png')}}" class="email-logo">
+                {{--<img src="{{asset('Group130.png')}}" class="email-logo">--}}
             </div>
             <div class="row username">
                 <h4>Hello <strong>{{$username}}</strong></h4>
             </div>
             <div class="row approve d-flex flex-row justify-content-center">
                 <div class="col-md-10">
-                    <p class="text-center font-weight-light main-color">Your <span class="app-color">Wzzaa</span>  account has been created successfully </p>
+                    <p class="text-center font-weight-light main-color">Your <span class="app-color">application</span>   has been submitted successfully </p>
                 </div>
             </div>
 
@@ -252,21 +253,21 @@
                 <div class="email-white-space">
                     <div class="email-img">
                         <div class="">
-                            <img src="{{asset('img/assets/auth/email.png')}}">
+                            {{--<img src="{{asset('img/assets/auth/email.png')}}">--}}
                         </div>
                     </div>
 
                     <div class="email-desc">
                         <div class="col-md-10">
                             <p class="main-color font-weight-light text-center">
-                                You can copy this following code and paste it in verification form or you can use smart link by click on the verify button
+                                You can copy this following code and paste it in search form to check the status of your application
                             </p>
                         </div>
                     </div>
 
                     <div class="code">
                         <p class="main-color text-center">
-                            <strong>{{$email_code}}</strong>
+                            <strong>{{$app_code}}</strong>
                         </p>
                     </div>
 
@@ -274,33 +275,33 @@
 
                     <div class="verify-btn">
                         <div class="col-md-5 d-flex justify-content-center">
-                            <a href="{{url('/verifyemail/'.$email_token.'/'.$email_code.'/'.$user_id)}}" class="btn">Verify</a>
+                            <a href="{{url('/application-track/')}}" class="btn">Search</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="email-white-space">
-                    <div class="download-section">
-                        <div class="col-sm-8 d-flex justify-content-center">
-                            <h4 class="main-color text-center">Download Wzzaa App Now !!</h4>
-                        </div>
-                    </div>
+                {{--<div class="email-white-space">--}}
+                    {{--<div class="download-section">--}}
+                        {{--<div class="col-sm-8 d-flex justify-content-center">--}}
+                            {{--<h4 class="main-color text-center">Download Wzzaa App Now !!</h4>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
 
-                    <div class="download-text">
-                        <div class="col-sm-10 ">
-                            <p class="main-color font-weight-light text-center">
-                                download mobile application of wzzaa the best social platform ever and connect with more tahn 500,000 active users
-                            </p>
-                        </div>
-                    </div>
+                    {{--<div class="download-text">--}}
+                        {{--<div class="col-sm-10 ">--}}
+                            {{--<p class="main-color font-weight-light text-center">--}}
+                                {{--download mobile application of wzzaa the best social platform ever and connect with more tahn 500,000 active users--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
 
-                    <div class=" download-links">
-                        <div class="d-flex flex-row justify-content-center">
-                            <a href="https://play.google.com/store/apps/details?id=com.smart.deals.wwzzaa"><img src="{{asset('img/download-google.png')}}"></a>
-                            <a href="#"><img src="{{asset('img/download-apple.png')}}"></a>
-                        </div>
-                    </div>
-                </div>
+                    {{--<div class=" download-links">--}}
+                        {{--<div class="d-flex flex-row justify-content-center">--}}
+                            {{--<a href="https://play.google.com/store/apps/details?id=com.smart.deals.wwzzaa"><img src="{{asset('img/download-google.png')}}"></a>--}}
+                            {{--<a href="#"><img src="{{asset('img/download-apple.png')}}"></a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
     </div>

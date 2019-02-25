@@ -28,8 +28,9 @@
                     <!--begin: Portlet Body-->
                     <div class="row d-flex flex-row justify-content-center">
                         <div class="col-lg-7">
-                            <form class="row mt-50 mb-50" action="{{url('/application-track/5')}}">
-                                <input type="text" name="app_code" placeholder="Enter Application Code Which sent to your Email" class="col-lg-9 form-control " required value="{{old('app_code')}}" style="height: 50px">
+                            <form method="post" class="row mt-50 mb-50" action="{{url('/search')}}">
+                                @csrf
+                                <input type="text" name="appcode" placeholder="Enter Application Code Which sent to your Email" class="col-lg-9 form-control " required value="" style="height: 50px">
                                 <div class="col-lg-3">
                                     <button class="btn btn-success w-100" type="submit" style="height: 50px; font-size: 16px">Search</button>
                                 </div>

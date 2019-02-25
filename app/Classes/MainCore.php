@@ -128,11 +128,9 @@ class MainCore
         }
     return $foundkey;
         //return $newarray;
-
-
     }
-    public static function sendmail($data,$user){
-        Mail::to($user)->send(new SendMail($data));
+    public static function sendmail($useremail,$appcode){
+        Mail::to($useremail)->send(new SendMail($useremail,$appcode));
 
     }
 }
