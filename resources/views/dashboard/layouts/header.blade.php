@@ -38,10 +38,10 @@
             <!-- END: Brand -->
             <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
                 <!-- BEGIN: Horizontal Menu -->
-            @include('dashboard.layouts.horizontalMenu')
+            {{--@include('dashboard.layouts.horizontalMenu')
             <!-- END: Horizontal Menu -->
                 <!-- BEGIN: Topbar -->
-            @include('dashboard.layouts.topBar')
+            @include('dashboard.layouts.topBar')--}}
             <!-- END: Topbar -->
             </div>
         </div>
