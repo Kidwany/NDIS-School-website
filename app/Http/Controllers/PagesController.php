@@ -262,7 +262,7 @@ class PagesController extends Controller
         $datapro->Email = $request->input('email');
         $datapro->APPID = $APPID;
         $datapro->save();
-        MainCore::sendmail("thank you for you applied and please keep your application code ".$appcode,$request->input('email'));
+        MainCore::sendmail($request->input('email'),$appcode);
         return redirect('thankyou')->with('appcode', $appcode);
 
 
@@ -398,13 +398,16 @@ class PagesController extends Controller
         return view('frontend.careers.apply', compact('careers'));
     }
 
-    public function search($appcode)
+    public function search(Request $request)
     {
+        $appcode = $request->input('appcode');
         $application = Models\Application::with('Grade', 'nat', 'gender', 'status','AppMoredetails')->where('appcode','=',trim($appcode))->get();
         if(count($application)){
-            return $application;
+            return view('frontend.admission.application-status',compact('application'));
         }else{
-            return "Not found";
+            $application = "not found";
+            return view('frontend.admission.application-status',compact('application'));
+
         }
 
     }

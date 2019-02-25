@@ -56,11 +56,12 @@ class ApplicationController extends Controller
             $findapp->diagnostictestresult = $request->diagnostictestresult;
             $findapp->assessmentresult = $request->assessmentresult;
             $findapp->save();
-            $application = Application::where('APPID','=',trim($request->APPID))->FirstOrfail();
+             $application = Application::with('Grade', 'nat', 'gender', 'status','dataprotection')->where('APPID','=',trim($request->APPID))->FirstOrfail();
+
             if(!is_null($request->diagnostictestdate)){
                 $application->STID = 2;
                 $application->save();
-                MainCore::sendmail("diagnostictestdate","khalednabawy7@gmail.com");
+                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
             }else{
                 $application->STID = 1;
                 $application->save();
@@ -68,7 +69,7 @@ class ApplicationController extends Controller
             if(!is_null($request->parentmeeting)){
                 $application->STID = 3;
                 $application->save();
-                MainCore::sendmail("parentmeeting","khalednabawy7@gmail.com");
+                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
             }else{
                 $application->STID = 1;
                 $application->save();
@@ -76,7 +77,7 @@ class ApplicationController extends Controller
             if(!is_null($request->assessmentdate)){
                 $application->STID = 4;
                 $application->save();
-                MainCore::sendmail("assessmentdate","khalednabawy7@gmail.com");
+                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
             }else{
                 $application->STID = 1;
                 $application->save();
@@ -91,11 +92,11 @@ class ApplicationController extends Controller
             $findapp2->assessmentresult = $request->assessmentresult;
             $findapp2->APPID = $request->APPID;
             $findapp2->save();
-            $application = Application::where('APPID','=',trim($request->APPID))->FirstOrfail();
+            $application = Application::with('Grade', 'nat', 'gender', 'status','dataprotection')->where('APPID','=',trim($request->APPID))->get();
             if(!is_null($request->diagnostictestdate)){
                 $application->STID = 2;
                 $application->save();
-                MainCore::sendmail("diagnostictestdate","khalednabawy7@gmail.com");
+                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
             }else{
                 $application->STID = 1;
                 $application->save();
@@ -103,7 +104,7 @@ class ApplicationController extends Controller
             if(!is_null($request->parentmeeting)){
                 $application->STID = 3;
                 $application->save();
-                MainCore::sendmail("parentmeeting","khalednabawy7@gmail.com");
+                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
             }else{
                 $application->STID = 1;
                 $application->save();
@@ -111,7 +112,7 @@ class ApplicationController extends Controller
             if(!is_null($request->assessmentdate)){
                 $application->STID = 4;
                 $application->save();
-                MainCore::sendmail("assessmentdate","khalednabawy7@gmail.com");
+                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
             }else{
                 $application->STID = 1;
                 $application->save();
