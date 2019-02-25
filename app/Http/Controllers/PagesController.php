@@ -324,7 +324,11 @@ class PagesController extends Controller
      */
     public function calendar()
     {
-        return view('frontend.about.calendar');
+        $events = Models\Calendar::all();
+
+
+
+        return view('frontend.about.calendar', compact('events'));
     }
 
     /**
@@ -339,8 +343,6 @@ class PagesController extends Controller
 
     public function apply(Request $request)
     {
-        //WHAT THE HELL
-
 
         $input = $request->all();
         $this->validate($request, [
@@ -389,6 +391,7 @@ class PagesController extends Controller
      */
     public function applyCareers()
     {
+        //kmnbhjk
         $careers = Models\Careers::all();
         return view('frontend.careers.apply', compact('careers'));
     }
@@ -407,6 +410,5 @@ class PagesController extends Controller
         Mail::to('krunal@appdividend.com')->send(new SendMail($data));
         return 'Email was sent';
     }
-
 
 }

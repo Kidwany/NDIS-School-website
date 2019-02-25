@@ -39,7 +39,11 @@ Route::group(['namespace' => 'Dashboard'],  function ()
     /*---- Applicant ----*/
 //    Route::resource('management/applicants', 'ApplicantController');
 
-    /*---- Applicant ----*/
+    /*---- Calendar ----*/
     Route::resource('management/calendar', 'CalendarController');
+
+    /*---- Events ----*/
+    Route::resource('management/event', 'EventController');
+
 
 });

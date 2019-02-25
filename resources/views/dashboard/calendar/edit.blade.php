@@ -31,7 +31,7 @@
             <div class="d-flex align-items-center">
                 <div class="mr-auto">
                     <h3 class="m-subheader__title m-subheader__title--separator">
-                        Create New Career
+                        Create New Event
                     </h3>
                     <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
                         <li class="m-nav__item m-nav__item--home">
@@ -55,7 +55,7 @@
                         <li class="m-nav__item">
                             <a href="{{url('management/careers')}}" class="m-nav__link">
                                 <span class="m-nav__link-text">
-                                    Careers
+                                    Calendar
                                 </span>
                             </a>
                         </li>
@@ -80,61 +80,6 @@
                             <i class="la la-plus m--hide"></i>
                             <i class="la la-ellipsis-h"></i>
                         </a>
-                        <div class="m-dropdown__wrapper">
-                            <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
-                            <div class="m-dropdown__inner">
-                                <div class="m-dropdown__body">
-                                    <div class="m-dropdown__content">
-                                        <ul class="m-nav">
-                                            <li class="m-nav__section m-nav__section--first m--hide">
-                                                <span class="m-nav__section-text">
-                                                    Quick Actions
-                                                </span>
-                                            </li>
-                                            <li class="m-nav__item">
-                                                <a href="" class="m-nav__link">
-                                                    <i class="m-nav__link-icon flaticon-share"></i>
-                                                    <span class="m-nav__link-text">
-                                                        Activity
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="m-nav__item">
-                                                <a href="" class="m-nav__link">
-                                                    <i class="m-nav__link-icon flaticon-chat-1"></i>
-                                                    <span class="m-nav__link-text">
-                                                        Messages
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="m-nav__item">
-                                                <a href="" class="m-nav__link">
-                                                    <i class="m-nav__link-icon flaticon-info"></i>
-                                                    <span class="m-nav__link-text">
-                                                        FAQ
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="m-nav__item">
-                                                <a href="" class="m-nav__link">
-                                                    <i class="m-nav__link-icon flaticon-lifebuoy"></i>
-                                                    <span class="m-nav__link-text">
-                                                        Support
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="m-nav__separator m-nav__separator--fit"></li>
-                                            <li class="m-nav__item">
-                                                <a href="#"
-                                                   class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
-                                                    Submit
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -159,7 +104,7 @@
                     <div class="m-portlet__head-caption">
                         <div class="m-portlet__head-title">
                             <h3 class="m-portlet__head-text">
-                                Create New Event
+                                Update Event
                             </h3>
                         </div>
                     </div>
@@ -221,7 +166,7 @@
                                 </label>
                                 <div class="col-lg-4 col-md-9 col-sm-12">
                                     <input type="text" class="form-control m-input" name="title"
-                                           placeholder="Enter Title " data-toggle="m-tooltip" required value="{{old('title')}}">
+                                           placeholder="Enter Title" data-toggle="m-tooltip" required value="{{$event->title}}">
                                     <span class="m-form__help">
                                         Enter Event Title you want to add in yearly calendar
                                     </span>
@@ -236,7 +181,7 @@
                                 </label>
                                 <div class="col-lg-10 col-md-9 col-sm-12">
                                     <textarea class="form-control m-input" name="desc"
-                                              placeholder="Enter a Description of Event" style="resize: none" rows="5" >{{old('desc')}}</textarea>
+                                              placeholder="Enter a Description of Event" style="resize: none" rows="5" >{{$event->desc}}</textarea>
                                     {{--<span class="m-form__help">
                                         Please enter a menu within text length range 10 and 100.
                                     </span>--}}
@@ -251,7 +196,7 @@
                                 </label>
                                 <div class="col-lg-4 col-md-9 col-sm-12">
                                     <div class='input-group'>
-                                        <input type='date' class="form-control m-input" name="start" value="{{old('start')}}" placeholder="Select date"/>
+                                        <input type='date' class="form-control m-input" name="start" value="{{$event->start}}" placeholder="Select date"/>
                                         <div class="input-group-append">
                                             <span class="input-group-text">
                                                 <i class="la la-calendar-check-o"></i>
@@ -273,7 +218,7 @@
                                 </label>
                                 <div class="col-lg-4 col-md-9 col-sm-12">
                                     <div class='input-group'>
-                                        <input type='date' class="form-control m-input" name="end" value="{{old('end')}}" placeholder="Select date" id='m_datepicker2'/>
+                                        <input type='date' class="form-control m-input" name="end" value="{{$event->end}}" placeholder="Select date" id='m_datepicker2'/>
                                         <div class="input-group-append">
                                             <span class="input-group-text">
                                                 <i class="la la-calendar-check-o"></i>
@@ -292,7 +237,7 @@
                             <div class="m-form__actions m-form__actions">
                                 <div class="row">
                                     <div class="col-lg-10 ml-lg-auto">
-                                        <input type="submit" class="btn btn-success" value="Publish">
+                                        <input type="submit" class="btn btn-success" value="Update">
 
                                         <button type="reset" class="btn btn-secondary">
                                             Cancel
