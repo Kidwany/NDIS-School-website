@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="about-img default-overlay">
+                    <div class="about-img">
                         <img src="{{asset('website/img/academics/aims.jpg')}}" alt="">
                         {{--<a class="video-btn video-popup" href="https://www.youtube.com/watch?v=sv5hK4crIRc">
                             <img class="animated" src="{{asset('website/img')}}/icon-img/video.png" alt="">
@@ -615,7 +615,7 @@
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="about-img default-overlay">
+                    <div class="about-img">
                         <img src="{{asset('website/img/academics/class.jpg')}}" alt="">
                         {{--<a class="video-btn video-popup" href="https://www.youtube.com/watch?v=sv5hK4crIRc">
                             <img class="animated" src="{{asset('website/img')}}/icon-img/video.png" alt="">

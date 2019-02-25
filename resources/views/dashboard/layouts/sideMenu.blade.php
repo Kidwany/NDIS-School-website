@@ -299,7 +299,7 @@
             <!-------- CareersController -------->
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  m-menu-submenu-toggle="hover">
                 <a  href="javascript:;" class="m-menu__link m-menu__toggle">
-                    <i class="m-menu__link-icon flaticon-share"></i>
+                    <i class="m-menu__link-icon fa fa-suitcase"></i>
                     <span class="m-menu__link-text">
                         Careers
                     </span>
@@ -350,7 +350,7 @@
             <!-------- Users -------->
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  m-menu-submenu-toggle="hover">
                 <a  href="javascript:;" class="m-menu__link m-menu__toggle">
-                    <i class="m-menu__link-icon flaticon-multimedia-1"></i>
+                    <i class="m-menu__link-icon fa fa-users"></i>
                     <span class="m-menu__link-text">
                         Users
                     </span>

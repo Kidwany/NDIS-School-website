@@ -7,7 +7,7 @@
         <div class="breadcrumb-top default-overlay bg-img pt-100 pb-95" style="background-image:url({{asset('website/img/about/about_banner.jpg')}});">
             <div class="container">
                 <h2>About Us</h2>
-                <p>NDIS is licensed as an American and British curriculum school by the Egyptian Ministry of Education.</p>
+                <p>We are the first International School that offers both accredited American and British Curriculums in reasonable costs.</p>
             </div>
         </div>
         <div class="breadcrumb-bottom">

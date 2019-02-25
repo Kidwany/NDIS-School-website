@@ -4268,7 +4268,7 @@ textarea:focus {
   justify-content: center;
   min-height: 84px; }
   .brand-logo-active.owl-carousel .owl-item .single-brand-logo img {
-    width: auto; }
+    width: 100%; }
 
 /*--------- 13. Banner style ---------*/
 .single-banner {

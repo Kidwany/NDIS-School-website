@@ -13,7 +13,7 @@
                         <div class="col-lg-9 col-md-7 col-12 col-sm-12">
                             <div class="slider-content slider-animated-1 pt-230">
                                 <h1 class="animated">NEW DISCOVERY INTERNATIONAL SCHOOL</h1>
-                                <p class="animated">NDIS is licenced as an American and British curriculum's school by the Egyptian Ministry of Education, Cambridge, Edexcel and AIAA </p>
+                                <p class="animated">Where each Child is a New Success Story.</p>
                                 <div class="slider-btn">
                                     <a class="animated default-btn btn-green-color" href="{{url('/about')}}">ABOUT US</a>
                                     <a class="animated default-btn btn-white-color" href="{{url('contact')}}">CONTACT US</a>
@@ -31,7 +31,7 @@
                     <div class="row">
                         <div class="col-lg-9 col-md-7 col-12 col-sm-12">
                             <div class="slider-content slider-animated-1 pt-230">
-                                <h1 class="animated">MakeYour Own World</h1>
+                                <h1 class="animated">Make Your Own World</h1>
                                 <p class="animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
                                 <div class="slider-btn">
                                     <a class="animated default-btn btn-green-color" href="about-us.html">ABOUT US</a>
@@ -278,7 +278,7 @@
     </div>
 
 
-    <!-- campus-area-end -->
+    <!-- Reviews -->
 
     <div class="achievement-area pt-130 pb-115">
         <div class="container">
@@ -286,7 +286,7 @@
                 <h2>Our <span>Achievement</span></h2>
                 <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
             </div>
-            <div class="row">
+           {{-- <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                     <div class="single-count mb-30 count-one">
                         <div class="count-img">
@@ -331,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>--}}
             <div class="testimonial-slider-wrap mt-45">
                 <div class="testimonial-text-slider">
                     <div class="testi-content-wrap">
@@ -501,7 +501,7 @@
     </div>
 
 
-    <div class="brand-logo-area pb-130 mt-30">
+    <div class="brand-logo-area pb-130 mt-80">
         <div class="container">
             <div class="brand-logo-active owl-carousel">
                 <div class="single-brand-logo">
