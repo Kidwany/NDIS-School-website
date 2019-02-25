@@ -43,5 +43,7 @@ class Familychild extends Model  {
      * @var array
      */
     protected $dates = [];
-
+    public  function gender(){
+        return $this->belongsTo('App\Models\Gender','GNID','GNID');
+    }
 }

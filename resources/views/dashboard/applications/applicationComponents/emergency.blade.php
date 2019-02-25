@@ -3,7 +3,7 @@
     <div class="m-portlet__body">
         <div class="form-group m-form__group m--margin-top-10 m--hide">
             <div class="alert m-alert m-alert--default" role="alert">
-                The example form below demonstrates common HTML form elements that receive updated styles from Bootstrap with additional classes.
+
             </div>
         </div>
 
@@ -24,7 +24,7 @@
                 First Person Name
             </label>
             <div class="col-7">
-                <input class="form-control m-input" type="text" value="Ahmed Mustfa Hossam" disabled="">
+                <input class="form-control m-input" type="text" value="{{$application->emergency[0]->Name}}" disabled="">
             </div>
         </div>
 
@@ -35,7 +35,7 @@
                 Relation To Child
             </label>
             <div class="col-7">
-                <input class="form-control m-input" type="text" value="Uncle" disabled="">
+                <input class="form-control m-input" type="text" value="{{$application->emergency[0]->Relationtochild}}" disabled="">
             </div>
         </div>
 
@@ -46,7 +46,7 @@
                 Mobile
             </label>
             <div class="col-7">
-                <input class="form-control m-input" type="number" value="0152336944" disabled="">
+                <input class="form-control m-input" type="number" value="{{$application->emergency[0]->Mobile}}" disabled="">
             </div>
         </div>
 
@@ -57,7 +57,7 @@
                 Home NO
             </label>
             <div class="col-7">
-                <input class="form-control m-input" type="number" value="002369588" disabled="">
+                <input class="form-control m-input" type="text" value="{{$application->emergency[0]->HomeTel}}" disabled="">
             </div>
         </div>
 
