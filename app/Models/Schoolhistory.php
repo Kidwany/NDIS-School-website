@@ -43,5 +43,7 @@ class Schoolhistory extends Model  {
      * @var array
      */
     protected $dates = [];
-
+    public  function grade(){
+        return $this->belongsTo('App\Models\Grade','GID','GID');
+    }
 }

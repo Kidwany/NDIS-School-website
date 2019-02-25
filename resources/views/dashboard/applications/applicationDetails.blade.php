@@ -10,6 +10,7 @@
                 <div class="mr-auto">
                     <h3 class="m-subheader__title ">
                         Application Details
+
                     </h3>
                 </div>
                 <div>

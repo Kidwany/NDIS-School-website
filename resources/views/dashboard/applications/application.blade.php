@@ -306,7 +306,7 @@
                                 <td>{{$data['gender']->Gendername}}</td>
                                 <td>{{$data['grade']->Gradename}}</td>
                                 <td>{{$data['nat']->Nationalityname}}</td>
-                                <td>{{$data->isapproved}}</td>
+                                <td>{{$data['status']->Name}}</td>
                                 <td>{{$data->RegestrationDate}}</td>
                                 <td>
                                     <div class="d-flex flex-row justify-content-between">

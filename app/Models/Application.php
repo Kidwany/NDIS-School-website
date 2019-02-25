@@ -45,13 +45,15 @@ class Application extends Model  {
     protected $dates = [];
     public  function grade(){
         return $this->belongsTo('App\Models\Grade','GID','GID');
-
     }
     public  function nat(){
         return $this->belongsTo('App\Models\Nationality','NID','NID');
     }
     public  function gender(){
         return $this->belongsTo('App\Models\Gender','GNID','GNID');
+    }
+    public  function status(){
+        return $this->belongsTo('App\Models\Status','STID','STID');
     }
     public  function appinfo(){
         return $this->hasMany('App\Models\Additionalinfo','APPID','APPID');
@@ -66,13 +68,19 @@ class Application extends Model  {
         return $this->hasMany('App\Models\Emergency','APPID','APPID');
     }
     public  function schoolhistory(){
-        return $this->hasMany('App\Models\Schoolhistory','APPID','APPID');
+        return $this->hasMany('App\Models\Schoolhistory','APPID','APPID')->with('grade');
     }
     public  function parentapp(){
-        return $this->hasMany('App\Models\Parentapp','APPID','APPID');
+        return $this->hasMany('App\Models\Parentapp','APPID','APPID')->with('Parenttype','Nationality','jobs');
     }
     public  function familychild(){
-        return $this->hasMany('App\Models\Familychild','APPID','APPID');
+        return $this->hasMany('App\Models\Familychild','APPID','APPID')->with('gender');
+    }
+    public  function parentstatus(){
+        return $this->belongsTo('App\Models\Parentstatus','PRSID','PRSID');
+    }
+    public  function AppMoredetails(){
+        return $this->belongsTo('App\Models\AppMoredetails','APPID','APPID');
     }
 
 

@@ -362,11 +362,11 @@
                                 <div class="col-lg-4 col-md-9 col-sm-12">
                                     <select class="form-control m-input" name="status">
                                         <option selected> Choose Status of Position</option>
-                                        <option value="1">
+                                        <option value="6">
                                             Running
                                         </option>
-                                        <option value="0">
-                                            Closed
+                                        <option value="7">
+                                            Expired
                                         </option>
                                     </select>
                                     <span class="m-form__help">

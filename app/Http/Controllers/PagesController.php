@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Mail\SendMail;
 use App\Models\Contact;
 use App\Models;
 use DemeterChain\Main;
@@ -10,6 +11,7 @@ use Illuminate\Http\Request;
 use App\Classes\MainCore;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
@@ -181,7 +183,7 @@ class PagesController extends Controller
         $app->applicationage = $age;
         $appcode = $randnumber . "_" . $dt->toDateString();
         $app->appcode = $appcode;
-        $app->isapproved = 1;
+        $app->STID = 1;
         $app->RegestrationDate = $dt->toDateString();
         $app->NID = $request->input('NID');
         $app->GNID = $request->input('GNID');
@@ -204,6 +206,7 @@ class PagesController extends Controller
         $parent->PRID = 4;
         $parent->save();
         //mother_fullname - mother_nationality - mother_phone - mother_email - mother_company - mother_job
+        $parent = new Models\Parentapp();
         $parent->FullName = $request->input('mother_fullname');
         $parent->Phone = $request->input('mother_phone');
         $parent->Company = $request->input('mother_company');
@@ -259,6 +262,7 @@ class PagesController extends Controller
         $datapro->Email = $request->input('email');
         $datapro->APPID = $APPID;
         $datapro->save();
+        MainCore::sendmail("thank you for you applied and please keep your application code ".$appcode,$request->input('email'));
         return redirect('thankyou')->with('appcode', $appcode);
 
 
@@ -394,5 +398,19 @@ class PagesController extends Controller
         return view('frontend.careers.apply', compact('careers'));
     }
 
+    public function search($appcode)
+    {
+        $application = Models\Application::with('Grade', 'nat', 'gender', 'status','AppMoredetails')->where('appcode','=',trim($appcode))->get();
+        if(count($application)){
+            return $application;
+        }else{
+            return "Not found";
+        }
+
+    }
+    public  function sendmail($data){
+        Mail::to('krunal@appdividend.com')->send(new SendMail($data));
+        return 'Email was sent';
+    }
 
 }

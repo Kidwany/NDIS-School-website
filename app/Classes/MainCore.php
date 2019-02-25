@@ -8,8 +8,10 @@
 
 namespace App\Classes;
 
+use App\Mail\SendMail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Session;
 use App\Models;
@@ -127,6 +129,10 @@ class MainCore
     return $foundkey;
         //return $newarray;
 
+
+    }
+    public static function sendmail($data,$user){
+        Mail::to($user)->send(new SendMail($data));
 
     }
 }
