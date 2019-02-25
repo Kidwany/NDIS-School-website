@@ -5,8 +5,8 @@
     <div class="breadcrumb-area">
         <div class="breadcrumb-top default-overlay bg-img pt-100 pb-95" style="background-image:url({{asset('website/img/about/about_banner.jpg')}});">
             <div class="container">
-                <h2>New Year Festival for Student & Parents.</h2>
-                <p>Every Year NDIS Celebrate with it's students for christmas day.</p>
+                <h2>{{$event->title}}</h2>
+                <p>{{str_limit($event->content, 60, '...')}}</p>
             </div>
         </div>
         <div class="breadcrumb-bottom">
@@ -20,7 +20,7 @@
 
 
 
-    <div class="event-details-area pt-130">
+    <div class="event-details-area pt-130 pb-100">
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 col-lg-8">
@@ -29,37 +29,37 @@
                             <div class="description-date-social mb-45">
                                 <div class="description-date-time">
                                     <div class="description-date">
-                                        <span class="event-date">1st</span>
-                                        <span>Dec</span>
+                                        <span class="event-date">{{$event->date->format('d')}}th</span>
+                                        <span>{{$event->date->format('M')}}</span>
                                     </div>
                                     <div class="description-meta-wrap">
                                         <div class="description-meta">
                                             <i class="fa fa-location-arrow"></i>
-                                            <span>Mascot Plaza ,Uttara</span>
+                                            <span>{{$event->location}}</span>
                                         </div>
                                         <div class="description-meta">
                                             <i class="fa fa-clock-o"></i>
-                                            <span>10:30 am</span>
+                                            <span>{{$event->date->format('g:i A')}}</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="description-social-wrap">
                                     <div class="description-social">
-                                        <ul>
+                                        {{--<ul>
                                             <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                             <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
                                             <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
                                             <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
+                                        </ul>--}}
                                     </div>
                                     <div class="description-btn">
                                         <a href="#"><i class="fa fa-share-alt"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <img src="{{asset('website/img/event/event-1.jpg')}}" alt="">
-                            <h3>New Year Festival for Student & Parents.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dorepre enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu antium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem snesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                            <img src="{{asset($event->image)}}" alt="">
+                            <h3>{{$event->title}}</h3>
+                            <p>{{$event->content}}</p>
 
 
 
@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4">
                     <div class="sidebar-style">
-                        <div class="sidebar-search mb-40">
+                        {{--<div class="sidebar-search mb-40">
                             <div class="sidebar-title mb-40">
                                 <h4>Search</h4>
                             </div>
@@ -118,12 +118,17 @@
                                 <input type="text" placeholder="Search">
                                 <button><i class="fa fa-search"></i></button>
                             </form>
-                        </div>
+                        </div>--}}
                         <div class="sidebar-about mb-40">
                             <div class="sidebar-title mb-15">
                                 <h4>About Us</h4>
                             </div>
-                            <p>quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolors eos qui ratione voluptatem sad.</p>
+                            <p>
+                                NDIS is licensed as an American and British curriculums school by the Egyptian Ministry of
+                                Education, Cambridge, Edexcel and AIAA.
+                                The task of school is offering students a general education leading to both Egyptian
+                                and International qualifications. In particular it serves the educational needs of students and promotes international understanding.
+                            </p>
                             <a href="#"><img src="assets/img/banner/banner-4.jpg" alt=""></a>
                             <div class="sidebar-social">
                                 <ul>
@@ -232,7 +237,7 @@
 
 
 
-    <div class="course-area bg-img pt-60 pb-10">
+    {{--<div class="course-area bg-img pt-60 pb-10">
         <div class="container">
             <div class="section-title mb-75">
                 <h2> <span>Event</span> Gallery</h2>
@@ -262,7 +267,7 @@
             </div>
         </div>
     </div>
-
+--}}
 
 
     @include('layouts.footer')

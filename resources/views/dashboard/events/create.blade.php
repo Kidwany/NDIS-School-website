@@ -29,117 +29,6 @@
     <!-- END: Left Aside -->
     <div class="m-grid__item m-grid__item--fluid m-wrapper">
         <!-- BEGIN: Subheader -->
-        <div class="m-subheader ">
-            <div class="d-flex align-items-center">
-                <div class="mr-auto">
-                    <h3 class="m-subheader__title m-subheader__title--separator">
-                        Create New Event
-                    </h3>
-                    <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
-                        <li class="m-nav__item m-nav__item--home">
-                            <a href="#" class="m-nav__link m-nav__link--icon">
-                                <i class="m-nav__link-icon la la-home"></i>
-                            </a>
-                        </li>
-                        <li class="m-nav__separator">
-                            -
-                        </li>
-                        <li class="m-nav__item">
-                            <a href="{{url('/management')}}" class="m-nav__link">
-                                <span class="m-nav__link-text">
-                                    Dashboard
-                                </span>
-                            </a>
-                        </li>
-                        <li class="m-nav__separator">
-                            -
-                        </li>
-                        <li class="m-nav__item">
-                            <a href="{{url('management/careers')}}" class="m-nav__link">
-                                <span class="m-nav__link-text">
-                                    Events
-                                </span>
-                            </a>
-                        </li>
-                        {{--<li class="m-nav__separator">
-                            -
-                        </li>
-                        <li class="m-nav__item">
-                            <a href="" class="m-nav__link">
-                                <span class="m-nav__link-text">
-                                    HTML
-                                </span>
-                            </a>
-                        </li>--}}
-                    </ul>
-                </div>
-                <div>
-                    <div
-                        class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push"
-                        m-dropdown-toggle="hover" aria-expanded="true">
-                        <a href="#"
-                           class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--outline-2x m-btn--air m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
-                            <i class="la la-plus m--hide"></i>
-                        </a>
-                        <div class="m-dropdown__wrapper">
-                            <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
-                            <div class="m-dropdown__inner">
-                                <div class="m-dropdown__body">
-                                    <div class="m-dropdown__content">
-                                        <ul class="m-nav">
-                                            <li class="m-nav__section m-nav__section--first m--hide">
-                                                <span class="m-nav__section-text">
-                                                    Quick Actions
-                                                </span>
-                                            </li>
-                                            <li class="m-nav__item">
-                                                <a href="" class="m-nav__link">
-                                                    <i class="m-nav__link-icon flaticon-share"></i>
-                                                    <span class="m-nav__link-text">
-                                                        Activity
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="m-nav__item">
-                                                <a href="" class="m-nav__link">
-                                                    <i class="m-nav__link-icon flaticon-chat-1"></i>
-                                                    <span class="m-nav__link-text">
-                                                        Messages
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="m-nav__item">
-                                                <a href="" class="m-nav__link">
-                                                    <i class="m-nav__link-icon flaticon-info"></i>
-                                                    <span class="m-nav__link-text">
-                                                        FAQ
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="m-nav__item">
-                                                <a href="" class="m-nav__link">
-                                                    <i class="m-nav__link-icon flaticon-lifebuoy"></i>
-                                                    <span class="m-nav__link-text">
-                                                        Support
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="m-nav__separator m-nav__separator--fit"></li>
-                                            <li class="m-nav__item">
-                                                <a href="#"
-                                                   class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">
-                                                    Submit
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- END: Subheader -->
         <div class="m-content">
             <div class="m-portlet m-portlet--mobile">
@@ -172,7 +61,7 @@
                 <div class="m-portlet__body">
                     <!--begin: Form -->
                     <!--begin::Form-->
-                    <form class="m-form m-form--fit m-form--label-align-right" id="m_form_1" action="{{url('management/event')}}" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+                    <form class="form-group" action="{{route('event.store')}}" method="POST" enctype="multipart/form-data">
                         {{csrf_field()}}
                         <div class="m-portlet__body">
 
@@ -187,8 +76,7 @@
                                         Opps! Please fill the required fields.
                                     </div>
                                     <div class="m-alert__close">
-                                        <button type="button" class="close" data-close="alert"
-                                                aria-label="Close"></button>
+                                        <button type="button" class="close" data-close="alert" aria-label="Close"></button>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +92,21 @@
                                         Enter Event Title you want to add in yearly calendar
                                     </span>
                                 </div>
+
+
+                                <!-------------------- Location ---------------->
+                                <label class="col-form-label col-lg-2 col-sm-12">
+                                    Location *
+                                </label>
+                                <div class="col-lg-4 col-md-9 col-sm-12">
+                                    <input type="text" class="form-control m-input" name="location"
+                                           placeholder="Enter Location " data-toggle="m-tooltip" required value="{{old('location')}}">
+                                    <span class="m-form__help">
+                                        Enter Event Location.
+                                    </span>
+                                </div>
                             </div>
+
 
 
                             <!-------------------- Description ---------------->
@@ -224,8 +126,8 @@
 
                             <div class="form-group m-form__group row">
                                 <!-------------------- Start Date ---------------->
-                                <label class="col-form-label col-lg-2 col-sm-12">
-                                     Date *
+                                <label class="col-form-label col-lg-2 col-sm-12 align-content-end">
+                                    Date *
                                 </label>
                                 <div class="col-lg-4 col-md-9 col-sm-12">
                                     <div class="input-group date" >
@@ -240,18 +142,16 @@
                                         Select a date
                                     </span>
                                 </div>
-                            </div>
 
 
-                            <div class="form-group m-form__group row">
+                                <!-------------------- Image---------------->
                                 <label class="col-form-label col-lg-2 col-sm-12">
                                     Image *
                                 </label>
-                                <div class="col-lg-10 col-md-9 col-sm-12">
+                                <div class="col-lg-4 col-md-9 col-sm-12">
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="validatedCustomFile" required name="image" {{old('cvpath')}}>
-                                        <label class="custom-file-label"for="validatedCustomFile">Upload Event Image...</label>
-                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        <input type="file" class="custom-file-input" id="customFile" name="image">
+                                        <label class="custom-file-label" for="customFile">Choose file</label>
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +165,6 @@
                                 <div class="row">
                                     <div class="col-lg-10 ml-lg-auto">
                                         <input type="submit" class="btn btn-success" value="Publish">
-
                                         <button type="reset" class="btn btn-secondary">
                                             Cancel
                                         </button>

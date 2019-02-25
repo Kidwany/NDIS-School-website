@@ -120,3 +120,7 @@ Route::post('/career-apply', 'PagesController@apply');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

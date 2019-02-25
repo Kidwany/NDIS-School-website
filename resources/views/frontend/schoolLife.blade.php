@@ -77,7 +77,7 @@
             <div class="course-slider-active nav-style-1 owl-carousel">
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img')}}/course/course-1.jpg" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/bathrooms.png')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4><a href="#">Bathrooms</a></h4>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/library.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/library.png')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4><a href="#">Library</a></h4>
@@ -140,7 +140,7 @@
                 </div>
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/theater.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/theater.png')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4><a href="#">Theater</a></h4>

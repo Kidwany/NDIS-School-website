@@ -6,7 +6,7 @@
  * Time: 3:16 PM
  */
 
-Route::group(['namespace' => 'Dashboard'],  function ()
+Route::group(['namespace' => 'Dashboard', 'middleware' => 'auth'],  function ()
 {
 
     /*--- Index of Dashboard ---*/
@@ -28,7 +28,7 @@ Route::group(['namespace' => 'Dashboard'],  function ()
     Route::get('management/careers/create', 'DashboardController@createCareer');
 
     /*--- Appliers For Career ---*/
-    Route::get('management/careers/appliers', 'DashboardController@appliers');
+    //Route::get('management/careers/appliers', 'DashboardController@appliers');
 
     /*---  Applicants Details  ---*/
     Route::get('management/careers/appliers/applicant', 'DashboardController@applicantDetails');
@@ -37,7 +37,7 @@ Route::group(['namespace' => 'Dashboard'],  function ()
     Route::resource('management/careers', 'CareersController');
 
     /*---- Applicant ----*/
-//    Route::resource('management/applicants', 'ApplicantController');
+    Route::resource('management/applicants', 'ApplicantController');
 
     /*---- Calendar ----*/
     Route::resource('management/calendar', 'CalendarController');

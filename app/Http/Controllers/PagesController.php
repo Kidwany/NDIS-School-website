@@ -23,7 +23,8 @@ class PagesController extends Controller
      */
     public function welcome()
     {
-        return view('frontend.welcome');
+        $events = Models\Events::orderBy('date', 'ASC')->get();
+        return view('frontend.welcome', compact('events'));
     }
 
     /**
@@ -293,7 +294,8 @@ class PagesController extends Controller
      */
     public function eventDetails($id)
     {
-        return view('frontend.events.eventDetails');
+        $event = Models\Events::find($id);
+        return view('frontend.events.eventDetails', compact('event'));
     }
 
 
@@ -345,7 +347,7 @@ class PagesController extends Controller
             'fullname' => 'required|min:6|max:30',
             'email' => 'required|email|min:6|max:40',
             'phone' => 'required|alpha_num|min:9|max:12',
-            'cvpath.*' => 'required|file|doc,docx,pdf',
+            'cvpath.*' => 'required|mimes:jpeg,bmp,png',
         ], [], [
             'fullname' => 'Name',
             'email' => 'Email',

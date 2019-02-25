@@ -85,7 +85,7 @@
 
                                                 <div class="col-lg-12">
                                                     <div class="custom-file">
-                                                        <input type="file" class="custom-file-input" id="validatedCustomFile" required name="cvpath" {{old('cvpath')}}>
+                                                        <input type="file" class="custom-file-input" id="validatedCustomFile" required name="cvpath" >
                                                         <label class="custom-file-label"for="validatedCustomFile">Upload your CV...</label>
                                                         <div class="invalid-feedback">Example invalid custom file feedback</div>
                                                     </div>

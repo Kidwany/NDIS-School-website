@@ -442,6 +442,22 @@
                 </div>
             </li>
 
+
+            <!-------- Logout -------->
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  m-menu-submenu-toggle="hover">
+                {{--<a class="dropdown-item" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>--}}
+                <a  href="{{ route('logout') }}" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon fa fa-sign-out"></i>
+                    <span class="m-menu__link-text">
+                        Logout
+                    </span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+            </li>
         </ul>
     </div>
     <!-- END: Aside Menu -->

@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Models\Events;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class EventController extends Controller
 {
@@ -34,32 +37,50 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        return $input = $request->all();
+        $input = $request->all();
 
-        /*$start_date = $input['start'];
-        $end_date = $input['end'];
+        $input['date'] = Carbon::parse($input['date'])->format('Y-m-d H:i:s');
 
-        $input['start'] = Carbon::parse($start_date)->format('Y-m-d');
-        $input['end'] = Carbon::parse($end_date)->format('Y-m-d');*/
+        //return $input['date'];
 
         $this->validate($request, [
             'title'         =>  'required|min:3',
-            'desc'          =>  '',
-            'start'         =>  'required|date',
-            'end'           =>  'nullable|date',
+            'location'      =>  'required',
+            'content'       =>  'required',
+            'date'          =>  'required',
+            'image'         =>  'required|mimes:jpeg,bmp,png,jpg,gif',
         ],[],[
-            'title'         =>  ' Title',
-            'desc'          =>  'Description',
-            'start'         =>  'Start',
-            'end'           =>  'End',
+            'title'         =>  'Title',
+            'content'       =>  'Content',
+            'date'          =>  'Date',
+            'image'         =>  'Image',
         ]);
-
         //Upload and insert images
 
-        $event = Calendar::create($input);
+
+        if ($file = $request->file('image')) {
+            $name = time() . $file->getClientOriginalName();
+
+            $file->move('dashboard/img/event', $name);
+
+            $path = 'dashboard/img/event/' . $name;
+
+            //$image = Images::create(['name' => $name, 'path' => $path]);
+
+            $input['image'] = $path;
+        }
+
+        $event = new Events;
+        $event->title = $input['title'];
+        $event->content = $input['content'];
+        $event->date = $input['date'];
+        $event->location = $input['location'];
+        $event->image = $input['image'];
+        $event->save();
+
 
         Session::flash('create',   $event->title . ' Has Been Created Successfully');
-        return redirect('management/calendar');
+        return redirect('management/event');
 
     }
 
@@ -82,11 +103,8 @@ class EventController extends Controller
      */
     public function edit($id)
     {
-
-        $event = Calendar::find($id);
-
-        return view('dashboard.calendar.edit', compact('event'));
-
+        $event = Events::find($id);
+        return view('dashboard.events.edit', compact('event'));
     }
 
     /**
@@ -101,34 +119,53 @@ class EventController extends Controller
     public function update(Request $request, $id)
     {
 
-        $event = Calendar::find($id);
 
         $input = $request->all();
 
-        /*$start_date = $input['start'];
-        $end_date = $input['end'];
+        $input['date'] = Carbon::parse($input['date'])->format('Y-m-d H:i:s');
 
-        $input['start'] = Carbon::parse($start_date)->format('Y-m-d');
-        $input['end'] = Carbon::parse($end_date)->format('Y-m-d');*/
+        //return $input['date'];
 
         $this->validate($request, [
             'title'         =>  'required|min:3',
-            'desc'          =>  '',
-            'start'         =>  'required|date',
-            'end'           =>  'nullable|date',
+            'location'      =>  'required',
+            'content'       =>  'required',
+            'date'          =>  'required',
+/*            'image'         =>  'mimes:jpeg,bmp,png,jpg,gif',*/
         ],[],[
-            'title'         =>  ' Title',
-            'desc'          =>  'Description',
-            'start'         =>  'Start',
-            'end'           =>  'End',
+            'title'         =>  'Title',
+            'content'       =>  'Content',
+            'date'          =>  'Date',
+            'image'         =>  'Image',
         ]);
 
         //Upload and insert images
+        if ($file = $request->file('image')) {
+            $name = time() . $file->getClientOriginalName();
 
-        $event = Calendar::update($input);
+            $file->move('dashboard/img/event', $name);
 
-        Session::flash('create',   $event->title . ' Has Been Updated Successfully');
-        return redirect('management/calendar');
+            $path = 'dashboard/img/event/' . $name;
+
+            //$image = Images::create(['name' => $name, 'path' => $path]);
+
+            $input['image'] = $path;
+        }
+
+        $event = Events::find($id);
+        $event->title = $input['title'];
+        $event->content = $input['content'];
+        $event->date = $input['date'];
+        $event->location = $input['location'];
+        if (!empty($input['image']))
+        {
+            $event->image = $input['image'];
+        }
+
+        $event->save();
+
+        Session::flash('update',   $event->title . ' Has Been Updated Successfully');
+        return redirect('management/event');
     }
 
     /**
@@ -139,12 +176,19 @@ class EventController extends Controller
      */
     public function destroy($id)
     {
-        $event = Calendar::find($id);
+        $event = Events::find($id);
+
+        if ($event->image)
+        {
+            unlink(public_path() . '/' . $event->image);
+        }
+
+        // Delete Pivot Row Related to Member ID
 
         $event->delete();
 
-        Session::flash('delete',   $event->title . ' Event Has Been Deleted Successfully');
+        Session::flash('delete', $event->title . ' Event Has Been Deleted Successfully');
 
-        return redirect('management/calendar');
+        return redirect('management/event');
     }
 }

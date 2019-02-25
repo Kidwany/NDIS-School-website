@@ -170,11 +170,11 @@
                                         {{$event->title}}
                                     </td>
                                     <td>
-                                        {{$event->content}}
+                                        {{str_limit($event->content, 150, '...')}}
                                     </td>
                                     <td>
                                         @if($event->date)
-                                            {{$event->date}}
+                                            {{$event->date->format('d M Y')}}
                                         @endif
                                     </td>
                                     <td>
@@ -182,10 +182,10 @@
                                     </td>
                                     <td>
                                         <div class="d-flex flex-row justify-content-between">
-                                            <button data-toggle="modal" data-target="#m_modal_{{$event->id}}" href="{{url('management/calendar/' . $event->id . '/delete')}}" type="button" class="btn  btn-danger mr-1">
+                                            <button data-toggle="modal" data-target="#m_modal_{{$event->EVID}}" href="{{url('management/calendar/' . $event->EVID . '/delete')}}" type="button" class="btn  btn-danger mr-1">
                                                 <i class="fa fa-trash"></i>
                                             </button>
-                                            <a href="{{url('management/calendar/' . $event->id . '/edit')}}" type="button" class="btn  btn-primary">
+                                            <a href="{{url('management/event/' . $event->EVID . '/edit')}}" type="button" class="btn  btn-primary">
                                                 <i class="fa fa-pencil"></i>
                                             </a>
                                         </div>
@@ -194,7 +194,7 @@
 
 
 
-                                <div class="modal fade" id="m_modal_{{$event->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="m_modal_{{$event->EVID}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -209,7 +209,7 @@
                                             </div>
                                             <div class="modal-body">
                                                 <p>
-                                                    Are You Sure You want to delete career <strong>{{$event->title}}</strong>
+                                                    Are You Sure You want to delete Event <strong>{{$event->title}}</strong>
                                                 </p>
                                             </div>
                                             <div class="modal-footer">
@@ -217,7 +217,7 @@
                                                     Close
                                                 </button>
 
-                                                <form action="{{route('calendar.destroy', $event->id)}}" method="post" accept-charset="UTF-8">
+                                                <form action="{{route('event.destroy', $event->EVID)}}" method="post" accept-charset="UTF-8">
                                                     {{csrf_field()}}
                                                     <input name="_method" type="hidden" value="DELETE">
                                                     <button type="submit" class="btn btn-danger">

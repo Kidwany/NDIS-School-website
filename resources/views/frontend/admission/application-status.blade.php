@@ -232,6 +232,7 @@
                                         </div>
                                     </div>
                                     <!--end: Form Wizard Step 2-->
+
                                     <!--begin: Form Wizard Step 3-->
                                     <div class="m-wizard__form-step d-none" id="m_wizard_form_step_3">
                                         <div class="m-form__section m-form__section--first">
