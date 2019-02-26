@@ -17,3 +17,10 @@
         <h6>{{session('create')}}</h6>
     </div>
 @endif
+
+
+@if(Session::has('error'))
+    <div class="alert alert-danger">
+        <h6>{{session('error')}}</h6>
+    </div>
+@endif

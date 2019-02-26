@@ -7,6 +7,28 @@
     <!------ Slider Section ------>
     <div class="slider-area">
         <div class="slider-active owl-carousel">
+
+            <div class="single-slider slider-height-1 bg-img" style="background-image:url({{asset('website/img/slider/slide-3.jpg')}});">
+                <div class="container">
+                    <div class="row d-flex flex-row justify-content-end">
+                        <div class="col-lg-6 col-md-7 col-12 col-sm-12">
+                            <div class="slider-content slider-animated-1 pt-230">
+                                <h1 class="animated">NEW DISCOVERY INTERNATIONAL SCHOOL</h1>
+                                <p class="animated">Where each Child is a New Success Story. </p>
+                                <div class="slider-btn">
+                                    <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">School Life</a>
+                                    <a class="animated default-btn btn-white-color" href="{{url('/academics')}}">Academics</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{--<div class="slider-single-img slider-animated-1">
+                        <img class="animated" src="{{asset('website/img')}}/slider/single-slide-1.png" alt="">
+                    </div>--}}
+                </div>
+            </div>
+
+{{--
             <div class="single-slider slider-height-1 bg-img" style="background-image:url({{asset('website/img/slider/slider-bg.jpg')}});">
                 <div class="container">
                     <div class="row">
@@ -21,30 +43,37 @@
                             </div>
                         </div>
                     </div>
-                    {{--<div class="slider-single-img slider-animated-1">
+                    --}}
+{{--<div class="slider-single-img slider-animated-1">
                         <img class="animated" src="{{asset('website/img/slider/mini-slider.jpg')}}" alt="">
-                    </div>--}}
+                    </div>--}}{{--
+
                 </div>
             </div>
-            <div class="single-slider slider-height-1 bg-img" style="background-image:url({{asset('website/img/slider/slider-1.jpg')}});">
+--}}
+
+
+            <div class="single-slider slider-height-1 bg-img" style="background-image:url({{asset('website/img/slider/slider-2.jpg')}});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-9 col-md-7 col-12 col-sm-12">
                             <div class="slider-content slider-animated-1 pt-230">
-                                <h1 class="animated">Make Your Own World</h1>
-                                <p class="animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                                <h1 class="animated">Applied Learning</h1>
+                                <p class="animated">Learning with passion is our aim. <br> We encourage our students to discover the information not to learn it.</p>
                                 <div class="slider-btn">
-                                    <a class="animated default-btn btn-green-color" href="about-us.html">ABOUT US</a>
-                                    <a class="animated default-btn btn-white-color" href="contact.html">CONTACT US</a>
+                                    <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">School Life</a>
+                                    <a class="animated default-btn btn-white-color" href="{{url('/academics')}}">Academics</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slider-single-img slider-animated-1">
+                    {{--<div class="slider-single-img slider-animated-1">
                         <img class="animated" src="{{asset('website/img')}}/slider/single-slide-1.png" alt="">
-                    </div>
+                    </div>--}}
                 </div>
             </div>
+
+
         </div>
     </div>
 
@@ -58,19 +87,19 @@
                             <img class="animated" src="{{asset('website/img/home/challenge.png')}}" alt="">
                         </div>
                         <div class="choose-content">
-                            <h3>Academically Challenging</h3>
-                            <p>A program of instruction in English leading to nationally and internationally-recognized qualifications. </p>
+                            <h3>Challenging Academic Curriculum</h3>
+                            <p>Every child has different type of intelligence. Our Curriculum is designed to challenge their mentality and build their Capacities.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="single-choose-us choose-bg-yellow">
                         <div class="choose-img">
-                            <img class="animated" src="{{asset('website/img/home/security.png')}}" alt="">
+                            <img class="animated" src="{{asset('website/img/home/accreditation.png')}}" alt="">
                         </div>
                         <div class="choose-content">
-                            <h3>Secure Environment</h3>
-                            <p>Students are encouraged to develop a love of learning and to internalize learning as lifelong practiced. </p>
+                            <h3>Accreditation.</h3>
+                            <p>The School is accredited by Virginia College for the American Section, Cambridge for the British one and ESLESCA for Mathematics.</p>
                         </div>
                     </div>
                 </div>
@@ -80,19 +109,23 @@
                             <img class="animated" src="{{asset('website/img/home/decsion.png')}}" alt="">
                         </div>
                         <div class="choose-content">
-                            <h3>Decision-Making</h3>
-                            <p>In implementing the policies of the Board, The director will give due consideration to the views of staff. </p>
+                            <h3>Personality Building.</h3>
+                            <p>We care about our students’ Behavior and Personality because each one of them is unique.
+                                Discovering their personality and developing it is a sacred mission that define our philosophy.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="single-choose-us choose-bg-green">
                         <div class="choose-img">
-                            <img class="animated" src="{{asset('website/img/home/american.png')}}" alt="">
+                            <img class="animated" src="{{asset('website/img/home/sport.png')}}" alt="">
                         </div>
                         <div class="choose-content">
-                            <h3>American Curriculums</h3>
-                            <p>NDIS is licensed as an American and British curriculum school by the Egyptian Ministry of Education. </p>
+                            <h3>Physical Development.</h3>
+                            <p>If they know how to play, they will know how to grow.
+                                Our aim is to guide them while playing to strengthen their muscles increase their wellness.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +182,7 @@
                         </div>
 
                         <div class="col-md-6 p-0">
-                            <div class="tab-wrapper">
+                            <div class="tab-wrapper" style="height: 100%">
                                 <ul class="nav nav-pills mb-3 campus-tab" id="pills-tab" role="tablist">
                                     <li role="presentation" class="active">
                                         <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
@@ -182,8 +215,7 @@
                                     <div role="tabpanel" class="tab-pane active" id="home">
                                         <div class="campus-wrapper">
                                             <div class="campus-content">
-                                                <p>The real success of nations is discovering and empowering the innate abilities of younger generations throught innovation and quality learning to cope withe the challenges of the 21st century worldwide  </p>
-                                                <p>The task of the school is offering students a general education leading to both Egyptian and international qualifications.</p>
+                                                <p style="text-align: justify">The real success of nations is concealed in discovering and empowering the innate abilities of younger generations through innovation and quality learning to be able to cope with the challenges of the 21st century worldwide.</p>
                                                 <a href="{{url('/about')}}">read more</a>
                                             </div>
                                         </div>
@@ -191,8 +223,8 @@
                                     <div role="tabpanel" class="tab-pane" id="profile">
                                         <div class="campus-wrapper">
                                             <div class="campus-content">
-                                                <p>We are keen to deliver to society highly qualified graduates through applied learning with advanced technology.    </p>
-                                                <p>Due care is given to moral development and character building as well as involving parents positively to complement the educational journey of their sons and daughters.</p>
+                                                <p style="text-align: justify">We are keen to deliver to society highly qualified graduates by applying the latest technologies and applied learning approaches. </p>
+                                                <p style="text-align: justify">Due care is given to moral development and character building as well as involving parents positively to be partner of their kids’ educational journey.</p>
                                                 <a href="{{url('/about')}}">read more</a>
                                             </div>
                                         </div>
@@ -200,10 +232,9 @@
                                     <div role="tabpanel" class="tab-pane" id="messages">
                                         <div class="campus-wrapper">
                                             <div class="campus-content">
-                                                <p>NDIS and staff share the philosophy that a aschool must be a place for successful experiences. </p>
-                                                <p>Even though learning styles and abilities are different, all children can be successful in many endeavors.</p>
-                                                <p>Teachers who individualize instruction to meet the student's further enhance the youngster's abilities to be successful in learning.</p>
-                                                <a href="{{url('/about')}}">read more</a>
+                                                <p style="text-align: justify">We believe that the first years of life are the most influential in establishing good habits and basic learning skills.  We are working to help all children to prepare for the future and enable them to develop their capabilities as successful learners, confident individuals and responsible citizens. <br> Indeed, play is a fundamental part of childhood. Therefor our children’s learning is promoted successfully by activities specially planned and adapted to meet or extend their individual learning needs.
+                                                    <br>NDIS is a place for happy healthy children.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -284,7 +315,7 @@
         <div class="container">
             <div class="section-title mb-75">
                 <h2>Our <span>Achievement</span></h2>
-                <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
+                <p>Our achievments, in our philosophy, is always measured by our students' happiness and well-being.  <br> NDIS Parents' testimonials are our Certificate of success.  </p>
             </div>
            {{-- <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -336,7 +367,7 @@
                 <div class="testimonial-text-slider">
                     <div class="testi-content-wrap">
                         <div class="testi-big-img">
-                            <img alt="" src="{{asset('website/img')}}/testimonial/testi-b1.jpg">
+                            <img alt="" src="{{asset('website/img/reviews/event-3.jpg')}}" style="object-position: center center; object-fit: cover">
                         </div>
                         <div class="row no-gutters">
                             <div class="ml-auto col-lg-6 col-md-12">
@@ -344,10 +375,10 @@
                                     <div class="quote-style quote-left">
                                         <i class="fa fa-quote-left"></i>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit </p>
+                                    <p>My experience in NDIS till now is unforgettable, my little lilly enjoy her school day in a way that i never imagined. <br>What matters for me is her smile and this school never failed me to draw it on her face.  </p>
                                     <div class="testi-info">
-                                        <h5>AYESHA HOQUE</h5>
-                                        <span>Students Of AMMT Department</span>
+                                        <h5>Amina Darwish</h5>
+                                        <span>Lilly's Mom</span>
                                     </div>
                                     <div class="quote-style quote-right">
                                         <i class="fa fa-quote-right"></i>
@@ -435,7 +466,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-image-slider">
+                {{--<div class="testimonial-image-slider">
                     <div class="sin-testi-image">
                         <img src="{{asset('website/img')}}/testimonial/testi-s2.jpg" alt="">
                     </div>
@@ -448,7 +479,7 @@
                     <div class="sin-testi-image">
                         <img src="{{asset('website/img')}}/testimonial/testi-s3.jpg" alt="">
                     </div>
-                </div>
+                </div>--}}
             </div>
             <div class="testimonial-text-img">
                 <img alt="" src="{{asset('website/img')}}/icon-img/testi-text.png">
@@ -462,7 +493,7 @@
         <div class="container">
             <div class="section-title mb-75">
                 <h2><span>Our</span> Event</h2>
-                <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
+                <p> Events are not a side activity, it is a main duty. <br> NDIS' Philosophy aim to give students a real life memories not just education. </p>
             </div>
 
             <div class="event-active owl-carousel nav-style-1">

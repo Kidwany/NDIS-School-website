@@ -45,5 +45,8 @@ Route::group(['namespace' => 'Dashboard', 'middleware' => 'auth'],  function ()
     /*---- Events ----*/
     Route::resource('management/event', 'EventController');
 
+    /*---- Events ----*/
+    Route::resource('management/users', 'UsersController');
+
 
 });

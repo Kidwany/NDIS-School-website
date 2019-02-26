@@ -96,6 +96,8 @@ Route::get('/send', 'PagesController@sendmail');
 
 
 
+/* -- School Rules--- */
+Route::get('/rules', 'PagesController@rules');
 
 
 

@@ -20,7 +20,7 @@ $(document).ready(function () {
     $('.slider-active').owlCarousel({
         loop: true,
         nav: false,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
@@ -84,7 +84,7 @@ $(document).ready(function () {
                 items: 3
             },
             1000: {
-                items: 4
+                items: 3
             }
         }
     })
@@ -392,7 +392,7 @@ $(document).ready(function () {
                 items: 4
             },
             1000: {
-                items:4
+                items:5
             }
         }
     })
@@ -877,7 +877,7 @@ $(document).ready(function () {
     }
 
 
-//according menu
+//according menu for admission steps
 
         //Add Inactive Class To All Accordion Headers
         $('.accordion-header').toggleClass('inactive-header');
@@ -905,10 +905,18 @@ $(document).ready(function () {
         });
 
         return false;
+
+
+
+
+//About Tabs
+
+
 });
 
 
 
+//Stepper
 
 $(function(){
     $("#wizard").steps({
@@ -940,9 +948,12 @@ $(function(){
 })
 
 
+$(document).ready(function(){
 
-
-
+    $('.campus .tab-wrapper #pills-tab li').click(function () {
+        this.addClass('.active').siblings().removeClass('active');
+    });
+});
 
 
 

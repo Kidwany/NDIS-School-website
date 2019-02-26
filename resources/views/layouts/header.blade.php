@@ -46,8 +46,9 @@
                                     </li>
                                     <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
                                         <ul class="submenu">
-                                            <li><a href="{{url('about')}}">About</a></li>
+                                            <li><a href="{{url('about')}}">About Us</a></li>
                                             <li><a href="{{url('calendar')}}">Calendar</a></li>
+                                            <li><a href="{{url('about#mission')}}">Mission & Vision</a></li>
                                             {{--<li><a href="event.html">event page</a></li>
                                             <li><a href="shop.html">shop page</a></li>
                                             <li><a href="course-details.html">course details</a></li>
@@ -94,6 +95,7 @@
                                         <a href="{{url('/school-life')}}"> SCHOOL LIFE  </a>
                                         <ul class="submenu">
                                             <li><a href="{{url('/school-life')}}">Facilities</a></li>
+                                            <li><a href="{{url('/rules')}}">School Rules</a></li>
                                             {{--<li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
                                             <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
                                             <li><a href="{{url('/admission')}}">Online Application</a></li>--}}
@@ -236,8 +238,8 @@
 
                             <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
                                 <ul class="submenu">
-                                    <li><a href="{{url('about')}}">Calendar</a></li>
-                                    <li><a href="{{url('calendar')}}">home version 2</a></li>
+                                    <li><a href="{{url('about')}}">About Us</a></li>
+                                    <li><a href="{{url('calendar')}}">School Calendar2</a></li>
                                 </ul>
                             </li>
 
@@ -313,6 +315,7 @@
                                 <a href="{{url('/school-life')}}"> SCHOOL LIFE  </a>
                                 <ul class="submenu">
                                     <li><a href="{{url('/school-life')}}">Facilities</a></li>
+                                    <li><a href="{{url('/rules')}}">School Rules</a></li>
                                     {{--<li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
                                     <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
                                     <li><a href="{{url('/admission')}}">Online Application</a></li>--}}
