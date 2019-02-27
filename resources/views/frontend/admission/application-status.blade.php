@@ -89,9 +89,8 @@
                                                 <a href="#" class="m-wizard__step-number">
                                                 <span
                                                     @if( $application[0]->AppMoredetails != null)
-                                                    @if($application[0]->AppMoredetails->parentmeeting != null) style="background-color: #7ddcc9;" @endif
-                                                    @endif
-                                                >
+                                                    @if($application[0]->AppMoredetails->diagnostictestdate != null) style="background-color: #7ddcc9;" @endif
+                                                    @endif>
                                                     <span>
                                                         2
                                                     </span>
@@ -101,7 +100,7 @@
                                                     <span></span>
                                                 </div>
                                                 <div class="m-wizard__step-label">
-                                                    Parents Meeting
+                                                    Diagnostic Test
                                                 </div>
                                             </div>
                                         </div>
@@ -110,8 +109,9 @@
                                                 <a href="#" class="m-wizard__step-number">
                                                 <span
                                                     @if( $application[0]->AppMoredetails != null)
-                                                    @if($application[0]->AppMoredetails->diagnostictestdate != null) style="background-color: #7ddcc9;" @endif
-                                                    @endif>
+                                                    @if($application[0]->AppMoredetails->parentmeeting != null) style="background-color: #7ddcc9;" @endif
+                                                    @endif
+                                                >
                                                     <span>
                                                         3
                                                     </span>
@@ -121,7 +121,7 @@
                                                     <span></span>
                                                 </div>
                                                 <div class="m-wizard__step-label">
-                                                    Diagnostic Test
+                                                    Parents Meeting
                                                 </div>
                                             </div>
                                         </div>
@@ -260,10 +260,59 @@
                                             <!--end: Form Wizard Step 1-->
                                     @endif
 
+
                                     @if( $application[0]->AppMoredetails != null)
-                                        <!--begin: Form Wizard Step 2 (Parents Meeting)-->
+                                        <!--begin: Form Wizard Step 2 (Diagnostic Test)-->
                                             <div class="m-wizard__form-step
-                                             {{$application[0]->AppMoredetails->parentmeeting != null ? 'd-inline-block' : 'd-none'}}" id="m_wizard_form_step_2">
+                                    {{$application[0]->AppMoredetails->diagnostictestdate != null ? 'd-inline-block' : 'd-none'}}" id="m_wizard_form_step_2">
+                                                <div class="m-form__section m-form__section--first">
+                                                    <div class="m-form__heading">
+                                                        <h3 class="m-form__heading-title">
+                                                            Diagnostic Test
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                                <div class="m-form__section">
+                                                    <div class="m-form__heading">
+                                                        <h3 class="m-form__heading-title">
+                                                            <i class="fa fa-calendar"></i> Diagnostic Test Appointment
+                                                        </h3>
+
+                                                        <p style="font-size: 17px; color: #4e4e4e; font-weight: 400; font-family: inherit">
+                                                            Your Child Diagnostic Test will be take place in <strong style="color: #0ac766">{{date('d M Y', strtotime($application[0]->AppMoredetails->diagnostictestdate))}}</strong>,
+                                                            Please attend to school in time.
+                                                            {{--<i data-toggle="m-tooltip" data-width="auto"
+                                                               class="m-form__heading-help-icon flaticon-info"
+                                                               title="Some help text goes here"></i>--}}
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-separator m-separator--dashed m-separator--lg"></div>
+                                                <div class="m-form__section">
+                                                    <div class="m-form__heading">
+                                                        {{--<h3 class="m-form__heading-title" style="color: #e4e4e4">
+                                                            Diagnostic Test Result
+                                                        </h3>--}}
+
+                                                        {{--<p style="font-size: 17px; color: #4e4e4e; font-weight: 400; font-family: inherit">
+                                                            Your Child Diagnostic Test will be take place in <strong style="color: #0ac766">15 Feb 2019</strong>,
+                                                            Please attend to school in time.
+                                                            --}}{{--<i data-toggle="m-tooltip" data-width="auto"
+                                                               class="m-form__heading-help-icon flaticon-info"
+                                                               title="Some help text goes here"></i>--}}{{--
+                                                        </p>--}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end: Form Wizard Step 3-->
+                                    @endif
+
+                                    @if( $application[0]->AppMoredetails != null)
+                                        <!--begin: Form Wizard Step 3 (Parents Meeting)-->
+                                            <div class="m-wizard__form-step
+                                             {{$application[0]->AppMoredetails->parentmeeting != null ? 'd-inline-block' : 'd-none'}}" id="m_wizard_form_step_3">
                                                 <div class="m-form__section m-form__section--first">
                                                     <div class="m-form__heading">
                                                         <h3 class="m-form__heading-title">
@@ -279,7 +328,7 @@
                                                         </h3>
 
                                                         <p style="font-size: 17px; color: #4e4e4e; font-weight: 400; font-family: inherit">
-                                                            Your Parent Meeting will be take place in <strong style="color: #0ac766">15 Feb 2019</strong>,
+                                                            Your Parent Meeting will be take place in <strong style="color: #0ac766">{{date('d M Y', strtotime($application[0]->AppMoredetails->parentmeeting))}}</strong>,
                                                             Please attend to school in time.
                                                             {{--<i data-toggle="m-tooltip" data-width="auto"
                                                                class="m-form__heading-help-icon flaticon-info"
@@ -309,57 +358,9 @@
                                     @endif
 
 
-                                    @if( $application[0]->AppMoredetails != null)
-                                        <!--begin: Form Wizard Step 3 (Diagnostic Test)-->
-                                            <div class="m-wizard__form-step
-                                    {{$application[0]->AppMoredetails->diagnostictestdate != null ? 'd-inline-block' : 'd-none'}}" id="m_wizard_form_step_3">
-                                                <div class="m-form__section m-form__section--first">
-                                                    <div class="m-form__heading">
-                                                        <h3 class="m-form__heading-title">
-                                                            Diagnostic Test
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="m-separator m-separator--dashed m-separator--lg"></div>
-                                                <div class="m-form__section">
-                                                    <div class="m-form__heading">
-                                                        <h3 class="m-form__heading-title">
-                                                            <i class="fa fa-calendar"></i> Diagnostic Test Appointment
-                                                        </h3>
-
-                                                        <p style="font-size: 17px; color: #4e4e4e; font-weight: 400; font-family: inherit">
-                                                            Your Child Diagnostic Test will be take place in <strong style="color: #0ac766">15 Feb 2019</strong>,
-                                                            Please attend to school in time.
-                                                            {{--<i data-toggle="m-tooltip" data-width="auto"
-                                                               class="m-form__heading-help-icon flaticon-info"
-                                                               title="Some help text goes here"></i>--}}
-                                                        </p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="m-separator m-separator--dashed m-separator--lg"></div>
-                                                <div class="m-form__section">
-                                                    <div class="m-form__heading">
-                                                        {{--<h3 class="m-form__heading-title" style="color: #e4e4e4">
-                                                            Diagnostic Test Result
-                                                        </h3>--}}
-
-                                                        {{--<p style="font-size: 17px; color: #4e4e4e; font-weight: 400; font-family: inherit">
-                                                            Your Child Diagnostic Test will be take place in <strong style="color: #0ac766">15 Feb 2019</strong>,
-                                                            Please attend to school in time.
-                                                            --}}{{--<i data-toggle="m-tooltip" data-width="auto"
-                                                               class="m-form__heading-help-icon flaticon-info"
-                                                               title="Some help text goes here"></i>--}}{{--
-                                                        </p>--}}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--end: Form Wizard Step 3-->
-                                    @endif
-
 
                                     @if( $application[0]->AppMoredetails != null)
-                                        <!--begin: Form Wizard Step (Assessment) 4-->
+                                        <!--begin: Form Wizard Step 4 (Assessment) 4-->
                                             <div class="m-wizard__form-step
                                         {{$application[0]->AppMoredetails->assessmentdate != null ? 'd-inline-block' : 'd-none'}}" id="m_wizard_form_step_4">
                                                 <div class="m-form__section m-form__section--first">

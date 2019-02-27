@@ -182,6 +182,7 @@ class ApplicationController extends Controller
         $appllication->schoolhistory()->delete();
         $appllication->parentapp()->delete();
         $appllication->familychild()->delete();
+        $appllication->AppMoredetails()->delete();
         $appllication->delete();
         Session::flash('delete', $appllication->applicationfullname . ' Application Has Been Deleted Successfully');
 
