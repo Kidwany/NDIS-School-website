@@ -339,7 +339,7 @@ class PagesController extends Controller
      */
     public function careers()
     {
-        $careers = Models\Careers::all();
+        $careers = Models\Careers::with('status')->get();
         return view('frontend.careers.careers', compact('careers'));
     }
 
@@ -405,9 +405,8 @@ class PagesController extends Controller
         if(count($application)){
             return view('frontend.admission.application-status',compact('application'));
         }else{
-            $application = "not found";
-            return view('frontend.admission.application-status',compact('application'));
-
+            Session::flash('error', 'Please Enter a valid Code');
+            return \redirect()->back();
         }
 
     }
@@ -416,4 +415,9 @@ class PagesController extends Controller
         return 'Email was sent';
     }
 
+
+    public function rules()
+    {
+        return view('frontend.admission.rules');
+    }
 }

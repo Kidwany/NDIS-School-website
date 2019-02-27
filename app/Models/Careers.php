@@ -44,4 +44,9 @@ class Careers extends Model  {
      */
     protected $dates = [];
 
+    public function status()
+    {
+        return $this->belongsTo('App\Models\Status', 'STID', 'STID');
+    }
+
 }

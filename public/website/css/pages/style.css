@@ -2203,7 +2203,7 @@ textarea:focus {
   transition: all .3s ease 0s; }
   @media only screen and (min-width: 1366px) and (max-width: 1600px) {
     .single-choose-us {
-      padding: 50px 15px 46px; } }
+      padding: 35px 15px 46px; } }
   @media only screen and (min-width: 1200px) and (max-width: 1365px) {
     .single-choose-us {
       padding: 40px 15px 36px; } }
@@ -4268,7 +4268,7 @@ textarea:focus {
   justify-content: center;
   min-height: 84px; }
   .brand-logo-active.owl-carousel .owl-item .single-brand-logo img {
-    width: auto; }
+    width: 100%; }
 
 /*--------- 13. Banner style ---------*/
 .single-banner {
