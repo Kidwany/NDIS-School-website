@@ -53,7 +53,7 @@
                                         </ul>--}}
                                     </div>
                                     <div class="description-btn">
-                                        <a href="#"><i class="fa fa-share-alt"></i></a>
+                                        {{--<a href="#"><i class="fa fa-share-alt"></i></a>--}}
                                     </div>
                                 </div>
                             </div>
@@ -132,10 +132,10 @@
                             <a href="#"><img src="assets/img/banner/banner-4.jpg" alt=""></a>
                             <div class="sidebar-social">
                                 <ul>
-                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    {{--<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>--}}
+                                    {{--<li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>--}}
+                                    {{--<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>--}}
+                                    {{--<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>--}}
                                 </ul>
                             </div>
                         </div>

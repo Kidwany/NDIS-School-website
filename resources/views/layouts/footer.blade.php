@@ -51,10 +51,10 @@
                         </div>
                         <div class="footer-list">
                             <ul>
-                                <li><a href="#">How to Apply </a></li>
-                                <li><a href="#">Fees Guide </a></li>
-                                <li><a href="#">Required Docs</a></li>
-                                <li><a href="#">Online Application</a></li>
+                                <li><a href="{{url('/how-to-apply')}}">How to Apply </a></li>
+                                <li><a href="{{url('/fees-guide')}}">Fees Guide </a></li>
+                                <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
+                                <li><a href="{{url('/admission')}}">Online Application</a></li>
                             </ul>
                         </div>
                     </div>
@@ -84,10 +84,10 @@
                         </div>
                         <div class="footer-social">
                             <ul>
-                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a class="facebook" href="https://www.facebook.com/newdiscoveryinternationalschool/"><i class="fa fa-facebook"></i></a></li>
+                                {{--<li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>--}}
+                                {{--<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>--}}
+                                {{--<li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>--}}
                             </ul>
                         </div>
                     </div>
