@@ -120,13 +120,13 @@
             <div class="col-lg-7 col-md-9 col-sm-12">
                 <select class="form-control m-select2" id="m_select2_8"  name="assessmentresult"  {{$application->appmoredetails == "" ? "disabled" : $application->appmoredetails->parentmeeting == "" ? "disabled":""}}>
                     <option selected value="" >Select Diagnostic Test Result</option>
-                    <option value="Passed" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Passed" ? 'selected' : ""}}>
+                    <option value="Passed" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->assessmentresult == "Passed" ? 'selected' : ""}}>
                         Passed
                     </option>
-                    <option value="Failed" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Failed" ? 'selected' : ""}}>
+                    <option value="Failed" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->assessmentresult == "Failed" ? 'selected' : ""}}>
                         Failed
                     </option>
-                    <option value="Waiting List" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Waiting List" ? 'selected' : ""}}>
+                    <option value="Waiting List" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->assessmentresult == "Waiting List" ? 'selected' : ""}}>
                         Waiting List
                     </option>
                 </select>

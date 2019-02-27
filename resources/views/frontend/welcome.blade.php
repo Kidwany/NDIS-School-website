@@ -53,13 +53,54 @@
 --}}
 
 
-            <div class="single-slider slider-height-1 bg-img" style="background-image:url({{asset('website/img/slider/slider-2.jpg')}});">
+            <div class="single-slider slider-height-1 bg-img" style="background-image:url({{asset('website/img/slider/slider-9.jpg')}});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-9 col-md-7 col-12 col-sm-12">
                             <div class="slider-content slider-animated-1 pt-230">
                                 <h1 class="animated">Applied Learning</h1>
                                 <p class="animated">Learning with passion is our aim. <br> We encourage our students to discover the information not to learn it.</p>
+                                <div class="slider-btn">
+                                    <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">School Life</a>
+                                    <a class="animated default-btn btn-white-color" href="{{url('/academics')}}">Academics</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{--<div class="slider-single-img slider-animated-1">
+                        <img class="animated" src="{{asset('website/img')}}/slider/single-slide-1.png" alt="">
+                    </div>--}}
+                </div>
+            </div>
+
+            <div class="single-slider slider-height-1 bg-img" style="background-image:url({{asset('website/img/slider/slider-7.jpg')}});">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-7 col-12 col-sm-12">
+                            <div class="slider-content slider-animated-1 pt-230">
+                                <h1 class="animated">Applied Learning</h1>
+                                <p class="animated">Learning with passion is our aim. <br> We encourage our students to discover the information not to learn it.</p>
+                                <div class="slider-btn">
+                                    <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">School Life</a>
+                                    <a class="animated default-btn btn-white-color" href="{{url('/academics')}}">Academics</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{--<div class="slider-single-img slider-animated-1">
+                        <img class="animated" src="{{asset('website/img')}}/slider/single-slide-1.png" alt="">
+                    </div>--}}
+                </div>
+            </div>
+
+
+            <div class="single-slider slider-height-1 bg-img" style="background-image:url({{asset('website/img/slider/slider-8.jpg')}});">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-7 col-12 col-sm-12">
+                            <div class="slider-content slider-animated-1 pt-230">
+                                <h1 class="animated">Applied Learning</h1>
+                                <p class="animated" ">Learning with passion is our aim. <br> We encourage our students to discover the information not to learn it.</p>
                                 <div class="slider-btn">
                                     <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">School Life</a>
                                     <a class="animated default-btn btn-white-color" href="{{url('/academics')}}">Academics</a>
