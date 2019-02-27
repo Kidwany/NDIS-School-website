@@ -118,7 +118,7 @@
                 Assessment Result
             </label>
             <div class="col-lg-7 col-md-9 col-sm-12">
-                <select class="form-control m-select2" id="m_select2_8"  name="assessmentresult"  {{$application->appmoredetails == "" ? "" : $application->appmoredetails->parentmeeting == "" ? "disabled":""}}>
+                <select class="form-control m-select2" id="m_select2_8"  name="assessmentresult"  {{$application->appmoredetails == "" ? "disabled" : $application->appmoredetails->parentmeeting == "" ? "disabled":""}}>
                     <option selected value="" >Select Diagnostic Test Result</option>
                     <option value="Passed" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Passed" ? "selected":""}}>
                         Passed
@@ -144,7 +144,7 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-7">
-                        <input type="hidden" value="{{$application->appmoredetails == "" ? "" : $application->APPID}}" name="APPID" />
+                        <input type="hidden" value="{{$application->APPID}}" name="APPID" />
                         <button type="submit" class="btn btn-accent m-btn m-btn--air m-btn--custom">
                             Save changes
                         </button>
