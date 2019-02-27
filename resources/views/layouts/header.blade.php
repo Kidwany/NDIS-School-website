@@ -15,7 +15,7 @@
                         <ul>
                            {{-- <li><a href="login-register.html">Login</a></li>--}}
 
-                            <li><a href="{{url('signin')}}">Login</a></li>
+                            {{--<li><a href="{{url('signin')}}">Login</a></li>--}}
                         </ul>
                     </div>
                 </div>
