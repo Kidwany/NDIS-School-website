@@ -49,39 +49,39 @@ class ApplicationController extends Controller
     public function store(Request $request)
     {
 
-         $findapp = AppMoredetails::where('APPID', '=', $request->APPID)->FirstOrfail();
-        if (!is_null($findapp)) {
-            $findapp->diagnostictestdate = $request->diagnostictestdate;
-            $findapp->parentmeeting = $request->parentmeeting;
-            $findapp->assessmentdate = $request->assessmentdate;
-            $findapp->diagnostictestresult = $request->diagnostictestresult;
-            $findapp->assessmentresult = $request->assessmentresult;
-            $findapp->save();
-             $application = Application::with('Grade', 'nat', 'gender', 'status','dataprotection')->where('APPID','=',trim($request->APPID))->FirstOrfail();
+          $findapp = AppMoredetails::where('APPID', '=', $request->APPID)->get();
 
+        if (count($findapp) > 0) {
+            $findapp[0]->diagnostictestdate = $request->diagnostictestdate;
+            $findapp[0]->parentmeeting = $request->parentmeeting;
+            $findapp[0]->assessmentdate = $request->assessmentdate;
+            $findapp[0]->diagnostictestresult = $request->diagnostictestresult;
+            $findapp[0]->assessmentresult = $request->assessmentresult;
+            $findapp[0]->save();
+             $application = Application::with('Grade', 'nat', 'gender', 'status','dataprotection')->where('APPID','=',trim($request->APPID))->get();
             if(!is_null($request->diagnostictestdate)){
-                $application->STID = 2;
-                $application->save();
-                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
+                $application[0]->STID = 2;
+                $application[0]->save();
+                MainCore::sendmail($application[0]->dataprotection[0]->Email,$application[0]->appcode);
             }else{
-                $application->STID = 1;
-                $application->save();
+                $application[0]->STID = 1;
+                $application[0]->save();
             }
             if(!is_null($request->parentmeeting)){
-                $application->STID = 3;
-                $application->save();
-                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
+                $application[0]->STID = 3;
+                $application[0]->save();
+                MainCore::sendmail($application[0]->dataprotection[0]->Email,$application[0]->appcode);
             }else{
-                $application->STID = 1;
-                $application->save();
+                $application[0]->STID = 1;
+                $application[0]->save();
             }
             if(!is_null($request->assessmentdate)){
-                $application->STID = 4;
-                $application->save();
-                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
+                $application[0]->STID = 4;
+                $application[0]->save();
+                MainCore::sendmail($application[0]->dataprotection[0]->Email,$application[0]->appcode);
             }else{
-                $application->STID = 1;
-                $application->save();
+                $application[0]->STID = 1;
+                $application[0]->save();
             }
             return redirect('management/applications/'.$request->APPID.'/edit');
         }else{
@@ -95,31 +95,32 @@ class ApplicationController extends Controller
             $findapp2->save();
             $application = Application::with('Grade', 'nat', 'gender', 'status','dataprotection')->where('APPID','=',trim($request->APPID))->get();
             if(!is_null($request->diagnostictestdate)){
-                $application->STID = 2;
-                $application->save();
-                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
+                $application[0]->STID = 2;
+                $application[0]->save();
+                MainCore::sendmail($application[0]->dataprotection[0]->Email,$application[0]->appcode);
             }else{
-                $application->STID = 1;
-                $application->save();
+                $application[0]->STID = 1;
+                $application[0]->save();
             }
             if(!is_null($request->parentmeeting)){
-                $application->STID = 3;
-                $application->save();
-                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
+                $application[0]->STID = 3;
+                $application[0]->save();
+                MainCore::sendmail($application[0]->dataprotection[0]->Email,$application[0]->appcode);
             }else{
-                $application->STID = 1;
-                $application->save();
+                $application[0]->STID = 1;
+                $application[0]->save();
             }
             if(!is_null($request->assessmentdate)){
-                $application->STID = 4;
-                $application->save();
-                MainCore::sendmail($application->dataprotection[0]->Email,$application->appcode);
+                $application[0]->STID = 4;
+                $application[0]->save();
+                MainCore::sendmail($application[0]->dataprotection[0]->Email,$application[0]->appcode);
             }else{
-                $application->STID = 1;
-                $application->save();
+                $application[0]->STID = 1;
+                $application[0]->save();
             }
             return redirect('management/applications/'.$request->APPID.'/edit');
         }
+
 
     }
 

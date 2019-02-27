@@ -42,7 +42,7 @@
                 Diagnostic Test Result
             </label>
             <div class="col-lg-7 col-md-9 col-sm-12">
-                <select class="form-control m-select2" id="m_select2_7"  name="diagnostictestresult" >
+                <select class="form-control m-select2" id="m_select2_7"  name="diagnostictestresult" {{$application->appmoredetails == "" ? "disabled" : $application->appmoredetails->diagnostictestdate == "" ? "disabled":""}} >
                     <option selected value="" >Select Diagnostic Test Result</option>
                     <option value="Passed" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Passed" ? "selected":""}}>
                         Passed
@@ -74,7 +74,7 @@
                 Parents Meeting Appointment
             </label>
             <div class="col-7">
-                <input class="form-control m-input" type="date" name="parentmeeting" value=" {{$application->appmoredetails == "" ? "" : date('Y-m-d', strtotime($application->appmoredetails->parentmeeting))}}" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestdate == "" ? "disabled":""}}>
+                <input class="form-control m-input" type="date" name="parentmeeting" value=" {{$application->appmoredetails == "" ? "" : date('Y-m-d', strtotime($application->appmoredetails->parentmeeting))}}" {{$application->appmoredetails == "" ? "disabled" : $application->appmoredetails->diagnostictestresult == "" ? "disabled":""}}>
             </div>
         </div>
 
@@ -101,7 +101,7 @@
             </label>
             <div class="col-7">
                 <div class='input-group'>
-                    <input type='date' class="form-control m-input" name="assessmentdate"value=" {{$application->appmoredetails == "" ? "" : date('Y-m-d', strtotime($application->appmoredetails->assessmentdate))}}" placeholder="Select date" id='' {{$application->appmoredetails == "" ? "" : $application->appmoredetails->parentmeeting == "" ? "disabled":""}}/>
+                    <input type='date' class="form-control m-input" name="assessmentdate"value=" {{$application->appmoredetails == "" ? "" : date('Y-m-d', strtotime($application->appmoredetails->assessmentdate))}}" placeholder="Select date" id='' {{$application->appmoredetails == "" ? "disabled" : $application->appmoredetails->parentmeeting == "" ? "disabled":""}}/>
                     <div class="input-group-append">
                         <span class="input-group-text">
                             <i class="la la-calendar-check-o"></i>
@@ -144,7 +144,7 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-7">
-                        <input type="hidden" value="{{ $application->APPID}}" name="APPID" />
+                        <input type="hidden" value="{{$application->appmoredetails == "" ? "" : $application->APPID}}" name="APPID" />
                         <button type="submit" class="btn btn-accent m-btn m-btn--air m-btn--custom">
                             Save changes
                         </button>
