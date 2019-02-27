@@ -495,8 +495,6 @@
         </div>
     </div>
 
-
-
     <!-- campus-area-start -->
     <div class="campus-area pt-130" id="mission">
         <div class="container">

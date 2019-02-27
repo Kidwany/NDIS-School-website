@@ -8,7 +8,7 @@
         <div class="breadcrumb-top default-overlay bg-img breadcrumb-overly-5 pt-100 pb-95" style="background-image:url({{asset('website/img/schoolLife/school-life.jpg')}});">
             <div class="container">
                 <h2>School Life</h2>
-                <p>Our facility offers all that a young child needs to explore and learn. We have four outdoor areas for children. .</p>
+                <p>We make sure that the School environment offers to each student, Happiness and well-being. .</p>
             </div>
         </div>
         <div class="breadcrumb-bottom">
@@ -40,7 +40,7 @@
             <div class="course-slider-active nav-style-1 owl-carousel">
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/lab.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/science.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Lab</a></h4>
@@ -49,7 +49,7 @@
 
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/mini_zoo.png')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/zoo.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Zoo</a></h4>
@@ -119,7 +119,7 @@
 
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/library.png')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/library.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Library</a></h4>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/theater.png')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/theater.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Theater</a></h4>

@@ -48,7 +48,8 @@ class ApplicationController extends Controller
      */
     public function store(Request $request)
     {
-        $findapp = AppMoredetails::where('APPID', '=', $request->APPID)->FirstOrfail();
+
+         $findapp = AppMoredetails::where('APPID', '=', $request->APPID)->FirstOrfail();
         if (!is_null($findapp)) {
             $findapp->diagnostictestdate = $request->diagnostictestdate;
             $findapp->parentmeeting = $request->parentmeeting;
@@ -119,7 +120,6 @@ class ApplicationController extends Controller
             }
             return redirect('management/applications/'.$request->APPID.'/edit');
         }
-
 
     }
 

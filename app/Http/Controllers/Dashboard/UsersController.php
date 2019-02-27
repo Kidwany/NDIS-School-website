@@ -128,11 +128,11 @@ class UsersController extends Controller
 
         $this->validate($request, [
             'fullname'                      =>  'required|min:3',
-            'email'                         =>  'required|email|unique:users,id,' . $user->id,
+            'email'                         =>  'required|email|unique:users,UID,' . $id . ',UID',
             'phone'                         =>  'required|min:10',
             'address'                       =>  'required',
             'password'                      =>  'required|min:6',
-            'password_confirmation'         =>  'required|confirmed',
+            'password_confirmation'         =>  'confirmed',
         ],[],[
             'fullname'                      =>  'Name',
             'email'                         =>  'Email',
@@ -144,7 +144,7 @@ class UsersController extends Controller
 
         //Upload and insert images
 
-        $user = Users::update($input);
+        $user->update($input);
 
         Session::flash('update',   $user->fullname . ' Has Been Updated Successfully');
         return redirect('management/users');
@@ -158,12 +158,12 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        $event = Calendar::find($id);
+        $user = Users::find($id);
 
-        $event->delete();
+        $user->delete();
 
-        Session::flash('delete',   $event->title . ' Event Has Been Deleted Successfully');
+        Session::flash('delete',   $user->fullname . ' Event Has Been Deleted Successfully');
 
-        return redirect('management/calendar');
+        return redirect('management/users');
     }
 }
