@@ -146,7 +146,6 @@ class PagesController extends Controller
 
         $this->validate($request, [
             'GID' => 'required|int',
-
         ], [], [
             'GID' => 'test'
         ]);

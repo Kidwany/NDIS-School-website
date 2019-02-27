@@ -36,6 +36,11 @@
             margin: 50px auto 30px;
         }
 
+        .username
+        {
+            padding-top: 30px;
+        }
+
         .username h4
         {
             margin: auto;
@@ -107,7 +112,7 @@
 
         .verify-btn a
         {
-            background-color: #663399;
+            background-color: #00a651;
             margin-bottom: 40px;
             margin-top: 10px;
             color: white;
@@ -250,7 +255,7 @@
             </div>
 
             <div class="">
-                <div class="email-white-space">
+                <div class="email-white-space" style="padding: 20px">
                     <div class="email-img">
                         <div class="">
                             {{--<img src="{{asset('img/assets/auth/email.png')}}">--}}

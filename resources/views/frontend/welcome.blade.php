@@ -314,7 +314,7 @@
     <div class="achievement-area pt-130 pb-115">
         <div class="container">
             <div class="section-title mb-75">
-                <h2>Our <span>Achievement</span></h2>
+                <h2>Our <span>Achievements</span></h2>
                 <p>Our achievments, in our philosophy, is always measured by our students' happiness and well-being.  <br> NDIS Parents' testimonials are our Certificate of success.  </p>
             </div>
            {{-- <div class="row">
@@ -371,17 +371,17 @@
                         </div>
                         <div class="row no-gutters">
                             <div class="ml-auto col-lg-6 col-md-12">
-                                <div class="testi-content bg-img default-overlay" style="background-image:url({{asset('website/img/bg/testi.png')}});">
+                                <div class="testi-content bg-img default-overlay" style="background-image:url({{asset('website/img/bg/reviews_bg.png')}});">
                                     <div class="quote-style quote-left">
                                         <i class="fa fa-quote-left"></i>
                                     </div>
                                     <p>My experience in NDIS till now is unforgettable, my little lilly enjoy her school day in a way that i never imagined. <br>What matters for me is her smile and this school never failed me to draw it on her face.  </p>
+                                    <div class="quote-style quote-right">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
                                     <div class="testi-info">
                                         <h5>Amina Darwish</h5>
                                         <span>Lilly's Mom</span>
-                                    </div>
-                                    <div class="quote-style quote-right">
-                                        <i class="fa fa-quote-right"></i>
                                     </div>
                                     <div class="testi-arrow">
                                         <img alt="" src="{{asset('website/img')}}/icon-img/testi-icon.png">
@@ -492,7 +492,7 @@
     <div class="event-area bg-img default-overlay pt-130 pb-130" style="background-image:url({{asset('website/img/bg/fees_bg.jpg')}});">
         <div class="container">
             <div class="section-title mb-75">
-                <h2><span>Our</span> Event</h2>
+                <h2><span>Our</span> Events</h2>
                 <p> Events are not a side activity, it is a main duty. <br> NDIS' Philosophy aim to give students a real life memories not just education. </p>
             </div>
 

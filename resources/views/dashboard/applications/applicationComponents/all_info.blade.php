@@ -101,7 +101,7 @@
             </label>
             <div class="col-7">
                 <div class='input-group'>
-                    <input type="date" class="form-control m-input" name="assessmentdate" value="{{$application->appmoredetails == "" ? "" : date('Y-m-d', strtotime($application->appmoredetails->assessmentdate))}}"   {{$application->appmoredetails == "" ? "disabled" : $application->appmoredetails->parentmeeting == "" ? "disabled":""}}/>
+                    <input type='date' class="form-control m-input" name="assessmentdate"value="{{$application->appmoredetails == "" ? "" : date('Y-m-d', strtotime($application->appmoredetails->assessmentdate))}}" placeholder="Select date" id='' {{$application->appmoredetails == "" ? "disabled" : $application->appmoredetails->parentmeeting == "" ? "disabled":""}}/>
                     <div class="input-group-append">
                         <span class="input-group-text">
                             <i class="la la-calendar-check-o"></i>
@@ -118,15 +118,15 @@
                 Assessment Result
             </label>
             <div class="col-lg-7 col-md-9 col-sm-12">
-                <select class="form-control m-select2" id="m_select2_8"  name="assessmentresult"  {{$application->appmoredetails == "" ? "disabled" : $application->appmoredetails->assessmentdate == "" ? "disabled":""}}>
+                <select class="form-control m-select2" id="m_select2_8"  name="assessmentresult"  {{$application->appmoredetails == "" ? "disabled" : $application->appmoredetails->parentmeeting == "" ? "disabled":""}}>
                     <option selected value="" >Select Diagnostic Test Result</option>
-                    <option value="Passed" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Passed" ? "selected":""}}>
+                    <option value="Passed" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Passed" ? 'selected' : ""}}>
                         Passed
                     </option>
-                    <option value="Failed" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Failed" ? "selected":""}}>
+                    <option value="Failed" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Failed" ? 'selected' : ""}}>
                         Failed
                     </option>
-                    <option value="Waiting List" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Waiting List" ? "selected":""}}>
+                    <option value="Waiting List" {{$application->appmoredetails == "" ? "" : $application->appmoredetails->diagnostictestresult == "Waiting List" ? 'selected' : ""}}>
                         Waiting List
                     </option>
                 </select>
@@ -144,7 +144,7 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-7">
-                        <input type="hidden" value="{{ $application->APPID }}" name="APPID" />
+                        <input type="hidden" value="{{$application->APPID}}" name="APPID" />
                         <button type="submit" class="btn btn-accent m-btn m-btn--air m-btn--custom">
                             Save changes
                         </button>
