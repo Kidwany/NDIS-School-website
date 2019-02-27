@@ -144,7 +144,7 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-7">
-                        <input type="hidden" value="{{$application->APPID}}" name="APPID" />
+                        <input type="hidden" value="{{ $application->APPID }}" name="APPID" />
                         <button type="submit" class="btn btn-accent m-btn m-btn--air m-btn--custom">
                             Save changes
                         </button>
