@@ -1,0 +1,67 @@
+.about-head .banner-sticky
+{
+    background-image: url("../../../img/pages/home/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 39vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.about-head .banner-sticky + .header-overlay
+{
+    height: 130px;
+}
+
+.cover .about-title
+{
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+}
+
+.cover .about-title h1
+{
+    font-size: 50px;
+}
+
+.cover .about-title ol.breadcrumb .breadcrumb-item a
+{
+    color: #e4e4e4;
+    font-weight: 600;
+}
+
+.cover .about-title ol.breadcrumb li.active
+{
+    color: #ce243b;
+    font-weight: 600 !important;
+}
+
+.about-us-text > .d-flex
+{
+    height: 395px;
+}
+
+.about-us-img img
+{
+    width: 100%;
+    border: 6px solid #ce243b;
+}
+
+.experience-years
+{
+    margin-top: 80px;
+}
+
+.experience-years h2 span
+{
+    border: 4px solid #ce243b;
+    padding: 8px 4px 9px 11px;
+    margin-right: 13px;
+}
+
+.about-features .about-feature
+{
+    height: 190px;
+}

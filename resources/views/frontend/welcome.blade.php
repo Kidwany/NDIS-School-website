@@ -14,10 +14,10 @@
                         <div class="col-lg-6 col-md-7 col-12 col-sm-12">
                             <div class="slider-content slider-animated-1 pt-230">
                                 <h1 class="animated">NEW DISCOVERY INTERNATIONAL SCHOOL</h1>
-                                <p class="animated">Where each Child is a New Success Story. </p>
+                                <p class="animated">Where each child is a new success story. </p>
                                 <div class="slider-btn">
-                                    <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">School Life</a>
-                                    <a class="animated default-btn btn-white-color" href="{{url('/academics')}}">Academics</a>
+                                    <a class="animated default-btn btn-green-color" href="{{url('/admission')}}">Admission</a>
+                                    <a class="animated default-btn btn-white-color" href="{{url('/about')}}">About Us</a>
                                 </div>
                             </div>
                         </div>
@@ -61,28 +61,27 @@
                                 <h1 class="animated">Applied Learning</h1>
                                 <p class="animated">Learning with passion is our aim. <br> We encourage our students to discover the information not to learn it.</p>
                                 <div class="slider-btn">
-                                    <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">School Life</a>
+                                    <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">About us</a>
                                     <a class="animated default-btn btn-white-color" href="{{url('/academics')}}">Academics</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {{--<div class="slider-single-img slider-animated-1">
-                        <img class="animated" src="{{asset('website/img')}}/slider/single-slide-1.png" alt="">
-                    </div>--}}
                 </div>
             </div>
+
+
 
             <div class="single-slider slider-height-1 bg-img" style="background-image:url({{asset('website/img/slider/slider-7.jpg')}});">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-9 col-md-7 col-12 col-sm-12">
                             <div class="slider-content slider-animated-1 pt-230">
-                                <h1 class="animated">Applied Learning</h1>
-                                <p class="animated">Learning with passion is our aim. <br> We encourage our students to discover the information not to learn it.</p>
+                                <h1 class="animated">Latest Technologies</h1>
+                                <p class="animated">We use latest technologies in our learning approaches. <br>Each child is a treasure to discover.</p>
                                 <div class="slider-btn">
-                                    <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">School Life</a>
-                                    <a class="animated default-btn btn-white-color" href="{{url('/academics')}}">Academics</a>
+                                    <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">About us</a>
+                                    <a class="animated default-btn btn-white-color" href="{{url('/academics')}}">Admission</a>
                                 </div>
                             </div>
                         </div>
@@ -99,11 +98,11 @@
                     <div class="row">
                         <div class="col-lg-9 col-md-7 col-12 col-sm-12">
                             <div class="slider-content slider-animated-1 pt-230">
-                                <h1 class="animated">Applied Learning</h1>
-                                <p class="animated" ">Learning with passion is our aim. <br> We encourage our students to discover the information not to learn it.</p>
+                                <h1 class="animated">Talent development</h1>
+                                <p class="animated">We believe that each student is talented in a special way. <br>It is our role to discover this talent and encourage them to dream.</p>
                                 <div class="slider-btn">
-                                    <a class="animated default-btn btn-green-color" href="{{url('/school-life')}}">School Life</a>
-                                    <a class="animated default-btn btn-white-color" href="{{url('/academics')}}">Academics</a>
+                                    <a class="animated default-btn btn-green-color" href="{{url('/about')}}">About us</a>
+                                    <a class="animated default-btn btn-white-color" href="{{url('/school-life')}}">School Life</a>
                                 </div>
                             </div>
                         </div>
@@ -129,10 +128,11 @@
                         </div>
                         <div class="choose-content">
                             <h3>Challenging Academic Curriculum</h3>
-                            <p>Every child has different type of intelligence. Our Curriculum is designed to challenge their mentality and build their Capacities.</p>
+                            <p>Every child has a different type of intelligence. Our Curriculum is designed to challenge their mentality and build their Capacities.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
                     <div class="single-choose-us choose-bg-yellow">
                         <div class="choose-img">
@@ -140,10 +140,11 @@
                         </div>
                         <div class="choose-content">
                             <h3>Accreditation.</h3>
-                            <p>The School is accredited by Virginia College for the American Section, Cambridge for the British one and ESLESCA for Mathematics.</p>
+                            <p>The School is accredited by Virginia College for the American Section, Cambridge for the British and ESLESCA for Mathematics.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
                     <div class="single-choose-us choose-bg-blue">
                         <div class="choose-img">
@@ -165,7 +166,7 @@
                         <div class="choose-content">
                             <h3>Physical Development.</h3>
                             <p>If they know how to play, they will know how to grow.
-                                Our aim is to guide them while playing to strengthen their muscles increase their wellness.
+                                Our aim is to guide them while playing to strengthen their muscles and increase their wellness.
                             </p>
                         </div>
                     </div>
@@ -173,8 +174,8 @@
             </div>
         </div>
     </div>
-{{--
 
+{{--
     <!------ About Section ------>
     <div class="about-us pt-130 pb-130">
         <div class="container">
@@ -273,8 +274,10 @@
                                     <div role="tabpanel" class="tab-pane" id="messages">
                                         <div class="campus-wrapper">
                                             <div class="campus-content">
-                                                <p style="text-align: justify">We believe that the first years of life are the most influential in establishing good habits and basic learning skills.  We are working to help all children to prepare for the future and enable them to develop their capabilities as successful learners, confident individuals and responsible citizens. <br> Indeed, play is a fundamental part of childhood. Therefor our children’s learning is promoted successfully by activities specially planned and adapted to meet or extend their individual learning needs.
-                                                    <br>NDIS is a place for happy healthy children.
+                                                <p style="text-align: justify; margin-bottom: 5px">We believe that the first years of life are the most influential in establishing good habits and basic learning skills.  We are working to help all children to prepare for the future and enable them to develop their capabilities as successful learners, confident individuals and responsible citizens. <br>
+                                                </p>
+                                                <p style="text-align: justify">
+                                                   Other Pillar of our philosophy is concealed in Giving due care to playing time. It is a fundamental part of childhood. Therefor our children’s learning is promoted successfully by activities specially planned and adapted to meet or extend their individual learning needs.
                                                 </p>
                                             </div>
                                         </div>
@@ -356,7 +359,7 @@
         <div class="container">
             <div class="section-title mb-75">
                 <h2>Our <span>Achievements</span></h2>
-                <p>Our achievments, in our philosophy, is always measured by our students' happiness and well-being.  <br> NDIS Parents' testimonials are our Certificate of success.  </p>
+                <p>The achievement, in our philosophy, is always measured by our students' happiness and well-being.  <br> NDIS Parents' testimonials are our Certificate of success.  </p>
             </div>
            {{-- <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -566,7 +569,6 @@
                         </div>
                     @endforeach
                 @endif
-
 
             </div>
         </div>
@@ -1321,6 +1323,22 @@
             </div>
         </div>
     </div>--}}
+
+
+
+    {{--<!-- Large modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#start-popup">Large modal</button>
+
+    <div class="modal fade" id="start-popup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="container-fluid" style="padding: 0 !important;">
+                    <video src="{{asset('website/img/slider/ndis.mp4')}}" controls="controls" autoplay style="width: 100%"></video>
+                </div>
+            </div>
+        </div>
+    </div>--}}
+
 
     
     @include('layouts.footer')

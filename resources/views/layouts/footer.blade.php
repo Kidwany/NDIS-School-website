@@ -30,7 +30,7 @@
                 <div class="col-lg-4 col-md-3 col-sm-6">
                     <div class="footer-widget mb-40">
                         <div class="footer-title">
-                            <h4>QUICK LINK</h4>
+                            <h4>QUICK LINKS</h4>
                         </div>
                         <div class="footer-list">
                             <ul>
@@ -53,7 +53,7 @@
                             <ul>
                                 <li><a href="{{url('/how-to-apply')}}">How to Apply </a></li>
                                 <li><a href="{{url('/fees-guide')}}">Fees Guide </a></li>
-                                <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
+                                <li><a href="{{url('/required-documents')}}">Required Documents</a></li>
                                 <li><a href="{{url('/admission')}}">Online Application</a></li>
                             </ul>
                         </div>
@@ -78,8 +78,8 @@
                     <div class="footer-menu-social">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#">Privecy & Policy</a></li>
-                                <li><a href="#">Terms & Conditions of Use</a></li>
+                                {{--<li><a href="#">Privecy & Policy</a></li>
+                                <li><a href="#">Terms & Conditions of Use</a></li>--}}
                             </ul>
                         </div>
                         <div class="footer-social">

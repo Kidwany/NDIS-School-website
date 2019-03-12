@@ -7,7 +7,7 @@
         <div class="breadcrumb-top default-overlay bg-img pt-100 pb-95" style="background-image:url({{asset('website/img/about/about_banner.jpg')}});">
             <div class="container">
                 <h2>About Us</h2>
-                <p>We are the first International School that offers both accredited American and British Curriculums in reasonable costs.</p>
+                <p>We are the first International School that offers both accredited American and British Curriculum in reasonable costs.</p>
             </div>
         </div>
         <div class="breadcrumb-bottom">
@@ -56,7 +56,7 @@
                                     </div>
                                     <div class="about-choose-content text-yellow">
                                         <h3>Accreditation </h3>
-                                        <p>The School is accredited by Virginia College for the American Section, Cambridge for the British one and ESLESCA for Mathematics.</p>
+                                        <p>The School is accredited by Virginia College for the American Section, Cambridge for the British and ESLESCA for Mathematics.</p>
                                     </div>
                                 </div>
                             </div>
@@ -564,18 +564,10 @@
                                     <div role="tabpanel" class="tab-pane" id="messages">
                                         <div class="campus-wrapper">
                                             <div class="campus-content">
-                                                <p>We believe that the first years of life are
-                                                    the most influential in establishing good habits
-                                                    and basic learning skills.  We are working to help
-                                                    all children to prepare for the future and enable
-                                                    them to develop their capabilities as successful
-                                                    learners, confident individuals and responsible citizens.
-                                                    Indeed, play is a fundamental part of childhood.
-                                                    For that reason our children’s learning is promoted successfully by activities
-                                                    specially planned and adapted to meet or extend their individual learning needs.
-                                                    NDIS is a place for happy healthy children.
-                                                    Every day is a learning day and that learning is around us. We aim to
-                                                    provide a balanced plan for every child.
+                                                <p style="text-align: justify; margin-bottom: 5px">We believe that the first years of life are the most influential in establishing good habits and basic learning skills.  We are working to help all children to prepare for the future and enable them to develop their capabilities as successful learners, confident individuals and responsible citizens. <br>
+                                                </p>
+                                                <p style="text-align: justify">
+                                                    Other Pillar of our philosophy is concealed in Giving due care to playing time. It is a fundamental part of childhood. Therefor our children’s learning is promoted successfully by activities specially planned and adapted to meet or extend their individual learning needs.
                                                 </p>
                                             </div>
                                         </div>

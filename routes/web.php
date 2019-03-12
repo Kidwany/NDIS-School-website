@@ -100,8 +100,8 @@ Route::get('/send', 'PagesController@sendmail');
 Route::get('/rules', 'PagesController@rules');
 
 
-
-
+/* -- About Owner --- */
+Route::get('/owner', 'PagesController@owner');
 
 
 

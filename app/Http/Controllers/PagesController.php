@@ -134,7 +134,7 @@ class PagesController extends Controller
      */
     public function academics()
     {
-        return view('frontend.academics');
+        return view('frontend.school-life.academics');
     }
 
     /**
@@ -315,7 +315,7 @@ class PagesController extends Controller
      */
     public function schoolLife()
     {
-        return view('frontend.schoolLife');
+        return view('frontend.school-life.schoolLife');
     }
 
 
@@ -326,10 +326,7 @@ class PagesController extends Controller
     public function calendar()
     {
         $events = Models\Calendar::all();
-
-
-
-        return view('frontend.about.calendar', compact('events'));
+        return view('frontend.school-life.calendar', compact('events'));
     }
 
     /**
@@ -417,6 +414,11 @@ class PagesController extends Controller
 
     public function rules()
     {
-        return view('frontend.admission.rules');
+        return view('frontend.school-life.rules');
+    }
+
+    public function owner()
+    {
+        return view('frontend.about.owner');
     }
 }
