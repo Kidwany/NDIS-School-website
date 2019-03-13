@@ -84,22 +84,28 @@
                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
                                     Language <span style="color: #00a651">Arts</span></h2></div>
                             <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Reading</h2></div>
-                            <p style="padding-left: 35px"> Students identify and explain plot-based relationships and begin to analyze narrative
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Reading</h2></div>
+                            <p style="padding-left: 35px"> Students identify and explain plot-based relationships and
+                                begin to analyze narrative
                                 elements of text. They continue to explore and understand the implied meaning of text as
                                 well as the impact a character has on a story.</p>
                             <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Writing and <span
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Writing and <span
                                             style="color: #00a651">Spelling</span></h2></div>
-                            <p style="padding-left: 35px">Students learn to create organized pieces of writing that support the topics with
+                            <p style="padding-left: 35px">Students learn to create organized pieces of writing that
+                                support the topics with
                                 reasons, facts, details, and other relevant information. Paragraphs are well formed and
                                 sequential, and students are able to complete the writing process through to a
                                 publishable piece.</p>
                             <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Social <span
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Social <span
                                             style="color: #00a651">Studies</span></h2></div>
                             <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">The <span
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    The <span
                                             style="color: #00a651">World</span></h2>
                                 <ul style="padding-left: 35px">
                                     <li>- World Geography (Spatial Sense; Mountains)</li>
@@ -111,10 +117,12 @@
                                 </ul>
                             </div>
                             <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Research<span
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Research<span
                                             style="color: #00a651"> Process</span></h2></div>
                             <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Students will<span
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Students will<span
                                             style="color: #00a651"> independently</span></h2>
                             </div>
                             <div class="section-title section-title-green mb-30">
@@ -143,6 +151,8 @@
             </div>
 
         </div>
+
+
     </div>
 
 
@@ -402,132 +412,6 @@
         </div>
 
     </div>
-    {{--<!------ About Section ------>
-    <div class="container">
-        <div class="wrapper">
-            <div class="inner">
-                <div id="wizard">
-                    <!-- SECTION 1 Curriculum-->
-                    <h4>Curriculum </h4>
-                    <section>
-                        <p>Our curriculum is designed to be fun and balanced to cover all the learning goals.
-                            The Department for Education, in the UK, sets out Learning Objectives for each area of the curriculum and Levels
-                            of Attainment that pupils are expected to achieve at the end of each key stage.
-                            <br>
-                            <span class="font-weight-bold">Paying the application doesn’t guarantee the acceptance.</span>
-                        </p>
-                        --}}{{--<button class="forward">Next Step
-                            <i class="zmdi zmdi-long-arrow-right"></i>
-                        </button>--}}{{--
-                    </section>
-
-                    <!-- SECTION 2 Character building-->
-                    <h4>Character building</h4>
-                    <section class="section-style">
-                        <div class="form-wrapper">
-                            <p>
-
-                            </p>
-                            --}}{{-- <button class="forward">Next Step
-                                 <i class="zmdi zmdi-long-arrow-right"></i>
-                             </button>--}}{{--
-                        </div>
-                    </section>
-
-                    <!-- SECTION 3 Activities-->
-                    <h4>Activities</h4>
-                    <section>
-                        <p>Parents will be notified of the assessment result within 5 working days from
-                            The assessment date.
-                        </p>
-
-                        --}}{{--<button class="forward" style="width: 195px; margin-top: 44px;">Next Step
-                            <i class="zmdi zmdi-long-arrow-right"></i>
-                        </button>--}}{{--
-                    </section>
-
-                    <!-- SECTION 4 Our typical day-->
-                    <h4>Our typical day</h4>
-                    <section class="section-style">
-                        <div class="pay-wrapper">
-                            <p>
-                                If the student is offered a place, a onetime reservation fee of <span class="font-weight-bold">2,500 EGP </span>must be paid within 5 working days and the below documents should be presented to guarantee the student’s place.
-                                <br><span class="font-weight-bold">** This amount is accredited from the 1st Installment.</span>
-                                <br>
-                                - Copy of vaccination report.
-                                <br>
-                                - Copy of parents’ IDs or Passports.
-                                <br>
-                                - An original electronic birth certificate.
-                                <br>
-                                - 8 recent passport-sized color photos.
-                                <br>
-                                - The original stamped report from the previous school.
-                                <br>
-                                If a school bus is required, an amount of 2,000 EGP MUST be paid with reservation fees
-                                with maximum 1st installment, Otherwise, the student will not be assigned to a bus route.
-                                <br>
-                                <span class="font-weight-bold">
-                                     **Promotion from one year to the next is not automatic, unless the following year’s
-                                1st installment is paid before 30th June.
-                                </span>
-
-
-                            </p>
-                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
-                                <i class="zmdi zmdi-long-arrow-right"></i>
-                            </button>--}}{{--
-                        </div>
-                    </section>
-
-
-                    <!-- SECTION 5 Classroom displays-->
-                    <h4>Classroom Displays</h4>
-                    <section class="section-style">
-                        <div class="pay-wrapper">
-                            <p>
-                                Classroom displays
-
-
-                            </p>
-                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
-                                <i class="zmdi zmdi-long-arrow-right"></i>
-                            </button>--}}{{--
-                        </div>
-                    </section>
-
-                    <!-- SECTION 6 Outdoor facilities-->
-                    <h4>Outdoor facilities</h4>
-                    <section class="section-style">
-                        <div class="pay-wrapper">
-                            <p>
-                                Outdoor facilities
-
-
-                            </p>
-                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
-                                <i class="zmdi zmdi-long-arrow-right"></i>
-                            </button>--}}{{--
-                        </div>
-                    </section>
-
-                    <!-- SECTION 7 How to help your child at home?-->
-                    <h4>How to help your child at home?</h4>
-                    <section class="section-style">
-                        <div class="pay-wrapper">
-                            <p>
-                                How to help your child at home?
-
-                            </p>
-                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
-                                <i class="zmdi zmdi-long-arrow-right"></i>
-                            </button>--}}{{--
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>--}}
     <!------ Curriculum Section ------>
     <div class="about-us pt-50 pb-50">
         <div class="container">
