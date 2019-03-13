@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>
-    <div class="header-bottom sticky-bar clearfix">
+    <div id="headerbottom" class="header-bottom sticky-bar clearfix">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-6 col-4">
@@ -70,14 +70,14 @@
                                         <ul class="submenu" style="width: 300px">
                                             <li><a href="#" style="color: #00a550; font-weight: 500">BRITISH SECTOR</a></li>
                                             <li><a href="{{url('/academics')}}" style="padding-left: 10px">Foundation Stage PRE-F / FS1 / FS2</a></li>
-                                            <li><a href="#" style="padding-left: 10px">Key Stage 1 & 2 (Year 1-6)</a></li>
-                                            <li><a href="#" style="padding-left: 10px">Key Stage 3 (Year 7-9)</a></li>
-                                            <li><a href="#" style="padding-left: 10px">Key Stage 4 (Year 10-11)</a></li>
-                                            <li><a href="#" style="padding-left: 10px">Key Stage 5 (Year 12)</a></li>
+                                            <li><a onclick="opencol('#stage1')" href="{{url('/british-sector')}}#stage1" style="padding-left: 10px">Key Stage 1 & 2 (Year 1-6)</a></li>
+                                            <li><a onclick="opencol('#stage3')" href="{{url('/british-sector')}}#stage3" style="padding-left: 10px">Key Stage 3 (Year 7-9)</a></li>
+                                            <li><a onclick="opencol('#stage4')" href="{{url('/british-sector')}}#stage4" style="padding-left: 10px">Key Stage 4 (Year 10-11)</a></li>
+                                            <li><a onclick="opencol('#stage5')" href="{{url('/british-sector')}}#stage5" style="padding-left: 10px">Key Stage 5 (Year 12)</a></li>
                                             <li><a href="#" style="color: #00a550; font-weight: 500">AMERICAN SECTOR</a></li>
-                                            <li><a href="#" style="padding-left: 10px">Elementary School Grades 1-5</a></li>
-                                            <li><a href="#" style="padding-left: 10px">Middle School Grades 6-8</a></li>
-                                            <li><a href="#" style="padding-left: 10px">High School Grades 9-12</a></li>
+                                            <li><a href="{{url('/american-sector')}}" style="padding-left: 10px">Elementary School Grades 1-5</a></li>
+                                            <li><a href="{{url('/american-sector')}}" style="padding-left: 10px">Middle School Grades 6-8</a></li>
+                                            <li><a href="{{url('/american-sector')}}" style="padding-left: 10px">High School Grades 9-12</a></li>
                                         </ul>
                                     </li>
 

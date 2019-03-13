@@ -136,6 +136,14 @@ class PagesController extends Controller
     {
         return view('frontend.school-life.academics');
     }
+    public function britishsector()
+    {
+        return view('frontend.school-life.British-sector');
+    }
+    public function americansector()
+    {
+        return view('frontend.school-life.american-sector');
+    }
 
     /**
      * This Function returns save applications form

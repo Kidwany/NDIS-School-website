@@ -59,6 +59,8 @@ Route::get('/application-track/{id}', 'PagesController@applicationStatus');
 
 /* --- Academics Page ---*/
 Route::get('/academics', 'PagesController@academics');
+Route::get('/british-sector', 'PagesController@britishsector');
+Route::get('/american-sector', 'PagesController@americansector');
 Route::post('/store', 'PagesController@storeappform');
 Route::get('/thankyou', 'PagesController@thankyou');
 Route::get('/getdata/{Table}/{rel}', 'PagesController@getview');
