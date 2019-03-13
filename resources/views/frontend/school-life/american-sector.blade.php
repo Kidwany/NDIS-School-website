@@ -1,5 +1,11 @@
 @extends('layouts.layouts')
 @section('title', 'British sector')
+@section('customizedStyle')
+    <!--begin::Page Vendors -->
+    <!--end::Page Vendors -->
+    <link href="{{asset('website/css/pages/about.css')}}" rel="stylesheet" type="text/css"/>
+    <!--end::Base Styles -->
+@endsection
 @section('applyStepper')
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('website/css/layouts/stepper.css')}}">
@@ -37,6 +43,9 @@
             </div>
         </div>
     </div>
+
+
+
 
 
 
@@ -147,388 +156,464 @@
 
 
 
-    <!------ Classroom displays ------>
-    <div class="container">
-
-        <div class="accordion-panel">
-            <div class="buttons-wrapper">
-                <i class="plus-icon"></i>
-                <div class="open-btn">
-                    Open all
-                </div>
-                <div class="close-btn hidden">
-                    Close all
-                </div>
-            </div>
-
-            <dl class="accordion">
-                <!------------------------ Pre-F ----------------->
-                <dt id="stage1"><a name="stage1">Key Stage 1 & 2 (Year 1 - 6)</a><i class="plus-icon"></i></dt>
-                <dd id="stage1d">
-                    <div class="content">
-                        <p>Our curriculum consists of the English National Curriculum complemented by a strong pastoral
-                            programme further supported by a wide range of extracurricular activities. Our curriculum is
-                            challenging, creative and constantly reviewed for relevance, breadth and effect. We
-                            understand that children learn best by doing, exploring and being appropriately challenged,
-                            whilst feeling safe, valued and part of a lively community.</p>
-                        <P>The broad curriculum we offer includes art, design, languages, science, humanities and
-                            personal, social and health education. We have an emphasis on knowledge, skills and cultural
-                            understanding. Whilst we give a strict prominence to our core subjects of English and
-                            Mathematics, we also use a ‘Creative Curriculum’ approach to the other subjects. A Creative
-                            Curriculum involves creative teaching of lessons, a wide variety of learning approaches and
-                            a creative output of ideas from the children.</p>
-                        <p> Students work within vibrant classrooms organised around corridors that house the year
-                            group. This enables activities to be organised within classes but also across year groups.
-                            This often means that the curriculum is organised under the umbrella of the House
-                            activities.</p>
-                        <p>In the Primary, the children are grouped within the class for different purposes either in
-                            ability groups or mixed ability groups depending on the objectives of each particular
-                            lesson. This ensures that learning opportunities are optimised to meet a variety of
-                            students’ needs.</p>
-                        <p> Primary students at NDIS are encouraged to become active learners, able to take
-                            responsibility for their lives, and to become leaders in their own way. Enrolling your
-                            children at NDIS is not only to prepare them for secondary school and university, but to
-                            prepare them for life, as we develop their dispositions and aptitudes for a rapidly changing
-                            world.</p>
-                        <p> Our teachers are fully qualified to British standards, receive ongoing training and are
-                            encouraged to model learning themselves. Recent initiatives to enhance our work have
-                            included Assessment for Learning, Attitudes to Learning, our Student Leadership programme
-                            and the development of our Virtual Learning Environment.</p>
-                        <p> One of the features of NDIS is the professionalism and availability of staff. Primary
-                            teachers meet parents informally after school every day of the year and most pastoral and
-                            academic issues are dealt with promptly this way.</p>
-                        <p>The Teachers are supported by a wide variety of support staff. We have teams of teaching
-                            assistants in every year, learning support assistants and specialist staff such as the
-                            librarians and IT support team. All work towards the same goal of educating the children at
-                            NDIS.</p>
-                        <p> The Primary School provides a vibrant curriculum, supported by highly qualified staff
-                            members all working to the mission of providing a superb foundation for secondary and
-                            further learning but even more so, shaping your child for their future lives of success.</p>
-
-                    </div>
-                </dd>
-
-
-            </dl>
-        </div>
-
-    </div>
-    <!------ Curriculum Section ------>
-    <div class="about-us pt-50 pb-50">
+    <!------ Middle School ------>
+    <div class="achievement-area pt-60 pb-40" id="middle-school">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="about-content">
-                        <div class="section-title  mb-30">
-                            <h2><span>The Senior Curriculum </span></h2>
-                            <p>The Senior School gives the student a supportive, yet challenging learning
-                                environment. A highly qualified and professional staff supports students in acquiring
-                                life-long skills and prepares for the internationally recognised IGCSE and ‘A’ level
-                                programmes through exciting, application based classroom teaching and learning.</p>
-                            <p>NDIS is well prepared to cater for the academic and social needs of internationally
-                                mobile students and encourages all students to constantly challenge themselves. Our
-                                teachers nurture students who are intellectually curious, creative, respectful, caring
-                                and discerning young adults, conscious of their responsibility to the community and
-                                their environment. Parents are encouraged to work in partnership with the school and
-                                support it in its mission of continual improvement.</p>
-                            <p>The Senior School Curriculum (11-18 years of age) is organised to ensure that all
-                                students receive a broad, balanced and clearly articulated learning entitlement, which
-                                is coherent within each Key Stage, as well as being progressive and continuous in
-                                nature, building upon the foundations laid during the Primary school.</p><br>
-                            The Senior School is organised through three key stages:
+            <div class="section-title">
+                <h3 class="font-weight-bold" style="font-size: 35px;  margin-bottom: 20px">Middle School   <span style="color: #00a651">Curriculum</span></h3>
+                <p>
+                    The curriculum and the environment of the Middle School are designed to facilitate the academic,
+                    aesthetic, physical, and social growth of students within a structured and caring framework.
+                    Our goal is to teach students to question, to encourage students to consider alternatives to
+                    stereotyped patterns of thinking, to pursue independent research on thought-provoking issues,
+                    and to make rational judgments.
+                </p>
+                <p>
+                    Academically, students are expected to master basic skills and content, to become more inquisitive
+                    and analytical, to develop research and technology skills, and to organize and present what they
+                    learn in verbal, written, and digital forms.
+                </p>
+                <p>
+                    Socially, students are expected to become more tolerant and understanding of others, to gain greater
+                    respect for themselves and for others, and to participate in the community.
+                </p>
+
+            </div>
+        </div>
+    </div>
 
 
-                            <div class="limiter">
-                                <div class="container-table100">
-                                    <div class="wrap-table100">
-                                        <div class="table100 ver5 m-b-110">
-                                            <div class="table100-head">
-                                                <table>
-                                                    <thead>
-                                                    <tr class="row100 head">
-                                                        <th class="cell100 column1">Year</th>
-                                                        <th class="cell100 column2">Age on 1st october</th>
-                                                        <th class="cell100 column3">Stage</th>
-                                                    </tr>
-                                                    </thead>
-                                                </table>
+    <!------ Middle School Grades ------>
+    <div class="achievement-area pt-60 pb-40">
+        <div class="container">
+            <div class="description-review-area pb-50 pt-40">
+                <div class="container">
+                    <div class="description-review-wrapper">
+                        <div class="description-review-topbar nav">
+                            <a class="active text-center" data-toggle="tab" href="#grade6" style="width: 33.3%">Grade 6 </a>
+                            <a data-toggle="tab" href="#grade7" class="text-center" style="width: 33.3%">Grade 7 </a>
+                            <a data-toggle="tab" href="#grade8" class="text-center" style="width: 33.3%">Grade 8 </a>
+                        </div>
+                        <div class="tab-content description-review-bottom">
+                            <!--------------- Grade 6 --------------->
+                            <div id="grade6" class="tab-pane active">
+                                <div class="product-description-wrapper">
+                                    <!--===================================Features Details ================================================-->
+                                    <div class="row about-features d-flex flex-row justify-content-center mt-5 mb-50">
+
+                                        <!------------ English ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/english.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px">English</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    The sixth grade English student is an active participant in classroom discussions. S/he
+                                                    Presents personal opinions, understands differing viewpoints, delivers a formal speech,
+                                                    Participates in dramatic presentations, distinguishes between fact and opinion, and
+                                                    Analyzes the effectiveness of group communication. The student builds on the study of
+                                                    Word origins and continues vocabulary development from grade five.
+                                                </p>
                                             </div>
+                                        </div>
 
-                                            <div class="table100-body js-pscroll">
-                                                <table>
-                                                    <tbody>
-                                                    <tr class="row100 body">
-                                                        <td class="cell100 column1">Year 7</td>
-                                                        <td class="cell100 column2">11.6</td>
-                                                        <td class="cell100 column3">key Stage 3</td>
-                                                    </tr>
-                                                    <tr class="row100 body">
-                                                        <td class="cell100 column1">Year 8</td>
-                                                        <td class="cell100 column2">12.6</td>
-                                                        <td class="cell100 column3">key Stage 3</td>
-                                                    </tr>
-                                                    <tr class="row100 body">
-                                                        <td class="cell100 column1">Year 9</td>
-                                                        <td class="cell100 column2">13.6</td>
-                                                        <td class="cell100 column3">key Stage 3</td>
-                                                    </tr>
-                                                    <tr class="row100 body">
-                                                        <td class="cell100 column1">Year 10</td>
-                                                        <td class="cell100 column2">14.6</td>
-                                                        <td class="cell100 column3">key Stage 4</td>
-                                                    </tr>
-                                                    <tr class="row100 body">
-                                                        <td class="cell100 column1">Year 11</td>
-                                                        <td class="cell100 column2">15.6</td>
-                                                        <td class="cell100 column3">key Stage 4</td>
-                                                    </tr>
-                                                    <tr class="row100 body">
-                                                        <td class="cell100 column1">Year 12</td>
-                                                        <td class="cell100 column2">16.6</td>
-                                                        <td class="cell100 column3">key Stage 5(also called the Sixth
-                                                            Form)
-                                                        </td>
-                                                    </tr>
+                                        <!------------ Math ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/math.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px">Math</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    Sixth Grade Mathematics places continued emphasis on the study of whole numbers,
+                                                    Decimals, and rational numbers (fractions). By the end of sixth grade, a student masters
+                                                    The four arithmetic operations with whole numbers, positive fractions, and positive
+                                                    Decimal integers; a grade six student accurately computes and solves problems. Students understand the concepts of mean, median, and the mode of data sets and how to calculate the range.
 
+                                                </p>
+                                            </div>
+                                        </div>
 
-                                                    </tbody>
-                                                </table>
+                                        <!------------ Earth Science ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/science_earth.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px">Earth Science</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    Students will be able to connect the study of Earth’s composition, structure, processes,
+                                                    And history; its atmosphere, fresh water, and oceans; and its environment in space.
+                                                    Students emphasize historical contributions in the development of scientific thought
+                                                    About the earth and space. Students are able to interpret maps, charts, tables, and profiles;
+                                                    they use technology to collect, analyze and report data; and they utilize science skills
+                                                    in systematic investigation. Problem solving and decision-making are an integral part of
+                                                    earth science, especially as they relate to the costs and benefits of utilizing the Earth’s resources.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!------------Social ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/social.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px">Social Studies</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    Grade 6 Social Studies will revolve around an exploration of world cultures. In grade 6,
+                                                    Students will be exploring the Western Hemisphere (Canada, USA, Mexico, Caribbean,
+                                                    Central America, and South America) as well as Europe. This larger region will be then
+                                                    Further broken down into smaller sections and students will look in depth at the
+                                                    Physical geography, cultures, climate, and the economic and political situations of these
+                                                    Locations.
+                                                    Grade 6 Social Studies will revolve around an exploration of world cultures. In grade 6,
+                                                    Students will be exploring the Western Hemisphere (Canada, USA, Mexico, Caribbean,
+                                                    Central America, and South America) as well as Europe. This larger region will be then
+                                                    Further broken down into smaller sections and students will look in depth at the
+                                                    Physical geography, cultures, climate, and the economic and political situations of these
+                                                    Locations.
+
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <p>
-                                The Senior School provides a progressive, student-led learning environment where each
-                                student has the opportunity to discover and develop their unique identity, talents and
-                                interests. Our committed teachers ensure that every student is given the guidance and
-                                encouragement to achieve to their very best of their ability, both inside and outside
-                                the classroom.</p>
-                            <p>In the Senior School, we strive to create a culture where curiosity is nurtured and
-                                where student success is driven by a sense of genuine engagement with learning. It is
-                                important to us that our students have a sense of humility through exposure to a
-                                diversity of human experience leading them to want to make a difference, to act
-                                creatively and to think critically. We aim for every individual to live our reach motto
-                                and to be respected, known and cared for within our community.
+                            <!--------------- Grade 7 --------------->
+                            <div id="grade7" class="tab-pane ">
+                                <div class="product-description-wrapper">
+                                    <!--===================================Features Details ================================================-->
+                                    <div class="row about-features d-flex flex-row justify-content-center mt-5 mb-50">
 
+                                        <!------------ English ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/english.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px">English</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    Student continues to develop oral communication skills and becomes more
+                                                    Knowledgeable of the effects of verbal and nonverbal behaviors in oral communication.
+                                                    S/he continues to read a wide variety of fiction, nonfiction, and poetry while becoming
+                                                    More independent and analytical. The student reads independently for at least thirty
+                                                    Minutes a night, a variety of fiction and non-fiction, for appreciation and comprehension.
+                                                    The student continues to extend responses to self-selected reading and continues to refine
+                                                    written composition skills, with special attention to word choice, organization, style, and grammar.
+                                                </p>
+                                            </div>
+                                        </div>
 
-                            </p>
+                                        <!------------ Mathematics ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/math.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px">Mathematics</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    <span class="font-weight-bold">Pre-Algebra (Integrated Math 1)</span> reviews or extends concepts and skills learned in
+                                                    previous grades and new content that prepares students for more abstract concepts in
+                                                    algebra and geometry. A pre-algebra student gains proficiency in computation with
+                                                    rational numbers (positive and negative fractions, positive and negative decimals, whole
+                                                    numbers, and integers) and uses proportions to solve a variety of problems. New concepts
+                                                    include solving two-step equations and inequalities, with a focus on the Pythagorean theorem and probability.
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!------------ Science ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/science.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px"> Science</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    Students in <span class="font-weight-bold">Grade Seven Life Science</span> develop a more complex understanding
+                                                    of change, cycles, patterns, and relationships in the living world. Students
+                                                    build on basic principles related to these concepts by exploring the cellular
+                                                    organization and the classification of organisms; the dynamic relationships
+                                                    among organisms, populations, communities, and ecosystems; and change as a
+                                                    result of the transmission of genetic information from generation to
+                                                    generation. Inquiry skills at this level include organization and mathematical
+                                                    analysis of data, manipulation of variables in experiments, and
+                                                    Identification of sources of experimental error.
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!------------Social Studies ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/social.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px">Social Studies</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    In grade 7, students will study world regions by focusing on the East and exploring
+                                                    Africa, Asia, Australia and Oceania. This larger region will be then further broken down
+                                                    Into smaller sections and students will look in depth at the physical geography, cultures,
+                                                    Climate, and the economic and political situations of these locations. There will be some
+                                                    Detail of history added to prepare the students for Grade 8. Students will work on travel
+                                                    Projects where they have to plan an itinerary and all of the details of their trips and then
+                                                    They will create presentations so they can share their virtual adventures with their
+                                                    Classmates.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------- Grade 8 --------------->
+                            <div id="grade8" class="tab-pane ">
+                                <div class="product-description-wrapper">
+                                    <!--===================================Features Details ================================================-->
+                                    <div class="row about-features d-flex flex-row justify-content-center mt-5 mb-50">
+
+                                        <!------------ English ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/english.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px">English</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    The focus of Grade 8 English is to prepare the student for the rigors of
+                                                    all courses in High School in that reading and writing skills are critical
+                                                    elements of all subjects. Key components of the curriculum include writing
+                                                    narrative, persuasive and expository essays, critical thinking, literature
+                                                    and poetry analysis, vocabulary, and grammatical and editing skills.
+                                                    In addition, the course focuses on public speaking to both enhance student
+                                                    confidence and oral English skills. Writing texts are expected to be between
+                                                    600 to 900 words or more.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!------------ Algebra (Integrated Math 2) ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/math.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px">Algebra (Integrated Math 2)</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    Students focus on symbolic reasoning and calculations with symbols, which
+                                                    are central in algebra. Through the study of algebra, a student develops
+                                                    an understanding of the symbolic language of mathematics. In addition,
+                                                    a student in algebra develops algebraic skills and concepts and uses
+                                                    them in solving problems.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!------------ Science: Basic Physics & Chemistry ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/science.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px"> Science: Basic Physics & Chemistry</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    Students in 8th Grade Science develop an understanding of the scientific
+                                                    process as they survey both physics and chemistry. Students continue to emphasize data
+                                                    analysis and experimentation through hands-on inquiry. The concept of change is explored
+                                                    through the study of transformations of energy and matter. Students focus on integrated
+                                                    topics, which include physical science formulas and basic chemistry concepts.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!------------Social Studies ----------->
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="about-feature d-flex flex-column justify-content-between">
+                                                <div class="feature-img-container">
+                                                    <img src="{{asset('website/img/curriculum/social.png')}}" style="width: 120px; margin-bottom: 30px">
+                                                </div>
+                                                <p class="mb-20" style="font-weight: 500; font-size: 16px">Social Studies</p>
+                                                <p class="main-font-size dark-grey text-justify">
+                                                    This course will take students from the ancient civilizations to the European Renaissance.
+                                                    Within the course, students will focus on the transitions of power, technology, and trade
+                                                    throughout the expanding world. Interactions between people and an exploration of how geography
+                                                    has affected humanity will facilitate students' understanding as they begin to question history
+                                                    and view it as a living, ever-changing content area.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
-
-
             </div>
-
         </div>
     </div>
 
-    <!------ Classroom displays ------>
-    <div class="container">
 
-        <div class="accordion-panel">
-            <div class="buttons-wrapper">
-                <i class="plus-icon"></i>
-                <div class="open-btn">
-                    Open all
-                </div>
-                <div class="close-btn hidden">
-                    Close all
-                </div>
+    <!------ High School ------>
+    <div class="achievement-area pt-60 pb-40" id="high-school">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="font-weight-bold text-center" style="font-size: 40px;  margin-bottom: 80px">High School    <span style="color: #00a651">Curriculum</span></h3>
+                <p>
+                    Senior school runs through to 12th grade. The subject spread remains wide with general emphasis. Most
+                    schools provide education in sciences (biology, chemistry and physics), mathematics (including algebra,
+                    geometry, pre-calculus and statistics), english language, social sciences and physical education.
+                </p>
             </div>
-
-            <dl class="accordion">
-
-
-                <!------------------------ Foundation Stage ----------------->
-                <dt id="stage3"><a name="stage3">Key Stage 3 (Year 7 - 9)</a> <i class="plus-icon"></i></dt>
-                <dd id="stage3d">
-                    <div class="content">
-                        <p>At NDIS, we have a three-year (Year 7, 8 and 9) KS3 curriculum which is broad and balanced in
-                            offering all students the opportunity to build their skills and knowledge in all of the
-                            following subjects: Art, Drama, Design & Technology (DT), English, Geography, History,
-                            Information and Communication Technology (ICT), Maths, Languages, Music, Physical Education
-                            (PE), Science and Personal Health and Social Education </p>
-                    </div>
-                </dd>
-
-                <!------------------------ Documents required for Year 1/ Grade 1  ----------------->
-                <dt id="stage4"><a name="stage4">Key Stage 4 (Year 10-11)</a><i class="plus-icon"></i></dt>
-                <dd id="stage4d">
-                    <div class="content">
-                        <p>The curriculum at Key Stage 4 is a two year course of study culminating in external
-                            examinations (IGCSE set by Cambridge Examinations 9CIE, London EDEXEL and AQA) Boards.</p>
-                        <p>These examinations allow for a range of achievements from either A* to G or 9-1, although we
-                            only considers grades from A* to C or 9-4 as passes. The courses are assessed by external
-                            examinations and coursework. The core curriculum at Key Stage 4 comprises the following
-                            subjects: Mathematics, English Literature, English Language, the Sciences, Physical
-                            Education (non-examined), Personal, Social and Health Education (PSHE).</p>
-                        <p> Students then select four optional subjects from the following: Spanish, French, Arabic
-                            (Native and Non-Native), Art, Drama, Music, Physical Education (examined), Food Technology,
-                            Resistant Materials, Geography, History, Economics, Business Studies and ICT. We encourage
-                            all students must select a Language, a Humanities subject, and a more practical subject from
-                            the options.
-                        </p>
-                    </div>
-                </dd>
-
-
-                <!------------------------ Knowledge and understanding of the world.  ----------------->
-                <dt id="stage5"><a name="stage5">Key Stage 5 (Year 12)</a><i class="plus-icon"></i></dt>
-                <dd id="stage5d">
-                    <div class="content">
-                        <p>
-                            Key Stage 5 offers students the opportunity to take their studies to A-level as part of a
-                            lively and enthusiastic academic community. Students who have demonstrated at GCSE that they
-                            have the potential for further study are able to choose from sixteen subjects (subject to
-                            demand, staffing, timetabling and individual GCSE targets).</p>
-                        <p>In Year 12, our students study four or five subjects at A/S level, and usually three but
-                            sometime four to A-level in Year 13. The majority of our students take up places in Higher
-                            Education, usually to some of the world’s top university. Part of the PSHE programme in the
-                            Sixth Form (called Futures) is devoted to careers advice and helping students as individuals
-                            select appropriate Higher Education courses.</p>
-                        <p>Currently the NDIS Sixth Form offers a range of subjects at A Level, a British qualification
-                            which is internationally recognised as being highly rigorous and desirable for entry into
-                            universities all around the world. These are a natural continuation from GCSE / IGCSE exams
-                            and follow a two year programme.
-
-                        </p>
-                    </div>
-                </dd>
-
-
-            </dl>
         </div>
-
     </div>
-    {{--<!------ About Section ------>
-    <div class="container">
-        <div class="wrapper">
-            <div class="inner">
-                <div id="wizard">
-                    <!-- SECTION 1 Curriculum-->
-                    <h4>Curriculum </h4>
-                    <section>
-                        <p>Our curriculum is designed to be fun and balanced to cover all the learning goals.
-                            The Department for Education, in the UK, sets out Learning Objectives for each area of the curriculum and Levels
-                            of Attainment that pupils are expected to achieve at the end of each key stage.
-                            <br>
-                            <span class="font-weight-bold">Paying the application doesn’t guarantee the acceptance.</span>
+
+
+    <!------ Should I take the SAT or the ACT? ------>
+    <div class="achievement-area pt-60 pb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title">
+
+                        <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">About the   <span style="color: #00a651">SAT </span></h3>
+                        <p style="margin-bottom: 0; text-align: justify" class="text-justify">
+                            The SAT is an entrance exam used by most colleges and universities to make admissions decisions.
+                            It is a multiple-choice, pencil-and-paper test administered by the College Board.
                         </p>
-                        --}}{{--<button class="forward">Next Step
-                            <i class="zmdi zmdi-long-arrow-right"></i>
-                        </button>--}}{{--
-                    </section>
-
-                    <!-- SECTION 2 Character building-->
-                    <h4>Character building</h4>
-                    <section class="section-style">
-                        <div class="form-wrapper">
-                            <p>
-
-                            </p>
-                            --}}{{-- <button class="forward">Next Step
-                                 <i class="zmdi zmdi-long-arrow-right"></i>
-                             </button>--}}{{--
-                        </div>
-                    </section>
-
-                    <!-- SECTION 3 Activities-->
-                    <h4>Activities</h4>
-                    <section>
-                        <p>Parents will be notified of the assessment result within 5 working days from
-                            The assessment date.
+                        <p class="text-justify">
+                            The purpose of the SAT is to measure a high school student's readiness for college, and provide
+                            colleges with one common data point that can be used to compare all applicants. College admissions
+                            officers will review standardized test scores alongside your high school GPA, the classes you
+                            took in high school, letters of recommendation from teachers or mentors, extracurricular activities,
+                            admissions interviews, and personal essays. How important SAT scores are in the college application
+                            process varies from school to school.
                         </p>
-
-                        --}}{{--<button class="forward" style="width: 195px; margin-top: 44px;">Next Step
-                            <i class="zmdi zmdi-long-arrow-right"></i>
-                        </button>--}}{{--
-                    </section>
-
-                    <!-- SECTION 4 Our typical day-->
-                    <h4>Our typical day</h4>
-                    <section class="section-style">
-                        <div class="pay-wrapper">
-                            <p>
-                                If the student is offered a place, a onetime reservation fee of <span class="font-weight-bold">2,500 EGP </span>must be paid within 5 working days and the below documents should be presented to guarantee the student’s place.
-                                <br><span class="font-weight-bold">** This amount is accredited from the 1st Installment.</span>
-                                <br>
-                                - Copy of vaccination report.
-                                <br>
-                                - Copy of parents’ IDs or Passports.
-                                <br>
-                                - An original electronic birth certificate.
-                                <br>
-                                - 8 recent passport-sized color photos.
-                                <br>
-                                - The original stamped report from the previous school.
-                                <br>
-                                If a school bus is required, an amount of 2,000 EGP MUST be paid with reservation fees
-                                with maximum 1st installment, Otherwise, the student will not be assigned to a bus route.
-                                <br>
-                                <span class="font-weight-bold">
-                                     **Promotion from one year to the next is not automatic, unless the following year’s
-                                1st installment is paid before 30th June.
-                                </span>
+                        <p class="text-justify">
+                            Overall, the higher you score on the SAT and/or ACT, the more options for attending and paying for
+                            college will be available to you.
+                        </p>
+                    </div>
+                </div>
 
 
-                            </p>
-                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
-                                <i class="zmdi zmdi-long-arrow-right"></i>
-                            </button>--}}{{--
-                        </div>
-                    </section>
 
+                <div class="col-lg-6">
+                    <div class="section-title">
 
-                    <!-- SECTION 5 Classroom displays-->
-                    <h4>Classroom Displays</h4>
-                    <section class="section-style">
-                        <div class="pay-wrapper">
-                            <p>
-                                Classroom displays
-
-
-                            </p>
-                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
-                                <i class="zmdi zmdi-long-arrow-right"></i>
-                            </button>--}}{{--
-                        </div>
-                    </section>
-
-                    <!-- SECTION 6 Outdoor facilities-->
-                    <h4>Outdoor facilities</h4>
-                    <section class="section-style">
-                        <div class="pay-wrapper">
-                            <p>
-                                Outdoor facilities
-
-
-                            </p>
-                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
-                                <i class="zmdi zmdi-long-arrow-right"></i>
-                            </button>--}}{{--
-                        </div>
-                    </section>
-
-                    <!-- SECTION 7 How to help your child at home?-->
-                    <h4>How to help your child at home?</h4>
-                    <section class="section-style">
-                        <div class="pay-wrapper">
-                            <p>
-                                How to help your child at home?
-
-                            </p>
-                            --}}{{--<button style="width: 195px; margin-top: 45px;">Confirmation
-                                <i class="zmdi zmdi-long-arrow-right"></i>
-                            </button>--}}{{--
-                        </div>
-                    </section>
+                        <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">Should I take the <span style="color: #00a651">SAT or the ACT? </span></h3>
+                        <p style="margin-bottom: 0; text-align: justify">
+                            Most colleges and universities will accept scores from either the SAT or ACT, and do not favor one test
+                            over the other. That said, college-bound students are increasingly taking both the SAT and ACT. Changes
+                            made to the SAT in 2016 have made it easier than ever to prep for both tests concurrently—and earn
+                            competitive scores on both! The best way to decide if taking the SAT, ACT, or both tests is right for
+                            you is to take a timed full-length practice test of each type. Since the content and style of the SAT
+                            and ACT are very similar, factors like how you handle time pressure and what types of questions you
+                            find most challenging can help you determine which test is a better fit. Try our QUIZ: SAT, ACT, or
+                            Both? To learn more.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>--}}
-    <!------ Curriculum Section ------>
+    </div>
+
+
+
+    <!------ How do I register for the SAT? ------>
+    <div class="achievement-area pt-60 pb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title">
+
+                        <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">What is on the   <span style="color: #00a651">SAT?  </span></h3>
+                        <p style="margin-bottom: 0; text-align: justify" class="text-justify">
+                            •	Math
+                        </p>
+                        <p style=" text-align: justify" class="text-justify">
+                            •	Evidence-Based Reading and Writing
+                        </p>
+                        <p class="text-justify">
+                            The SAT also includes an optional Essay section. SAT Essay scores are reported separately
+                            from overall test scores. Some colleges may require that you complete the SAT Essay.
+                            You can confirm each college's admissions policies on the school website or on our school profiles.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6">
+                    <div class="section-title">
+
+                        <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">How do I register for the<span style="color: #00a651"> SAT? </span></h3>
+                        <p style="margin-bottom: 0; text-align: justify">
+                            SAT registration deadlines fall approximately five weeks before each test date. Register online
+                            on the College Board website. The College Board may require SAT registration by mail under special
+                            circumstances.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------ How long is the SAT? ------>
+    <div class="achievement-area pt-60 pb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title">
+
+                        <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">How long is the   <span style="color: #00a651">SAT?   </span></h3>
+                        <p class="text-justify">
+                            The SAT is 3 hours long. If you choose to take the SAT with Essay, the test will be 3 hours
+                            and 50 minutes.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6">
+                    <div class="section-title">
+
+                        <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">How can I prepare for the <span style="color: #00a651"> SAT? </span></h3>
+                        <p style="margin-bottom: 0; text-align: justify">
+                            We can help. We have SAT prep solutions for every student and every budget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------ How is the SAT scored? ------>
+    <div class="achievement-area pt-60 pb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title">
+
+                        <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">How is the    <span style="color: #00a651">SAT scored?   </span></h3>
+                        <p class="text-justify">
+                            Each section of the SAT is scored on a 200 to 800 point scale. Your total SAT score is the sum
+                            of your section scores. The highest possible SAT score is 1600. If you take the Essay, you will
+                            receive a separate score
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------ American & British ------>
     <div class="about-us pt-50 pb-50">
         <div class="container">
             <div class="row">
@@ -536,9 +621,9 @@
                     <div class="about-content">
                         <div class="section-title section-title-green mb-30">
                             <h3><span>MOE Civil Subjects: </span></h3>
-                            <p class="aims">Ministry exams are administered in Arabic, religion and Arabic social
+                            <p class="aims">Ministry exams are administered in <span class="font-weight-bold">Arabic, religion and Arabic social
                                 studies.
-
+                                </span>
 
                             </p>
 
@@ -554,8 +639,6 @@
 
 
                             </p>
-
-
                         </div>
 
                     </div>
@@ -566,6 +649,7 @@
 
         </div>
     </div>
+
     <script type="text/javascript">
         function opencol(ele) {
 

@@ -131,6 +131,14 @@ Route::get('/school-campus', 'PagesController@schoolCampus');
 
 
 
+/* -- Co-Curricular --- */
+Route::get('/co-curricular', 'PagesController@coCurricular');
+
+
+
+
+
+
 
 
 

@@ -76,18 +76,18 @@
                                             <li><a onclick="opencol('#stage5')" href="{{url('/british-sector')}}#stage5" style="padding-left: 10px">Key Stage 5 (Year 12)</a></li>
                                             <li><a href="#" style="color: #00a550; font-weight: 500">AMERICAN SECTOR</a></li>
                                             <li><a href="{{url('/american-sector')}}" style="padding-left: 10px">Elementary School Grades 1-5</a></li>
-                                            <li><a href="{{url('/american-sector')}}" style="padding-left: 10px">Middle School Grades 6-8</a></li>
-                                            <li><a href="{{url('/american-sector')}}" style="padding-left: 10px">High School Grades 9-12</a></li>
+                                            <li><a href="{{url('/american-sector')}}#middle-school" style="padding-left: 10px">Middle School Grades 6-8</a></li>
+                                            <li><a href="{{url('/american-sector')}}#high-school" style="padding-left: 10px">High School Grades 9-12</a></li>
                                         </ul>
                                     </li>
 
 
                                     <li>
-                                        <a href="{{url('/school-life')}}"> SCHOOL LIFE  </a>
+                                        <a href="{{url('/school-life')}}"> SCHOOL LIFE <i class="fa fa-angle-down"></i>  </a>
                                         <ul class="submenu">
                                             <li><a href="{{url('/calendar')}}">School Calendar</a></li>
                                             <li><a href="{{url('/school-life')}}">Facilities</a></li>
-                                            <li><a href="{{url('/school-life')}}">Co-Curricular Activities</a></li>
+                                            <li><a href="{{url('/co-curricular')}}">Co-Curricular Activities</a></li>
                                             <li><a href="{{url('/rules')}}">School Rules</a></li>
                                         </ul>
                                     </li>

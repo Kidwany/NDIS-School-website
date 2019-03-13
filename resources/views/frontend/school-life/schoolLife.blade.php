@@ -69,19 +69,56 @@
         </div>
     </div>
 
-    <!--------  Tennis, Bathrooms, Football ------>
-    <div class="course-area bg-img pt-20 pb-10" style="background-color: white">
+    <!-------- Lab, Zoo, ICT, Playgrounds ------>
+    <div class="course-area bg-img pt-100 pb-10" style="background-color: white">
         <div class="container">
+
             <div class="course-slider-active nav-style-1 owl-carousel">
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/science.jpg')}}" alt=""></a>
+                    </div>
+                    <div class="course-content">
+                        <h4 class="text-center"><a href="#">4 Science Labs</a></h4>
+                    </div>
+                </div>
+
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/zoo.jpg')}}" alt=""></a>
+                    </div>
+                    <div class="course-content">
+                        <h4 class="text-center"><a href="#">Mini Zoo</a></h4>
+                    </div>
+                </div>
+
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/ict.jpg')}}" alt=""></a>
+                    </div>
+                    <div class="course-content">
+                        <h4 class="text-center"><a href="#">ICT Labs</a></h4>
+                    </div>
+                </div>
+
 
                 <div class="single-course">
                     <div class="course-img">
                         <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/tennis.png')}}" alt=""></a>
                     </div>
                     <div class="course-content">
-                        <h4 class="text-center"><a href="#">Tennis</a></h4>
+                        <h4 class="text-center"><a href="#">Playgrounds For (Football, Volley ball, Tennis)</a></h4>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------  , Bathrooms, Football, class room activities, staff rooms ------>
+    <div class="course-area bg-img pt-20 pb-10" style="background-color: white">
+        <div class="container">
+            <div class="course-slider-active nav-style-1 owl-carousel">
 
                 <div class="single-course">
                     <div class="course-img">
@@ -100,11 +137,30 @@
                         <h4 class="text-center"><a href="#">Football</a></h4>
                     </div>
                 </div>
+
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/football.jpg')}}" alt=""></a>
+                    </div>
+                    <div class="course-content">
+                        <h4 class="text-center"><a href="#">Classrooms For Activities</a></h4>
+                    </div>
+                </div>
+
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/football.jpg')}}" alt=""></a>
+                    </div>
+                    <div class="course-content">
+                        <h4 class="text-center"><a href="#">Staff Rooms</a></h4>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
-    <!-------- Classes, Library Play Ground, Clinic, Theater, Art ------>
+    <!-------- Courtyards, Library Play Ground, Gardens ------>
     <div class="course-area bg-img pt-20 pb-10" style="background-color: white">
         <div class="container">
             <div class="course-slider-active nav-style-1 owl-carousel">
@@ -113,7 +169,7 @@
                         <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/class.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
-                        <h4 class="text-center"><a href="#">Classes</a></h4>
+                        <h4 class="text-center"><a href="#">Two Court Yards</a></h4>
                     </div>
                 </div>
 
@@ -122,7 +178,7 @@
                         <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/library.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
-                        <h4 class="text-center"><a href="#">Library</a></h4>
+                        <h4 class="text-center"><a href="#">Libraries</a></h4>
                     </div>
                 </div>
 
@@ -134,38 +190,41 @@
                         <h4 class="text-center"><a href="#">Play Ground</a></h4>
                     </div>
                 </div>
+
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/football.jpg')}}" alt=""></a>
+                    </div>
+                    <div class="course-content">
+                        <h4 class="text-center"><a href="#">Gardens</a></h4>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-------- Clinic, Theater, Art ------>
+    <!-------- Management Offices, Kids Area ------>
     <div class="course-area bg-img pt-20 pb-10" style="background-color: white">
         <div class="container">
             <div class="course-slider-active nav-style-1 owl-carousel">
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img')}}/course/course-1.jpg" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/class.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
-                        <h4 class="text-center"><a href="#">Clinic</a></h4>
+                        <h4 class="text-center"><a href="#">Management Offices,</a></h4>
                     </div>
                 </div>
+
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/theater.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/library.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
-                        <h4 class="text-center"><a href="#">Theater</a></h4>
+                        <h4 class="text-center"><a href="#">Kids Area</a></h4>
                     </div>
                 </div>
-                <div class="single-course">
-                    <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/art.jpg')}}" alt=""></a>
-                    </div>
-                    <div class="course-content">
-                        <h4 class="text-center"><a href="#">Art</a></h4>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

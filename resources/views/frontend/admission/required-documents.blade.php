@@ -89,6 +89,11 @@
                             <li>- The original academic end of FS1 & FS2 report signed & stamped from the previous
                                 school.
                             </li>
+                            <li>- 4 Copies of transfer requests signed & certified from both schools (new & previous)Stamped with The official Seal from <span class="font-weight-bold">The Educational Administration Department Offices</span>
+                            <li><span class="font-weight-bold">*If the transfer is from a different governorate to another, transfer papers are to beCertified by Educational Directorate In both government's.</span></li>
+                            <li>- Electronic Transfer certificate from the Ministry Of Education’s Website for Transferred students signed and stamped by the previous school</li>
+                            <li>- Proof of graduation document for FS1 & FS2 certified from the MOE</li>
+
                         </ul>
                     </div>
                 </dd>
