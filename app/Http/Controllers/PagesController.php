@@ -421,4 +421,34 @@ class PagesController extends Controller
     {
         return view('frontend.about.owner');
     }
+
+    public function learning()
+    {
+        return view('frontend.about.learning');
+    }
+
+
+
+    public function british()
+    {
+        return view('frontend.about.british');
+    }
+
+
+    public function american()
+    {
+        return view('frontend.about.american');
+    }
+
+
+    public function accreditation()
+    {
+        return view('frontend.about.accreditation');
+    }
+
+    public function schoolCampus()
+    {
+        return view('frontend.about.campus');
+    }
+
 }

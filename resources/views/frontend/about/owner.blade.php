@@ -1,5 +1,5 @@
 @extends('layouts.layouts')
-@section('title', 'About')
+@section('title', 'About Owner')
 @section('customizedStyle')
     <!--begin::Page Vendors -->
     <!--end::Page Vendors -->
@@ -50,7 +50,7 @@
                                     <p class="main-font-size" style="color: #0ac766">School Owner</p>
                                 </div>
                                 <div>
-                                    <img src=" {{asset('img/pages/about/Ahmed%20Tawfik.png')}}">
+                                    <img style="height: 40px" src="{{asset('website/img/about/signature.png')}}">
                                 </div>
                             </div>
                         </div>
@@ -66,61 +66,71 @@
 
         <!--===================================Features ================================================-->
         <div class="row experience-years d-flex flex-row justify-content-center ">
-            <h2 class="dark-grey text-center font-weight-bold"><span>20 </span>{{trans('about/about.years_experience')}}</h2>
+            <h2 class="dark-grey text-center font-weight-bold"><span>30 </span>Years of Experience</h2>
         </div>
 
         <!--===================================Features Details ================================================-->
-        <div class="row about-features d-flex flex-row justify-content-center mt-5">
+        <div class="row about-features d-flex flex-row justify-content-center mt-5 mb-50">
 
             <!------------Time Commitment ----------->
             <div class="col-md-3 col-sm-6">
                 <div class="about-feature d-flex flex-column justify-content-between">
                     <div class="feature-img-container">
-                        <img src="{{asset('img/assets/about/time.png')}}">
+                        <img src="{{asset('website/img/about/students.png')}}" style="width: 120px; margin-bottom: 30px">
                     </div>
-                    <p class="large-font-size-font-size dark-grey main-font-weight mb-0">{{trans('home/home.time_title')}}</p>
+                    <p class="mb-20" style="font-weight: 500; font-size: 16px">Students Characters</p>
                     <p class="main-font-size dark-grey ">
-                        {{trans('home/home.time_desc')}}
-
+                        Afterwards, Mr. Abdelghany established the New Discovery British School in Cairo. There,
+                        he ensures that the students undergo a stimulatingly effective and modern educational process;
+                        Mr. Abdelghany introduced a unique 21st century character building program, as well as the world’s
+                        top e-learning system. An ever-lasting principle for students
                     </p>
                 </div>
             </div>
 
-            <!------------ Team ----------->
+            <!------------Time Commitment ----------->
             <div class="col-md-3 col-sm-6">
                 <div class="about-feature d-flex flex-column justify-content-between">
                     <div class="feature-img-container">
-                        <img src="{{asset('img/assets/about/team.png')}}">
+                        <img src="{{asset('website/img/about/vision.png')}}" style="width: 120px; margin-bottom: 30px">
                     </div>
-                    <p class="large-font-size-font-size dark-grey main-font-weight mb-0">{{trans('home/home.professional_title')}}</p>
+                    <p class="mb-20" style="font-weight: 500; font-size: 16px">Vision</p>
                     <p class="main-font-size dark-grey ">
-                        {{trans('home/home.professional_desc')}}
+                        Mr. Abdelghany’s vision is to tackle every student’s strengths and talents, and ensure
+                        that he/she is exposed to an out-of-the-box learning environment. He integrates his
+                        educational passion with a strong set of principles. His principles include motivating
+                        students through their educational journey, empowering their characters, and applying
+                        authentic cultural values and norms within their lifestyles.
                     </p>
                 </div>
             </div>
 
-            <!------------Modern Designs----------->
+            <!------------Time Commitment ----------->
             <div class="col-md-3 col-sm-6">
                 <div class="about-feature d-flex flex-column justify-content-between">
                     <div class="feature-img-container">
-                        <img src="{{asset('img/assets/about/home%20design.png')}}">
+                        <img src="{{asset('website/img/about/parents.png')}}" style="width: 120px; margin-bottom: 30px">
                     </div>
-                    <p class="large-font-size-font-size dark-grey main-font-weight mb-0">{{trans('home/home.modern_title')}}</p>
+                    <p class="mb-20" style="font-weight: 500; font-size: 16px">His Value for Parents</p>
                     <p class="main-font-size dark-grey ">
-                        {{trans('home/home.modern_desc')}}
+                        His principles as well ensure that parents are involved in their children’s education.
+                        Parents not only integrate their children’s learning at home, but also strengthen their children’s
+                        values with the help of the teachers. Mr. Abdelghany verifies that teaming up with parents creates
+                        an unparalleled bond for students and paves the road to youth development.
                     </p>
                 </div>
             </div>
 
-            <!------------Support 24/7----------->
+            <!------------Time Commitment ----------->
             <div class="col-md-3 col-sm-6">
                 <div class="about-feature d-flex flex-column justify-content-between">
                     <div class="feature-img-container">
-                        <img src="{{asset('img/assets/about/support.png')}}">
+                        <img src="{{asset('website/img/about/word.png')}}" style="width: 120px; margin-bottom: 30px">
                     </div>
-                    <p class="large-font-size-font-size dark-grey main-font-weight mb-0">{{trans('home/home.support_title')}}</p>
+                    <p class="mb-20" style="font-weight: 500; font-size: 16px">In Word</p>
                     <p class="main-font-size dark-grey ">
-                        {{trans('home/home.support_desc')}}
+                        On this basis, Mr. Abdelghany pursues his living passion by developing a
+                        stronger, more integrated community; thus, making positive change.
                     </p>
                 </div>
             </div>

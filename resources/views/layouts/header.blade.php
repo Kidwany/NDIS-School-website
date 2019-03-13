@@ -47,11 +47,11 @@
                                     <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
                                         <ul class="submenu" style="width: 250px">
                                             <li><a href="{{url('owner')}}">Owner & Directors</a></li>
-                                            <li><a href="{{url('about')}}" style="color: #00a550; font-weight: 500">OUR LEARNING APPROACH</a></li>
-                                            <li><a href="{{url('about')}}" style="padding-left: 10px">Why British ?</a></li>
-                                            <li><a href="{{url('about')}}" style="padding-left: 10px">Why American ?</a></li>
-                                            <li><a href="{{url('calendar')}}">Accreditation</a></li>
-                                            <li><a href="{{url('about#mission')}}">School Campus</a></li>
+                                            <li><a href="{{url('#')}}" style="color: #00a550; font-weight: 500">OUR LEARNING APPROACH</a></li>
+                                            <li><a href="{{url('/british')}}" style="padding-left: 10px">Why British ?</a></li>
+                                            <li><a href="{{url('/american')}}" style="padding-left: 10px">Why American ?</a></li>
+                                            <li><a href="{{url('/accreditation')}}">Accreditation</a></li>
+                                            <li><a href="{{url('/school-campus')}}">School Campus</a></li>
                                             {{--<li><a href="event.html">event page</a></li>
                                             <li><a href="shop.html">shop page</a></li>
                                             <li><a href="course-details.html">course details</a></li>
