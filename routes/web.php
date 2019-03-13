@@ -106,19 +106,28 @@ Route::get('/rules', 'PagesController@rules');
 Route::get('/owner', 'PagesController@owner');
 
 
+/* -- Learning --- */
+Route::get('/learning-approach', 'PagesController@learning');
 
 
 
+/* -- British --- */
+Route::get('/british', 'PagesController@british');
 
 
 
+/* -- British --- */
+Route::get('/american', 'PagesController@american');
 
 
 
+/* -- accreditation --- */
+Route::get('/accreditation', 'PagesController@accreditation');
 
 
 
-
+/* -- Campus --- */
+Route::get('/school-campus', 'PagesController@schoolCampus');
 
 
 

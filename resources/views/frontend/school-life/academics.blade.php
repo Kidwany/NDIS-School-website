@@ -44,8 +44,21 @@
                     <div class="about-content">
                         <div class="section-title section-title-green mb-30">
                             <h2>Our <span>Aims</span></h2>
-                            <p class="aims">At NDIS Foundation Stage, we believe that the first years of life are the most influential in establishing good habits and basic learning skills.  We are working to help all children to prepare for the future and enable them to develop their capabilities as successful learners, confident individuals and responsible citizens.  Indeed, play is a fundamental part of childhood. For that reason our children’s learning is promoted successfully by activities specially planned and adapted to meet or extend their individual learning needs. </p>
-                            <p>Every day is a learning day and that learning is around us. We aim to provide a balanced plan for every   child. As well we work to develop our kids’ skills and attitude best through playing, which is well planned to give our kids the opportunity to be creative and to explore the world. .</p>
+                            <p class="aims">
+                                At NDIS Foundation Stage, we believe that the first years of life are
+                                the most influential in establishing good habits and basic learning skills.
+                                We are working to help all children to prepare for the future and enable them
+                                to develop their capabilities as successful learners, confident individuals and
+                                responsible citizens.  Indeed, play is a fundamental part of childhood. For that
+                                reason our children’s learning is promoted successfully by activities specially
+                                planned and adapted to meet or extend their individual learning needs.
+                            </p>
+                            <p>
+                                Every day is a learning day and that learning is around us. We aim to provide
+                                a balanced plan for every   child. As well we work to develop our kids’ skills and
+                                attitude best through playing, which is well planned to give our kids the opportunity
+                                to be creative and to explore the world.
+                            </p>
 
                         </div>
                         {{--<div class="about-btn mt-45">
@@ -87,6 +100,7 @@
                         </div>--}}
                     </div>
                 </div>
+
 
 
                 {{--<div class="col-lg-6 col-md-6">
@@ -259,6 +273,7 @@
                                                 <h3 style="margin-bottom: 5px"><a href="#">Understanding the World.</a></h3>
                                                 <p style="margin-bottom: 5px;">People and communities.</p>
                                                 <p style="margin-bottom: 5px;">The world.</p>
+                                                <p style="margin-bottom: 5px;">Technology.</p>
                                             </div>
                                         </div>
 
@@ -380,7 +395,7 @@
             <p class="aims">Building character starts at an early age. It is believed that character building is at its most effective degree during time spent in a kindergarten. We introduce a new lesson every and each two weeks. All the topics are designed to help them enjoy a healthy life style. </p>
 
         </div>
-        <div class="wrapper">
+        {{--<div class="wrapper">
             <div class="inner">
                 <div id="wizard">
                     <!-- Table manners 1 -->
@@ -399,9 +414,9 @@
                             <br>
                             - Always pick up your plate and say thank you.
                         </p>
-                        {{--<button class="forward">Next Step
+                        --}}{{--<button class="forward">Next Step
                             <i class="zmdi zmdi-long-arrow-right"></i>
-                        </button>--}}
+                        </button>--}}{{--
                     </section>
 
                     <!-- Winter Tips & Etiquette: 2 -->
@@ -432,9 +447,9 @@
                             - The  importance of using them as they make us kind, happy and friendly.
                         </p>
 
-                        {{--<button class="forward" style="width: 195px; margin-top: 44px;">Next Step
+                        --}}{{--<button class="forward" style="width: 195px; margin-top: 44px;">Next Step
                             <i class="zmdi zmdi-long-arrow-right"></i>
-                        </button>--}}
+                        </button>--}}{{--
                     </section>
 
                     <!-- Activities 4 -->
@@ -473,7 +488,9 @@
                     </section>
                 </div>
             </div>
-        </div>
+        </div>--}}
+
+        <img src="{{asset('website/img/schoolLife/activities.jpg')}}" style="width: 100%">
     </div>
 
     <!------ Typically Day Table ------>
@@ -628,28 +645,33 @@
 
 
     <!------ Outdoor Facilities displays ------>
-    <div class="container">
-        <div class="section-title section-title-green mb-30 mt-100">
-            <h2>Outdoor <span>Facilities</span></h2>
-            <p class="aims">
-                Our facility offers all that a young child needs to explore and learn. We have four outdoor areas for children.
-            </p>
-            <p class="aims">
-                The first is a fenced-in space where children can enjoy a large, well-equipped, playground.
-            </p>
-            <p class="aims">
-                The second is a mini zoo that has some animal’s species such as; monkeys, pelicans, ostriches, peacocks, tortoise and birds.
-            </p>
-            <p class="aims">
-                The third is a sand area where children learn through play. While playing with
-                sand you give children the freedom to explore, create, and ask questions. Playing
-                with sand develops the fine motor skills and hand & eye coordination.
-                Also it develops the sense of touch through feelings and manipulating objects.
-            </p>
-            <p class="aims">
-                The fourth is a role play area that includes kitchen, hospital, police station, laundry, super market and
-                a restaurant. Pretend play builds confidence, creativity communication, physical development and problem solving. Along with being a fun activity, it also allows children to get into character and act out real life roles or fictional performances.
-            </p>
+    <div class="container d-flex">
+        <div class="col-lg-6 col-md-6">
+            <div class="section-title section-title-green mb-30 mt-100">
+                <h2>Outdoor <span>Facilities</span></h2>
+                <p class="aims">
+                    Our facility offers all that a young child needs to explore and learn. We have four outdoor areas for children.
+                </p>
+                <p class="aims">
+                    The first is a fenced-in space where children can enjoy a large, well-equipped, playground.
+                </p>
+                <p class="aims">
+                    The second is a mini zoo that has some animal’s species such as; monkeys, pelicans, ostriches, peacocks, tortoise and birds.
+                </p>
+                <p class="aims">
+                    The third is a sand area where children learn through play. While playing with
+                    sand you give children the freedom to explore, create, and ask questions. Playing
+                    with sand develops the fine motor skills and hand & eye coordination.
+                    Also it develops the sense of touch through feelings and manipulating objects.
+                </p>
+                <p class="aims">
+                    The fourth is a role play area that includes kitchen, hospital, police station, laundry, super market and
+                    a restaurant. Pretend play builds confidence, creativity communication, physical development and problem solving. Along with being a fun activity, it also allows children to get into character and act out real life roles or fictional performances.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-6 ">
+            <img src="{{asset('website/img/schoolLife/facilities.jpg')}}" style="width: 100%; margin-top: 100px">
         </div>
     </div>
 
