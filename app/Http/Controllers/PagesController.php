@@ -454,9 +454,16 @@ class PagesController extends Controller
         return view('frontend.about.accreditation');
     }
 
+
     public function schoolCampus()
     {
         return view('frontend.about.campus');
+    }
+
+
+    public function coCurricular()
+    {
+        return view('frontend.school-life.co-curricular');
     }
 
 }

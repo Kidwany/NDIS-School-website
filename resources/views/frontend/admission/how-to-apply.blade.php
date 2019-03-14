@@ -37,10 +37,12 @@
                 <h3 class="font-weight-bold" style="font-size: 30px;  margin-bottom: 20px">How to apply for school year <span style="color: #00a651"> 2019/2020:</span></h3>
                 <p style="font-size: 18px">NDIS accepts applicants for enrollment in:</p>
                 <p style="margin-bottom: 0; font-size: 18px">- Pre-Foundation, Foundation Stage 1 & 2.  <span style="color: #214090; font-size: 18px; font-weight: 600">(UK Curriculum).</span> </p>
-                <p style="margin-bottom: 0; font-size: 18px">- Year 1 to 8 <span style="color: #214090; font-size: 18px; font-weight: 600">(British).</span> </p>
+                <p style="margin-bottom: 0; font-size: 18px">- Year 1 to 9 <span style="color: #214090; font-size: 18px; font-weight: 600">(British).</span> </p>
                 <p style=" font-size: 18px">- Grade 1 to Grade 12  <span style="color: #214090; font-size: 18px; font-weight: 600">(American).</span> {{--<span style="color: #d71e27; font-size: 18px; font-weight: 600">(11 & 12 if capacity allows).</span> --}}</p>
                 <p style="">All applicants are assessed on an individual basis and must be in good academic and behavior standing..</p>
                 <p style="margin-bottom: 0">All Sections of the below application must be printed and filled in clear handwriting.</p>
+                <p style="margin-bottom: 0; font-weight: bold">•	The parent is responsible for any wrong typed details</p>
+                <a class="animated default-btn btn-green-color mt-3" href="{{url('admission')}}" style="padding: 15px">Apply Online</a>
             </div>
         </div>
     </div>
@@ -75,11 +77,9 @@
                     <section class="section-style">
                         <div class="form-wrapper">
                             <p>
-                                Initially accepted applicants are requested to attend a family interview.
-                                <br>The Interview Shall include the applicant and his/her parents.
-                                <br>The aim of the subject interview is to agree on the family role in motivation, social and emotional development, Willingness to work and the ability of NDIS to accommodate the needs of the student.
-
-
+                                Parents of applicants that meet the school criteria will have to attend
+                                an interview  to ensure motivation, social and emotional development,
+                                willingness to work and the ability of NDIS to accommodate the needs  of the student.
 
                             </p>
                            {{-- <button class="forward">Next Step
