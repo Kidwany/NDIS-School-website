@@ -37,13 +37,9 @@
                         <div class="main-menu">
                             <nav>
                                 <ul>
-                                    <li><a href="{{url('/')}}"> HOME </a>
-                                        {{--<ul class="submenu">
-                                            <li><a href="index.html">home version 1</a></li>
-                                            <li><a href="index-2.html">home version 2</a></li>
-                                            <li><a href="index-3.html">home version 3</a></li>
-                                        </ul>--}}
-                                    </li>
+                                    <li><a href="{{url('/')}}"> HOME </a></li>
+
+
                                     <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
                                         <ul class="submenu" style="width: 250px">
                                             <li><a href="{{url('owner')}}">Owner & Directors</a></li>
@@ -52,15 +48,6 @@
                                             <li><a href="{{url('/american')}}" style="padding-left: 10px">Why American ?</a></li>
                                             <li><a href="{{url('/accreditation')}}">Accreditation</a></li>
                                             <li><a href="{{url('/school-campus')}}">School Campus</a></li>
-                                            {{--<li><a href="event.html">event page</a></li>
-                                            <li><a href="shop.html">shop page</a></li>
-                                            <li><a href="course-details.html">course details</a></li>
-                                            <li><a href="event-details.html">event details</a></li>
-                                            <li><a href="single-product.html">single product</a></li>
-                                            <li><a href="cart.html">cart page</a></li>
-                                            <li><a href="checkout.html">checkout</a></li>
-                                            <li><a href="wishlist.html">wishlist</a></li>
-                                            <li><a href="login-register.html">login / register</a></li>--}}
                                         </ul>
                                     </li>
 
@@ -233,12 +220,47 @@
                             <li><a href="{{url('/')}}"> HOME </a>
                             </li>
 
-                            <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
+                            <li>
+                                <a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i>
+                                </a>
                                 <ul class="submenu">
-                                    <li><a href="{{url('about')}}">About Us</a></li>
-                                    <li><a href="{{url('calendar')}}">School Calendar2</a></li>
+                                    <li><a href="{{url('owner')}}">Owner & Directors</a></li>
+                                    <li><a href="{{url('#')}}" style="color: #00a550; font-weight: 500">OUR LEARNING APPROACH</a></li>
+                                    <li><a href="{{url('/british')}}" style="padding-left: 10px">Why British ?</a></li>
+                                    <li><a href="{{url('/american')}}" style="padding-left: 10px">Why American ?</a></li>
+                                    <li><a href="{{url('/accreditation')}}">Accreditation</a></li>
+                                    <li><a href="{{url('/school-campus')}}">School Campus</a></li>
                                 </ul>
                             </li>
+
+
+                            <li>
+                                <a href="{{url('/education')}}"> CURRICULUM  <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="#" style="color: #00a550; font-weight: 500">BRITISH SECTOR</a></li>
+                                    <li><a href="{{url('/academics')}}" style="padding-left: 10px">Foundation Stage PRE-F / FS1 / FS2</a></li>
+                                    <li><a onclick="opencol('#stage1')" href="{{url('/british-sector')}}#stage1" style="padding-left: 10px">Key Stage 1 & 2 (Year 1-6)</a></li>
+                                    <li><a onclick="opencol('#stage3')" href="{{url('/british-sector')}}#stage3" style="padding-left: 10px">Key Stage 3 (Year 7-9)</a></li>
+                                    <li><a onclick="opencol('#stage4')" href="{{url('/british-sector')}}#stage4" style="padding-left: 10px">Key Stage 4 (Year 10-11)</a></li>
+                                    <li><a onclick="opencol('#stage5')" href="{{url('/british-sector')}}#stage5" style="padding-left: 10px">Key Stage 5 (Year 12)</a></li>
+                                    <li><a href="#" style="color: #00a550; font-weight: 500">AMERICAN SECTOR</a></li>
+                                    <li><a href="{{url('/american-sector')}}" style="padding-left: 10px">Elementary School Grades 1-5</a></li>
+                                    <li><a href="{{url('/american-sector')}}#middle-school" style="padding-left: 10px">Middle School Grades 6-8</a></li>
+                                    <li><a href="{{url('/american-sector')}}#high-school" style="padding-left: 10px">High School Grades 9-12</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="{{url('/school-life')}}"> SCHOOL LIFE  </a>
+                                <ul class="submenu">
+                                    <li><a href="{{url('/calendar')}}">School Calendar</a></li>
+                                    <li><a href="{{url('/school-life')}}">Facilities</a></li>
+                                    <li><a href="{{url('/co-curricular')}}">Co-Curricular Activities</a></li>
+                                    <li><a href="{{url('/rules')}}">School Rules</a></li>
+                                </ul>
+                            </li>
+
 
                             <li>
                                 <a href="{{url('/admission')}}"> ADMISSION  <i class="fa fa-angle-down"></i> </a>
@@ -246,20 +268,11 @@
                                     <li><a href="{{url('how-to-apply')}}">How To Apply</a></li>
                                     <li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
                                     <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
-                                    <li><a href="{{url('/admission')}}">Online Application</a></li>
+                                    <li><a href="{{url('/admission')}}">Apply Online</a></li>
                                     <li><a href="{{url('/application-track')}}">Track Your Application</a></li>
-                                    {{--<li><a href="#">Schedule a Visit</a></li>--}}
                                 </ul>
                             </li>
 
-                            <li>
-                                <a href="{{url('/academics')}}"> ACADEMICS  <i class="fa fa-angle-down"></i> </a>
-                                <ul class="submenu">
-                                    <li><a href="{{url('/academics')}}">Foundation Stage</a></li>
-                                    <li><a href="#">Junior</a></li>
-                                    <li><a href="#">Senior</a></li>
-                                </ul>
-                            </li>
                             {{--<li class="mega-menu-position top-hover"><a href="shop.html"> SHOP <i class="fa fa-angle-down"></i> </a>
                                 <ul class="mega-menu">
                                     <li>
@@ -308,35 +321,10 @@
                                     </li>
                                 </ul>
                             </li>--}}
-                            <li>
-                                <a href="{{url('/school-life')}}"> SCHOOL LIFE  </a>
-                                <ul class="submenu">
-                                    <li><a href="{{url('/school-life')}}">Facilities</a></li>
-                                    <li><a href="{{url('/rules')}}">School Rules</a></li>
-                                    {{--<li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
-                                    <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
-                                    <li><a href="{{url('/admission')}}">Online Application</a></li>--}}
-                                </ul>
-                            </li>
 
-                            <li><a href="{{url('/about')}}"> ABOUT <i class="fa fa-angle-down"></i> </a>
-                                {{--<ul class="submenu">
-                                    <li><a href="course.html">course page</a></li>
-                                    <li><a href="event.html">event page</a></li>
-                                    <li><a href="shop.html">shop page</a></li>
-                                    <li><a href="course-details.html">course details</a></li>
-                                    <li><a href="event-details.html">event details</a></li>
-                                    <li><a href="single-product.html">single product</a></li>
-                                    <li><a href="cart.html">cart page</a></li>
-                                    <li><a href="checkout.html">checkout</a></li>
-                                    <li><a href="wishlist.html">wishlist</a></li>
-                                    <li><a href="login-register.html">login / register</a></li>
-                                </ul>--}}
-                            </li>
-                            {{--<li><a href="course.html"> COURSES / PROGRAMMES</a></li>--}}
-                            <li><a href="{{url('blog')}}"> BLOG </a>
+                            <li><a href="{{url('/careers')}}"> CAREERS </a></li>
 
-                            </li>
+
                             <li><a href="{{url('contact')}}"> CONTACT </a></li>
                         </ul>
                     </nav>

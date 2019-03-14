@@ -44,123 +44,134 @@
         </div>
     </div>
 
-
-
-
-
-
-    <!------ Curriculum Section ------>
-    <div class="about-us pt-50 pb-50">
+    <!------ American Curruclume ------>
+    <div class="achievement-area pt-60 pb-40" id="middle-school">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="about-content">
-                        <div class="section-title section-title-green mb-30">
-                            <h3 class="font-weight-bold"
-                                style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">American <span
-                                        style="color: #00a651"> Curriculum  </span></h3>
-                            <p class="aims" style="padding-left: 35px">Academic programs at NDIS have always been given
-                                the highest priority by
-                                both the School's dedicated teachers and the administration. In the Lower and Middle
-                                Schools, the Core Knowledge Sequence provides the foundation for the curriculum, which
-                                ensures that all students in these divisions learn a coherent and unified body of
-                                knowledge and academic skills.
-                                Upper school students follow a challenging college-preparatory curriculum, with the
-                                option of pursuing the courses in many subjects.
-
-
-                            </p>
-
-
-                        </div>
-
-                        <div class="section-title section-title-green mb-30">
-                            <h3 class="font-weight-bold"
-                                style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Elementary<span
-                                        style="color: #00a651"> Stage</span></h3>
-                        </div>
-
-                        <p style="padding-left: 35px">NDIS Lower School is committed to educating the whole child, and
-                            the program focuses not only
-                            on the academic, but also on the creative, moral, and physical development of children.</p>
-                        <p style="padding-left: 35px">The curriculum is both traditional and innovative, and is
-                            supplemented by a variety of social
-                            and cultural activities. NDIS endorses, through all its programs, an enthusiasm for life,
-                            for learning and for individual growth within a purposeful community.</p>
-                        <div class="about-content">
-                            <div class="section-title section-title-green mb-30">
-                                <h2 class="font-weight-bold"
-                                    style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
-                                    Language <span style="color: #00a651">Arts</span></h2></div>
-                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Reading</h2></div>
-                            <p style="padding-left: 35px"> Students identify and explain plot-based relationships and begin to analyze narrative
-                                elements of text. They continue to explore and understand the implied meaning of text as
-                                well as the impact a character has on a story.</p>
-                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Writing and <span
-                                            style="color: #00a651">Spelling</span></h2></div>
-                            <p style="padding-left: 35px">Students learn to create organized pieces of writing that support the topics with
-                                reasons, facts, details, and other relevant information. Paragraphs are well formed and
-                                sequential, and students are able to complete the writing process through to a
-                                publishable piece.</p>
-                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Social <span
-                                            style="color: #00a651">Studies</span></h2></div>
-                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">The <span
-                                            style="color: #00a651">World</span></h2>
-                                <ul style="padding-left: 35px">
-                                    <li>- World Geography (Spatial Sense; Mountains)</li>
-                                    <li>- Europe in Middle Ages</li>
-                                    <li>- The Spread of Islam and the Holy Wars</li>
-                                    <li>- Early and Medieval</li>
-                                    <li>- African Kingdoms</li>
-                                    <li>- China: Dynasties and Conquerors</li>
-                                </ul>
-                            </div>
-                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Research<span
-                                            style="color: #00a651"> Process</span></h2></div>
-                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
-                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">Students will<span
-                                            style="color: #00a651"> independently</span></h2>
-                            </div>
-                            <div class="section-title section-title-green mb-30">
-                                <ul style="padding-left: 35px">
-                                    <li>- Demonstrate the use of topic-based guiding questions</li>
-                                    <li>- Recognize a variety of research resources</li>
-                                    <li>- Identify keywords and synonyms as effective search criteria</li>
-                                    <li>- Practice note-taking methods</li>
-                                    <li>- Practice paraphrasing and summarizing skills</li>
-                                    <li>- Keep track of sources</li>
-                                    <li>- Define plagiarism</li>
-                                    <li>- List sources</li>
-                                    <li>- Explore the elements of a research project</li>
-                                    <li>- Revise for grammar and mechanics</li>
-                                    <li>- Follow teacher-set research goals and deadlines</li>
-                                    <li>- Maintain proper use of time and focus during the research process</li>
-                                    <li>- Reflect on the research process and product</li>
-                                    <li>- Differentiate between useful and non-useful information</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
+            <div class="section-title">
+                <h3 class="font-weight-bold text-center" style="font-size: 40px;  margin-bottom: 60px">American    <span style="color: #00a651">Curriculum</span></h3>
+                <p>
+                    Academic programs at NDIS have always been given the highest priority by both the School's dedicated
+                    teachers and the administration. In the Lower and Middle Schools, the Core Knowledge Sequence provides
+                    the foundation for the curriculum, which ensures that all students in these divisions learn a coherent
+                    and unified body of knowledge and academic skills.
+                </p>
+                <p>
+                    Upper school students follow a challenging college-preparatory curriculum, with the option of pursuing
+                    the courses in many subjects.
+                </p>
             </div>
-
         </div>
     </div>
 
 
+    <!------ Elementary Stage ------>
+    <div class="achievement-area pt-60 pb-40" id="middle-school">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="font-weight-bold text-center" style="font-size: 40px;  margin-bottom: 60px">Elementary    <span style="color: #00a651">Stage</span></h3>
+                <p>
+                    NDIS Lower School is committed to educating the whole child, and the program focuses not only on the
+                    academic, but also on the creative, moral, and physical development of children.
+                </p>
+                <p>
+                    UThe curriculum is both traditional and innovative, and is supplemented by a variety of social and
+                    cultural activities. NDIS endorses, through all its programs, an enthusiasm for life, for learning
+                    and for individual growth within a purposeful community.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!------ Language Arts ------>
+    <div class="achievement-area pt-60 pb-40">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">Language <span style="color: #00a651">Arts </span></h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title">
+
+                        <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">Reading <span style="color: #00a651"> </span></h3>
+                        <p style="margin-bottom: 0; text-align: justify" class="text-justify">
+                            Students identify and explain plot-based relationships and begin to analyze narrative elements
+                            of text. They continue to explore and understand the implied meaning of text as well as the impact
+                            a character has on a story.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6">
+                    <div class="section-title">
+
+                        <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">Writing and  <span style="color: #00a651">Spelling </span></h3>
+                        <p style="margin-bottom: 0; text-align: justify">
+                            Students learn to create organized pieces of writing that support the topics with reasons,
+                            facts, details, and other relevant information. Paragraphs are well formed and sequential,
+                            and students are able to complete the writing process through to a publishable piece.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------ Social Studies ------>
+    <div class="achievement-area pt-60 pb-40">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">Social <span style="color: #00a651">Studies </span></h3>
+            </div>
+            <div class="section-title">
+
+                <h3 class="font-weight-bold" style="font-size: 30px;  margin-bottom: 20px">The  <span style="color: #00a651">World</span></h3>
+                <p>
+                    •	World Geography (Spatial Sense; Mountains) <br>
+                    •	Europe in Middle Ages <br>
+                    •	The Spread of Islam and the Holy Wars <br>
+                    •	Early and Medieval <br>
+                    •	African Kingdoms <br>
+                    •	China: Dynasties and Conquerors <br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!------  Research Process------>
+    <div class="achievement-area pt-60 pb-40">
+        <div class="container">
+            <div class="section-title">
+
+                <h3 class="font-weight-bold" style="font-size: 30px;  margin-bottom: 20px">Research   <span style="color: #00a651">Process</span></h3>
+                <p>
+                    •	Demonstrate the use of topic-based guiding questions. <br>
+                    •	Recognize a variety of research resources. <br>
+                    •	Identify keywords and synonyms as effective search criteria. <br>
+                    •	Practice note-taking methods. <br>
+                    •	Practice paraphrasing and summarizing skills. <br>
+                    •	Keep track of sources. <br>
+                    •	Define plagiarism. <br>
+                    •	List sources. <br>
+                    •	Explore the elements of a research project. <br>
+                    •	Revise for grammar and mechanics. <br>
+                    •	Follow teacher-set research goals and deadlines. <br>
+                    •	Maintain proper use of time and focus during the research process. <br>
+                    •	Reflect on the research process and product. <br>
+                    •	Differentiate between useful and non-useful information. <br>
+
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!------ Middle School ------>
     <div class="achievement-area pt-60 pb-40" id="middle-school">
         <div class="container">
             <div class="section-title">
-                <h3 class="font-weight-bold" style="font-size: 35px;  margin-bottom: 20px">Middle School   <span style="color: #00a651">Curriculum</span></h3>
+                <h3 class="font-weight-bold text-center" style="font-size: 40px;  margin-bottom: 60px">Middle School   <span style="color: #00a651">Curriculum</span></h3>
                 <p>
                     The curriculum and the environment of the Middle School are designed to facilitate the academic,
                     aesthetic, physical, and social growth of students within a structured and caring framework.
@@ -622,7 +633,7 @@
                         <div class="section-title section-title-green mb-30">
                             <h3><span>MOE Civil Subjects: </span></h3>
                             <p class="aims">Ministry exams are administered in <span class="font-weight-bold">Arabic, religion and Arabic social
-                                studies.
+                                    studies.
                                 </span>
 
                             </p>
