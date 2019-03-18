@@ -62,7 +62,7 @@
                                             <li><a onclick="opencol('#stage4')" href="{{url('/british-sector')}}#stage4" style="padding-left: 10px">Key Stage 4 (Year 10-11)</a></li>
                                             <li><a onclick="opencol('#stage5')" href="{{url('/british-sector')}}#stage5" style="padding-left: 10px">Key Stage 5 (Year 12)</a></li>
                                             <li><a href="#" style="color: #00a550; font-weight: 500">AMERICAN SECTOR</a></li>
-                                            <li><a href="{{url('/american-sector')}}" style="padding-left: 10px">Elementary School Grades 1-5</a></li>
+                                            <li><a href="{{url('/american-sector')}}#elementary-school" style="padding-left: 10px">Elementary School Grades 1-5</a></li>
                                             <li><a href="{{url('/american-sector')}}#middle-school" style="padding-left: 10px">Middle School Grades 6-8</a></li>
                                             <li><a href="{{url('/american-sector')}}#high-school" style="padding-left: 10px">High School Grades 9-12</a></li>
                                         </ul>
@@ -85,7 +85,7 @@
                                         <ul class="submenu">
                                             <li><a href="{{url('how-to-apply')}}">How To Apply</a></li>
                                             <li><a href="{{url('/fees-guide')}}">Fess Guide</a></li>
-                                            <li><a href="{{url('/required-documents')}}">Required Docs</a></li>
+                                            <li><a href="{{url('/required-documents')}}">Required Documents</a></li>
                                             <li><a href="{{url('/admission')}}">Apply Online</a></li>
                                             <li><a href="{{url('/application-track')}}">Track Your Application</a></li>
                                         </ul>

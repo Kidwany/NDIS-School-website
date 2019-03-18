@@ -54,7 +54,7 @@
 
 
     <div class="container">
-        <div class="wrapper">
+        <div class="wrapper pt-5">
             <div class="inner">
                 <div id="wizard">
                     <!-- SECTION 1 -->
