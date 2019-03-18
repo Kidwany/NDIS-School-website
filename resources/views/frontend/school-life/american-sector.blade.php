@@ -1,5 +1,5 @@
 @extends('layouts.layouts')
-@section('title', 'British sector')
+@section('title', 'American Sector')
 @section('customizedStyle')
     <!--begin::Page Vendors -->
     <!--end::Page Vendors -->
@@ -45,10 +45,10 @@
     </div>
 
     <!------ American Curruclume ------>
-    <div class="achievement-area pt-60 pb-40" id="middle-school">
+    <div class="achievement-area pt-60 pb-40 ">
         <div class="container">
             <div class="section-title">
-                <h3 class="font-weight-bold text-center" style="font-size: 40px;  margin-bottom: 60px">American    <span style="color: #00a651">Curriculum</span></h3>
+                <h3 class="font-weight-bold text-center mt-100" style="font-size: 40px;  margin-bottom: 60px">American    <span style="color: #00a651">Curriculum</span></h3>
                 <p>
                     Academic programs at NDIS have always been given the highest priority by both the School's dedicated
                     teachers and the administration. In the Lower and Middle Schools, the Core Knowledge Sequence provides
@@ -65,7 +65,7 @@
 
 
     <!------ Elementary Stage ------>
-    <div class="achievement-area pt-60 pb-40" id="middle-school">
+    <div class="achievement-area pt-60 pb-40" id="elementary-school">
         <div class="container">
             <div class="section-title">
                 <h3 class="font-weight-bold text-center" style="font-size: 40px;  margin-bottom: 60px">Elementary    <span style="color: #00a651">Stage</span></h3>

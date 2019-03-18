@@ -20,9 +20,7 @@
                         <div>
                             <h3 class="dark-grey font-weight-bold">ABOUT OWNER</h3>
                             <p class="dark-grey main-font-size">
-                                Mr. Mohamed Abdelghany is a long-time educationalist since 1964, with an extensive
-                                experience in teaching students and managing schools of different grades in several
-                                governesses around Egypt, including Minya, Southern Egypt and Cairo.
+                                Mr. Mohamed Abdelghany is a long-time educationalist since 1964, with an extensive experience in teaching students and managing schools of different grades in several governorates around Egypt, including Minya, Southern Egypt and Cairo.
                             </p>
                             <p class="dark-grey main-font-size">
                                 Mr. Abdelghany has continuously pursued his passion in achieving a unique
@@ -94,7 +92,7 @@
                     <div class="feature-img-container">
                         <img src="{{asset('website/img/about/vision.png')}}" style="width: 120px; margin-bottom: 30px">
                     </div>
-                    <p class="mb-20" style="font-weight: 500; font-size: 16px">Vision</p>
+                    <p class="mb-20" style="font-weight: 500; font-size: 16px">His Vision</p>
                     <p class="main-font-size dark-grey ">
                         Mr. Abdelghany’s vision is to tackle every student’s strengths and talents, and ensure
                         that he/she is exposed to an out-of-the-box learning environment. He integrates his
@@ -127,7 +125,7 @@
                     <div class="feature-img-container">
                         <img src="{{asset('website/img/about/word.png')}}" style="width: 120px; margin-bottom: 30px">
                     </div>
-                    <p class="mb-20" style="font-weight: 500; font-size: 16px">In Word</p>
+                    <p class="mb-20" style="font-weight: 500; font-size: 16px">In a Word</p>
                     <p class="main-font-size dark-grey ">
                         On this basis, Mr. Abdelghany pursues his living passion by developing a
                         stronger, more integrated community; thus, making positive change.
