@@ -116,7 +116,7 @@ Route::get('/british', 'PagesController@british');
 
 
 
-/* -- British --- */
+/* -- American --- */
 Route::get('/american', 'PagesController@american');
 
 

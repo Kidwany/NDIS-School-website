@@ -110,7 +110,7 @@
 
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/zoo.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/mini-zoo.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Mini Zoo</a></h4>
@@ -165,7 +165,7 @@
 
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/football.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/activities-classroom.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Classrooms For Activities</a></h4>
@@ -174,7 +174,7 @@
 
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/football.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/staff-room.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Staff Rooms</a></h4>
@@ -185,16 +185,16 @@
         </div>
     </div>
 
-    <!-------- Courtyards, Library Play Ground, Gardens ------>
+    <!-------- Kids Area, Library Play Ground, Gardens ------>
     <div class="course-area bg-img pt-20 pb-10" style="background-color: white">
         <div class="container">
             <div class="course-slider-active nav-style-1 owl-carousel">
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/class.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/kidsarea.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
-                        <h4 class="text-center"><a href="#">Two Court Yards</a></h4>
+                        <h4 class="text-center"><a href="#">Kids Area</a></h4>
                     </div>
                 </div>
 
@@ -218,7 +218,7 @@
 
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/football.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/gardens.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Gardens</a></h4>
@@ -228,7 +228,7 @@
         </div>
     </div>
 
-    <!-------- Management Offices, Kids Area ------>
+    {{--<!-------- Management Offices, Kids Area ------>
     <div class="course-area bg-img pt-20 pb-10" style="background-color: white">
         <div class="container">
             <div class="course-slider-active nav-style-1 owl-carousel">
@@ -252,7 +252,7 @@
 
             </div>
         </div>
-    </div>
+    </div>--}}
 
 
 

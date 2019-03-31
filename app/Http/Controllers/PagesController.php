@@ -295,8 +295,10 @@ class PagesController extends Controller
      */
     public function events()
     {
-        return view('frontend.events.events');
+        $events = Models\Events::orderBy('date', 'ASC')->get();
+        return view('frontend.events.events', compact('events'));
     }
+
 
 
     /**

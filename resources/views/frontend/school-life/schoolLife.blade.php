@@ -22,53 +22,6 @@
 
 
 
-    <!-------- Lab, Zoo, Mosque ------>
-    <div class="course-area bg-img pt-100 pb-10" style="background-color: white">
-        <div class="container">
-            <div class="section-title mb-75">
-                <h2> <span>School</span> Facilities</h2>
-                <p>When a flower doesn't bloom you fix the environment in which it grows, not the flower...
-                    We have the option of hosting sessions outside the classrooms, such as the garden.
-                    We have a Volleyball/Basketball ring, Football field, Tennis court and a Ballet room.
-                    We have over 100 CCTV cameras installed on every corner, inside & outside the school, to maintain the maximum level of safety and security of our kids.
-                    Our P.E sessions are really on the physical education level, by its means!
-                    We provide Zumba classes, we provide Gymnastic sessions.
-                    Our sports team is simply qualified to meet & maintain the Excellency level of our standards.
-                </p>
-            </div>
-
-            <div class="course-slider-active nav-style-1 owl-carousel">
-                <div class="single-course">
-                    <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/science.jpg')}}" alt=""></a>
-                    </div>
-                    <div class="course-content">
-                        <h4 class="text-center"><a href="#">Lab</a></h4>
-                    </div>
-                </div>
-
-                <div class="single-course">
-                    <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/zoo.jpg')}}" alt=""></a>
-                    </div>
-                    <div class="course-content">
-                        <h4 class="text-center"><a href="#">Zoo</a></h4>
-                    </div>
-                </div>
-
-                <div class="single-course">
-                    <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img')}}/course/course-1.jpg" alt=""></a>
-                    </div>
-                    <div class="course-content">
-                        <h4 class="text-center"><a href="#">Mosque</a></h4>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <!-------- Lab, Zoo, ICT, Playgrounds ------>
     <div class="course-area bg-img pt-100 pb-10" style="background-color: white">
         <div class="container">
@@ -85,7 +38,7 @@
 
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/zoo.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/mini-zoo.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Mini Zoo</a></h4>
@@ -140,7 +93,7 @@
 
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/football.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/activities-classroom.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Classrooms For Activities</a></h4>
@@ -149,7 +102,7 @@
 
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/football.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/staff-room.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Staff Rooms</a></h4>
@@ -160,16 +113,16 @@
         </div>
     </div>
 
-    <!-------- Courtyards, Library Play Ground, Gardens ------>
+    <!-------- Kids Area, Library Play Ground, Gardens ------>
     <div class="course-area bg-img pt-20 pb-10" style="background-color: white">
         <div class="container">
             <div class="course-slider-active nav-style-1 owl-carousel">
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/class.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/kidsarea.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
-                        <h4 class="text-center"><a href="#">Two Court Yards</a></h4>
+                        <h4 class="text-center"><a href="#">Kids Area</a></h4>
                     </div>
                 </div>
 
@@ -193,7 +146,7 @@
 
                 <div class="single-course">
                     <div class="course-img">
-                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/football.jpg')}}" alt=""></a>
+                        <a href="#"><img class="animated" src="{{asset('website/img/schoolLife/gardens.jpg')}}" alt=""></a>
                     </div>
                     <div class="course-content">
                         <h4 class="text-center"><a href="#">Gardens</a></h4>
@@ -202,7 +155,7 @@
             </div>
         </div>
     </div>
-
+{{--
     <!-------- Management Offices, Kids Area ------>
     <div class="course-area bg-img pt-20 pb-10" style="background-color: white">
         <div class="container">
@@ -227,7 +180,7 @@
 
             </div>
         </div>
-    </div>
+    </div>--}}
 
 
 

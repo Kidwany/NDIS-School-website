@@ -22,93 +22,44 @@
 
 
 
-    <div class="event-area pt-130 pb-130">
+    <!-- Events -->
+    <div class="event-area bg-img default-overlay pt-130 pb-130" style="background-image:url({{asset('website/img/bg/fees_bg.jpg')}});">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-event event-white-bg">
-                        <div class="event-img">
-                            <a href="{{url('event/details/1')}}"><img src="{{asset('website/img/event/event-1.jpg')}}" alt=""></a>
-                            <div class="event-date-wrap">
-                                <span class="event-date">31th</span>
-                                <span>Dec</span>
-                            </div>
-                        </div>
-                        <div class="event-content">
-                            <h3><a href="{{url('event/details/1')}}">New Year Festival for Student & Parents.</a></h3>
-                            <p>Every Year NDIS Celebrate with it's students for christmas day .</p>
-                            <div class="event-meta-wrap">
-                                <div class="event-meta">
-                                    <i class="fa fa-location-arrow"></i>
-                                    <span>Movenpick ,Giza</span>
-                                </div>
-                                <div class="event-meta">
-                                    <i class="fa fa-clock-o"></i>
-                                    <span>11:00 pm</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-event event-white-bg">
-                        <div class="event-img">
-                            <a href="{{url('event/details/1')}}"><img src="{{asset('website/img/about/who_we_are.jpg')}}" alt=""></a>
-                            <div class="event-date-wrap">
-                                <span class="event-date">10th</span>
-                                <span>Jan</span>
-                            </div>
-                        </div>
-                        <div class="event-content">
-                            <h3><a href="{{url('event/details/1')}}">Open Day for FS-1 Stage.</a></h3>
-                            <p>Next Monday will be the yearly open day for FS-1 Stage.</p>
-                            <div class="event-meta-wrap">
-                                <div class="event-meta">
-                                    <i class="fa fa-location-arrow"></i>
-                                    <span>Campus ,Giza</span>
-                                </div>
-                                <div class="event-meta">
-                                    <i class="fa fa-clock-o"></i>
-                                    <span>08:30 am</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-event event-white-bg">
-                        <div class="event-img">
-                            <a href="{{url('event/details/1')}}"><img src="{{asset('website/img/event/event-3.jpg')}}" alt=""></a>
-                            <div class="event-date-wrap">
-                                <span class="event-date">1st</span>
-                                <span>Feb</span>
-                            </div>
-                        </div>
-                        <div class="event-content">
-                            <h3><a href="{{url('event/details/1')}}">Second Term Parents Meeting.</a></h3>
-                            <p>parent meeting is a very important event for make interviews with your child's teachers.</p>
-                            <div class="event-meta-wrap">
-                                <div class="event-meta">
-                                    <i class="fa fa-location-arrow"></i>
-                                    <span>Campus ,Al Mnia</span>
-                                </div>
-                                <div class="event-meta">
-                                    <i class="fa fa-clock-o"></i>
-                                    <span>10:00 am</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-title mb-75">
+                <h2><span>Our</span> Events</h2>
+                <p> Events are not a side activity, it is a main duty. <br> NDIS' Philosophy aim to give students a real life memories not just education. </p>
             </div>
 
-            <div class="pro-pagination-style text-center mt-25">
-                <ul>
-                    <li><a class="prev" href="#"><i class="fa fa-angle-double-left"></i></a></li>
-                    <li><a class="active" href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a class="next" href="#"><i class="fa fa-angle-double-right"></i></a></li>
-                </ul>
+            <div class="event-active owl-carousel nav-style-1">
+
+                @if($events)
+                    @foreach($events as $event)
+                        <div class="single-event event-white-bg">
+                            <div class="event-img">
+                                <a href="{{url('event/details/' . $event->EVID)}}"><img src="{{asset($event->image)}}" alt=""></a>
+                                <div class="event-date-wrap">
+                                    <span class="event-date">{{$event->date->format('d')}}th</span>
+                                    <span>{{$event->date->format('M')}}</span>
+                                </div>
+                            </div>
+                            <div class="event-content">
+                                <h3><a href="{{url('event/details/' . $event->EVID)}}">{{$event->title}}</a></h3>
+                                <p>{{str_limit($event->content, 60, '...')}}</p>
+                                <div class="event-meta-wrap">
+                                    <div class="event-meta">
+                                        <i class="fa fa-location-arrow"></i>
+                                        <span>{{$event->location}}</span>
+                                    </div>
+                                    <div class="event-meta">
+                                        <i class="fa fa-clock-o"></i>
+                                        <span>{{$event->date->format('g:i A')}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
+
             </div>
         </div>
     </div>
