@@ -73,7 +73,7 @@ Route::get('/checkrelation/{table}', 'PagesController@getrelation');
 Route::get('/events', 'PagesController@events');
 Route::get('/event/details/{id}', 'PagesController@eventDetails');
 
-
+  
 /* -- School Life Page --- */
 Route::get('/school-life', 'PagesController@schoolLife');
 
