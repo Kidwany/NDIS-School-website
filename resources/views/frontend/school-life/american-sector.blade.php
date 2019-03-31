@@ -125,18 +125,86 @@
                 <h3 class="font-weight-bold" style="font-size: 25px;  margin-bottom: 20px">Social <span style="color: #00a651">Studies </span></h3>
             </div>
             <div class="section-title">
+                        <p style="padding-left: 35px">NDIS Lower School is committed to educating the whole child, and
+                            the program focuses not only
+                            on the academic, but also on the creative, moral, and physical development of children.</p>
+                        <p style="padding-left: 35px">The curriculum is both traditional and innovative, and is
+                            supplemented by a variety of social
+                            and cultural activities. NDIS endorses, through all its programs, an enthusiasm for life,
+                            for learning and for individual growth within a purposeful community.</p>
+                        <div class="about-content">
+                            <div class="section-title section-title-green mb-30">
+                                <h2 class="font-weight-bold"
+                                    style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Language <span style="color: #00a651">Arts</span></h2></div>
+                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Reading</h2></div>
+                            <p style="padding-left: 35px"> Students identify and explain plot-based relationships and
+                                begin to analyze narrative
+                                elements of text. They continue to explore and understand the implied meaning of text as
+                                well as the impact a character has on a story.</p>
+                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Writing and <span
+                                            style="color: #00a651">Spelling</span></h2></div>
+                            <p style="padding-left: 35px">Students learn to create organized pieces of writing that
+                                support the topics with
+                                reasons, facts, details, and other relevant information. Paragraphs are well formed and
+                                sequential, and students are able to complete the writing process through to a
+                                publishable piece.</p>
+                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Social <span
+                                            style="color: #00a651">Studies</span></h2></div>
+                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    The <span
+                                            style="color: #00a651">World</span></h2>
+                                <ul style="padding-left: 35px">
+                                    <li>- World Geography (Spatial Sense; Mountains)</li>
+                                    <li>- Europe in Middle Ages</li>
+                                    <li>- The Spread of Islam and the Holy Wars</li>
+                                    <li>- Early and Medieval</li>
+                                    <li>- African Kingdoms</li>
+                                    <li>- China: Dynasties and Conquerors</li>
+                                </ul>
+                            </div>
+                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Research<span
+                                            style="color: #00a651"> Process</span></h2></div>
+                            <div class="section-title section-title-green mb-30"><h2 class="font-weight-bold"
+                                                                                     style="font-size: 30px;  margin-bottom: 20px; padding-left: 35px">
+                                    Students will<span
+                                            style="color: #00a651"> independently</span></h2>
+                            </div>
+                            <div class="section-title section-title-green mb-30">
+                                <ul style="padding-left: 35px">
+                                    <li>- Demonstrate the use of topic-based guiding questions</li>
+                                    <li>- Recognize a variety of research resources</li>
+                                    <li>- Identify keywords and synonyms as effective search criteria</li>
+                                    <li>- Practice note-taking methods</li>
+                                    <li>- Practice paraphrasing and summarizing skills</li>
+                                    <li>- Keep track of sources</li>
+                                    <li>- Define plagiarism</li>
+                                    <li>- List sources</li>
+                                    <li>- Explore the elements of a research project</li>
+                                    <li>- Revise for grammar and mechanics</li>
+                                    <li>- Follow teacher-set research goals and deadlines</li>
+                                    <li>- Maintain proper use of time and focus during the research process</li>
+                                    <li>- Reflect on the research process and product</li>
+                                    <li>- Differentiate between useful and non-useful information</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <h3 class="font-weight-bold" style="font-size: 30px;  margin-bottom: 20px">The  <span style="color: #00a651">World</span></h3>
-                <p>
-                    •	World Geography (Spatial Sense; Mountains) <br>
-                    •	Europe in Middle Ages <br>
-                    •	The Spread of Islam and the Holy Wars <br>
-                    •	Early and Medieval <br>
-                    •	African Kingdoms <br>
-                    •	China: Dynasties and Conquerors <br>
-                </p>
             </div>
         </div>
+
+
     </div>
 
 

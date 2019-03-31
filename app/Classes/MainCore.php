@@ -130,7 +130,7 @@ class MainCore
         //return $newarray;
     }
     public static function sendmail($useremail,$appcode){
-        Mail::to($useremail)->send(new SendMail($useremail,$appcode));
+       // Mail::to($useremail)->send(new SendMail($useremail,$appcode));
 
     }
 }
