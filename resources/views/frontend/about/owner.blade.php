@@ -57,7 +57,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="about-us-img">
-                    <img src="{{asset('img/pages/about/ahmed.png')}}">
+                    <img src="{{asset('website/img/about/owner.jpg')}}">
                 </div>
             </div>
         </div>
