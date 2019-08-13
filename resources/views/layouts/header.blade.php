@@ -6,7 +6,7 @@
                     <div class="header-contact">
                         <ul>
                             <li><i class="fa fa-phone"></i> (+2) 33632038  </li>
-                            <li><i class="fa fa-envelope-o"></i><a href="#">info@ndbischool.com</a></li>
+                            <li><i class="fa fa-envelope-o"></i><a href="#">info@ndis.com.eg</a></li>
                         </ul>
                     </div>
                 </div>

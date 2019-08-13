@@ -169,8 +169,8 @@
                                                 <div class="event-content">
                                                     <h3 style="margin-bottom: 5px"><a href="#">Communication and Language.</a></h3>
                                                     <p style="margin-bottom: 5px;">Listening and attention.</p>
-                                                    <p style="margin-bottom: 5px;">Understanding.</p>
-                                                    <p style="margin-bottom: 5px;">Speaking.</p>
+                                                    <p style="margin-bottom: 5px;">Understanding Speaking.</p>
+                                                    <p style="margin-bottom: 5px;"></p>
                                                     {{--<div class="event-meta-wrap">
                                                         <div class="event-meta">
                                                             <i class="fa fa-location-arrow"></i>
@@ -272,8 +272,7 @@
                                             <div class="event-content">
                                                 <h3 style="margin-bottom: 5px"><a href="#">Understanding the World.</a></h3>
                                                 <p style="margin-bottom: 5px;">People and communities.</p>
-                                                <p style="margin-bottom: 5px;">The world.</p>
-                                                <p style="margin-bottom: 5px;">Technology.</p>
+                                                <p style="margin-bottom: 5px;">The world Technology.</p>
                                             </div>
                                         </div>
 
@@ -649,29 +648,11 @@
         <div class="col-lg-6 col-md-6">
             <div class="section-title section-title-green mb-30 mt-100">
                 <h2>Outdoor <span>Facilities</span></h2>
-                <p class="aims">
-                    Our facility offers all that a young child needs to explore and learn. We have four outdoor areas for children.
-                </p>
-                <p class="aims">
-                    The first is a fenced-in space where children can enjoy a large, well-equipped, playground.
-                </p>
-                <p class="aims">
-                    The second is a mini zoo that has some animal’s species such as; monkeys, pelicans, ostriches, peacocks, tortoise and birds.
-                </p>
-                <p class="aims">
-                    The third is a sand area where children learn through play. While playing with
-                    sand you give children the freedom to explore, create, and ask questions. Playing
-                    with sand develops the fine motor skills and hand & eye coordination.
-                    Also it develops the sense of touch through feelings and manipulating objects.
-                </p>
-                <p class="aims">
-                    The fourth is a role play area that includes kitchen, hospital, police station, laundry, super market and
-                    a restaurant. Pretend play builds confidence, creativity communication, physical development and problem solving. Along with being a fun activity, it also allows children to get into character and act out real life roles or fictional performances.
-                </p>
+                <img src="{{asset('website/img/schoolLife/facilities.jpg')}}" style="width: 100%; margin-top: 100px">
             </div>
         </div>
         <div class="col-lg-6 ">
-            <img src="{{asset('website/img/schoolLife/facilities.jpg')}}" style="width: 100%; margin-top: 100px">
+
         </div>
     </div>
 
@@ -791,6 +772,54 @@
                     </div>
                 </dd>
             </dl>
+        </div>
+
+    </div>
+
+
+
+    <!------ Classroom displays ------>
+    <div class="container">
+        <div class="col-lg-6 col-md-6">
+
+        </div>
+        <div class="section-title section-title-green mb-30 mt-100">
+            <h2>Useful Websites for<span> EYFS  </span>Students</h2>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.readinga-z.com" style="padding: 15px; text-transform: capitalize">Online reading programme with downloadable Books. </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.ixl.com" style="padding: 15px; text-transform: capitalize">Math and language arts practice   </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.sparklebox.co.uk" style="padding: 15px; text-transform: capitalize">useful downloadable resources    </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.coolmath4kids.com/math-games/alien-addition" style="padding: 15px; text-transform: capitalize">Math games for kids   </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://me.cbeebies.com/" style="padding: 15px; text-transform: capitalize">British free T.V. channel, aimed to young children   </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="http://www.letters-and-sounds.com/" style="padding: 15px; text-transform: capitalize">Free printable resources for letters and sounds   </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.busythings.co.uk/families" style="padding: 15px; text-transform: capitalize">Curriculum linked, fun educational activities.   </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="http://learnenglishkids.britishcouncil.org/" style="padding: 15px; text-transform: capitalize">British council “learn English”- songs and stories  </a>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!------ Classroom displays ------>
+    <div class="container">
+        <div class="col-lg-6 col-md-6">
+
+        </div>
+        <div class="section-title section-title-green mb-30 mt-100">
+            <h2>Useful <span> Youtube Channels  </span></h2>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.youtube.com/user/houstonzoo" style="padding: 15px; text-transform: capitalize">About animals and how to protect them in the wild </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.youtube.com/user/soulpancake" style="padding: 15px; text-transform: capitalize">Videos about art, culture science, philosophy and humor.  </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.youtube.com/user/scishow" style="padding: 15px; text-transform: capitalize">Scientific subjects that defy kids’ expectations and make the kids even more curious!</a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.youtube.com/user/itsokaytobesmart" style="padding: 15px; text-transform: capitalize">Science topics   </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.youtube.com/channel/UCEG2kLhJoFJD1dxVR8-h7HA" style="padding: 15px; text-transform: capitalize">Easy crafts for kids   </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.youtube.com/user/thebrainscoop" style="padding: 15px; text-transform: capitalize">Montana Zoological Museum videos    </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.youtube.com/user/thekydstv" style="padding: 15px; text-transform: capitalize">An online educational platform, specializing in graphic videos, nursery rhymes and songs for children.   </a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.youtube.com/channel/UCc_-hy0u9-oKlNdMKHBudcQ" style="padding: 15px; text-transform: capitalize">Introducing fun science experiments to children. Every parent can make that magic happen using thing that you already have at home</a>
+            <a  class="animated default-btn btn-green-color mt-3" href="https://www.youtube.com/channel/UCrNnk0wFBnCS1awGjq_ijGQ" style="padding: 15px; text-transform: capitalize">Educational based on media YouTube channel.   </a>
         </div>
 
     </div>

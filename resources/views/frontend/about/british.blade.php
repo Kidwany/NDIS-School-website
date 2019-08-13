@@ -6,6 +6,14 @@
     <link href="{{asset('website/css/pages/about.css')}}" rel="stylesheet" type="text/css"/>
     <!--end::Base Styles -->
 @endsection
+@section('applyStepper')
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{asset('website/css/layouts/stepper.css')}}">
+@endsection
+
+@section('applyStepperScript')
+    <script src="{{asset('website/js/stepper/jquery.steps.js')}}"></script>
+@endsection
 @section('content')
     @include('layouts.header')
 
@@ -28,8 +36,161 @@
     </div>
 
 
+    <div class="container">
+        <div class="wrapper pt-5">
+            <div class="inner">
+                <div id="wizard">
+                    <!-- SECTION 1 -->
+                    <h4>Key Characteristics </h4>
+                    <section>
+                        <p style="margin-bottom: 0; text-align: justify">
+                            The National Curriculum of England (also commonly referred to as the “UK Curriculum”) is
+                            a very structured curriculum that is designed to meet the needs of all students, stretching
+                            brighter children and supporting those who need it through differentiated teaching and learning
+                            activities. The curriculum extends and excites all students, whatever their interests or ability.
+                            Through it, teachers are able to identify, celebrate and nurture the talents and intelligence of students.
+                            British education is renowned for concerning itself with the development of the whole personality
+                            . Learning is important, but not enough in itself. Young people need to develop their potential to
+                            explore and discover the world around them, to think for themselves and form opinions, to relate
+                            to others, to develop their bodies through sport and physical education, and to gain experience
+                            in taking responsibility.
+                            In the British education system, students are taught to learn by questioning, problem-solving and
+                            creative thinking rather than by the mere retention of facts, hence giving them analytical and
+                            creative thinking skills that they will need in the working world. A variety of teaching and
+                            assessment methods designed to develop independent thought as well as a mastery of the subject
+                            matter is used. Parents also want the wide range of extra-curricular activities that the British
+                            education system provides.
+                        </p>
+                        {{--<button class="forward">Next Step
+                            <i class="zmdi zmdi-long-arrow-right"></i>
+                        </button>--}}
+                    </section>
 
-    <!------ Responsibilities ------>
+                    <!-- SECTION 2 -->
+                    <h4>Overall Structure</h4>
+                    <section class="section-style">
+                        <div class="form-wrapper">
+                            <p style="margin-bottom: 0; text-align: justify">
+                                The National Curriculum of England has a clearly defined series of academic and other objectives
+                                at every level. The education system is divided into Foundation Stage (ages 3 to 5), primary
+                                education (ages 5 to 11) and secondary education (ages 11 to 18) leading most typically to an A
+                                Level qualification.
+                                At the end of Key Stage 1, 2, 3, progress is examined via individual teacher assessment against
+                                the National Curriculum Attainment Targets for all subjects.
+                                NDIS students follow the General Certificate of Secondary Education (IGCSE) programme in Key Stage 4
+                                – most of them taking the Cambridge Assessment International Education or Edexcel Examinations
+                                Board exams. During the IGCSE programme, students typically take courses in the core subject
+                                groups of mathematics, science, English language, English literature and modern foreign language,
+                                but can choose other subjects from the available options. They are awarded certificates from the
+                                examination boards for the subjects that they successfully complete. Students then take the A Level
+                                exams at the end of Key Stage 5.
+
+                            </p>
+                            {{-- <button class="forward">Next Step
+                                 <i class="zmdi zmdi-long-arrow-right"></i>
+                             </button>--}}
+                        </div>
+                    </section>
+
+                    <!-- SECTION 3 -->
+                    <h4>Learning for Tomorrow</h4>
+                    <section>
+                        <p style="margin-bottom: 0; text-align: justify">
+                            We are all aware that we live in a rapidly changing world and that we are preparing
+                            our students for life in a society where they may be working in jobs that do not currently
+                            exist, employing technologies that have not yet been invented. Through the British curriculum
+                            at NDIS we place significant emphasis on the development of personal learning and thinking skills
+                            that will result in young people who are flexible and able to adapt to changing circumstances
+                            without fear of inhibition, enabling and empowering them to meet the demands of 21st century life.
+
+                        </p>
+
+                        {{--<button class="forward" style="width: 195px; margin-top: 44px;">Next Step
+                            <i class="zmdi zmdi-long-arrow-right"></i>
+                        </button>--}}
+                    </section>
+
+                    <!-- SECTION 4 -->
+                    <h4>Personal Development</h4>
+                    <section class="section-style">
+                        <div class="pay-wrapper">
+                            <p class="main-font-size dark-grey " style="text-align: justify">
+                                We understand that children of tomorrow are going to need very different personal
+                                qualities and skills than their former generation. For this reason, children at the
+                                NDIS learn in such a way that they develop the personal qualities of respect, striving
+                                for excellence, accepting accountability, facing challenges and ensuring we maintain a
+                                happy environment. The efforts toward achievement of these attributes and personal goals
+                                are reflected in our reach motto and therefore embedded in our everyday learning.
+
+
+                            </p>
+                            {{--<button style="width: 195px; margin-top: 45px;">Confirmation
+                                <i class="zmdi zmdi-long-arrow-right"></i>
+                            </button>--}}
+                        </div>
+                    </section>
+
+                    <!-- SECTION 5 -->
+                    <h4>International Mindedness and Global Awareness</h4>
+                    <section class="section-style">
+                        <div class="pay-wrapper">
+                            <p class="main-font-size dark-grey " style="text-align: justify">
+                                One of the most essential life skills is developing an understanding of, and a
+                                respect for others. We embrace this concept through nurturing and fostering this
+                                respect for one another within both in our immediate community and the world in
+                                which we live. We encourage our children to identify similarities rather than
+                                differences among cultures and to celebrate and respect other people’s beliefs,
+                                opinions, and customs.
+
+
+                            </p>
+                            {{--<button style="width: 195px; margin-top: 45px;">Confirmation
+                                <i class="zmdi zmdi-long-arrow-right"></i>
+                            </button>--}}
+                        </div>
+                    </section>
+
+                    <!-- SECTION 5 -->
+                    <h4>Problem Solving and Thinking Skills</h4>
+                    <section class="section-style">
+                        <div class="pay-wrapper">
+                            <p class="main-font-size dark-grey " style="text-align: justify">
+                                We place significant value on the development of problem solving and thinking
+                                skills. We recognize that the process of reaching an outcome is as important
+                                as the activity or content of a lesson. Our students learn to investigate and
+                                hypothesize rather than just read about scientific facts. They learn how to research,
+                                interpret and develop historical enquiry skills rather than merely learning to recite
+                                dates. Children at NDIS are able to apply their mathematical skills and select strategies
+                                rather than learning by rote.
+                            </p>
+                            {{--<button style="width: 195px; margin-top: 45px;">Confirmation
+                                <i class="zmdi zmdi-long-arrow-right"></i>
+                            </button>--}}
+                        </div>
+                    </section>
+
+                    <!-- SECTION 5 -->
+                    <h4>Information, Communication and Technology (ICT)</h4>
+                    <section class="section-style">
+                        <div class="pay-wrapper">
+                            <p class="main-font-size dark-grey " style="text-align: justify">
+                                ICT covers a range of theoritical and practical topics which teach the children the increasing
+                                importance of technology in our lives. Children are taught these skills in a well-resourced
+                                laboratory applying these skills in their everyday learning on computers and interactive
+                                whiteboards in each classroom.
+                            </p>
+                            {{--<button style="width: 195px; margin-top: 45px;">Confirmation
+                                <i class="zmdi zmdi-long-arrow-right"></i>
+                            </button>--}}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{--<!------ Responsibilities ------>
     <div class="achievement-area pt-60 pb-40">
         <div class="container">
             <div class="row">
@@ -185,7 +346,7 @@
 
             <img src="{{asset('website/img/about/british-table.png')}}" style="width: 100%; margin-top: 50px">
         </div>
-    </div>
+    </div>--}}
 
 
     @include('layouts.footer')

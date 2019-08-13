@@ -41,8 +41,8 @@
                                 to teach both the British and American curricula as confirmed by the relevant ministered decrees.
                             </p>
                             <div class="d-md-flex">
-                                <a href="{{asset('website/pdf/398 American.pdf')}}" download class="btn btn-danger mr-3" style="font-size: 14px"><i class="fa fa-file-pdf-o"></i> Download American Accreditation</a>
-                                <a href="{{asset('website/pdf/399 British.pdf')}}" download class="btn btn-danger mt-10" style="font-size: 14px"><i class="fa fa-file-pdf-o"></i> Download British Accreditation</a>
+                                <a href="{{asset('website/pdf/398 American.pdf')}}" download class="btn btn-danger mt-10 mr-3" style="font-size: 14px"><i class="fa fa-file-pdf-o"></i> Download License for American Sector</a>
+                                <a href="{{asset('website/pdf/399 British.pdf')}}" download class="btn btn-danger mt-10" style="font-size: 14px"><i class="fa fa-file-pdf-o"></i> Download License for British Sector</a>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
 
                             </p>
                             <div class="d-md-flex">
-                                <a href="{{asset('website/pdf/Cambridge.pdf')}}" download class="btn btn-danger mr-3" style="font-size: 14px"><i class="fa fa-file-pdf-o"></i> Download Cambridge Accreditation</a>
+                                <a href="{{asset('website/pdf/Cambridge.pdf')}}" download class="btn btn-danger mt-10 mr-3" style="font-size: 14px"><i class="fa fa-file-pdf-o"></i> Download Cambridge Accreditation</a>
                                 <a href="{{asset('website/pdf/Cambridge examinations.pdf')}}" download class="btn btn-danger mt-10" style="font-size: 14px"><i class="fa fa-file-pdf-o"></i> Download Cambridge Examination</a>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
 
                             </p>
                             <div class="d-md-flex">
-                                <a href="{{asset('website/pdf/Pearson.pdf')}}" download class="btn btn-danger mr-3" style="font-size: 14px"><i class="fa fa-file-pdf-o"></i> Download Pearson Accreditation</a>
+                                <a href="{{asset('website/pdf/Pearson.pdf')}}" download class="btn btn-danger mt-10 mr-3" style="font-size: 14px"><i class="fa fa-file-pdf-o"></i> Download Pearson Accreditation</a>
                                 <a href="{{asset('website/pdf/Edexcel.pdf')}}" download class="btn btn-danger mt-10" style="font-size: 14px"><i class="fa fa-file-pdf-o"></i> Download Edexcel Accreditation</a>
                             </div>
 

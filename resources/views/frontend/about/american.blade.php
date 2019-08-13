@@ -30,7 +30,7 @@
     </div>
 
 
-
+{{--
     <!------ Aim Section ------>
     <div class="about-us pt-130 pb-50">
         <div class="container">
@@ -55,22 +55,22 @@
                             </p>
 
                         </div>
-                        {{--<div class="about-btn mt-45">
+                        --}}{{--<div class="about-btn mt-45">
                             <a class="default-btn" href="about-us.html">ABOUT US</a>
-                        </div>--}}
+                        </div>--}}{{--
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5">
                     <div class="about-img">
                         <img src="{{asset('website/img/about/american.jpg')}}" alt="">
-                        {{--<a class="video-btn video-popup" href="https://www.youtube.com/watch?v=sv5hK4crIRc">
+                        --}}{{--<a class="video-btn video-popup" href="https://www.youtube.com/watch?v=sv5hK4crIRc">
                             <img class="animated" src="{{asset('website/img')}}/icon-img/video.png" alt="">
-                        </a>--}}
+                        </a>--}}{{--
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
 
 
     <!------ Additional Section ------>

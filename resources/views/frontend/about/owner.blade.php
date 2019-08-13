@@ -20,7 +20,7 @@
                         <div>
                             <h3 class="dark-grey font-weight-bold">ABOUT OWNER</h3>
                             <p class="dark-grey main-font-size">
-                                Mr. Mohamed Abdelghany is a long-time educationalist since 1964, with an extensive experience in teaching students and managing schools of different grades in several governorates around Egypt, including Minya, Southern Egypt and Cairo.
+                                Mr. Abdelghany Mohamed  is a long-time educationalist since 1964, with an extensive experience in teaching students and managing schools of different grades in several governorates around Egypt, including Minya, Southern Egypt and Cairo.
                             </p>
                             <p class="dark-grey main-font-size">
                                 Mr. Abdelghany has continuously pursued his passion in achieving a unique
@@ -35,16 +35,13 @@
                                 backgrounds.
                             </p>
                             <p class="dark-grey main-font-size">
-                                Afterwards, Mr. Abdelghany established the New Discovery British School in Cairo. There,
-                                he ensures that the students undergo a stimulatingly effective and modern educational process;
-                                Mr. Abdelghany introduced a unique 21st century character building program, as well as the world’s
-                                top e-learning system.
+
                             </p>
                         </div>
                         <div class="about-footer mt-40">
                             <div class="d-flex flex-row justify-content-between">
                                 <div>
-                                    <p class="medium-font-size dark-grey font-weight-bold mb-0">Mr.Mohamed Abdelghany</p>
+                                    <p class="medium-font-size dark-grey font-weight-bold mb-0">Mr.Abdelghany Mohamed </p>
                                     <p class="main-font-size" style="color: #0ac766">School Owner</p>
                                 </div>
                                 <div>
